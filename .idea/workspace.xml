@@ -2,73 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2aee0f3-f5f9-43bc-8c21-1487e4acca45" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/twitter/bootstrap/img/glyphicons-halflings-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/twitter/bootstrap/img/glyphicons-halflings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/core-samples/2011-12-29-jekyll-introduction.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/History.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Rakefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/analytics" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/bootstrap/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/bootstrap/css/bs-sticky-footer.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/categories.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/categories_list" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/changelog.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/comments" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_plugins/debug.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/themes/bootstrap-3/default.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/themes/twitter/default.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_layouts/default.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/comments-providers/disqus" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/comments-providers/duoshuo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/comments-providers/facebook" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/feedburner" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/file_exists" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/analytics-providers/gauges" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/analytics-providers/getclicky" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/gist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/analytics-providers/google-universal" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/analytics-providers/google" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/comments-providers/intensedebate" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/is_production" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_drafts/jekyll-introduction-draft.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/liquid_raw" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/comments-providers/livefyre" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/analytics-providers/mixpanel" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/themes/bootstrap-3/page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/themes/twitter/page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_layouts/page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/pages_list" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/analytics-providers/piwik" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/themes/bootstrap-3/post.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/themes/twitter/post.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_layouts/post.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/posts_collate" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rss.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/themes/bootstrap-3/settings.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/themes/twitter/settings.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/setup" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/sharing" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/sort_collection" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/twitter/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/tags_list" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -112,6 +45,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="2011-12-29-jekyll-introduction.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/core-samples/2011-12-29-jekyll-introduction.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.2784553">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/main.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -122,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8769231">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -256,6 +199,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="_posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="26huitailang.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="26huitailang.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core-samples" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -481,14 +442,20 @@
       <option name="project" value="LOCAL" />
       <updated>1469808779581</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="demo">
+      <created>1469809416593</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1469809416593</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="793" y="0" width="814" height="867" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26790452" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26790452" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -523,21 +490,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="skeleton" />
-    <option name="LAST_COMMIT_MESSAGE" value="skeleton" />
+    <MESSAGE value="demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2016-07-29-welcome-to-jekyll.markdown">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7142856">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -567,8 +527,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8769231">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-07-29-welcome-to-jekyll.markdown">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7142856">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/core-samples/2011-12-29-jekyll-introduction.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.2784553">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
