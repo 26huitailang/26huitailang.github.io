@@ -2,80 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2aee0f3-f5f9-43bc-8c21-1487e4acca45" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\404.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\Gemfile" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\History.markdown" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\README.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\Rakefile" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_config.yml" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_drafts\jekyll-introduction-draft.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\analytics" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\analytics-providers\gauges" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\analytics-providers\getclicky" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\analytics-providers\google" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\analytics-providers\google-universal" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\analytics-providers\mixpanel" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\analytics-providers\piwik" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\categories_list" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\comments" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\comments-providers\disqus" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\comments-providers\duoshuo" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\comments-providers\facebook" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\comments-providers\intensedebate" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\comments-providers\livefyre" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\feedburner" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\file_exists" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\gist" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\is_production" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\liquid_raw" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\pages_list" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\posts_collate" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\setup" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\sharing" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\sort_collection" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\JB\tags_list" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\themes\bootstrap-3\default.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\themes\bootstrap-3\page.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\themes\bootstrap-3\post.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\themes\bootstrap-3\settings.yml" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\themes\twitter\default.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\themes\twitter\page.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\themes\twitter\post.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_includes\themes\twitter\settings.yml" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_layouts\default.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_layouts\page.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_layouts\post.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_plugins\debug.rb" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_posts\2016-07-29-welcome-to-jekyll.markdown" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\_posts\core-samples\2011-12-29-jekyll-introduction.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\about.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\archive.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\assets\css\main.scss" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\assets\themes\bootstrap\css\bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\assets\themes\bootstrap\css\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\assets\themes\bootstrap\css\bs-sticky-footer.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\assets\themes\bootstrap\fonts\glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\assets\themes\bootstrap\fonts\glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\assets\themes\bootstrap\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\assets\themes\bootstrap\fonts\glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\assets\themes\bootstrap\js\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\assets\themes\css\style.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\assets\themes\twitter\bootstrap\css\bootstrap.2.2.2.min.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\assets\themes\twitter\bootstrap\img\glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\assets\themes\twitter\bootstrap\img\glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\assets\themes\twitter\css\style.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\atom.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\categories.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\changelog.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\feed.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\index.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\pages.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\rss.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\26huitailang.github.io\tags.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/rss.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CNAME" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.textile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_config.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_layouts/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_layouts/post.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2008-10-18-how-i-turned-down-300k.textile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2008-10-27-looking-back-on-selling-gravatar-to-automattic.textile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2008-11-03-how-to-meet-your-next-cofounder.textile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2008-11-17-blogging-like-a-hacker.textile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2009-05-19-the-git-parable.textile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2010-05-11-tomdoc-reasonable-ruby-documentation.textile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2010-08-23-readme-driven-development.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2010-10-18-optimize-for-happiness.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2011-03-29-ten-lessons-from-githubs-first-year.textile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2011-05-03-rejected-bio-from-the-setup.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2011-11-22-open-source-everything.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/screen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/syntax.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/random/canvas_rotated_textfill.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="26huitailang.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -96,12 +46,42 @@
     <favorites_list name="26huitailang.github.io" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2703252">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="-950">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.textile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.textile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="atom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/atom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -125,20 +105,19 @@
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
-  <component name="NamedScopeManager">
-    <order />
-  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="793" />
-    <option name="width" value="814" />
-    <option name="height" value="867" />
+    <option name="x" value="349" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -161,6 +140,8 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scratches" />
@@ -188,7 +169,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/jekylltheme" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -271,6 +252,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
@@ -390,7 +372,9 @@
       <method />
     </configuration>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -399,29 +383,34 @@
       <changelist id="c2aee0f3-f5f9-43bc-8c21-1487e4acca45" name="Default" comment="" />
       <created>1469804690699</created>
       <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1469804690699</updated>
     </task>
     <task id="LOCAL-00001" summary="skeleton">
       <created>1469807698482</created>
       <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
       <updated>1469807698482</updated>
     </task>
     <task id="LOCAL-00002" summary="skeleton">
       <created>1469808779581</created>
       <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
       <updated>1469808779581</updated>
     </task>
     <task id="LOCAL-00003" summary="demo">
       <created>1469809416593</created>
       <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
       <updated>1469809416593</updated>
     </task>
     <task id="LOCAL-00004" summary="demo">
       <created>1469809507316</created>
       <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
       <updated>1469809507316</updated>
     </task>
@@ -438,29 +427,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="793" y="0" width="814" height="867" extended-state="0" />
-    <editor active="true" />
+    <frame x="349" y="0" width="960" height="1040" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28249338" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292517" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25306123" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2888889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25283447" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -486,8 +475,40 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2703252">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-950">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.textile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
           <folding />
         </state>
       </provider>
