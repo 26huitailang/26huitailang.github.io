@@ -1,6 +1,7 @@
 ---
-layout: default
 title: 你好，世界
+date: 2016-08-02 18:26:00
+categories: helloworld Jekyll
 ---
 
 {{ page.title }}
