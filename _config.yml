@@ -1,6 +1,5 @@
-markdown: rdiscount
+markdown: kramdown
 pygments: true
 baseurl: /26huitailang.github.io
 permalink: /:title
 author: Peter
-layout: post
