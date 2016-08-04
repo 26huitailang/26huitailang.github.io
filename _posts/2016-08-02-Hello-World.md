@@ -13,3 +13,6 @@ tagline: test tagline
 {% endhighlight %}
 
 ![第一次用模板做成的博客]({{ site.url }}/assets/images/first-page.jpg =100*100)
+
+![第一次用模板做成的博客](https://raw.githubusercontent.com/26huitailang/26huitailang.github.io/master/assets/images/first-page.jpg =100x100)
+

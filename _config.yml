@@ -5,6 +5,14 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
 
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #

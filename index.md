@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hello World!
+title: Aloha!
 tagline: Welcome to Peter's blog
 ---
 {% include JB/setup %}
@@ -15,13 +15,20 @@ tagline: Welcome to Peter's blog
 
 ## Posts
 
-    2016-Aug-02之前的文章是模板里面用来学习的，暂时未去掉。
+    2016-Aug-02之前的文章是模板，暂时未去掉。
 
 <ul class="posts">
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
+
+## To-Do
+
+- [ ] 未来可能会增加一个多说评论，但是github下面交流比较集中一点，后续有需要再更新吧。
+- [ ] 搜索功能暂时不能用
+- [ ] 顺便推荐一个漂亮的博客[HUX](http://huangxuan.me/about/)
+- [ ] 首页增加Tags，方便筛选
 
 ## Suggestion
 
