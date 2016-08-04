@@ -12,7 +12,8 @@ tagline: test tagline
 [i for i in range(0, 100)]
 {% endhighlight %}
 
-![第一次用模板做成的博客]({{ site.url }}/assets/images/first-page.jpg =100*100)
+```python
+[i for i in range(0, 100)]
+```
 
-![第一次用模板做成的博客](https://raw.githubusercontent.com/26huitailang/26huitailang.github.io/master/assets/images/first-page.jpg =100x100)
-
+<div align="center"><img src="https://raw.githubusercontent.com/26huitailang/26huitailang.github.io/master/assets/images/first-page.jpg" alt="第一次用模板做成的博客" width=100 height=100 /></div>
