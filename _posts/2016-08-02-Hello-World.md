@@ -16,4 +16,4 @@ tagline: test tagline
 [i for i in range(0, 100)]
 ```
 
-<div align="center"><img src="https://raw.githubusercontent.com/26huitailang/26huitailang.github.io/master/assets/images/first-page.jpg" alt="第一次用模板做成的博客" width=100 height=100 /></div>
+![]({{ site.url}}/assets/images/first-page.jpg)
