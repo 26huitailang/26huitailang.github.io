@@ -12,3 +12,4 @@ tagline: test tagline
 [i for i in range(0, 100)]
 {% endhighlight %}
 
+![第一次用模板做成的博客]({{ site.url }}/assets/images/first-page.jpg =100*100)
