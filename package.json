@@ -7,10 +7,10 @@
     "name": "PeterChen",
     "email": "26huitailang@gmail.com"
   },
-  "repository": "git@github.com:26huitailang/26huitailang.github.io.git/Peter&#39;s Blog",
+  "repository": "git@github.com:26huitailang/26huitailang.github.io.git",
   "scripts": {
-    "dev": "vuepress dev blog",
-    "build": "vuepress build blog"
+    "docs:dev": "vuepress dev blog",
+    "docs:build": "vuepress build blog"
   },
   "license": "MIT",
   "devDependencies": {
