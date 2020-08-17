@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>k3s 初次使用 | Peter&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="
+multipass 环境准备
+
+quick-start
+参考1
+参考2
+
+`s ...">
+    <link rel="preload" href="/assets/css/0.styles.c4a4baaf.css" as="style"><link rel="preload" href="/assets/js/app.690bae17.js" as="script"><link rel="preload" href="/assets/js/6.6703c8d5.js" as="script"><link rel="preload" href="/assets/js/3.504ff661.js" as="script"><link rel="preload" href="/assets/js/38.294f4e06.js" as="script"><link rel="prefetch" href="/assets/js/10.52a06c24.js"><link rel="prefetch" href="/assets/js/11.fa1e3341.js"><link rel="prefetch" href="/assets/js/12.d662b934.js"><link rel="prefetch" href="/assets/js/13.a976cb61.js"><link rel="prefetch" href="/assets/js/14.897e85f7.js"><link rel="prefetch" href="/assets/js/15.6158a1aa.js"><link rel="prefetch" href="/assets/js/16.1e4348c9.js"><link rel="prefetch" href="/assets/js/17.71009544.js"><link rel="prefetch" href="/assets/js/18.41d4e8f4.js"><link rel="prefetch" href="/assets/js/19.7676fedb.js"><link rel="prefetch" href="/assets/js/20.15c6efb8.js"><link rel="prefetch" href="/assets/js/21.d12214f0.js"><link rel="prefetch" href="/assets/js/22.f2673794.js"><link rel="prefetch" href="/assets/js/23.9d4d6d98.js"><link rel="prefetch" href="/assets/js/24.460bea4b.js"><link rel="prefetch" href="/assets/js/25.99e06aad.js"><link rel="prefetch" href="/assets/js/26.d08b15f4.js"><link rel="prefetch" href="/assets/js/27.9fd78ea7.js"><link rel="prefetch" href="/assets/js/28.5b35012e.js"><link rel="prefetch" href="/assets/js/29.a9377d7c.js"><link rel="prefetch" href="/assets/js/30.24079df5.js"><link rel="prefetch" href="/assets/js/31.21a340c7.js"><link rel="prefetch" href="/assets/js/32.d47e620f.js"><link rel="prefetch" href="/assets/js/33.c73bb0fe.js"><link rel="prefetch" href="/assets/js/34.cb2e044a.js"><link rel="prefetch" href="/assets/js/35.e88c56b9.js"><link rel="prefetch" href="/assets/js/36.d447ee16.js"><link rel="prefetch" href="/assets/js/37.6300a5ce.js"><link rel="prefetch" href="/assets/js/39.b2ed0a2a.js"><link rel="prefetch" href="/assets/js/4.a5f7ee2f.js"><link rel="prefetch" href="/assets/js/40.f8fcf442.js"><link rel="prefetch" href="/assets/js/41.92877d71.js"><link rel="prefetch" href="/assets/js/5.e1e1c655.js"><link rel="prefetch" href="/assets/js/7.50675d1d.js"><link rel="prefetch" href="/assets/js/8.05a4d9d8.js"><link rel="prefetch" href="/assets/js/9.b2c12ae5.js"><link rel="prefetch" href="/assets/js/vuejs-paginate.f29279fa.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c4a4baaf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuepress-theme-blog__global-layout"><section id="header-wrapper"><header id="header"><div class="header-wrapper"><div class="title"><a href="/" class="nav-link home-link">Peter's Blog </a></div> <div class="header-right-wrap"><ul class="nav"><li class="nav-item"><a href="/" class="nav-link">Blog</a></li><li class="nav-item"><a href="/tag/" class="nav-link">Tags</a></li></ul> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></div></header></section> <div id="mobile-header"><div class="mobile-header-bar"><div class="mobile-header-title"><a href="/" class="nav-link mobile-home-link">Peter's Blog </a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div> <div class="mobile-menu-wrapper"><hr class="menu-divider"> <ul class="mobile-nav"><li class="mobile-nav-item"><a href="/" class="nav-link">Blog</a></li><li class="mobile-nav-item"><a href="/tag/" class="nav-link">Tags</a></li> <li class="mobile-nav-item"><!----></li></ul></div></div></div> <div class="content-wrapper"><div id="vuepress-theme-blog__post-layout"><article itemscope="itemscope" itemtype="https://schema.org/BlogPosting" class="vuepress-blog-theme-content"><header><h1 itemprop="name headline" class="post-title">
+        
+      </h1> <div class="post-meta"><div itemprop="publisher author" itemtype="http://schema.org/Person" itemscope="itemscope" class="post-meta-author"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg> <span itemprop="name">Peter</span> <!----></div> <div class="post-meta-date"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <time pubdate itemprop="datePublished" datetime="2020-05-16T00:00:00.000Z">
+      Sat May 16 2020
+    </time></div> <ul itemprop="keywords" class="post-meta-tags"><li class="post-tag" data-v-42ccfcd5><a href="/tag/k3s" data-v-42ccfcd5><span data-v-42ccfcd5>k3s</span></a></li></ul></div></header> <div itemprop="articleBody" class="content__default"><h1 id="k3s-初次使用"><a href="#k3s-初次使用" class="header-anchor">#</a> k3s 初次使用</h1> <h2 id="multipass-环境准备"><a href="#multipass-环境准备" class="header-anchor">#</a> multipass 环境准备</h2> <ul><li><a href="https://rancher.com/docs/k3s/latest/en/quick-start/" target="_blank" rel="noopener noreferrer">quick-start<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://www.jianshu.com/p/dbc8d9a8374e" target="_blank" rel="noopener noreferrer">参考1<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://juejin.im/post/5dbb9471e51d4529ea263c67" target="_blank" rel="noopener noreferrer">参考2<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># k3s1 node for master 192.168.64.5</span>
+multipass launch -v --name k3s1 <span class="token number">20.04</span>
+multipass shell k3s1
+<span class="token function">curl</span> -sfL https://get.k3s.io <span class="token operator">|</span> <span class="token function">sh</span> -
+<span class="token comment"># default config</span>
+<span class="token function">sudo</span> <span class="token function">cat</span> /etc/rancher/k3s/k3s.yaml
+<span class="token comment"># node-token</span>
+<span class="token function">sudo</span> <span class="token function">cat</span> /var/lib/rancher/k3s/server/node-token
+<span class="token comment"># Check for Ready node, takes maybe 30 seconds</span>
+<span class="token function">sudo</span> kubectl get nodes
+
+<span class="token comment"># k3s2 node 192.168.64.6</span>
+multipass launch -v --name k3s2 <span class="token number">20.04</span>
+multipass shell k3s2
+<span class="token comment"># add node to cluster</span>
+<span class="token comment"># token in master cat /var/lib/rancher/k3s/server/node-token</span>
+<span class="token comment"># K3S_NODE_NAME for unique hostname</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">K3S_TOKEN</span><span class="token operator">=</span>x
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">K3S_URL</span><span class="token operator">=</span>https://192.168.1.21:6443
+<span class="token function">curl</span> -sfL https://get.k3s.io <span class="token operator">|</span> <span class="token assign-left variable">K3S_URL</span><span class="token operator">=</span><span class="token variable">${K3S_URL}</span> <span class="token assign-left variable">K3S_TOKEN</span><span class="token operator">=</span><span class="token variable">${K3S_TOKEN}</span> <span class="token function">sh</span> -
+<span class="token comment"># if not register successfully, 查看日志可能是因为之前有重复node hostname</span>
+<span class="token comment"># 原因：https://github.com/rancher/k3s/issues/802 移除node没有一同移除密码</span>
+<span class="token function">sudo</span> <span class="token function">vim</span> /var/lib/rancher/k3s/server/cred/node-passwd
+</code></pre></div><p>查看节点状态：</p> <div class="language- extra-class"><pre><code>sudo kubectl get nodes
+</code></pre></div><h2 id="dashboard"><a href="#dashboard" class="header-anchor">#</a> dashboard</h2> <p><a href="https://rancher.com/docs/k3s/latest/en/installation/kube-dashboard/" target="_blank" rel="noopener noreferrer">kube-dashboard<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>install</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token assign-left variable">GITHUB_URL</span><span class="token operator">=</span>https://github.com/kubernetes/dashboard/releases
+<span class="token assign-left variable">VERSION_KUBE_DASHBOARD</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">curl</span> -w <span class="token string">'%{url_effective}'</span> -I -L -s -S $<span class="token punctuation">{</span>GITHUB_URL<span class="token punctuation">}</span>/latest -o /dev/null <span class="token operator">|</span> <span class="token function">sed</span> -e <span class="token string">'s|.*/||'</span><span class="token variable">)</span></span>
+<span class="token function">sudo</span> k3s kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/<span class="token variable">${VERSION_KUBE_DASHBOARD}</span>/aio/deploy/recommended.yaml
+</code></pre></div><p>Dashboard RBAC Configuration</p> <p>dashboard.admin-user.yml</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> ServiceAccount
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> admin<span class="token punctuation">-</span>user
+  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> kubernetes<span class="token punctuation">-</span>dashboard
+</code></pre></div><p>dashboard.admin-user-role.yml</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> rbac.authorization.k8s.io/v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> ClusterRoleBinding
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> admin<span class="token punctuation">-</span>user
+<span class="token key atrule">roleRef</span><span class="token punctuation">:</span>
+  <span class="token key atrule">apiGroup</span><span class="token punctuation">:</span> rbac.authorization.k8s.io
+  <span class="token key atrule">kind</span><span class="token punctuation">:</span> ClusterRole
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> cluster<span class="token punctuation">-</span>admin
+<span class="token key atrule">subjects</span><span class="token punctuation">:</span>
+<span class="token punctuation">-</span> <span class="token key atrule">kind</span><span class="token punctuation">:</span> ServiceAccount
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> admin<span class="token punctuation">-</span>user
+  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> kubernetes<span class="token punctuation">-</span>dashboard
+</code></pre></div><div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">sudo</span> k3s kubectl create -f dashboard.admin-user.yml -f dashboard.admin-user-role.yml
+</code></pre></div><p>Obtain the Bearer Token, 用于token登录dashboard</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">sudo</span> k3s kubectl -n kubernetes-dashboard describe secret admin-user-token <span class="token operator">|</span> <span class="token function">grep</span> ^token
+</code></pre></div><p>access</p> <div class="language- extra-class"><pre><code>http://192.168.64.5:6443/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+</code></pre></div><h2 id="ingress"><a href="#ingress" class="header-anchor">#</a> ingress</h2> <p>k3s 默认使用的是traefik，k8s推荐的是GCE和ingress-nginx。</p> <p>但是traefik默认配置: <code>/var/lib/rancher/k3s/server/manifests/traefik.yaml</code> 没有开启dashboard。尝试打开：</p> <p>查看当前配置：</p> <div class="language- extra-class"><pre><code>kubectl describe deploy traefik -n kube-system
+</code></pre></div><p>得知配置是使用的 /config 的volume：</p> <div class="language- extra-class"><pre><code>kubectl describe configmap traefik -n kube-system
+</code></pre></div><p>添加set部分内容：</p> <div class="language- extra-class"><pre><code>set:
+    dashboard.enabled: &quot;true&quot;
+</code></pre></div><p>traefik.yml</p> <div class="language- extra-class"><pre><code>root@k3s1:/var/lib/rancher/k3s/server/manifests# cat traefik.yaml
+</code></pre></div><div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> helm.cattle.io/v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> HelmChart
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> traefik
+  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> kube<span class="token punctuation">-</span>system
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">chart</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//%<span class="token punctuation">{</span>KUBERNETES_API<span class="token punctuation">}</span>%/static/charts/traefik<span class="token punctuation">-</span>1.81.0.tgz
+  <span class="token key atrule">set</span><span class="token punctuation">:</span>
+    <span class="token key atrule">dashboard.enabled</span><span class="token punctuation">:</span> <span class="token string">&quot;true&quot;</span>
+  <span class="token key atrule">valuesContent</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token punctuation">-</span>
+    <span class="token key atrule">rbac</span><span class="token punctuation">:</span>
+      <span class="token key atrule">enabled</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">ssl</span><span class="token punctuation">:</span>
+      <span class="token key atrule">enabled</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">metrics</span><span class="token punctuation">:</span>
+      <span class="token key atrule">prometheus</span><span class="token punctuation">:</span>
+        <span class="token key atrule">enabled</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">kubernetes</span><span class="token punctuation">:</span>
+      <span class="token key atrule">ingressEndpoint</span><span class="token punctuation">:</span>
+        <span class="token key atrule">useDefaultPublishedService</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> <span class="token string">&quot;rancher/library-traefik&quot;</span>
+    <span class="token key atrule">tolerations</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">key</span><span class="token punctuation">:</span> <span class="token string">&quot;CriticalAddonsOnly&quot;</span>
+        <span class="token key atrule">operator</span><span class="token punctuation">:</span> <span class="token string">&quot;Exists&quot;</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">key</span><span class="token punctuation">:</span> <span class="token string">&quot;node-role.kubernetes.io/master&quot;</span>
+        <span class="token key atrule">operator</span><span class="token punctuation">:</span> <span class="token string">&quot;Exists&quot;</span>
+        <span class="token key atrule">effect</span><span class="token punctuation">:</span> <span class="token string">&quot;NoSchedule&quot;</span>
+</code></pre></div><p>如何配置ingress，配合一个<a href="https://github.com/okteto/samples" target="_blank" rel="noopener noreferrer">django的sample<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> extensions/v1beta1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> Ingress
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> my<span class="token punctuation">-</span>server
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">rules</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">host</span><span class="token punctuation">:</span> my<span class="token punctuation">-</span>server.192.168.1.22.xip.io
+      <span class="token key atrule">http</span><span class="token punctuation">:</span>
+        <span class="token key atrule">paths</span><span class="token punctuation">:</span>
+          <span class="token punctuation">-</span> <span class="token key atrule">path</span><span class="token punctuation">:</span> /jobs
+            <span class="token key atrule">backend</span><span class="token punctuation">:</span>
+              <span class="token key atrule">serviceName</span><span class="token punctuation">:</span> web
+              <span class="token key atrule">servicePort</span><span class="token punctuation">:</span> <span class="token number">8080</span>
+          <span class="token punctuation">-</span> <span class="token key atrule">path</span><span class="token punctuation">:</span> /static
+            <span class="token key atrule">backend</span><span class="token punctuation">:</span>
+              <span class="token key atrule">serviceName</span><span class="token punctuation">:</span> web
+              <span class="token key atrule">servicePort</span><span class="token punctuation">:</span> <span class="token number">8080</span>
+</code></pre></div><h2 id="cheat-sheet"><a href="#cheat-sheet" class="header-anchor">#</a> cheat sheet</h2> <p><a href="https://kubernetes.io/zh/docs/reference/kubectl/cheatsheet/" target="_blank" rel="noopener noreferrer">cheatsheet<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="nginx-demo"><a href="#nginx-demo" class="header-anchor">#</a> nginx demo</h2> <p>in k3s2 machine</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">mkdir</span> ~/controllers
+<span class="token function">cat</span> <span class="token operator">&gt;</span> nginx-deployment.yaml <span class="token operator">&lt;&lt;</span><span class="token string">EOL
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    app: nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
+EOL</span>
+</code></pre></div><h2 id="问题"><a href="#问题" class="header-anchor">#</a> 问题</h2> <ul><li>vagrant nat 10.0.2.15网络问题，server/agent 选择对应的网络启动，不然默认选中第一个</li></ul> <div class="language- extra-class"><pre class="language-text"><code>sudo vim /etc/systemd/system/k3s-agent.service
+
+sudo vim /etc/systemd/system/k3s.service
+
+ExecStart=/usr/local/bin/k3s \
+    server --flannel-iface=enp0s8 \
+</code></pre></div><ul><li>镜像 docker.io 加速，在containerd的config中加入地址，http://www.zzfly.net/k3s-installation-and-containerd-registry/</li></ul> <div class="language-ini extra-class"><pre class="language-ini"><code><span class="token selector">[plugins.cri.registry.mirrors]</span>
+<span class="token selector">  [plugins.cri.registry.mirrors.&quot;docker.io&quot;]</span>
+<span class="token constant">    endpoint</span> <span class="token attr-value"><span class="token punctuation">=</span> [&quot;https://docker.mirrors.ustc.edu.cn&quot;]</span>
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>root@k3s1:/vagrant/samples-master/django# cd /var/lib/rancher/k3s/agent/etc/containerd/
+root@k3s1:/var/lib/rancher/k3s/agent/etc/containerd# ls
+config.toml
+root@k3s1:/var/lib/rancher/k3s/agent/etc/containerd# cp config.toml config.toml.tmpl
+root@k3s1:/var/lib/rancher/k3s/agent/etc/containerd# vim config.toml.tmpl
+
+root@k3s1:/var/lib/rancher/k3s/agent/etc/containerd# systemctl restart k3s
+root@k3s1:/var/lib/rancher/k3s/agent/etc/containerd# crictl info | grep registry -C 10
+        }
+      },
+      &quot;noPivot&quot;: false
+    },
+    &quot;cni&quot;: {
+      &quot;binDir&quot;: &quot;/var/lib/rancher/k3s/data/572dcee7aa63e8f11e61142e4b0fc4f7ce33a0a6fed6a72924c6f6be85781b10/bin&quot;,
+      &quot;confDir&quot;: &quot;/var/lib/rancher/k3s/agent/etc/cni/net.d&quot;,
+      &quot;maxConfNum&quot;: 1,
+      &quot;confTemplate&quot;: &quot;&quot;
+    },
+    &quot;registry&quot;: {
+      &quot;mirrors&quot;: {
+        &quot;docker.io&quot;: {
+          &quot;endpoint&quot;: [
+            &quot;https://docker.mirrors.ustc.edu.cn&quot;
+          ]
+        }
+      },
+      &quot;configs&quot;: null,
+      &quot;auths&quot;: null
+    },
+</code></pre></div></div> <footer><!----> <hr> <!----></footer></article> <div class="sticker vuepress-toc"><div class="vuepress-toc-item vuepress-toc-h2 active"><a href="#multipass-环境准备" title="multipass 环境准备">multipass 环境准备</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#dashboard" title="dashboard">dashboard</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#ingress" title="ingress">ingress</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#cheat-sheet" title="cheat sheet">cheat sheet</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#nginx-demo" title="nginx demo">nginx demo</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#问题" title="问题">问题</a></div></div></div></div> <footer class="footer" data-v-fdbf4940><div class="footer-left-wrap" data-v-fdbf4940><ul class="contact" data-v-fdbf4940><li class="contact-item" data-v-fdbf4940><a href="https://github.com/26huitailang" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github" data-v-fdbf4940><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" data-v-fdbf4940></path></svg>
+          
+        </a></li><li class="contact-item" data-v-fdbf4940><a href="https://twitter.com/HuitailangPeter" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter" data-v-fdbf4940><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" data-v-fdbf4940></path></svg>
+          
+        </a></li></ul></div> <div class="footer-right-wrap" data-v-fdbf4940><ul class="copyright" data-v-fdbf4940><li class="copyright-item" data-v-fdbf4940><a href="https://policies.google.com/privacy?hl=en-US" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940>Privacy Policy</a></li><li class="copyright-item" data-v-fdbf4940><a href="/2020/05/16/k3s/.html" class="nav-link" data-v-fdbf4940>MIT Licensed | Copyright © 2020</a></li></ul></div></footer></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.690bae17.js" defer></script><script src="/assets/js/6.6703c8d5.js" defer></script><script src="/assets/js/3.504ff661.js" defer></script><script src="/assets/js/38.294f4e06.js" defer></script>
+  </body>
+</html>

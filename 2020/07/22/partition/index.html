@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>PostgreSQL 分表 | Peter&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="
+
+继承实现更灵活，可以直接在已有数据的表上实现，不用重新迁移。
+
+-- https://www.postgresql.org/docs/current/ddl-partitioning.html
+-- zh
+-- http://postgres.cn/docs/11/ddl-partitioning.html
+-- keyword: further redirect
+
+-- 已有数 ...">
+    <link rel="preload" href="/assets/css/0.styles.c4a4baaf.css" as="style"><link rel="preload" href="/assets/js/app.690bae17.js" as="script"><link rel="preload" href="/assets/js/6.6703c8d5.js" as="script"><link rel="preload" href="/assets/js/3.504ff661.js" as="script"><link rel="preload" href="/assets/js/30.24079df5.js" as="script"><link rel="prefetch" href="/assets/js/10.52a06c24.js"><link rel="prefetch" href="/assets/js/11.fa1e3341.js"><link rel="prefetch" href="/assets/js/12.d662b934.js"><link rel="prefetch" href="/assets/js/13.a976cb61.js"><link rel="prefetch" href="/assets/js/14.897e85f7.js"><link rel="prefetch" href="/assets/js/15.6158a1aa.js"><link rel="prefetch" href="/assets/js/16.1e4348c9.js"><link rel="prefetch" href="/assets/js/17.71009544.js"><link rel="prefetch" href="/assets/js/18.41d4e8f4.js"><link rel="prefetch" href="/assets/js/19.7676fedb.js"><link rel="prefetch" href="/assets/js/20.15c6efb8.js"><link rel="prefetch" href="/assets/js/21.d12214f0.js"><link rel="prefetch" href="/assets/js/22.f2673794.js"><link rel="prefetch" href="/assets/js/23.9d4d6d98.js"><link rel="prefetch" href="/assets/js/24.460bea4b.js"><link rel="prefetch" href="/assets/js/25.99e06aad.js"><link rel="prefetch" href="/assets/js/26.d08b15f4.js"><link rel="prefetch" href="/assets/js/27.9fd78ea7.js"><link rel="prefetch" href="/assets/js/28.5b35012e.js"><link rel="prefetch" href="/assets/js/29.a9377d7c.js"><link rel="prefetch" href="/assets/js/31.21a340c7.js"><link rel="prefetch" href="/assets/js/32.d47e620f.js"><link rel="prefetch" href="/assets/js/33.c73bb0fe.js"><link rel="prefetch" href="/assets/js/34.cb2e044a.js"><link rel="prefetch" href="/assets/js/35.e88c56b9.js"><link rel="prefetch" href="/assets/js/36.d447ee16.js"><link rel="prefetch" href="/assets/js/37.6300a5ce.js"><link rel="prefetch" href="/assets/js/38.294f4e06.js"><link rel="prefetch" href="/assets/js/39.b2ed0a2a.js"><link rel="prefetch" href="/assets/js/4.a5f7ee2f.js"><link rel="prefetch" href="/assets/js/40.f8fcf442.js"><link rel="prefetch" href="/assets/js/41.92877d71.js"><link rel="prefetch" href="/assets/js/5.e1e1c655.js"><link rel="prefetch" href="/assets/js/7.50675d1d.js"><link rel="prefetch" href="/assets/js/8.05a4d9d8.js"><link rel="prefetch" href="/assets/js/9.b2c12ae5.js"><link rel="prefetch" href="/assets/js/vuejs-paginate.f29279fa.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c4a4baaf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuepress-theme-blog__global-layout"><section id="header-wrapper"><header id="header"><div class="header-wrapper"><div class="title"><a href="/" class="nav-link home-link">Peter's Blog </a></div> <div class="header-right-wrap"><ul class="nav"><li class="nav-item"><a href="/" class="nav-link">Blog</a></li><li class="nav-item"><a href="/tag/" class="nav-link">Tags</a></li></ul> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></div></header></section> <div id="mobile-header"><div class="mobile-header-bar"><div class="mobile-header-title"><a href="/" class="nav-link mobile-home-link">Peter's Blog </a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div> <div class="mobile-menu-wrapper"><hr class="menu-divider"> <ul class="mobile-nav"><li class="mobile-nav-item"><a href="/" class="nav-link">Blog</a></li><li class="mobile-nav-item"><a href="/tag/" class="nav-link">Tags</a></li> <li class="mobile-nav-item"><!----></li></ul></div></div></div> <div class="content-wrapper"><div id="vuepress-theme-blog__post-layout"><article itemscope="itemscope" itemtype="https://schema.org/BlogPosting" class="vuepress-blog-theme-content"><header><h1 itemprop="name headline" class="post-title">
+        
+      </h1> <div class="post-meta"><div itemprop="publisher author" itemtype="http://schema.org/Person" itemscope="itemscope" class="post-meta-author"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg> <span itemprop="name">Peter</span> <!----></div> <div class="post-meta-date"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <time pubdate itemprop="datePublished" datetime="2020-7-22">
+      Wed Jul 22 2020
+    </time></div> <ul itemprop="keywords" class="post-meta-tags"><li class="post-tag" data-v-42ccfcd5><a href="/tag/database" data-v-42ccfcd5><span data-v-42ccfcd5>database</span></a></li><li class="post-tag" data-v-42ccfcd5><a href="/tag/postgresql" data-v-42ccfcd5><span data-v-42ccfcd5>postgresql</span></a></li></ul></div></header> <div itemprop="articleBody" class="content__default"><h1 id="postgresql-分表"><a href="#postgresql-分表" class="header-anchor">#</a> PostgreSQL 分表</h1> <p>继承实现更灵活，可以直接在已有数据的表上实现，不用重新迁移。</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token comment">-- https://www.postgresql.org/docs/current/ddl-partitioning.html</span>
+<span class="token comment">-- zh</span>
+<span class="token comment">-- http://postgres.cn/docs/11/ddl-partitioning.html</span>
+<span class="token comment">-- keyword: further redirect</span>
+
+<span class="token comment">-- 已有数据分表，因为主表不能有数据，所以需要先备份，创建分表和规则完毕后重新插入</span>
+<span class="token comment">-- 或者用新的表名，之后再分批读取插入</span>
+
+<span class="token comment">-- 创建主表</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> measurement <span class="token punctuation">(</span>
+    city_id         <span class="token keyword">int</span> <span class="token operator">not</span> <span class="token boolean">null</span><span class="token punctuation">,</span>
+    logdate         <span class="token keyword">date</span> <span class="token operator">not</span> <span class="token boolean">null</span><span class="token punctuation">,</span>
+    peaktemp        <span class="token keyword">int</span><span class="token punctuation">,</span>
+    unitsales       <span class="token keyword">int</span>
+<span class="token punctuation">)</span> <span class="token keyword">PARTITION</span> <span class="token keyword">BY</span> RANGE <span class="token punctuation">(</span>logdate<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 创建分表及规则</span>
+<span class="token comment">-- 还可以通过partition by 再次创建sub-partitioning，对插入measurement_y2006m02的数据再次重定向</span>
+<span class="token comment">-- CREATE TABLE measurement_y2006m02 PARTITION OF measurement</span>
+<span class="token comment">--     FOR VALUES FROM ('2006-02-01') TO ('2006-03-01')</span>
+<span class="token comment">--     PARTITION BY RANGE (peaktemp);</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> measurement_y2006m02 <span class="token keyword">PARTITION</span> <span class="token keyword">OF</span> measurement
+    <span class="token keyword">FOR</span> <span class="token keyword">VALUES</span> <span class="token keyword">FROM</span> <span class="token punctuation">(</span><span class="token string">'2006-02-01'</span><span class="token punctuation">)</span> <span class="token keyword">TO</span> <span class="token punctuation">(</span><span class="token string">'2006-03-01'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> measurement_y2006m03 <span class="token keyword">PARTITION</span> <span class="token keyword">OF</span> measurement
+    <span class="token keyword">FOR</span> <span class="token keyword">VALUES</span> <span class="token keyword">FROM</span> <span class="token punctuation">(</span><span class="token string">'2006-03-01'</span><span class="token punctuation">)</span> <span class="token keyword">TO</span> <span class="token punctuation">(</span><span class="token string">'2006-04-01'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 创建索引，自动再每个分区上创建索引</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">INDEX</span> <span class="token keyword">ON</span> measurement <span class="token punctuation">(</span>logdate<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- Ensure that the enable_partition_pruning configuration parameter is not disabled in postgresql.conf. If it is, queries will not be optimized as desired.</span>
+
+<span class="token comment">-- test</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> measurement <span class="token punctuation">(</span>city_id<span class="token punctuation">,</span> logdate<span class="token punctuation">,</span> peaktemp<span class="token punctuation">,</span> unitsales<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'2008-2-1'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> measurement <span class="token punctuation">(</span>city_id<span class="token punctuation">,</span> logdate<span class="token punctuation">,</span> peaktemp<span class="token punctuation">,</span> unitsales<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'2006-2-1'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">---- 维护 ----</span>
+
+<span class="token comment">-- 删除分表，可以快速删除百万数据，但是需要父表的 ACCESS EXCLUSIVE 锁</span>
+<span class="token keyword">DROP</span> <span class="token keyword">TABLE</span> measurement_y2006m02<span class="token punctuation">;</span>
+
+<span class="token comment">-- 更好的处理方式，将分表从主表中分离，以单独的形式存在</span>
+<span class="token comment">-- This allows further operations to be performed on the data before it is dropped. For example, this is often a useful time to back up the data using COPY, pg_dump, or similar tools. It might also be a useful time to aggregate data into smaller formats, perform other data manipulations, or run reports.</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> measurement DETACH <span class="token keyword">PARTITION</span> measurement_y2006m02<span class="token punctuation">;</span>
+
+<span class="token comment">-- 在新的自盘空间申明，一般是用于把重要数据放在可靠快速磁盘，将日志型等数据放于普通磁盘</span>
+<span class="token comment">-- CREATE TABLE measurement_y2008m02 PARTITION OF measurement</span>
+<span class="token comment">--     FOR VALUES FROM ('2008-02-01') TO ('2008-03-01')</span>
+<span class="token comment">--     TABLESPACE fasttablespace;</span>
+
+<span class="token comment">--  分区表有下列限制：</span>
+<span class="token comment">--</span>
+<span class="token comment">--     没有办法创建跨越所有分区的排除约束，只可能单个约束每个叶子分区。</span>
+<span class="token comment">--</span>
+<span class="token comment">--     虽然在分区表上支持主键，但引用分区表的外键不受支持（但支持从分区表到某个其他表的外键引用）。</span>
+<span class="token comment">--</span>
+<span class="token comment">--     当一个UPDATE导致一行从一个分区移动到另一个分区时，另一个并发的UPDATE或DELETE可能会产生一个串行化错误。假设会话1正在执行一个分区键上的UPDATE，同时一个并发的能看见这个行的会话2执行了对该行的UPDATE或者DELETE操作。在这种情况下，会话2的UPDATE或者DELETE会检测到行的移动，并抛出一个串行化的错误(将总是会返回一个SQLSTATE '40001')。 如果发生这种情况，应用程序可能希望重试该事务。 在没有分区表或没有行移动的通常情况下， 会话2将识别新更新的行并在新行上执行UPDATE/DELETE。</span>
+<span class="token comment">--</span>
+<span class="token comment">--     如果必要，必须在个体分区上定义BEFORE ROW触发器，分区表上不需要。</span>
+<span class="token comment">--</span>
+<span class="token comment">--     不允许在同一个分区树中混杂临时关系和持久关系。因此，如果分区表是持久的，则其分区也必须是持久的，反之亦然。在使用临时关系时，分区数的所有成员都必须来自于同一个会话。</span>
+
+<span class="token comment">-- 使用继承实现</span>
+
+<span class="token comment">--  虽然内建的声明式分区适合于大部分常见的用例，但还是有一些场景需要更加灵活的方法。分区可以使用表继承来实现，这能够带来一些声明式分区不支持的特性，例如：</span>
+<span class="token comment">--</span>
+<span class="token comment">--     对声明式分区来说，分区必须具有和分区表正好相同的列集合，而在表继承中，子表可以有父表中没有出现过的额外列。</span>
+<span class="token comment">--</span>
+<span class="token comment">--     表继承允许多继承。</span>
+<span class="token comment">--</span>
+<span class="token comment">--     声明式分区仅支持范围、列表以及哈希分区，而表继承允许数据按照用户的选择来划分（不过注意，如果约束排除不能有效地剪枝子表，查询性能可能会很差）。</span>
+<span class="token comment">--</span>
+<span class="token comment">--     在使用声明式分区时，一些操作比使用表继承时要求更长的持锁时间。例如，向分区表中增加分区或者从分区表移除分区要求在父表上取得一个ACCESS EXCLUSIVE锁，而在常规继承的情况下一个SHARE UPDATE EXCLUSIVE锁就足够了。</span>
+
+<span class="token comment">--继承实现可以在已有数据中实现吗？</span>
+<span class="token keyword">create</span> <span class="token keyword">table</span> measurement3 <span class="token punctuation">(</span>
+    id <span class="token keyword">int</span> <span class="token operator">not</span> <span class="token boolean">null</span><span class="token punctuation">,</span>
+    name <span class="token keyword">char</span> <span class="token operator">not</span> <span class="token boolean">null</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">insert</span> <span class="token keyword">into</span> measurement3 <span class="token punctuation">(</span>id<span class="token punctuation">,</span> name<span class="token punctuation">)</span> <span class="token keyword">values</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">insert</span> <span class="token keyword">into</span> measurement3 <span class="token punctuation">(</span>id<span class="token punctuation">,</span> name<span class="token punctuation">)</span> <span class="token keyword">values</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">insert</span> <span class="token keyword">into</span> measurement3 <span class="token punctuation">(</span>id<span class="token punctuation">,</span> name<span class="token punctuation">)</span> <span class="token keyword">values</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">insert</span> <span class="token keyword">into</span> measurement3 <span class="token punctuation">(</span>id<span class="token punctuation">,</span> name<span class="token punctuation">)</span> <span class="token keyword">values</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token string">'d'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">create</span> <span class="token keyword">table</span> measurement3_y1 <span class="token punctuation">(</span><span class="token keyword">check</span> <span class="token punctuation">(</span> id <span class="token operator">&gt;=</span> <span class="token number">10</span> <span class="token operator">and</span> id <span class="token operator">&lt;</span> <span class="token number">20</span> <span class="token punctuation">)</span><span class="token punctuation">)</span> inherits <span class="token punctuation">(</span>measurement3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">create</span> <span class="token keyword">table</span> measurement3_y2 <span class="token punctuation">(</span><span class="token keyword">check</span> <span class="token punctuation">(</span> id <span class="token operator">&gt;=</span> <span class="token number">20</span> <span class="token operator">and</span> id <span class="token operator">&lt;</span> <span class="token number">30</span> <span class="token punctuation">)</span><span class="token punctuation">)</span> inherits <span class="token punctuation">(</span>measurement3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">create</span> <span class="token keyword">function</span> measurement_insert_trigger<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">returns</span> <span class="token keyword">trigger</span>
+    <span class="token keyword">language</span> plpgsql
+<span class="token keyword">as</span>
+$$
+<span class="token keyword">BEGIN</span>
+    <span class="token keyword">IF</span> <span class="token punctuation">(</span>NEW<span class="token punctuation">.</span>id <span class="token operator">&gt;=</span> <span class="token number">10</span> <span class="token operator">and</span> NEW<span class="token punctuation">.</span>id <span class="token operator">&lt;</span> <span class="token number">20</span><span class="token punctuation">)</span> <span class="token keyword">then</span>
+        <span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> measurement3_y1 <span class="token keyword">VALUES</span> <span class="token punctuation">(</span>NEW<span class="token punctuation">.</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    ELSIF <span class="token punctuation">(</span>NEW<span class="token punctuation">.</span>id <span class="token operator">&gt;=</span> <span class="token number">20</span> <span class="token operator">and</span> NEW<span class="token punctuation">.</span>id <span class="token operator">&lt;</span> <span class="token number">30</span><span class="token punctuation">)</span> <span class="token keyword">then</span>
+        <span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> measurement3_y2 <span class="token keyword">VALUES</span> <span class="token punctuation">(</span>NEW<span class="token punctuation">.</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">ELSE</span>
+        RAISE EXCEPTION <span class="token string">'id out of range. Fix the measurement_insert_trigger function!'</span><span class="token punctuation">;</span>
+    <span class="token keyword">END</span> <span class="token keyword">IF</span><span class="token punctuation">;</span>
+    <span class="token keyword">RETURN</span> <span class="token boolean">NULL</span><span class="token punctuation">;</span>
+<span class="token keyword">END</span><span class="token punctuation">;</span>
+$$<span class="token punctuation">;</span>
+
+<span class="token keyword">alter</span> <span class="token keyword">function</span> measurement_insert_trigger<span class="token punctuation">(</span><span class="token punctuation">)</span> owner <span class="token keyword">to</span> develop<span class="token punctuation">;</span>
+
+
+<span class="token keyword">CREATE</span> <span class="token keyword">TRIGGER</span> insert_measurement_trigger
+    BEFORE <span class="token keyword">INSERT</span> <span class="token keyword">ON</span> measurement3
+    <span class="token keyword">FOR EACH ROW</span> <span class="token keyword">EXECUTE</span> <span class="token keyword">FUNCTION</span> measurement_insert_trigger<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">insert</span> <span class="token keyword">into</span> measurement3 <span class="token punctuation">(</span>id<span class="token punctuation">,</span> name<span class="token punctuation">)</span>
+<span class="token keyword">values</span> <span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token string">'d'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer><!----> <hr> <!----></footer></article> <!----></div></div> <footer class="footer" data-v-fdbf4940><div class="footer-left-wrap" data-v-fdbf4940><ul class="contact" data-v-fdbf4940><li class="contact-item" data-v-fdbf4940><a href="https://github.com/26huitailang" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github" data-v-fdbf4940><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" data-v-fdbf4940></path></svg>
+          
+        </a></li><li class="contact-item" data-v-fdbf4940><a href="https://twitter.com/HuitailangPeter" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter" data-v-fdbf4940><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" data-v-fdbf4940></path></svg>
+          
+        </a></li></ul></div> <div class="footer-right-wrap" data-v-fdbf4940><ul class="copyright" data-v-fdbf4940><li class="copyright-item" data-v-fdbf4940><a href="https://policies.google.com/privacy?hl=en-US" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940>Privacy Policy</a></li><li class="copyright-item" data-v-fdbf4940><a href="/2020/07/22/partition/.html" class="nav-link" data-v-fdbf4940>MIT Licensed | Copyright © 2020</a></li></ul></div></footer></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.690bae17.js" defer></script><script src="/assets/js/6.6703c8d5.js" defer></script><script src="/assets/js/3.504ff661.js" defer></script><script src="/assets/js/30.24079df5.js" defer></script>
+  </body>
+</html>
