@@ -179,6 +179,8 @@
   </url><url>
     <loc>http://localhost:8000/tags/python/</loc>
   </url><url>
+    <loc>http://localhost:8000/search/</loc>
+  </url><url>
     <loc>http://localhost:8000/tags/teamcity/</loc>
   </url><url>
     <loc>http://localhost:8000/posts/teamcity/teamcity/</loc>
