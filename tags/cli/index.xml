@@ -10,12 +10,15 @@
     </image>
     <generator>Hugo -- gohugo.io</generator><atom:link href="http://localhost:8000/tags/cli/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
+      <title>Cobra 命令行</title>
       <link>http://localhost:8000/posts/golang/cobra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:8000/posts/golang/cobra/</guid>
-      <description>Desc Text.</description>
+      <description>Cobra 命令行 因为之前写 Django，python manage.py这个命令非常好用，想看看能不能实现类似的效果。搜索之后发现了更强的cobra，看简介中使用的项目就知道非常不错。代码组织参考的frp的。
+PATH/frp/cmd，frpc和fprs分别是客户端和服务端
+├───frpc │ │ main.go │ │ │ └───sub │ http.go │ https.go │ reload.go │ root.go │ status.go │ stcp.go │ sudp.go │ tcp.go │ tcpmux.go │ udp.go │ xtcp.go │ └───frps main.go root.go 添加 go get -u github.com/spf13/cobra/cobra 在项目目录中执行，appname mycli，其中cmd中 rootCmd 的名称是mycli，这里建议和appname一样，后面可以直接go install之后使用mycli即可。
+mkdir cmd &amp;amp;&amp;amp; cd cmd cobra init mycli --pkg-name mycli cmd └───mycli │ LICENSE │ main.go │ └───cmd root.go 模板代码 import错误，重新按照自己项目的组织方式重写 import即可。</description>
     </item>
     
   </channel>

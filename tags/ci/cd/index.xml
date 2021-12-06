@@ -10,12 +10,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator><atom:link href="http://localhost:8000/tags/ci/cd/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>http://localhost:8000/posts/etcd/readme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Gitlab CI/CD</title>
+      <link>http://localhost:8000/posts/devops/gitlab/gitlab-ci-cd/</link>
+      <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/posts/etcd/readme/</guid>
-      <description>etcd 尝试 vagrant # -*- mode: ruby -*- # vi: set ft=ruby : servers = { :etcd1 =&amp;gt; &#39;192.168.1.21&#39;, :etcd2 =&amp;gt; &#39;192.168.1.22&#39;, :etcd3 =&amp;gt; &#39;192.168.1.23&#39; } Vagrant.configure(&amp;quot;2&amp;quot;) do |config| config.vm.box = &amp;quot;ubuntu/focal64&amp;quot; servers.each do |server_name, server_ip| config.vm.define server_name do |server_config| server_config.vm.hostname = &amp;quot;#{server_name.to_s}&amp;quot; server_config.vm.network :private_network, ip: server_ip server_config.vm.provider &amp;quot;virtualbox&amp;quot; do |vb| vb.name = server_name.to_s if vb.name == &amp;quot;etcd1&amp;quot; vb.memory = 1024 vb.cpus = 1 else vb.memory = 1024 vb.cpus = 1 end end end end end install install.</description>
+      <guid>http://localhost:8000/posts/devops/gitlab/gitlab-ci-cd/</guid>
+      <description>Gitlab CI/CD For the development environment.
+Install with docker Read the official documentation for how to install docker.
+I installed docker on the MacOS.
+gitlab documentation
+sudo docker run --detach \  --hostname 192.168.8.226 \  --publish 443:443 --publish 80:80 --publish 8022:22 \  --name gitlab \  --restart always \  --volume ~/gitlab/config:/etc/gitlab \  --volume ~/gitlab/logs:/var/log/gitlab \  --volume ~/gitlab/data:/var/opt/gitlab \  gitlab/gitlab-ce:latest gitlab-runner Order of initialization:
+ install register custom config  documentation</description>
     </item>
     
     <item>

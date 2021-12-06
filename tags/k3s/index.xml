@@ -11,7 +11,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/tags/k3s/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
+      <title>Prometheus</title>
       <link>http://localhost:8000/posts/k3s/prometheus/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       
@@ -20,21 +20,12 @@
     </item>
     
     <item>
-      <title></title>
+      <title>k3s</title>
       <link>http://localhost:8000/posts/k3s/k3s/</link>
       <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:8000/posts/k3s/k3s/</guid>
       <description>k3s 初次使用 multipass 环境准备  quick-start 参考1 参考2  # k3s1 node for master 192.168.64.5 multipass launch -v --name k3s1 20.04 multipass shell k3s1 curl -sfL https://get.k3s.io | sh - # default config sudo cat /etc/rancher/k3s/k3s.yaml # node-token sudo cat /var/lib/rancher/k3s/server/node-token # Check for Ready node, takes maybe 30 seconds sudo kubectl get nodes # k3s2 node 192.168.64.6 multipass launch -v --name k3s2 20.04 multipass shell k3s2 # add node to cluster # token in master cat /var/lib/rancher/k3s/server/node-token # K3S_NODE_NAME for unique hostname export K3S_TOKEN=x export K3S_URL=https://192.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:8000/posts/k3s/service/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:8000/posts/k3s/service/</guid>
-      <description>k8s service spec: type  ClusterIP (default) - Exposes the Service on an internal IP in the cluster. This type makes the Service only reachable from within the cluster. NodePort - Exposes the Service on the same port of each selected Node in the cluster using NAT. Makes a Service accessible from outside the cluster using :. Superset of ClusterIP. LoadBalancer - Creates an external load balancer in the current cloud (if supported) and assigns a fixed, external IP to the Service.</description>
     </item>
     
   </channel>

@@ -9,18 +9,9 @@
       <link>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 22 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>http://localhost:8000/posts/security/zero-trust/</link>
-      <pubDate>Mon, 22 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:8000/posts/security/zero-trust/</guid>
-      <description>概念  一种战略性网络安全模型 理念：无论是处于网络界限之内或是之外，组织都不应该信任任何事物 要求：在获取访问权限之前，组织必须先检查访问者的身份 目标：减轻大多数组织运作的现代化环境中网络攻击的风险  </description>
-    </item>
-    
-    <item>
-      <title></title>
+      <title>tmux</title>
       <link>http://localhost:8000/posts/devenv/tmux/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
       
@@ -31,17 +22,7 @@ $ cd $ rm -rf .tmux $ git clone https://github.com/gpakosz/.tmux.git $ ln -s -f 
     </item>
     
     <item>
-      <title></title>
-      <link>http://localhost:8000/posts/markdown/pandoc/</link>
-      <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:8000/posts/markdown/pandoc/</guid>
-      <description>Pandoc 开始  install pandoc install miktext build  中文要选择合适的字体否则无法成功创建 fc-list  mac: brew install fontconfig fc-list :lang-zh &amp;gt; fonts.txt fc-list -f &amp;ldquo;%{family}\n&amp;rdquo; :lang=zh   参数解释  -o: 输出文件 &amp;ndash;from: 输入文件类型 &amp;ndash;template: 模版文件 &amp;ndash;listings: 列表 &amp;ndash;pdf-engine: pdf生成用的引擎 -V: 参数  CJKmainfont: 中文文字字体        pandoc &amp;#34;README.md&amp;#34; -o &amp;#34;document.pdf&amp;#34; --from markdown --template &amp;#34;./template.latex&amp;#34; --listings --pdf-engine &amp;#34;xelatex&amp;#34; -V CJKmainfont=&amp;#34;PingFang SC&amp;#34; &amp;amp;&amp;amp; open document.pdf data-dir DATADIR
-macos: ~/.</description>
-    </item>
-    
-    <item>
-      <title></title>
+      <title>Nginx</title>
       <link>http://localhost:8000/posts/nginx/nginx/</link>
       <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
       
@@ -57,7 +38,17 @@ macos: ~/.</description>
     </item>
     
     <item>
-      <title></title>
+      <title>Pandoc</title>
+      <link>http://localhost:8000/posts/markdown/pandoc/</link>
+      <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/markdown/pandoc/</guid>
+      <description>Pandoc 开始  install pandoc install miktext build  中文要选择合适的字体否则无法成功创建 fc-list  mac: brew install fontconfig fc-list :lang-zh &amp;gt; fonts.txt fc-list -f &amp;ldquo;%{family}\n&amp;rdquo; :lang=zh   参数解释  -o: 输出文件 &amp;ndash;from: 输入文件类型 &amp;ndash;template: 模版文件 &amp;ndash;listings: 列表 &amp;ndash;pdf-engine: pdf生成用的引擎 -V: 参数  CJKmainfont: 中文文字字体        pandoc &amp;#34;README.md&amp;#34; -o &amp;#34;document.pdf&amp;#34; --from markdown --template &amp;#34;./template.latex&amp;#34; --listings --pdf-engine &amp;#34;xelatex&amp;#34; -V CJKmainfont=&amp;#34;PingFang SC&amp;#34; &amp;amp;&amp;amp; open document.pdf data-dir DATADIR
+macos: ~/.</description>
+    </item>
+    
+    <item>
+      <title>Podman</title>
       <link>http://localhost:8000/posts/podman/readme/</link>
       <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
       
@@ -67,7 +58,7 @@ podman pull docker.io/nginx:latest podman create --name nginx -p 8080:80 nginx:l
     </item>
     
     <item>
-      <title></title>
+      <title>Upgrade debian main version</title>
       <link>http://localhost:8000/posts/linux/debian/upgrade/</link>
       <pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate>
       
@@ -76,34 +67,21 @@ podman pull docker.io/nginx:latest podman create --name nginx -p 8080:80 nginx:l
     </item>
     
     <item>
-      <title></title>
-      <link>http://localhost:8000/posts/golang/echo/</link>
-      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:8000/posts/golang/echo/</guid>
-      <description>用Echo封装一个业务框架 模块  用户  登录/登出 增删改查   代码  参考drf封装一些接触接口组件  Restful ViewSet   错误码设计   操作日志  日志分类，记录哪些信息 查询   权限  权限管理的方式：自定义role，rbac，casbin middleware实现   swagger 任务  异步任务 定时任务   websocket metrics  对接grafana   sentry Log  logurs   系统  备份/还原   导入/导出 前端  React    roadmap  写一个系统自用 提取公共组件到一个模版新项目中，供其他项目使用和参考  flowchart TB START --&amp;gt; END 前端 React  create-react-app &amp;ndash;template typescript react-router-dom  HashRouter, 组件接受props已经注入了history，props.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:8000/posts/kms/readme/</link>
-      <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:8000/posts/kms/readme/</guid>
-      <description>KMS 参考  什么是KMS  使用视图实现自定义属性  支持视图更新？不支持 虚拟表性能，空间占用？ EAV: entity-attribute-value model  attr_def: id, name, description, data type, other columns about: input validation/set of permissible values eav: entity id, attr id, value    使用JSONB实现  Postgresql jsonb字段   </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:8000/posts/database/sqlite-view/</link>
+      <title>Gitlab CI/CD</title>
+      <link>http://localhost:8000/posts/devops/gitlab/gitlab-ci-cd/</link>
       <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/posts/database/sqlite-view/</guid>
-      <description>Sqlite视图 使用视图实现自定义属性  支持视图更新？不支持 虚拟表性能，空间占用？ EAV: entity-attribute-value model  attr_def: id, name, description, data type, other columns about: input validation/set of permissible values eav: entity id, attr id, value    使用JSONB实现  Postgresql jsonb字段   </description>
+      <guid>http://localhost:8000/posts/devops/gitlab/gitlab-ci-cd/</guid>
+      <description>Gitlab CI/CD For the development environment.
+Install with docker Read the official documentation for how to install docker.
+I installed docker on the MacOS.
+gitlab documentation
+sudo docker run --detach \  --hostname 192.168.8.226 \  --publish 443:443 --publish 80:80 --publish 8022:22 \  --name gitlab \  --restart always \  --volume ~/gitlab/config:/etc/gitlab \  --volume ~/gitlab/logs:/var/log/gitlab \  --volume ~/gitlab/data:/var/opt/gitlab \  gitlab/gitlab-ce:latest gitlab-runner Order of initialization:
+ install register custom config  documentation</description>
     </item>
     
     <item>
-      <title></title>
+      <title>Apache Bench Test</title>
       <link>http://localhost:8000/posts/test/ab-test/</link>
       <pubDate>Thu, 06 Aug 2020 00:00:00 +0000</pubDate>
       
@@ -116,7 +94,7 @@ ab -n 1 -c 1 -p f:/postdata.txt -T application/x-www-form-urlencoded &amp;ldquo;
     </item>
     
     <item>
-      <title></title>
+      <title>Prometheus</title>
       <link>http://localhost:8000/posts/k3s/prometheus/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       
@@ -125,7 +103,7 @@ ab -n 1 -c 1 -p f:/postdata.txt -T application/x-www-form-urlencoded &amp;ldquo;
     </item>
     
     <item>
-      <title></title>
+      <title>PyCharm Docker</title>
       <link>http://localhost:8000/posts/pycharm/docker/</link>
       <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
       
@@ -135,7 +113,7 @@ Development  使用windows和virtualbox，没有打开hyper-v所以无法使用d
     </item>
     
     <item>
-      <title></title>
+      <title>Django打开gzip导致文件流content-length丢失</title>
       <link>http://localhost:8000/posts/django/gzip/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
       
@@ -146,7 +124,7 @@ If file feature is important. You&amp;rsquo;d better be independent from the api
     </item>
     
     <item>
-      <title></title>
+      <title>k3s</title>
       <link>http://localhost:8000/posts/k3s/k3s/</link>
       <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
       
@@ -155,7 +133,7 @@ If file feature is important. You&amp;rsquo;d better be independent from the api
     </item>
     
     <item>
-      <title></title>
+      <title>golang 大奖环境</title>
       <link>http://localhost:8000/posts/golang/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
       
@@ -167,7 +145,7 @@ If file feature is important. You&amp;rsquo;d better be independent from the api
     </item>
     
     <item>
-      <title></title>
+      <title>Multipass</title>
       <link>http://localhost:8000/posts/linux/ubuntu/multipass/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
@@ -177,18 +155,7 @@ If file feature is important. You&amp;rsquo;d better be independent from the api
     </item>
     
     <item>
-      <title></title>
-      <link>http://localhost:8000/posts/tools/toolbox/</link>
-      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:8000/posts/tools/toolbox/</guid>
-      <description>Tool Hub 各个分类的工具汇总
-开发 代码  vscode jetbrains  接口测试  postman httpie jebrains http test curl  文档 markdown：
- typora vscode + markdown plugin  i18n  poedit  redis  another redis desktop manager redis desktop manager  密码  keepass, windows macpass, macos, keepss的mac实现  输入效率  atext, windows copyQ, windows afred, macos dash, macos  ssh/sftp  transmit, macos xshell, windows mobaxterm, windows  作图  draw.</description>
-    </item>
-    
-    <item>
-      <title></title>
+      <title>vue cors</title>
       <link>http://localhost:8000/posts/vue/cors/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       
@@ -202,7 +169,7 @@ devServer: { ... proxy: { [process.env.VUE_APP_BASE_API]: { target: &amp;#39;htt
     </item>
     
     <item>
-      <title></title>
+      <title>docker env file</title>
       <link>http://localhost:8000/posts/docker/env/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
@@ -215,17 +182,7 @@ CPU_NUM=$(cat /proc/cpuinfo |grep processor|wc -l)  所以，在web服务的comm
     </item>
     
     <item>
-      <title></title>
-      <link>http://localhost:8000/posts/docker/logs/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:8000/posts/docker/logs/</guid>
-      <description>docker 日志 后台运行docker的时候，怎么查看日志？
-docker logs SERVICE_NAME  </description>
-    </item>
-    
-    <item>
-      <title></title>
+      <title>docker 使用</title>
       <link>http://localhost:8000/posts/docker/usage/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
@@ -238,7 +195,7 @@ docker build . --no-cache  </description>
     </item>
     
     <item>
-      <title></title>
+      <title>docker 加速</title>
       <link>http://localhost:8000/posts/docker/%E5%8A%A0%E9%80%9F/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
@@ -247,7 +204,7 @@ docker build . --no-cache  </description>
     </item>
     
     <item>
-      <title></title>
+      <title>docker 容器导出和导入</title>
       <link>http://localhost:8000/posts/docker/%E5%AE%B9%E5%99%A8%E5%AF%BC%E5%87%BA%E5%92%8C%E5%AF%BC%E5%85%A5/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
@@ -258,7 +215,7 @@ https://yeasy.gitbooks.io/docker_practice/container/import_export.html
     </item>
     
     <item>
-      <title></title>
+      <title>docker 快速扩容</title>
       <link>http://localhost:8000/posts/docker/%E6%89%A9%E5%AE%B9/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
@@ -269,7 +226,17 @@ docker-compose up --scale web=2 celery-worker=3  经测试，多个worker都获�
     </item>
     
     <item>
-      <title></title>
+      <title>docker 日志</title>
+      <link>http://localhost:8000/posts/docker/logs/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/docker/logs/</guid>
+      <description>docker 日志 后台运行docker的时候，怎么查看日志？
+docker logs SERVICE_NAME  </description>
+    </item>
+    
+    <item>
+      <title>docker 清理</title>
       <link>http://localhost:8000/posts/docker/%E6%B8%85%E7%90%86/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
@@ -285,7 +252,7 @@ nginx: image: nginx:1.12.1 restart: always logging: driver: &amp;#34;json-file&a
     </item>
     
     <item>
-      <title></title>
+      <title>docker 管理工具</title>
       <link>http://localhost:8000/posts/docker/%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
@@ -296,7 +263,7 @@ docker volume create portainer_data docker run -d -p 9000:9000 --name portainer 
     </item>
     
     <item>
-      <title></title>
+      <title>docker 阿里云仓库</title>
       <link>http://localhost:8000/posts/docker/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BB%93%E5%BA%93/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
@@ -308,140 +275,6 @@ Error saving credentials: error storing credentials - err: exit status 1, out: `
 将镜像推送到Registry $ sudo docker login --username=26huitailang@gmail.com registry.cn-hangzhou.aliyuncs.com $ sudo docker tag [ImageId] registry.cn-hangzhou.aliyuncs.com/26huitailang/golang-web:[镜像版本号] $ sudo docker push registry.cn-hangzhou.aliyuncs.com/26huitailang/golang-web:[镜像版本号]  请根据实际镜像信息替换示例中的[ImageId]和[镜像版本号]参数。
 选择合适的镜像仓库地址 从ECS推送镜像时，可以选择使用镜像仓库内网地址。推送速度将得到提升并且将不会损耗您的公网流量。
 如果您使用的机器位于VPC网络，请使用 registry-vpc.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:8000/posts/devops/gitlab/gitlab-ci-cd/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:8000/posts/devops/gitlab/gitlab-ci-cd/</guid>
-      <description>Gilab CI/CD For the development environment.
-Install with docker Read the official documentation for how to install docker.
-I installed docker on the MacOS.
-gitlab documentation
-sudo docker run --detach \  --hostname 192.168.8.226 \  --publish 443:443 --publish 80:80 --publish 8022:22 \  --name gitlab \  --restart always \  --volume ~/gitlab/config:/etc/gitlab \  --volume ~/gitlab/logs:/var/log/gitlab \  --volume ~/gitlab/data:/var/opt/gitlab \  gitlab/gitlab-ce:latest gitlab-runner Order of initialization:
- install register custom config  documentation</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:8000/posts/docker/debian-docker-install/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:8000/posts/docker/debian-docker-install/</guid>
-      <description>docker install install docker on Debian/Ubuntu
-link
-Uninstall old versions $ sudo apt-get remove docker docker-engine docker.io containerd runc Set up the repository $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg-agent \ software-properties-common $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - or $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add - $ sudo apt-key fingerprint 0EBFCD88 $ sudo add-apt-repository \ &amp;quot;deb [arch=amd64] https://download.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:8000/posts/docker/%E7%A7%81%E6%9C%89registry/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:8000/posts/docker/%E7%A7%81%E6%9C%89registry/</guid>
-      <description>docker Private Registry 简单使用，官方 官方提供的 https://hub.docker.com/_/registry
-Run a local registry: Quick Version
-$ docker run -d -p 5000:5000 --restart always --name registry registry:2  Now, use it from within Docker:
-$ docker pull ubuntu $ docker tag ubuntu localhost:5000/ubuntu $ docker push localhost:5000/ubuntu  更复杂的需求，harbor https://goharbor.io/
-Our mission is to be the trusted cloud native repository for Kubernetes</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:8000/posts/etcd/readme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:8000/posts/etcd/readme/</guid>
-      <description>etcd 尝试 vagrant # -*- mode: ruby -*- # vi: set ft=ruby : servers = { :etcd1 =&amp;gt; &#39;192.168.1.21&#39;, :etcd2 =&amp;gt; &#39;192.168.1.22&#39;, :etcd3 =&amp;gt; &#39;192.168.1.23&#39; } Vagrant.configure(&amp;quot;2&amp;quot;) do |config| config.vm.box = &amp;quot;ubuntu/focal64&amp;quot; servers.each do |server_name, server_ip| config.vm.define server_name do |server_config| server_config.vm.hostname = &amp;quot;#{server_name.to_s}&amp;quot; server_config.vm.network :private_network, ip: server_ip server_config.vm.provider &amp;quot;virtualbox&amp;quot; do |vb| vb.name = server_name.to_s if vb.name == &amp;quot;etcd1&amp;quot; vb.memory = 1024 vb.cpus = 1 else vb.memory = 1024 vb.cpus = 1 end end end end end install install.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:8000/posts/golang/cobra/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:8000/posts/golang/cobra/</guid>
-      <description>Desc Text.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:8000/posts/k3s/service/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:8000/posts/k3s/service/</guid>
-      <description>k8s service spec: type  ClusterIP (default) - Exposes the Service on an internal IP in the cluster. This type makes the Service only reachable from within the cluster. NodePort - Exposes the Service on the same port of each selected Node in the cluster using NAT. Makes a Service accessible from outside the cluster using :. Superset of ClusterIP. LoadBalancer - Creates an external load balancer in the current cloud (if supported) and assigns a fixed, external IP to the Service.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:8000/posts/postgresql/partition/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:8000/posts/postgresql/partition/</guid>
-      <description>PostgreSQL 分表 继承实现更灵活，可以直接在已有数据的表上实现，不用重新迁移。
--- https://www.postgresql.org/docs/current/ddl-partitioning.html -- zh -- http://postgres.cn/docs/11/ddl-partitioning.html -- keyword: further redirect  -- 已有数据分表，因为主表不能有数据，所以需要先备份，创建分表和规则完毕后重新插入 -- 或者用新的表名，之后再分批读取插入  -- 创建主表 CREATE TABLE measurement ( city_id int not null, logdate date not null, peaktemp int, unitsales int ) PARTITION BY RANGE (logdate); -- 创建分表及规则 -- 还可以通过partition by 再次创建sub-partitioning，对插入measurement_y2006m02的数据再次重定向 -- CREATE TABLE measurement_y2006m02 PARTITION OF measurement -- FOR VALUES FROM (&amp;#39;2006-02-01&amp;#39;) TO (&amp;#39;2006-03-01&amp;#39;) -- PARTITION BY RANGE (peaktemp); CREATE TABLE measurement_y2006m02 PARTITION OF measurement FOR VALUES FROM (&amp;#39;2006-02-01&amp;#39;) TO (&amp;#39;2006-03-01&amp;#39;); CREATE TABLE measurement_y2006m03 PARTITION OF measurement FOR VALUES FROM (&amp;#39;2006-03-01&amp;#39;) TO (&amp;#39;2006-04-01&amp;#39;); -- 创建索引，自动再每个分区上创建索引 CREATE INDEX ON measurement (logdate); -- Ensure that the enable_partition_pruning configuration parameter is not disabled in postgresql.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:8000/posts/python/pip/pipenv/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:8000/posts/python/pip/pipenv/</guid>
-      <description>pipenv pip和virtualenv的组合，使用Pipfile来替换旧的requirements.txt方式。
- documentation zhihu 参考 segmentfault 参考  安装 安装到系统常用的python版本下，mac可以使用brew安装
-$ pip install pipenv  创建虚拟环境 $ pipenv install --three django  创建一个python3的虚拟环境并安装django，随机生成一个和当前文件夹名有关的虚拟环境。也可以用过--python 3.7指定python版本。
- TODO， 不能指定名称吗？  进入虚拟环境 $ pipenv shell  不过就算不进入环境，pipenv install依然可以正确安装包到对应的环境。
-新环境依赖 自动识别Pipfile，然后安装。
-$ pipenv install  一并安装开发环境的包：
-$ pipenv install --dev  区别开发环境 在安装包的时候添加一个--dev选项，会分类到开发依赖。
-更换源 更换Pipfile中的source-url
-[[source]] url = &amp;quot;https://mirrors.aliyun.com/pypi/simple&amp;quot; verify_ssl = true name = &amp;quot;pypi&amp;quot;  设置环境变量 PIPENV_PYPI_MIRROR 效果相同。类似指定&amp;ndash;pypi-mirror选项：
-$ pipenv install --pypi-mirror https://mirrors.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:8000/posts/python/pip/wheel/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:8000/posts/python/pip/wheel/</guid>
-      <description>wheel 提供给系统组的wheel包构建，要求none-any
-以oss2包为例
-pip download oss2 --platform=any --abi=none --no-deps 查看setup.py中的依赖，分别用上面的命令下载，获得所有的源码包。
-打包wheel，universal选项可以打包忽略平台和架构的包;如果包里面含有c extension是不支持universal的，必须是纯python实现
-python .\setup.py bdist_wheel --universal 如果遇到打包错误 error: invalid command &#39;bdist_wheel&#39;，可以修改setup.py使用setuptools的setup方法：
-# from distutils.core import setup from setuptools import setup </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:8000/posts/python/pip/%E6%89%93%E5%8C%85%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:8000/posts/python/pip/%E6%89%93%E5%8C%85%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</guid>
-      <description>pip 离线安装 打包 注意，要在同平台打包，否则有些包不能正确安装。
-在已有的环境中，一般是一个虚拟环境：
- pip freeze &amp;gt; pip-requirements.txt pip download -d pip-packages -r pip-requirements.txt，将提取的包下载到pip-packages文件夹中  安装  将pip-requirements.txt和pip-packages文件夹，拷贝到目标环境的同目录下 pip install &amp;ndash;no-index &amp;ndash;find-links=pip-packages -r pip-requirements.txt  参考  断网环境下一键安装 python3 离线安装包及其依赖  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:8000/posts/vagrant/vagrant/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:8000/posts/vagrant/vagrant/</guid>
-      <description>如何使用 Vagrant 快速搭建环境 加速 可以直接从国内镜像下载 box格式的文件，然后用 vagrant box add NAME URL添加
-# 自己下载 https://mirrors.tuna.tsinghua.edu.cn/ubuntu-cloud-images/focal/current/  制作自己的box 官方文档
-正常安装镜像，然后安装基础环境
-导出
-vagrant package --base ubuntu20.04 --output ./ubuntu2004.box  添加box
-vagrant box add ubuntu2004 .\ubuntu2004.box  如果没有Vagrantfile，则初始化
-vagrant box add ubuntu2004 .\ubuntu2004.box  启动
-vagrant up  VagrantFile # -*- mode: ruby -*- # vi: set ft=ruby : servers = { :k3s1 =&amp;gt; &amp;#39;192.168.1.21&amp;#39;, :k3s2 =&amp;gt; &amp;#39;192.168.1.22&amp;#39;, :k3s3 =&amp;gt; &amp;#39;192.168.1.23&amp;#39; } Vagrant.configure(&amp;#34;2&amp;#34;) do |config| # 可以指定自己导出的box config.</description>
     </item>
     
     <item>
@@ -460,6 +293,90 @@ apt ubuntu 20.04
     </item>
     
     <item>
+      <title>Cobra 命令行</title>
+      <link>http://localhost:8000/posts/golang/cobra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/golang/cobra/</guid>
+      <description>Cobra 命令行 因为之前写 Django，python manage.py这个命令非常好用，想看看能不能实现类似的效果。搜索之后发现了更强的cobra，看简介中使用的项目就知道非常不错。代码组织参考的frp的。
+PATH/frp/cmd，frpc和fprs分别是客户端和服务端
+├───frpc │ │ main.go │ │ │ └───sub │ http.go │ https.go │ reload.go │ root.go │ status.go │ stcp.go │ sudp.go │ tcp.go │ tcpmux.go │ udp.go │ xtcp.go │ └───frps main.go root.go 添加 go get -u github.com/spf13/cobra/cobra 在项目目录中执行，appname mycli，其中cmd中 rootCmd 的名称是mycli，这里建议和appname一样，后面可以直接go install之后使用mycli即可。
+mkdir cmd &amp;amp;&amp;amp; cd cmd cobra init mycli --pkg-name mycli cmd └───mycli │ LICENSE │ main.go │ └───cmd root.go 模板代码 import错误，重新按照自己项目的组织方式重写 import即可。</description>
+    </item>
+    
+    <item>
+      <title>docker install</title>
+      <link>http://localhost:8000/posts/docker/debian-docker-install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/docker/debian-docker-install/</guid>
+      <description>docker install install docker on Debian/Ubuntu
+link
+Uninstall old versions $ sudo apt-get remove docker docker-engine docker.io containerd runc Set up the repository $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg-agent \ software-properties-common $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - or $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add - $ sudo apt-key fingerprint 0EBFCD88 $ sudo add-apt-repository \ &amp;quot;deb [arch=amd64] https://download.</description>
+    </item>
+    
+    <item>
+      <title>Docker Private Registry</title>
+      <link>http://localhost:8000/posts/docker/%E7%A7%81%E6%9C%89registry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/docker/%E7%A7%81%E6%9C%89registry/</guid>
+      <description>Docker Private Registry 简单使用，官方 官方提供的 https://hub.docker.com/_/registry
+Run a local registry: Quick Version
+$ docker run -d -p 5000:5000 --restart always --name registry registry:2  Now, use it from within Docker:
+$ docker pull ubuntu $ docker tag ubuntu localhost:5000/ubuntu $ docker push localhost:5000/ubuntu  更复杂的需求，harbor https://goharbor.io/
+Our mission is to be the trusted cloud native repository for Kubernetes</description>
+    </item>
+    
+    <item>
+      <title>etcd 尝试</title>
+      <link>http://localhost:8000/posts/etcd/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/etcd/readme/</guid>
+      <description>etcd 尝试 vagrant # -*- mode: ruby -*- # vi: set ft=ruby : servers = { :etcd1 =&amp;gt; &#39;192.168.1.21&#39;, :etcd2 =&amp;gt; &#39;192.168.1.22&#39;, :etcd3 =&amp;gt; &#39;192.168.1.23&#39; } Vagrant.configure(&amp;quot;2&amp;quot;) do |config| config.vm.box = &amp;quot;ubuntu/focal64&amp;quot; servers.each do |server_name, server_ip| config.vm.define server_name do |server_config| server_config.vm.hostname = &amp;quot;#{server_name.to_s}&amp;quot; server_config.vm.network :private_network, ip: server_ip server_config.vm.provider &amp;quot;virtualbox&amp;quot; do |vb| vb.name = server_name.to_s if vb.name == &amp;quot;etcd1&amp;quot; vb.memory = 1024 vb.cpus = 1 else vb.memory = 1024 vb.cpus = 1 end end end end end install install.</description>
+    </item>
+    
+    <item>
+      <title>pip 离线安装</title>
+      <link>http://localhost:8000/posts/python/pip/%E6%89%93%E5%8C%85%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/python/pip/%E6%89%93%E5%8C%85%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</guid>
+      <description>pip 离线安装 打包 注意，要在同平台打包，否则有些包不能正确安装。
+在已有的环境中，一般是一个虚拟环境：
+ pip freeze &amp;gt; pip-requirements.txt pip download -d pip-packages -r pip-requirements.txt，将提取的包下载到pip-packages文件夹中  安装  将pip-requirements.txt和pip-packages文件夹，拷贝到目标环境的同目录下 pip install &amp;ndash;no-index &amp;ndash;find-links=pip-packages -r pip-requirements.txt  参考  断网环境下一键安装 python3 离线安装包及其依赖  </description>
+    </item>
+    
+    <item>
+      <title>pipenv</title>
+      <link>http://localhost:8000/posts/python/pip/pipenv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/python/pip/pipenv/</guid>
+      <description>pipenv pip和virtualenv的组合，使用Pipfile来替换旧的requirements.txt方式。
+ documentation zhihu 参考 segmentfault 参考  安装 安装到系统常用的python版本下，mac可以使用brew安装
+$ pip install pipenv  创建虚拟环境 $ pipenv install --three django  创建一个python3的虚拟环境并安装django，随机生成一个和当前文件夹名有关的虚拟环境。也可以用过--python 3.7指定python版本。
+ TODO， 不能指定名称吗？  进入虚拟环境 $ pipenv shell  不过就算不进入环境，pipenv install依然可以正确安装包到对应的环境。
+新环境依赖 自动识别Pipfile，然后安装。
+$ pipenv install  一并安装开发环境的包：
+$ pipenv install --dev  区别开发环境 在安装包的时候添加一个--dev选项，会分类到开发依赖。
+更换源 更换Pipfile中的source-url
+[[source]] url = &amp;quot;https://mirrors.aliyun.com/pypi/simple&amp;quot; verify_ssl = true name = &amp;quot;pypi&amp;quot;  设置环境变量 PIPENV_PYPI_MIRROR 效果相同。类似指定&amp;ndash;pypi-mirror选项：
+$ pipenv install --pypi-mirror https://mirrors.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL 分表</title>
+      <link>http://localhost:8000/posts/postgresql/partition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/postgresql/partition/</guid>
+      <description>PostgreSQL 分表 继承实现更灵活，可以直接在已有数据的表上实现，不用重新迁移。
+-- https://www.postgresql.org/docs/current/ddl-partitioning.html -- zh -- http://postgres.cn/docs/11/ddl-partitioning.html -- keyword: further redirect  -- 已有数据分表，因为主表不能有数据，所以需要先备份，创建分表和规则完毕后重新插入 -- 或者用新的表名，之后再分批读取插入  -- 创建主表 CREATE TABLE measurement ( city_id int not null, logdate date not null, peaktemp int, unitsales int ) PARTITION BY RANGE (logdate); -- 创建分表及规则 -- 还可以通过partition by 再次创建sub-partitioning，对插入measurement_y2006m02的数据再次重定向 -- CREATE TABLE measurement_y2006m02 PARTITION OF measurement -- FOR VALUES FROM (&amp;#39;2006-02-01&amp;#39;) TO (&amp;#39;2006-03-01&amp;#39;) -- PARTITION BY RANGE (peaktemp); CREATE TABLE measurement_y2006m02 PARTITION OF measurement FOR VALUES FROM (&amp;#39;2006-02-01&amp;#39;) TO (&amp;#39;2006-03-01&amp;#39;); CREATE TABLE measurement_y2006m03 PARTITION OF measurement FOR VALUES FROM (&amp;#39;2006-03-01&amp;#39;) TO (&amp;#39;2006-04-01&amp;#39;); -- 创建索引，自动再每个分区上创建索引 CREATE INDEX ON measurement (logdate); -- Ensure that the enable_partition_pruning configuration parameter is not disabled in postgresql.</description>
+    </item>
+    
+    <item>
       <title>TeamCity 搭建CI/CD</title>
       <link>http://localhost:8000/posts/teamcity/teamcity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -467,6 +384,36 @@ apt ubuntu 20.04
       <guid>http://localhost:8000/posts/teamcity/teamcity/</guid>
       <description>Teamcity 搭建CI/CD install server
 mkdir teamcity_server docker run -it --name teamcity-server-instance \  -v /home/ubuntu/teamcity_server/datadir:/data/teamcity_server/datadir \  -v /home/ubuntu/teamcity_server/logs:/opt/teamcity/logs \  -p 8111:8111 \  jetbrains/teamcity-server  agent, conf 有权限问题，最好在root运行 如果要使用docker-in-docker特性（sudo command not found），请使用linux-sudo tag的image  sudo docker run -it -e SERVER_URL=&amp;#34;http://10.200.160.4:8111&amp;#34; \  -u 0 \  -v docker_volumes:/var/lib/docker \  -v /var/run/docker.sock:/var/run/docker.sock \  -v /opt/buildagent/work:/opt/buildagent/work \  -v /opt/buildagent/temp:/opt/buildagent/temp \  -v /opt/buildagent/tools:/opt/buildagent/tools \  -v /opt/buildagent/plugins:/opt/buildagent/plugins \  -v /opt/buildagent/system:/opt/buildagent/system \  --privileged -e DOCKER_IN_DOCKER=start \  -v /home/ubuntu/teamcity_agent/conf:/data/teamcity_agent/conf \  jetbrains/teamcity-agent register agent agent 安装好后，在server UI/Agents 中进行认证授权。待agent就绪后，可以添加需要的项目和操作等。</description>
+    </item>
+    
+    <item>
+      <title>Vagrant</title>
+      <link>http://localhost:8000/posts/vagrant/vagrant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/vagrant/vagrant/</guid>
+      <description>如何使用 Vagrant 快速搭建环境 加速 可以直接从国内镜像下载 box格式的文件，然后用 vagrant box add NAME URL添加
+# 自己下载 https://mirrors.tuna.tsinghua.edu.cn/ubuntu-cloud-images/focal/current/  制作自己的box 官方文档
+正常安装镜像，然后安装基础环境
+导出
+vagrant package --base ubuntu20.04 --output ./ubuntu2004.box  添加box
+vagrant box add ubuntu2004 .\ubuntu2004.box  如果没有Vagrantfile，则初始化
+vagrant box add ubuntu2004 .\ubuntu2004.box  启动
+vagrant up  VagrantFile # -*- mode: ruby -*- # vi: set ft=ruby : servers = { :k3s1 =&amp;gt; &amp;#39;192.168.1.21&amp;#39;, :k3s2 =&amp;gt; &amp;#39;192.168.1.22&amp;#39;, :k3s3 =&amp;gt; &amp;#39;192.168.1.23&amp;#39; } Vagrant.configure(&amp;#34;2&amp;#34;) do |config| # 可以指定自己导出的box config.</description>
+    </item>
+    
+    <item>
+      <title>wheel</title>
+      <link>http://localhost:8000/posts/python/pip/wheel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/python/pip/wheel/</guid>
+      <description>wheel 提供给系统组的wheel包构建，要求none-any
+以oss2包为例
+pip download oss2 --platform=any --abi=none --no-deps 查看setup.py中的依赖，分别用上面的命令下载，获得所有的源码包。
+打包wheel，universal选项可以打包忽略平台和架构的包;如果包里面含有c extension是不支持universal的，必须是纯python实现
+python .\setup.py bdist_wheel --universal 如果遇到打包错误 error: invalid command &#39;bdist_wheel&#39;，可以修改setup.py使用setuptools的setup方法：
+# from distutils.core import setup from setuptools import setup </description>
     </item>
     
   </channel>
