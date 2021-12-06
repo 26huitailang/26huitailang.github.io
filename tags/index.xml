@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Peter&#39;s Blog</title>
+    <link>http://localhost:8000/tags/</link>
+    <description>Recent content in Tags on Peter&#39;s Blog</description>
+    <image>
+      <url>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 22 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>security</title>
+      <link>http://localhost:8000/tags/security/</link>
+      <pubDate>Mon, 22 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>http://localhost:8000/tags/linux/</link>
+      <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tmux</title>
+      <link>http://localhost:8000/tags/tmux/</link>
+      <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/tmux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>http://localhost:8000/tags/markdown/</link>
+      <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nginx</title>
+      <link>http://localhost:8000/tags/nginx/</link>
+      <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/nginx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pandoc</title>
+      <link>http://localhost:8000/tags/pandoc/</link>
+      <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/pandoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>container</title>
+      <link>http://localhost:8000/tags/container/</link>
+      <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/container/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>podman</title>
+      <link>http://localhost:8000/tags/podman/</link>
+      <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/podman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>debian</title>
+      <link>http://localhost:8000/tags/debian/</link>
+      <pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/debian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>echo</title>
+      <link>http://localhost:8000/tags/echo/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/echo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>http://localhost:8000/tags/golang/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>react</title>
+      <link>http://localhost:8000/tags/react/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/react/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kms</title>
+      <link>http://localhost:8000/tags/kms/</link>
+      <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/kms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sqlite</title>
+      <link>http://localhost:8000/tags/sqlite/</link>
+      <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/sqlite/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>view</title>
+      <link>http://localhost:8000/tags/view/</link>
+      <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/view/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>视图</title>
+      <link>http://localhost:8000/tags/%E8%A7%86%E5%9B%BE/</link>
+      <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/%E8%A7%86%E5%9B%BE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ab</title>
+      <link>http://localhost:8000/tags/ab/</link>
+      <pubDate>Thu, 06 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/ab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>k3s</title>
+      <link>http://localhost:8000/tags/k3s/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/k3s/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>prometheus</title>
+      <link>http://localhost:8000/tags/prometheus/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/prometheus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>http://localhost:8000/tags/docker/</link>
+      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pycharm</title>
+      <link>http://localhost:8000/tags/pycharm/</link>
+      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/pycharm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>django</title>
+      <link>http://localhost:8000/tags/django/</link>
+      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gzip</title>
+      <link>http://localhost:8000/tags/gzip/</link>
+      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/gzip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>multipass</title>
+      <link>http://localhost:8000/tags/multipass/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/multipass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ubuntu</title>
+      <link>http://localhost:8000/tags/ubuntu/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tools</title>
+      <link>http://localhost:8000/tags/tools/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vue</title>
+      <link>http://localhost:8000/tags/vue/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/vue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>阿里云</title>
+      <link>http://localhost:8000/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>apt</title>
+      <link>http://localhost:8000/tags/apt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/apt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CI/CD</title>
+      <link>http://localhost:8000/tags/ci/cd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/ci/cd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cli</title>
+      <link>http://localhost:8000/tags/cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/cli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>database</title>
+      <link>http://localhost:8000/tags/database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>etcd</title>
+      <link>http://localhost:8000/tags/etcd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/etcd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pip</title>
+      <link>http://localhost:8000/tags/pip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/pip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pipenv</title>
+      <link>http://localhost:8000/tags/pipenv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/pipenv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>postgresql</title>
+      <link>http://localhost:8000/tags/postgresql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/postgresql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>http://localhost:8000/tags/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>teamcity</title>
+      <link>http://localhost:8000/tags/teamcity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/teamcity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vagrant</title>
+      <link>http://localhost:8000/tags/vagrant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/vagrant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wheel</title>
+      <link>http://localhost:8000/tags/wheel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/tags/wheel/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

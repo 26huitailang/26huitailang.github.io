@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>golang on Peter&#39;s Blog</title>
+    <link>http://localhost:8000/tags/golang/</link>
+    <description>Recent content in golang on Peter&#39;s Blog</description>
+    <image>
+      <url>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 02 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:8000/posts/golang/echo/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/golang/echo/</guid>
+      <description>用Echo封装一个业务框架 模块  用户  登录/登出 增删改查   代码  参考drf封装一些接触接口组件  Restful ViewSet   错误码设计   操作日志  日志分类，记录哪些信息 查询   权限  权限管理的方式：自定义role，rbac，casbin middleware实现   swagger 任务  异步任务 定时任务   websocket metrics  对接grafana   sentry Log  logurs   系统  备份/还原   导入/导出 前端  React    roadmap  写一个系统自用 提取公共组件到一个模版新项目中，供其他项目使用和参考  flowchart TB START --&amp;gt; END 前端 React  create-react-app &amp;ndash;template typescript react-router-dom  HashRouter, 组件接受props已经注入了history，props.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:8000/posts/golang/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/golang/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
+      <description>Golang 搭建环境 Golang 开发环境准备和工具选择
+参考Alikhll/golang-developer-roadmap。
+更多关于golang的分享，参考Awesome-go
+环境准备  加速/私有模块  开发编辑器/IDE  vim vscode goland  软件选择  CLI工具开发  cobra   Web  Gin🍺 Echo🍺 Beego go-swagger Iris   ORM  Gorm🍺 Xorm   DB  PG🍺 Redis🍺 MongoDB   Log  Zap Logrus   Websocket  gorilla/websocket   Task schedule  Gron    CI/CD  gitlab CI/CD githu actions teamcity  部署选择  docker supervisor  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:8000/posts/golang/cobra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/golang/cobra/</guid>
+      <description>Desc Text.</description>
+    </item>
+    
+    <item>
+      <title>Cheatsheet for pkg manager</title>
+      <link>http://localhost:8000/posts/cheatsheet/pkg-manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/cheatsheet/pkg-manager/</guid>
+      <description>Cheatsheet for package manager  go mod pip apt ubuntu 20.04  pip pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+升级 pip 到最新的版本 (&amp;gt;=10.0.0) 后进行配置：
+pip install pip -U pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+如果您到 pip 默认源的网络连接较差，临时使用本镜像站来升级 pip：
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -U
+apt ubuntu 20.04
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse # deb-src https://mirrors.</description>
+    </item>
+    
+  </channel>
+</rss>

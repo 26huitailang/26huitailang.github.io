@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cheatsheet on Peter&#39;s Blog</title>
+    <link>http://localhost:8000/cheatsheet/</link>
+    <description>Recent content in Cheatsheet on Peter&#39;s Blog</description>
+    <image>
+      <url>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="http://localhost:8000/cheatsheet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cheatsheet for pkg manager</title>
+      <link>http://localhost:8000/cheatsheet/pkg-manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/cheatsheet/pkg-manager/</guid>
+      <description>Cheatsheet for package manager  go mod pip apt ubuntu 20.04  pip pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+升级 pip 到最新的版本 (&amp;gt;=10.0.0) 后进行配置：
+pip install pip -U pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+如果您到 pip 默认源的网络连接较差，临时使用本镜像站来升级 pip：
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -U
+apt ubuntu 20.04
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse # deb-src https://mirrors.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>vagrant on Peter&#39;s Blog</title>
+    <link>http://localhost:8000/tags/vagrant/</link>
+    <description>Recent content in vagrant on Peter&#39;s Blog</description>
+    <image>
+      <url>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="http://localhost:8000/tags/vagrant/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:8000/posts/vagrant/vagrant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/vagrant/vagrant/</guid>
+      <description>如何使用 Vagrant 快速搭建环境 加速 可以直接从国内镜像下载 box格式的文件，然后用 vagrant box add NAME URL添加
+# 自己下载 https://mirrors.tuna.tsinghua.edu.cn/ubuntu-cloud-images/focal/current/  制作自己的box 官方文档
+正常安装镜像，然后安装基础环境
+导出
+vagrant package --base ubuntu20.04 --output ./ubuntu2004.box  添加box
+vagrant box add ubuntu2004 .\ubuntu2004.box  如果没有Vagrantfile，则初始化
+vagrant box add ubuntu2004 .\ubuntu2004.box  启动
+vagrant up  VagrantFile # -*- mode: ruby -*- # vi: set ft=ruby : servers = { :k3s1 =&amp;gt; &amp;#39;192.168.1.21&amp;#39;, :k3s2 =&amp;gt; &amp;#39;192.168.1.22&amp;#39;, :k3s3 =&amp;gt; &amp;#39;192.168.1.23&amp;#39; } Vagrant.configure(&amp;#34;2&amp;#34;) do |config| # 可以指定自己导出的box config.</description>
+    </item>
+    
+  </channel>
+</rss>

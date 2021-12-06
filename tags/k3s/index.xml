@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>k3s on Peter&#39;s Blog</title>
+    <link>http://localhost:8000/tags/k3s/</link>
+    <description>Recent content in k3s on Peter&#39;s Blog</description>
+    <image>
+      <url>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/tags/k3s/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:8000/posts/k3s/prometheus/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/k3s/prometheus/</guid>
+      <description>Prometheus 简介 概念  prometheus server exporter，用于server采集数据，有官方提供的node-exporter，也可以通过各种SDK自定义导出内容，暴露一个类似/metrics的路径用于采集  注意，exporter在多进程（gunicorn 多进程）模式下使用会有限制，参考文档   数据模型，和influxdb类似，是时序数据库，以metric为名称，多个label（key-value形式）组成：&amp;lt;metric name&amp;gt;{&amp;lt;label name&amp;gt;=&amp;lt;label value&amp;gt;, ...}  重载配置 Yes, sending SIGHUP to the Prometheus process or an HTTP POST request to the /-/reload endpoint will reload and apply the configuration file. The various components attempt to handle failing changes gracefully.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:8000/posts/k3s/k3s/</link>
+      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/k3s/k3s/</guid>
+      <description>k3s 初次使用 multipass 环境准备  quick-start 参考1 参考2  # k3s1 node for master 192.168.64.5 multipass launch -v --name k3s1 20.04 multipass shell k3s1 curl -sfL https://get.k3s.io | sh - # default config sudo cat /etc/rancher/k3s/k3s.yaml # node-token sudo cat /var/lib/rancher/k3s/server/node-token # Check for Ready node, takes maybe 30 seconds sudo kubectl get nodes # k3s2 node 192.168.64.6 multipass launch -v --name k3s2 20.04 multipass shell k3s2 # add node to cluster # token in master cat /var/lib/rancher/k3s/server/node-token # K3S_NODE_NAME for unique hostname export K3S_TOKEN=x export K3S_URL=https://192.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:8000/posts/k3s/service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/k3s/service/</guid>
+      <description>k8s service spec: type  ClusterIP (default) - Exposes the Service on an internal IP in the cluster. This type makes the Service only reachable from within the cluster. NodePort - Exposes the Service on the same port of each selected Node in the cluster using NAT. Makes a Service accessible from outside the cluster using :. Superset of ClusterIP. LoadBalancer - Creates an external load balancer in the current cloud (if supported) and assigns a fixed, external IP to the Service.</description>
+    </item>
+    
+  </channel>
+</rss>

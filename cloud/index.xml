@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Clouds on Peter&#39;s Blog</title>
+    <link>http://localhost:8000/cloud/</link>
+    <description>Recent content in Clouds on Peter&#39;s Blog</description>
+    <image>
+      <url>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 30 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aliyun OSS demo</title>
+      <link>http://localhost:8000/cloud/ali-oss/</link>
+      <pubDate>Tue, 30 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/cloud/ali-oss/</guid>
+      <description>aliyun oss demo  后端签名 PUT  注意签名需包含 Content-Type 请求的body就是文件内容，不能使用multipart/form-data表单的格式，否则表单信息会被作为内容保存   后端签名 POST  签名等内容会放在表单中，可以使用multipart/form-data表单的格式   后端签名 GET  </description>
+    </item>
+    
+  </channel>
+</rss>

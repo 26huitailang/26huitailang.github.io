@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ab on Peter&#39;s Blog</title>
+    <link>http://localhost:8000/tags/ab/</link>
+    <description>Recent content in ab on Peter&#39;s Blog</description>
+    <image>
+      <url>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 06 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/tags/ab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:8000/posts/test/ab-test/</link>
+      <pubDate>Thu, 06 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/test/ab-test/</guid>
+      <description>Apache Bench Test   GET
+ab -c 10 -n 40 http://127.0.0.1:8000/api/v1/mzitu/tags/
+  POST, https://blog.csdn.net/chenggong2dm/article/details/51850923
+ab -n 1 -c 1 -p f:/postdata.txt -T application/x-www-form-urlencoded &amp;ldquo;http://127.0.0.1/abpost&amp;rdquo; ab -n 100 -c 10 -p data.json -T application/json http://127.0.0.1/api
+  // postdata.txt </description>
+    </item>
+    
+  </channel>
+</rss>

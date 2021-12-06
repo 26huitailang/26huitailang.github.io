@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>nginx on Peter&#39;s Blog</title>
+    <link>http://localhost:8000/tags/nginx/</link>
+    <description>Recent content in nginx on Peter&#39;s Blog</description>
+    <image>
+      <url>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 10 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:8000/posts/nginx/nginx/</link>
+      <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/nginx/nginx/</guid>
+      <description>nginx [toc]
+常用命令 nginx -s stop nginx -s reload 简介 反向代理 一句话：
+ 什么是正向代理？代理的是客户端 什么是反向代理？代理的是服务器，客户端是无感知的  nginx反向代理配置
+正常情况： client —(send request)—&amp;gt; server 代理情况： client —(send request)—&amp;gt; clinet proxy –(send request)—&amp;gt; server 反向代理： client -(send request)-&amp;gt; server proxy -(send request)-&amp;gt; other server  可以看到反向代理并不是真的反过来，而是代理人的身份由客户端转向了服务端，也因为代理是在服务端，所以客户端是对此无感知的。
+负载均衡 将原先集中请求到单个服务器的请求分发到多个服务器上，目的是为了支持服务横向扩展。
+动静分离 配置 全局 配置文件开始到events之间的内容，主要是设置一些影响nginx运行的配置指令，比如：
+ 用户（组） worker process数量 进程pid存放路径 日志存放路径和类型 配置文件的引入  events 配置nginx服务器与用户的网络连接，此部分对性能影响较大，应根据实际情况处理，比如：
+ 是否开启对多worker process下的网络连接进行序列化 是否允许同时接受多个网络连接 选取处理连接的事件驱动模型 每个worker 支持的最大连接数等  http  全局配置 server配置  全局 location配置    server 配置和匹配规则 一个http服务可以有多个server，而对server的路径匹配，反向代理都是在这里配置的。</description>
+    </item>
+    
+  </channel>
+</rss>

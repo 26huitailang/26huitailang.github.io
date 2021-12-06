@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>echo on Peter&#39;s Blog</title>
+    <link>http://localhost:8000/tags/echo/</link>
+    <description>Recent content in echo on Peter&#39;s Blog</description>
+    <image>
+      <url>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 02 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/tags/echo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:8000/posts/golang/echo/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/golang/echo/</guid>
+      <description>用Echo封装一个业务框架 模块  用户  登录/登出 增删改查   代码  参考drf封装一些接触接口组件  Restful ViewSet   错误码设计   操作日志  日志分类，记录哪些信息 查询   权限  权限管理的方式：自定义role，rbac，casbin middleware实现   swagger 任务  异步任务 定时任务   websocket metrics  对接grafana   sentry Log  logurs   系统  备份/还原   导入/导出 前端  React    roadmap  写一个系统自用 提取公共组件到一个模版新项目中，供其他项目使用和参考  flowchart TB START --&amp;gt; END 前端 React  create-react-app &amp;ndash;template typescript react-router-dom  HashRouter, 组件接受props已经注入了history，props.</description>
+    </item>
+    
+  </channel>
+</rss>

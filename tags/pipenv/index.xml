@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>pipenv on Peter&#39;s Blog</title>
+    <link>http://localhost:8000/tags/pipenv/</link>
+    <description>Recent content in pipenv on Peter&#39;s Blog</description>
+    <image>
+      <url>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="http://localhost:8000/tags/pipenv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:8000/posts/python/pip/pipenv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/posts/python/pip/pipenv/</guid>
+      <description>pipenv pip和virtualenv的组合，使用Pipfile来替换旧的requirements.txt方式。
+ documentation zhihu 参考 segmentfault 参考  安装 安装到系统常用的python版本下，mac可以使用brew安装
+$ pip install pipenv  创建虚拟环境 $ pipenv install --three django  创建一个python3的虚拟环境并安装django，随机生成一个和当前文件夹名有关的虚拟环境。也可以用过--python 3.7指定python版本。
+ TODO， 不能指定名称吗？  进入虚拟环境 $ pipenv shell  不过就算不进入环境，pipenv install依然可以正确安装包到对应的环境。
+新环境依赖 自动识别Pipfile，然后安装。
+$ pipenv install  一并安装开发环境的包：
+$ pipenv install --dev  区别开发环境 在安装包的时候添加一个--dev选项，会分类到开发依赖。
+更换源 更换Pipfile中的source-url
+[[source]] url = &amp;quot;https://mirrors.aliyun.com/pypi/simple&amp;quot; verify_ssl = true name = &amp;quot;pypi&amp;quot;  设置环境变量 PIPENV_PYPI_MIRROR 效果相同。类似指定&amp;ndash;pypi-mirror选项：
+$ pipenv install --pypi-mirror https://mirrors.</description>
+    </item>
+    
+  </channel>
+</rss>
