@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>apt on Peter&#39;s Blog</title>
-    <link>http://localhost:8000/tags/apt/</link>
+    <link>https://26huitailang.github.io/tags/apt/</link>
     <description>Recent content in apt on Peter&#39;s Blog</description>
     <image>
-      <url>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="http://localhost:8000/tags/apt/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://26huitailang.github.io/tags/apt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cheatsheet for pkg manager</title>
-      <link>http://localhost:8000/posts/cheatsheet/pkg-manager/</link>
+      <link>https://26huitailang.github.io/posts/cheatsheet/pkg-manager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/posts/cheatsheet/pkg-manager/</guid>
+      <guid>https://26huitailang.github.io/posts/cheatsheet/pkg-manager/</guid>
       <description>Cheatsheet for package manager  go mod pip apt ubuntu 20.04  pip pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
 升级 pip 到最新的版本 (&amp;gt;=10.0.0) 后进行配置：
 pip install pip -U pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple

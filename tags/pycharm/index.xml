@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>pycharm on Peter&#39;s Blog</title>
-    <link>http://localhost:8000/tags/pycharm/</link>
+    <link>https://26huitailang.github.io/tags/pycharm/</link>
     <description>Recent content in pycharm on Peter&#39;s Blog</description>
     <image>
-      <url>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 22 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/tags/pycharm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/pycharm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PyCharm Docker</title>
-      <link>http://localhost:8000/posts/pycharm/docker/</link>
+      <link>https://26huitailang.github.io/posts/pycharm/docker/</link>
       <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/posts/pycharm/docker/</guid>
+      <guid>https://26huitailang.github.io/posts/pycharm/docker/</guid>
       <description>PyCharm 使用 Docker pycharm use docker for development and stage
 Development  使用windows和virtualbox，没有打开hyper-v所以无法使用docker，在虚拟机中使用docker并打开tcp，但是由于volume只能挂载宿主机，所以要先用pycharmm将文件拷贝到远程的映射目录，再使用。  此方法适合还没有准备开发环境和需要使用docker作为开发环境，但是windows本机没有docker的情况 我已使用虚拟机和pycharm远程同步功能达到同样的效果   在宿主机中开发时，可以很方便的将docker配置集成到configuration中  Stage PyCharm的docker也支持修改registry，如果有远程仓库需要的，也可以方便分发镜像</description>
     </item>

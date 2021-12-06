@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>golang on Peter&#39;s Blog</title>
-    <link>http://localhost:8000/tags/golang/</link>
+    <link>https://26huitailang.github.io/tags/golang/</link>
     <description>Recent content in golang on Peter&#39;s Blog</description>
     <image>
-      <url>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 07 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>golang 大奖环境</title>
-      <link>http://localhost:8000/posts/golang/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
+      <link>https://26huitailang.github.io/posts/golang/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/posts/golang/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
+      <guid>https://26huitailang.github.io/posts/golang/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
       <description>Golang 搭建环境 Golang 开发环境准备和工具选择
 参考Alikhll/golang-developer-roadmap。
 更多关于golang的分享，参考Awesome-go
@@ -24,10 +24,10 @@
     
     <item>
       <title>Cheatsheet for pkg manager</title>
-      <link>http://localhost:8000/posts/cheatsheet/pkg-manager/</link>
+      <link>https://26huitailang.github.io/posts/cheatsheet/pkg-manager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/posts/cheatsheet/pkg-manager/</guid>
+      <guid>https://26huitailang.github.io/posts/cheatsheet/pkg-manager/</guid>
       <description>Cheatsheet for package manager  go mod pip apt ubuntu 20.04  pip pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
 升级 pip 到最新的版本 (&amp;gt;=10.0.0) 后进行配置：
 pip install pip -U pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
@@ -39,10 +39,10 @@ apt ubuntu 20.04
     
     <item>
       <title>Cobra 命令行</title>
-      <link>http://localhost:8000/posts/golang/cobra/</link>
+      <link>https://26huitailang.github.io/posts/golang/cobra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/posts/golang/cobra/</guid>
+      <guid>https://26huitailang.github.io/posts/golang/cobra/</guid>
       <description>Cobra 命令行 因为之前写 Django，python manage.py这个命令非常好用，想看看能不能实现类似的效果。搜索之后发现了更强的cobra，看简介中使用的项目就知道非常不错。代码组织参考的frp的。
 PATH/frp/cmd，frpc和fprs分别是客户端和服务端
 ├───frpc │ │ main.go │ │ │ └───sub │ http.go │ https.go │ reload.go │ root.go │ status.go │ stcp.go │ sudp.go │ tcp.go │ tcpmux.go │ udp.go │ xtcp.go │ └───frps main.go root.go 添加 go get -u github.com/spf13/cobra/cobra 在项目目录中执行，appname mycli，其中cmd中 rootCmd 的名称是mycli，这里建议和appname一样，后面可以直接go install之后使用mycli即可。

@@ -2,308 +2,308 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Peter&#39;s Blog</title>
-    <link>http://localhost:8000/tags/</link>
+    <link>https://26huitailang.github.io/tags/</link>
     <description>Recent content in Tags on Peter&#39;s Blog</description>
     <image>
-      <url>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 17 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>tmux</title>
-      <link>http://localhost:8000/tags/tmux/</link>
+      <link>https://26huitailang.github.io/tags/tmux/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/tmux/</guid>
+      <guid>https://26huitailang.github.io/tags/tmux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>http://localhost:8000/tags/markdown/</link>
+      <link>https://26huitailang.github.io/tags/markdown/</link>
       <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/markdown/</guid>
+      <guid>https://26huitailang.github.io/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>nginx</title>
-      <link>http://localhost:8000/tags/nginx/</link>
+      <link>https://26huitailang.github.io/tags/nginx/</link>
       <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/nginx/</guid>
+      <guid>https://26huitailang.github.io/tags/nginx/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pandoc</title>
-      <link>http://localhost:8000/tags/pandoc/</link>
+      <link>https://26huitailang.github.io/tags/pandoc/</link>
       <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/pandoc/</guid>
+      <guid>https://26huitailang.github.io/tags/pandoc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>container</title>
-      <link>http://localhost:8000/tags/container/</link>
+      <link>https://26huitailang.github.io/tags/container/</link>
       <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/container/</guid>
+      <guid>https://26huitailang.github.io/tags/container/</guid>
       <description></description>
     </item>
     
     <item>
       <title>podman</title>
-      <link>http://localhost:8000/tags/podman/</link>
+      <link>https://26huitailang.github.io/tags/podman/</link>
       <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/podman/</guid>
+      <guid>https://26huitailang.github.io/tags/podman/</guid>
       <description></description>
     </item>
     
     <item>
       <title>debian</title>
-      <link>http://localhost:8000/tags/debian/</link>
+      <link>https://26huitailang.github.io/tags/debian/</link>
       <pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/debian/</guid>
+      <guid>https://26huitailang.github.io/tags/debian/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linux</title>
-      <link>http://localhost:8000/tags/linux/</link>
+      <link>https://26huitailang.github.io/tags/linux/</link>
       <pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/linux/</guid>
+      <guid>https://26huitailang.github.io/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>gitlab</title>
-      <link>http://localhost:8000/tags/gitlab/</link>
+      <link>https://26huitailang.github.io/tags/gitlab/</link>
       <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/gitlab/</guid>
+      <guid>https://26huitailang.github.io/tags/gitlab/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ab</title>
-      <link>http://localhost:8000/tags/ab/</link>
+      <link>https://26huitailang.github.io/tags/ab/</link>
       <pubDate>Thu, 06 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/ab/</guid>
+      <guid>https://26huitailang.github.io/tags/ab/</guid>
       <description></description>
     </item>
     
     <item>
       <title>k3s</title>
-      <link>http://localhost:8000/tags/k3s/</link>
+      <link>https://26huitailang.github.io/tags/k3s/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/k3s/</guid>
+      <guid>https://26huitailang.github.io/tags/k3s/</guid>
       <description></description>
     </item>
     
     <item>
       <title>prometheus</title>
-      <link>http://localhost:8000/tags/prometheus/</link>
+      <link>https://26huitailang.github.io/tags/prometheus/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/prometheus/</guid>
+      <guid>https://26huitailang.github.io/tags/prometheus/</guid>
       <description></description>
     </item>
     
     <item>
       <title>docker</title>
-      <link>http://localhost:8000/tags/docker/</link>
+      <link>https://26huitailang.github.io/tags/docker/</link>
       <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/docker/</guid>
+      <guid>https://26huitailang.github.io/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pycharm</title>
-      <link>http://localhost:8000/tags/pycharm/</link>
+      <link>https://26huitailang.github.io/tags/pycharm/</link>
       <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/pycharm/</guid>
+      <guid>https://26huitailang.github.io/tags/pycharm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>django</title>
-      <link>http://localhost:8000/tags/django/</link>
+      <link>https://26huitailang.github.io/tags/django/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/django/</guid>
+      <guid>https://26huitailang.github.io/tags/django/</guid>
       <description></description>
     </item>
     
     <item>
       <title>gzip</title>
-      <link>http://localhost:8000/tags/gzip/</link>
+      <link>https://26huitailang.github.io/tags/gzip/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/gzip/</guid>
+      <guid>https://26huitailang.github.io/tags/gzip/</guid>
       <description></description>
     </item>
     
     <item>
       <title>golang</title>
-      <link>http://localhost:8000/tags/golang/</link>
+      <link>https://26huitailang.github.io/tags/golang/</link>
       <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/golang/</guid>
+      <guid>https://26huitailang.github.io/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>multipass</title>
-      <link>http://localhost:8000/tags/multipass/</link>
+      <link>https://26huitailang.github.io/tags/multipass/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/multipass/</guid>
+      <guid>https://26huitailang.github.io/tags/multipass/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ubuntu</title>
-      <link>http://localhost:8000/tags/ubuntu/</link>
+      <link>https://26huitailang.github.io/tags/ubuntu/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/ubuntu/</guid>
+      <guid>https://26huitailang.github.io/tags/ubuntu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vue</title>
-      <link>http://localhost:8000/tags/vue/</link>
+      <link>https://26huitailang.github.io/tags/vue/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/vue/</guid>
+      <guid>https://26huitailang.github.io/tags/vue/</guid>
       <description></description>
     </item>
     
     <item>
       <title>aliyun</title>
-      <link>http://localhost:8000/tags/aliyun/</link>
+      <link>https://26huitailang.github.io/tags/aliyun/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/aliyun/</guid>
+      <guid>https://26huitailang.github.io/tags/aliyun/</guid>
       <description></description>
     </item>
     
     <item>
       <title>apt</title>
-      <link>http://localhost:8000/tags/apt/</link>
+      <link>https://26huitailang.github.io/tags/apt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/apt/</guid>
+      <guid>https://26huitailang.github.io/tags/apt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CI/CD</title>
-      <link>http://localhost:8000/tags/ci/cd/</link>
+      <link>https://26huitailang.github.io/tags/ci/cd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/ci/cd/</guid>
+      <guid>https://26huitailang.github.io/tags/ci/cd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cli</title>
-      <link>http://localhost:8000/tags/cli/</link>
+      <link>https://26huitailang.github.io/tags/cli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/cli/</guid>
+      <guid>https://26huitailang.github.io/tags/cli/</guid>
       <description></description>
     </item>
     
     <item>
       <title>database</title>
-      <link>http://localhost:8000/tags/database/</link>
+      <link>https://26huitailang.github.io/tags/database/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/database/</guid>
+      <guid>https://26huitailang.github.io/tags/database/</guid>
       <description></description>
     </item>
     
     <item>
       <title>etcd</title>
-      <link>http://localhost:8000/tags/etcd/</link>
+      <link>https://26huitailang.github.io/tags/etcd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/etcd/</guid>
+      <guid>https://26huitailang.github.io/tags/etcd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pip</title>
-      <link>http://localhost:8000/tags/pip/</link>
+      <link>https://26huitailang.github.io/tags/pip/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/pip/</guid>
+      <guid>https://26huitailang.github.io/tags/pip/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pipenv</title>
-      <link>http://localhost:8000/tags/pipenv/</link>
+      <link>https://26huitailang.github.io/tags/pipenv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/pipenv/</guid>
+      <guid>https://26huitailang.github.io/tags/pipenv/</guid>
       <description></description>
     </item>
     
     <item>
       <title>postgresql</title>
-      <link>http://localhost:8000/tags/postgresql/</link>
+      <link>https://26huitailang.github.io/tags/postgresql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/postgresql/</guid>
+      <guid>https://26huitailang.github.io/tags/postgresql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>http://localhost:8000/tags/python/</link>
+      <link>https://26huitailang.github.io/tags/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/python/</guid>
+      <guid>https://26huitailang.github.io/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>teamcity</title>
-      <link>http://localhost:8000/tags/teamcity/</link>
+      <link>https://26huitailang.github.io/tags/teamcity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/teamcity/</guid>
+      <guid>https://26huitailang.github.io/tags/teamcity/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vagrant</title>
-      <link>http://localhost:8000/tags/vagrant/</link>
+      <link>https://26huitailang.github.io/tags/vagrant/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/vagrant/</guid>
+      <guid>https://26huitailang.github.io/tags/vagrant/</guid>
       <description></description>
     </item>
     
     <item>
       <title>wheel</title>
-      <link>http://localhost:8000/tags/wheel/</link>
+      <link>https://26huitailang.github.io/tags/wheel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/tags/wheel/</guid>
+      <guid>https://26huitailang.github.io/tags/wheel/</guid>
       <description></description>
     </item>
     

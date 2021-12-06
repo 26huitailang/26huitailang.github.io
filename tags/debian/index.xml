@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>debian on Peter&#39;s Blog</title>
-    <link>http://localhost:8000/tags/debian/</link>
+    <link>https://26huitailang.github.io/tags/debian/</link>
     <description>Recent content in debian on Peter&#39;s Blog</description>
     <image>
-      <url>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 05 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/tags/debian/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/debian/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Upgrade debian main version</title>
-      <link>http://localhost:8000/posts/linux/debian/upgrade/</link>
+      <link>https://26huitailang.github.io/posts/linux/debian/upgrade/</link>
       <pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/posts/linux/debian/upgrade/</guid>
+      <guid>https://26huitailang.github.io/posts/linux/debian/upgrade/</guid>
       <description>Upgrade debian main version update $ apt-get update &amp;amp;&amp;amp; apt-get upgrade backup sources.list $ cp /etc/apt/sources.list /etc/apt/sources.list.bak replace `stretch` to `buster` of `/etc/apt/sources.list` $ sed -i &amp;#39;s/stretch/buster/g&amp;#39; /etc/apt/sources.list run upgrade $ apt-get update &amp;amp;&amp;amp; apt-get upgrade run dist upgrade $ apt-get dist-upgrade $ reboot $ lsb_release -a clean: $ apt-get autoremove </description>
     </item>
     

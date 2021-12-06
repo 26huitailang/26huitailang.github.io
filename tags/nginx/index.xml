@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>nginx on Peter&#39;s Blog</title>
-    <link>http://localhost:8000/tags/nginx/</link>
+    <link>https://26huitailang.github.io/tags/nginx/</link>
     <description>Recent content in nginx on Peter&#39;s Blog</description>
     <image>
-      <url>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 10 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nginx</title>
-      <link>http://localhost:8000/posts/nginx/nginx/</link>
+      <link>https://26huitailang.github.io/posts/nginx/nginx/</link>
       <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/posts/nginx/nginx/</guid>
+      <guid>https://26huitailang.github.io/posts/nginx/nginx/</guid>
       <description>nginx [toc]
 常用命令 nginx -s stop nginx -s reload 简介 反向代理 一句话：
  什么是正向代理？代理的是客户端 什么是反向代理？代理的是服务器，客户端是无感知的  nginx反向代理配置

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>aliyun on Peter&#39;s Blog</title>
-    <link>http://localhost:8000/tags/aliyun/</link>
+    <link>https://26huitailang.github.io/tags/aliyun/</link>
     <description>Recent content in aliyun on Peter&#39;s Blog</description>
     <image>
-      <url>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/tags/aliyun/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/aliyun/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>docker 阿里云仓库</title>
-      <link>http://localhost:8000/posts/docker/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BB%93%E5%BA%93/</link>
+      <link>https://26huitailang.github.io/posts/docker/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BB%93%E5%BA%93/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/posts/docker/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BB%93%E5%BA%93/</guid>
+      <guid>https://26huitailang.github.io/posts/docker/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BB%93%E5%BA%93/</guid>
       <description>docker 阿里云仓库 登录阿里云Docker Registry $ sudo docker login --username=26huitailang@gmail.com registry.cn-hangzhou.aliyuncs.com  用于登录的用户名为阿里云账号全名，密码为开通服务时设置的密码。
 您可以在产品控制台首页修改登录密码。
 遇到无法登录问题：

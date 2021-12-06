@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>postgresql on Peter&#39;s Blog</title>
-    <link>http://localhost:8000/tags/postgresql/</link>
+    <link>https://26huitailang.github.io/tags/postgresql/</link>
     <description>Recent content in postgresql on Peter&#39;s Blog</description>
     <image>
-      <url>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="http://localhost:8000/tags/postgresql/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://26huitailang.github.io/tags/postgresql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PostgreSQL 分表</title>
-      <link>http://localhost:8000/posts/postgresql/partition/</link>
+      <link>https://26huitailang.github.io/posts/postgresql/partition/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/posts/postgresql/partition/</guid>
+      <guid>https://26huitailang.github.io/posts/postgresql/partition/</guid>
       <description>PostgreSQL 分表 继承实现更灵活，可以直接在已有数据的表上实现，不用重新迁移。
 -- https://www.postgresql.org/docs/current/ddl-partitioning.html -- zh -- http://postgres.cn/docs/11/ddl-partitioning.html -- keyword: further redirect  -- 已有数据分表，因为主表不能有数据，所以需要先备份，创建分表和规则完毕后重新插入 -- 或者用新的表名，之后再分批读取插入  -- 创建主表 CREATE TABLE measurement ( city_id int not null, logdate date not null, peaktemp int, unitsales int ) PARTITION BY RANGE (logdate); -- 创建分表及规则 -- 还可以通过partition by 再次创建sub-partitioning，对插入measurement_y2006m02的数据再次重定向 -- CREATE TABLE measurement_y2006m02 PARTITION OF measurement -- FOR VALUES FROM (&amp;#39;2006-02-01&amp;#39;) TO (&amp;#39;2006-03-01&amp;#39;) -- PARTITION BY RANGE (peaktemp); CREATE TABLE measurement_y2006m02 PARTITION OF measurement FOR VALUES FROM (&amp;#39;2006-02-01&amp;#39;) TO (&amp;#39;2006-03-01&amp;#39;); CREATE TABLE measurement_y2006m03 PARTITION OF measurement FOR VALUES FROM (&amp;#39;2006-03-01&amp;#39;) TO (&amp;#39;2006-04-01&amp;#39;); -- 创建索引，自动再每个分区上创建索引 CREATE INDEX ON measurement (logdate); -- Ensure that the enable_partition_pruning configuration parameter is not disabled in postgresql.</description>
     </item>

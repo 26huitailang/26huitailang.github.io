@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>podman on Peter&#39;s Blog</title>
-    <link>http://localhost:8000/tags/podman/</link>
+    <link>https://26huitailang.github.io/tags/podman/</link>
     <description>Recent content in podman on Peter&#39;s Blog</description>
     <image>
-      <url>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 06 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/tags/podman/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/podman/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Podman</title>
-      <link>http://localhost:8000/posts/podman/readme/</link>
+      <link>https://26huitailang.github.io/posts/podman/readme/</link>
       <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/posts/podman/readme/</guid>
+      <guid>https://26huitailang.github.io/posts/podman/readme/</guid>
       <description>README 初次使用  podman root用户和非root用户的images和container是分开的 非root用户使用podman generate systemd命令生成的文件，拷贝到~/.config/systemd/user/下面，使用systemctl --user执行  流程演示
 podman pull docker.io/nginx:latest podman create --name nginx -p 8080:80 nginx:latest mkdir -p ~/.config/systemd/user cd ~/.config/systemd/user podman generate systemd --files --name nginx systemctl --user enable container-nginx systemctl --user start container-nginx curl http://127.0.0.1:8080 </description>
     </item>

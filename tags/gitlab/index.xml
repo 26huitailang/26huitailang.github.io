@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>gitlab on Peter&#39;s Blog</title>
-    <link>http://localhost:8000/tags/gitlab/</link>
+    <link>https://26huitailang.github.io/tags/gitlab/</link>
     <description>Recent content in gitlab on Peter&#39;s Blog</description>
     <image>
-      <url>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:8000/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 26 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/tags/gitlab/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/gitlab/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gitlab CI/CD</title>
-      <link>http://localhost:8000/posts/devops/gitlab/gitlab-ci-cd/</link>
+      <link>https://26huitailang.github.io/posts/devops/gitlab/gitlab-ci-cd/</link>
       <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/posts/devops/gitlab/gitlab-ci-cd/</guid>
+      <guid>https://26huitailang.github.io/posts/devops/gitlab/gitlab-ci-cd/</guid>
       <description>Gitlab CI/CD For the development environment.
 Install with docker Read the official documentation for how to install docker.
 I installed docker on the MacOS.
