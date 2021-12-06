@@ -2,14 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://26huitailang.github.io/tags/cheatsheet/</loc>
+    <lastmod>2021-12-06T17:53:22+08:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/tags/docker/</loc>
+    <lastmod>2021-12-06T17:53:22+08:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/posts/docker/cheatsheet/</loc>
+    <lastmod>2021-12-06T17:53:22+08:00</lastmod>
+  </url><url>
     <loc>https://26huitailang.github.io/</loc>
-    <lastmod>2021-11-17T00:00:00+00:00</lastmod>
+    <lastmod>2021-12-06T17:53:22+08:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/posts/</loc>
-    <lastmod>2021-11-17T00:00:00+00:00</lastmod>
+    <lastmod>2021-12-06T17:53:22+08:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/tags/</loc>
-    <lastmod>2021-11-17T00:00:00+00:00</lastmod>
+    <lastmod>2021-12-06T17:53:22+08:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/tags/tmux/</loc>
     <lastmod>2021-11-17T00:00:00+00:00</lastmod>
@@ -71,9 +80,6 @@
     <loc>https://26huitailang.github.io/tags/prometheus/</loc>
     <lastmod>2020-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://26huitailang.github.io/tags/docker/</loc>
-    <lastmod>2020-05-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://26huitailang.github.io/tags/pycharm/</loc>
     <lastmod>2020-05-22T00:00:00+00:00</lastmod>
   </url><url>
@@ -119,22 +125,7 @@
     <loc>https://26huitailang.github.io/posts/docker/env/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://26huitailang.github.io/posts/docker/usage/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://26huitailang.github.io/posts/docker/%E5%8A%A0%E9%80%9F/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://26huitailang.github.io/posts/docker/%E5%AE%B9%E5%99%A8%E5%AF%BC%E5%87%BA%E5%92%8C%E5%AF%BC%E5%85%A5/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://26huitailang.github.io/posts/docker/%E6%89%A9%E5%AE%B9/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://26huitailang.github.io/posts/docker/logs/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://26huitailang.github.io/posts/docker/%E6%B8%85%E7%90%86/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/posts/docker/%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</loc>
