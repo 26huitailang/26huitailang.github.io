@@ -165,6 +165,17 @@ If file feature is important. You&amp;rsquo;d better be independent from the api
     </item>
     
     <item>
+      <title>Toolhub</title>
+      <link>https://26huitailang.github.io/posts/tools/toolbox/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://26huitailang.github.io/posts/tools/toolbox/</guid>
+      <description>Tool Hub 各个分类的工具汇总
+开发 代码  vim vscode jetbrains  接口测试  postman httpie jebrains http test curl  文档 markdown：
+ typora，已收费 vscode + markdown + mermaid plugin pandoc 构建文档  i18n  poedit  redis  another redis desktop manager redis desktop manager  密码  keepass, windows macpass, macos, keepss的mac实现  输入效率  atext, windows copyQ, windows afred, macos dash, macos  ssh/sftp  transmit, macos xshell, windows mobaxterm, windows  作图  draw.</description>
+    </item>
+    
+    <item>
       <title>vue cors</title>
       <link>https://26huitailang.github.io/posts/vue/cors/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
