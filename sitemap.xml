@@ -2,6 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://26huitailang.github.io/</loc>
+    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/posts/</loc>
+    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/tags/</loc>
+    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/tags/tools/</loc>
+    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/posts/tools/vim/</loc>
+    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/tags/vim/</loc>
+    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/tags/api/</loc>
+    <lastmod>2021-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/posts/security/api-security-checklist/</loc>
+    <lastmod>2021-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/tags/checklist/</loc>
+    <lastmod>2021-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/tags/security/</loc>
+    <lastmod>2021-12-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://26huitailang.github.io/tags/cheatsheet/</loc>
     <lastmod>2021-12-06T17:53:22+08:00</lastmod>
   </url><url>
@@ -9,15 +39,6 @@
     <lastmod>2021-12-06T17:53:22+08:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/posts/docker/cheatsheet/</loc>
-    <lastmod>2021-12-06T17:53:22+08:00</lastmod>
-  </url><url>
-    <loc>https://26huitailang.github.io/</loc>
-    <lastmod>2021-12-06T17:53:22+08:00</lastmod>
-  </url><url>
-    <loc>https://26huitailang.github.io/posts/</loc>
-    <lastmod>2021-12-06T17:53:22+08:00</lastmod>
-  </url><url>
-    <loc>https://26huitailang.github.io/tags/</loc>
     <lastmod>2021-12-06T17:53:22+08:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/tags/tmux/</loc>
