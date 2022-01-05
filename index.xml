@@ -178,12 +178,12 @@ If file feature is important. You&amp;rsquo;d better be independent from the api
     </item>
     
     <item>
-      <title>golang 大奖环境</title>
+      <title>Golang搭建环境</title>
       <link>https://26huitailang.github.io/posts/golang/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://26huitailang.github.io/posts/golang/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
-      <description>Golang 搭建环境 Golang 开发环境准备和工具选择
+      <description>Golang 开发环境准备和工具选择
 参考Alikhll/golang-developer-roadmap。
 更多关于golang的分享，参考Awesome-go
 环境准备  加速/私有模块  开发编辑器/IDE  vim vscode goland  软件选择  CLI工具开发  cobra   Web  Gin🍺 Echo🍺 Beego go-swagger Iris   ORM  Gorm🍺 Xorm   DB  PG🍺 Redis🍺 MongoDB   Log  Zap Logrus   Websocket  gorilla/websocket   Task schedule  Gron    CI/CD  gitlab CI/CD githu actions teamcity  部署选择  docker supervisor  </description>
