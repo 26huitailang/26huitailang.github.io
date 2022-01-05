@@ -9,7 +9,20 @@
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 20 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Dec 2021 11:22:50 +0800</lastBuildDate><atom:link href="https://26huitailang.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neovim</title>
+      <link>https://26huitailang.github.io/posts/tools/neovim/</link>
+      <pubDate>Mon, 27 Dec 2021 11:22:50 +0800</pubDate>
+      
+      <guid>https://26huitailang.github.io/posts/tools/neovim/</guid>
+      <description>installation brew install neovim plugin use https://github.com/junegunn/vim-plug, install this first.
+mkdir ~/.config/nvim/ nvim ~/.config/nvim/init.vim cat &amp;lt;&amp;lt; EOF &amp;gt; ~/.config/nvim/init.vim call plug#begin(&amp;#39;~/.vim/plugged&amp;#39;) call plug#end() EOF  write Plug &#39;fatih/vim-go&#39; between call run :PlugInstall vim config is .vimrc  language support use coc.nvim
+Plug &#39;neoclide/coc.nvim&#39;, {&#39;branch&#39;: &#39;release&#39;} :PlugInstall coc-settings.json
+{ &amp;#34;languageserver&amp;#34;: { &amp;#34;go&amp;#34;: { &amp;#34;command&amp;#34;: &amp;#34;gopls&amp;#34;, &amp;#34;rootPatterns&amp;#34;: [&amp;#34;go.mod&amp;#34;], &amp;#34;trace.server&amp;#34;: &amp;#34;verbose&amp;#34;, &amp;#34;filetypes&amp;#34;: [&amp;#34;go&amp;#34;] } } } problem:
+ build/index.js not found, please install dependencies and compile coc.</description>
+    </item>
+    
     <item>
       <title>Vim</title>
       <link>https://26huitailang.github.io/posts/tools/vim/</link>
@@ -193,8 +206,8 @@ If file feature is important. You&amp;rsquo;d better be independent from the api
       
       <guid>https://26huitailang.github.io/posts/tools/toolbox/</guid>
       <description>Tool Hub 各个分类的工具汇总
-开发 代码  vim vscode jetbrains  接口测试  postman httpie jebrains http test curl pssh + vegeta, pssh并行在多个计算机中执行命令，vegeta接口性能测试工具，支持代码修改、命令模式，输出json、text、gob、html等格式  文档 markdown：
- typora，已收费 vscode + markdown + mermaid plugin pandoc 构建文档  i18n  poedit  redis  another redis desktop manager redis desktop manager  密码  keepass, windows macpass, macos, keepss的mac实现  输入效率  atext, windows copyQ, windows afred, macos dash, macos  ssh/sftp  transmit, macos xshell, windows mobaxterm, windows  作图  draw.</description>
+开发 代码  nvim vscode jetbrains vim  接口测试  postman httpie jebrains http test curl  接口性能测试  vegeta  pssh + vegeta, pssh并行在多个计算机中执行命令，vegeta接口性能测试工具，支持代码修改、命令模式，输出json、text、gob、html等格式   apache benchmark(ab)  文档 markdown：
+ typora，已收费 vscode + markdown + mermaid plugin  markdown mermaid plantUML   pandoc 构建文档  i18n  poedit  redis  another redis desktop manager redis desktop manager  密码  keepass, windows macpass, macos, keepss的mac实现  输入效率  atext, windows copyQ, windows afred, macos dash, macos  ssh/sftp  transmit, macos xshell, windows mobaxterm, windows  作图    工具 功能 价格 地址     draw.</description>
     </item>
     
     <item>
