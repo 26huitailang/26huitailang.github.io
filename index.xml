@@ -16,11 +16,10 @@
       <pubDate>Mon, 27 Dec 2021 11:22:50 +0800</pubDate>
       
       <guid>https://26huitailang.github.io/posts/tools/neovim/</guid>
-      <description>installation brew install neovim plugin use https://github.com/junegunn/vim-plug, install this first.
-mkdir ~/.config/nvim/ nvim ~/.config/nvim/init.vim cat &amp;lt;&amp;lt; EOF &amp;gt; ~/.config/nvim/init.vim call plug#begin(&amp;#39;~/.vim/plugged&amp;#39;) call plug#end() EOF  write Plug &#39;fatih/vim-go&#39; between call run :PlugInstall vim config is .vimrc  language support use coc.nvim
+      <description>installation brew install neovim plugin use https://github.com/junegunn/vim-plug, install this first：
+sh -c &amp;#39;curl -fLo &amp;#34;${XDG_DATA_HOME:-$HOME/.local/share}&amp;#34;/nvim/site/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim&amp;#39; mkdir ~/.config/nvim/ nvim ~/.config/nvim/init.vim cat &amp;lt;&amp;lt; EOF &amp;gt; ~/.config/nvim/init.vim call plug#begin(&amp;#39;~/.vim/plugged&amp;#39;) call plug#end() EOF  write Plug &#39;fatih/vim-go&#39; between call run :PlugInstall vim config is .vimrc  language support use coc.nvim
 Plug &#39;neoclide/coc.nvim&#39;, {&#39;branch&#39;: &#39;release&#39;} :PlugInstall coc-settings.json
-{ &amp;#34;languageserver&amp;#34;: { &amp;#34;go&amp;#34;: { &amp;#34;command&amp;#34;: &amp;#34;gopls&amp;#34;, &amp;#34;rootPatterns&amp;#34;: [&amp;#34;go.mod&amp;#34;], &amp;#34;trace.server&amp;#34;: &amp;#34;verbose&amp;#34;, &amp;#34;filetypes&amp;#34;: [&amp;#34;go&amp;#34;] } } } problem:
- build/index.js not found, please install dependencies and compile coc.</description>
+{ &amp;#34;languageserver&amp;#34;: { &amp;#34;go&amp;#34;: { &amp;#34;command&amp;#34;: &amp;#34;gopls&amp;#34;, &amp;#34;rootPatterns&amp;#34;: [&amp;#34;go.mod&amp;#34;], &amp;#34;trace.server&amp;#34;: &amp;#34;verbose&amp;#34;, &amp;#34;filetypes&amp;#34;: [&amp;#34;go&amp;#34;] } } } problem:</description>
     </item>
     
     <item>
@@ -329,6 +328,16 @@ Our mission is to be the trusted cloud native repository for Kubernetes</descrip
       
       <guid>https://26huitailang.github.io/posts/etcd/readme/</guid>
       <description>etcd 尝试 vagrant # -*- mode: ruby -*- # vi: set ft=ruby : servers = { :etcd1 =&amp;gt; &#39;192.168.1.21&#39;, :etcd2 =&amp;gt; &#39;192.168.1.22&#39;, :etcd3 =&amp;gt; &#39;192.168.1.23&#39; } Vagrant.configure(&amp;quot;2&amp;quot;) do |config| config.vm.box = &amp;quot;ubuntu/focal64&amp;quot; servers.each do |server_name, server_ip| config.vm.define server_name do |server_config| server_config.vm.hostname = &amp;quot;#{server_name.to_s}&amp;quot; server_config.vm.network :private_network, ip: server_ip server_config.vm.provider &amp;quot;virtualbox&amp;quot; do |vb| vb.name = server_name.to_s if vb.name == &amp;quot;etcd1&amp;quot; vb.memory = 1024 vb.cpus = 1 else vb.memory = 1024 vb.cpus = 1 end end end end end install install.</description>
+    </item>
+    
+    <item>
+      <title>pdm</title>
+      <link>https://26huitailang.github.io/posts/python/pdm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://26huitailang.github.io/posts/python/pdm/</guid>
+      <description>github, A modern Python package manager with PEP 582 support.
+ 仅在__pypackages__/&amp;lt;major.minor&amp;gt;包含必要的依赖和bin文件，没有解释器相关文件 就算python解释器被删除了，但是只要有其他符合pyproject.yoml规定版本的解释器即可，项目目录下的__pypackages__不包含解释器相关的内容，venv则必须重新关联或者重新创建  $ tree -L 3 __pypackages__ __pypackages__ └── 3.10 ├── bin │ ├── django-admin │ └── sqlformat ├── include └── lib ├── Django-4.0.1.dist-info ├── anyio ├── anyio-3.5.0.dist-info ├── asgiref ├── asgiref-3.4.1.dist-info ├── django ... install brew install pdm demo mkdir pdm-demo cd pdm-demo pdm init Creating a pyproject.toml for PDM... Please enter the Python interpreter to use .</description>
     </item>
     
     <item>

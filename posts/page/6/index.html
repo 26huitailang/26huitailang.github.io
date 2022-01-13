@@ -112,6 +112,18 @@ Our mission is to be the trusted cloud native repository for Kubernetes</p>
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>pdm
+</h2>
+</header>
+<section class=entry-content>
+<p>github, A modern Python package manager with PEP 582 support.
+仅在__pypackages__/&lt;major.minor>包含必要的依赖和bin文件，没有解释器相关文件 就算python解释器被删除了，但是只要有其他符合pyproject.yoml规定版本的解释器即可，项目目录下的__pypackages__不包含解释器相关的内容，venv则必须重新关联或者重新创建 $ tree -L 3 __pypackages__ __pypackages__ └── 3.10 ├── bin │ ├── django-admin │ └── sqlformat ├── include └── lib ├── Django-4.0.1.dist-info ├── anyio ├── anyio-3.5.0.dist-info ├── asgiref ├── asgiref-3.4.1.dist-info ├── django ... install brew install pdm demo mkdir pdm-demo cd pdm-demo pdm init Creating a pyproject.toml for PDM... Please enter the Python interpreter to use ....</p>
+</section>
+<footer class=entry-footer>2 min&nbsp;·&nbsp;Peter</footer>
+<a class=entry-link aria-label="post link to pdm" href=https://26huitailang.github.io/posts/python/pdm/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>pip 离线安装
 </h2>
 </header>
@@ -122,26 +134,6 @@ pip freeze > pip-requirements.txt pip download -d pip-packages -r pip-requiremen
 </section>
 <footer class=entry-footer>1 min&nbsp;·&nbsp;Peter</footer>
 <a class=entry-link aria-label="post link to pip 离线安装" href=https://26huitailang.github.io/posts/python/pip/%E6%89%93%E5%8C%85%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>pipenv
-</h2>
-</header>
-<section class=entry-content>
-<p>pipenv pip和virtualenv的组合，使用Pipfile来替换旧的requirements.txt方式。
-documentation zhihu 参考 segmentfault 参考 安装 安装到系统常用的python版本下，mac可以使用brew安装
-$ pip install pipenv 创建虚拟环境 $ pipenv install --three django 创建一个python3的虚拟环境并安装django，随机生成一个和当前文件夹名有关的虚拟环境。也可以用过--python 3.7指定python版本。
-TODO， 不能指定名称吗？ 进入虚拟环境 $ pipenv shell 不过就算不进入环境，pipenv install依然可以正确安装包到对应的环境。
-新环境依赖 自动识别Pipfile，然后安装。
-$ pipenv install 一并安装开发环境的包：
-$ pipenv install --dev 区别开发环境 在安装包的时候添加一个--dev选项，会分类到开发依赖。
-更换源 更换Pipfile中的source-url
-[[source]] url = "https://mirrors.aliyun.com/pypi/simple" verify_ssl = true name = "pypi" 设置环境变量 PIPENV_PYPI_MIRROR 效果相同。类似指定–pypi-mirror选项：
-$ pipenv install --pypi-mirror https://mirrors....</p>
-</section>
-<footer class=entry-footer>1 min&nbsp;·&nbsp;Peter</footer>
-<a class=entry-link aria-label="post link to pipenv" href=https://26huitailang.github.io/posts/python/pip/pipenv/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

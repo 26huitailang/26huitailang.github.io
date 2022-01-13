@@ -73,6 +73,26 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>pipenv
+</h2>
+</header>
+<section class=entry-content>
+<p>pipenv pip和virtualenv的组合，使用Pipfile来替换旧的requirements.txt方式。
+documentation zhihu 参考 segmentfault 参考 安装 安装到系统常用的python版本下，mac可以使用brew安装
+$ pip install pipenv 创建虚拟环境 $ pipenv install --three django 创建一个python3的虚拟环境并安装django，随机生成一个和当前文件夹名有关的虚拟环境。也可以用过--python 3.7指定python版本。
+TODO， 不能指定名称吗？ 进入虚拟环境 $ pipenv shell 不过就算不进入环境，pipenv install依然可以正确安装包到对应的环境。
+新环境依赖 自动识别Pipfile，然后安装。
+$ pipenv install 一并安装开发环境的包：
+$ pipenv install --dev 区别开发环境 在安装包的时候添加一个--dev选项，会分类到开发依赖。
+更换源 更换Pipfile中的source-url
+[[source]] url = "https://mirrors.aliyun.com/pypi/simple" verify_ssl = true name = "pypi" 设置环境变量 PIPENV_PYPI_MIRROR 效果相同。类似指定–pypi-mirror选项：
+$ pipenv install --pypi-mirror https://mirrors....</p>
+</section>
+<footer class=entry-footer>1 min&nbsp;·&nbsp;Peter</footer>
+<a class=entry-link aria-label="post link to pipenv" href=https://26huitailang.github.io/posts/python/pip/pipenv/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>PostgreSQL 分表
 </h2>
 </header>

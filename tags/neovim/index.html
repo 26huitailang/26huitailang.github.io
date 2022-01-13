@@ -76,11 +76,10 @@
 </h2>
 </header>
 <section class=entry-content>
-<p>installation brew install neovim plugin use https://github.com/junegunn/vim-plug, install this first.
-mkdir ~/.config/nvim/ nvim ~/.config/nvim/init.vim cat &lt;&lt; EOF > ~/.config/nvim/init.vim call plug#begin('~/.vim/plugged') call plug#end() EOF write Plug 'fatih/vim-go' between call run :PlugInstall vim config is .vimrc language support use coc.nvim
+<p>installation brew install neovim plugin use https://github.com/junegunn/vim-plug, install this first：
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim' mkdir ~/.config/nvim/ nvim ~/.config/nvim/init.vim cat &lt;&lt; EOF > ~/.config/nvim/init.vim call plug#begin('~/.vim/plugged') call plug#end() EOF write Plug 'fatih/vim-go' between call run :PlugInstall vim config is .vimrc language support use coc.nvim
 Plug 'neoclide/coc.nvim', {'branch': 'release'} :PlugInstall coc-settings.json
-{ "languageserver": { "go": { "command": "gopls", "rootPatterns": ["go.mod"], "trace.server": "verbose", "filetypes": ["go"] } } } problem:
-build/index.js not found, please install dependencies and compile coc....</p>
+{ "languageserver": { "go": { "command": "gopls", "rootPatterns": ["go.mod"], "trace.server": "verbose", "filetypes": ["go"] } } } problem:...</p>
 </section>
 <footer class=entry-footer><span title="2021-12-27 11:22:50 +0800 CST">December 27, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Peter</footer>
 <a class=entry-link aria-label="post link to Neovim" href=https://26huitailang.github.io/posts/tools/neovim/></a>
