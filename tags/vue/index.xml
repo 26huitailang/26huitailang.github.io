@@ -17,11 +17,11 @@
       
       <guid>https://26huitailang.github.io/posts/vue/cors/</guid>
       <description>利用proxy 解决 Django Vue 开发环境中的跨域问题 最近使用 Django+Vue的组合快速的做一个项目，前段之前有看过，但是只是👀会了，这次实际操作，在前后端分离后的开发环境中踩了坑。
-环境  Django + DRF Django Channels，主要是websocket vue-admin-template，一个开源的项目，很多东西都有实现，新手可以用来改改就用，还能学习  开发环境：
- wsgi, 8000 asgi, 8001 vue, 9528  问题  想像在使用nginx一样的透明的使用开发环境 django已经配置了corsheaders middleware了 尝试 axios显示指定地址和端口到8000的服务上，解决了axios实例的访问，但是使用 el-upload的表单时，发现就不好使了，localhost和其他不同域，拿不到 cookie中的csrftoken，导致被 django拒绝  解决 在查看了各种文档后，最有效的方案是devServer的proxy，这是webpack提供的功能，使用的是http-proxy-middleware这个中间件，文档很详细，可以看看。
+环境 Django + DRF Django Channels，主要是websocket vue-admin-template，一个开源的项目，很多东西都有实现，新手可以用来改改就用，还能学习 开发环境：
+wsgi, 8000 asgi, 8001 vue, 9528 问题 想像在使用nginx一样的透明的使用开发环境 django已经配置了corsheaders middleware了 尝试 axios显示指定地址和端口到8000的服务上，解决了axios实例的访问，但是使用 el-upload的表单时，发现就不好使了，localhost和其他不同域，拿不到 cookie中的csrftoken，导致被 django拒绝 解决 在查看了各种文档后，最有效的方案是devServer的proxy，这是webpack提供的功能，使用的是http-proxy-middleware这个中间件，文档很详细，可以看看。
 目标：
- 代理 /api的请求到8000端口的wsgi server 代理 /ws的请求到8001的asgi server   /api ---&amp;gt; localhost:8000/api localhost:9528 (cookie) -- /ws ---&amp;gt; localhost:8001/ws vue.conf.js
-devServer: { ... proxy: { [process.env.VUE_APP_BASE_API]: { target: &amp;#39;http://127.0.0.1:8000&amp;#39;, changeOrigin: true, ws: false, pathRewrite: { [&amp;#39;^&amp;#39; + process.</description>
+代理 /api的请求到8000端口的wsgi server 代理 /ws的请求到8001的asgi server /api ---&amp;gt; localhost:8000/api localhost:9528 (cookie) -- /ws ---&amp;gt; localhost:8001/ws vue.conf.js
+devServer: { ... proxy: { [process.env.VUE_APP_BASE_API]: { target: &amp;#39;http://127.0.0.1:8000&amp;#39;, changeOrigin: true, ws: false, pathRewrite: { [&amp;#39;^&amp;#39; + process.env.VUE_APP_BASE_API]: &amp;#39;&amp;#39; }, cookieDomainRewrite: { &amp;#39;*&amp;#39;: &amp;#39;localhost&amp;#39; } }, &amp;#39;/ws&amp;#39;: { target: &amp;#39;ws://127.</description>
     </item>
     
   </channel>

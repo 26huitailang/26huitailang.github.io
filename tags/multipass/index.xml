@@ -17,7 +17,7 @@
       
       <guid>https://26huitailang.github.io/posts/linux/ubuntu/multipass/</guid>
       <description>multipass to set development environment 官网
-指定配置 $ multipass launch --name XXX -c 2 -d 20G -m 2G  删除 $ multipass delete --purge XXXXX  问题  macos下面使用virtualbox暂时拿不到ip，只能使用NAT，最好使用hyperkit windows下面也不行，尝试添加第二个网络(gui操作 or vboxmanager)，我这里使用了桥接，之后修改/etc/network/interfaces填写相关信息，重启之后查看网卡能获得ip  # ubuntu 18.04 allow-hotplug enp0s8 iface enp0s8 inet static address 10.200.242.200 netmask 255.0.0.0 gateway 10.0.0.3  ubuntu20.04操作:  修改 /etc/netplan/50-cloud-init.yaml 应用 sudo netplan apply 重启 sudo reboot    # ubuntu 20.04 /etc/netplan/50-cloud-init.yaml network: ethernets: enp0s3: dhcp4: true match: macaddress: 08:00:27:bc:97:36 set-name: enp0s3 version: 2 # change like following part network: ethernets: enp0s3: dhcp4: false addresses: [10.</description>
+指定配置 $ multipass launch --name XXX -c 2 -d 20G -m 2G 删除 $ multipass delete --purge XXXXX 问题 macos下面使用virtualbox暂时拿不到ip，只能使用NAT，最好使用hyperkit windows下面也不行，尝试添加第二个网络(gui操作 or vboxmanager)，我这里使用了桥接，之后修改/etc/network/interfaces填写相关信息，重启之后查看网卡能获得ip # ubuntu 18.04 allow-hotplug enp0s8 iface enp0s8 inet static address 10.200.242.200 netmask 255.0.0.0 gateway 10.0.0.3 ubuntu20.04操作: 修改 /etc/netplan/50-cloud-init.yaml 应用 sudo netplan apply 重启 sudo reboot # ubuntu 20.04 /etc/netplan/50-cloud-init.yaml network: ethernets: enp0s3: dhcp4: true match: macaddress: 08:00:27:bc:97:36 set-name: enp0s3 version: 2 # change like following part network: ethernets: enp0s3: dhcp4: false addresses: [10.</description>
     </item>
     
   </channel>

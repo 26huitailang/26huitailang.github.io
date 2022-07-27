@@ -15,7 +15,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://26huitailang.github.io/posts/cheatsheet/pkg-manager/</guid>
-      <description>Cheatsheet for package manager  go mod pip apt ubuntu 20.04  pip pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+      <description>Cheatsheet for package manager go mod pip apt ubuntu 20.04 pip pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
 升级 pip 到最新的版本 (&amp;gt;=10.0.0) 后进行配置：
 pip install pip -U pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 如果您到 pip 默认源的网络连接较差，临时使用本镜像站来升级 pip：
@@ -32,7 +32,7 @@ apt ubuntu 20.04
       <guid>https://26huitailang.github.io/posts/python/pip/%E6%89%93%E5%8C%85%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</guid>
       <description>pip 离线安装 打包 注意，要在同平台打包，否则有些包不能正确安装。
 在已有的环境中，一般是一个虚拟环境：
- pip freeze &amp;gt; pip-requirements.txt pip download -d pip-packages -r pip-requirements.txt，将提取的包下载到pip-packages文件夹中  安装  将pip-requirements.txt和pip-packages文件夹，拷贝到目标环境的同目录下 pip install &amp;ndash;no-index &amp;ndash;find-links=pip-packages -r pip-requirements.txt  参考  断网环境下一键安装 python3 离线安装包及其依赖  </description>
+pip freeze &amp;gt; pip-requirements.txt pip download -d pip-packages -r pip-requirements.txt，将提取的包下载到pip-packages文件夹中 安装 将pip-requirements.txt和pip-packages文件夹，拷贝到目标环境的同目录下 pip install &amp;ndash;no-index &amp;ndash;find-links=pip-packages -r pip-requirements.txt 参考 断网环境下一键安装 python3 离线安装包及其依赖 </description>
     </item>
     
     <item>
@@ -42,15 +42,16 @@ apt ubuntu 20.04
       
       <guid>https://26huitailang.github.io/posts/python/pip/pipenv/</guid>
       <description>pipenv pip和virtualenv的组合，使用Pipfile来替换旧的requirements.txt方式。
- documentation zhihu 参考 segmentfault 参考  安装 安装到系统常用的python版本下，mac可以使用brew安装
-$ pip install pipenv  创建虚拟环境 $ pipenv install --three django  创建一个python3的虚拟环境并安装django，随机生成一个和当前文件夹名有关的虚拟环境。也可以用过--python 3.7指定python版本。
- TODO， 不能指定名称吗？  进入虚拟环境 $ pipenv shell  不过就算不进入环境，pipenv install依然可以正确安装包到对应的环境。
+documentation zhihu 参考 segmentfault 参考 安装 安装到系统常用的python版本下，mac可以使用brew安装
+$ pip install pipenv 创建虚拟环境 $ pipenv install --three django 创建一个python3的虚拟环境并安装django，随机生成一个和当前文件夹名有关的虚拟环境。也可以用过--python 3.7指定python版本。
+TODO， 不能指定名称吗？ 进入虚拟环境 $ pipenv shell 不过就算不进入环境，pipenv install依然可以正确安装包到对应的环境。
 新环境依赖 自动识别Pipfile，然后安装。
-$ pipenv install  一并安装开发环境的包：
-$ pipenv install --dev  区别开发环境 在安装包的时候添加一个--dev选项，会分类到开发依赖。
+$ pipenv install 一并安装开发环境的包：
+$ pipenv install --dev 区别开发环境 在安装包的时候添加一个--dev选项，会分类到开发依赖。
 更换源 更换Pipfile中的source-url
-[[source]] url = &amp;quot;https://mirrors.aliyun.com/pypi/simple&amp;quot; verify_ssl = true name = &amp;quot;pypi&amp;quot;  设置环境变量 PIPENV_PYPI_MIRROR 效果相同。类似指定&amp;ndash;pypi-mirror选项：
-$ pipenv install --pypi-mirror https://mirrors.</description>
+[[source]] url = &amp;quot;https://mirrors.aliyun.com/pypi/simple&amp;quot; verify_ssl = true name = &amp;quot;pypi&amp;quot; 设置环境变量 PIPENV_PYPI_MIRROR 效果相同。类似指定&amp;ndash;pypi-mirror选项：
+$ pipenv install --pypi-mirror https://mirrors.aliyun.com/pypi/simple 查看安装的包 $ pipenv graph 不仅可以看到安装包，还可以看到依赖关系。
+Django==2.1.7 - pytz [required: Any, installed: 2018.</description>
     </item>
     
     <item>

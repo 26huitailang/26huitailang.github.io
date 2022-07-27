@@ -2,28 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://26huitailang.github.io/posts/tools/neovim/</loc>
-    <lastmod>2021-12-27T11:22:50+08:00</lastmod>
+    <loc>https://26huitailang.github.io/tags/fastapi/</loc>
+    <lastmod>2022-07-27T10:11:58+08:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/python/fastapi/</loc>
+    <lastmod>2022-07-27T10:11:58+08:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/</loc>
+    <lastmod>2022-07-27T10:11:58+08:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/tags/python/</loc>
+    <lastmod>2022-07-27T10:11:58+08:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/python/</loc>
+    <lastmod>2022-07-27T10:11:58+08:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/tags/</loc>
+    <lastmod>2022-07-27T10:11:58+08:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/tags/playwright/</loc>
+    <lastmod>2022-03-24T17:12:16+08:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/posts/test/playwright/</loc>
+    <lastmod>2022-03-24T17:12:16+08:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/posts/</loc>
+    <lastmod>2022-03-24T17:12:16+08:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/tags/test/</loc>
+    <lastmod>2022-03-24T17:12:16+08:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/tags/docker/</loc>
+    <lastmod>2022-01-26T11:24:36+08:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/posts/docker/docker-network/</loc>
+    <lastmod>2022-01-26T11:24:36+08:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/tags/network/</loc>
+    <lastmod>2022-01-26T11:24:36+08:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/tags/neovim/</loc>
     <lastmod>2021-12-27T11:22:50+08:00</lastmod>
   </url><url>
-    <loc>https://26huitailang.github.io/</loc>
-    <lastmod>2021-12-27T11:22:50+08:00</lastmod>
-  </url><url>
-    <loc>https://26huitailang.github.io/posts/</loc>
-    <lastmod>2021-12-27T11:22:50+08:00</lastmod>
-  </url><url>
-    <loc>https://26huitailang.github.io/tags/</loc>
+    <loc>https://26huitailang.github.io/posts/tools/neovim/</loc>
     <lastmod>2021-12-27T11:22:50+08:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/tags/tools/</loc>
     <lastmod>2021-12-27T11:22:50+08:00</lastmod>
   </url><url>
-    <loc>https://26huitailang.github.io/posts/tools/vim/</loc>
+    <loc>https://26huitailang.github.io/tags/vim/</loc>
     <lastmod>2021-12-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://26huitailang.github.io/tags/vim/</loc>
+    <loc>https://26huitailang.github.io/posts/tools/vim/</loc>
     <lastmod>2021-12-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/tags/api/</loc>
@@ -41,9 +71,6 @@
     <loc>https://26huitailang.github.io/tags/cheatsheet/</loc>
     <lastmod>2021-12-06T17:53:22+08:00</lastmod>
   </url><url>
-    <loc>https://26huitailang.github.io/tags/docker/</loc>
-    <lastmod>2021-12-06T17:53:22+08:00</lastmod>
-  </url><url>
     <loc>https://26huitailang.github.io/posts/docker/cheatsheet/</loc>
     <lastmod>2021-12-06T17:53:22+08:00</lastmod>
   </url><url>
@@ -56,25 +83,25 @@
     <loc>https://26huitailang.github.io/tags/markdown/</loc>
     <lastmod>2021-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://26huitailang.github.io/posts/nginx/nginx/</loc>
-    <lastmod>2021-11-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://26huitailang.github.io/tags/nginx/</loc>
     <lastmod>2021-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://26huitailang.github.io/posts/markdown/pandoc/</loc>
+    <loc>https://26huitailang.github.io/posts/nginx/nginx/</loc>
     <lastmod>2021-11-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/tags/pandoc/</loc>
     <lastmod>2021-11-10T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://26huitailang.github.io/posts/markdown/pandoc/</loc>
+    <lastmod>2021-11-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://26huitailang.github.io/tags/container/</loc>
     <lastmod>2021-11-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://26huitailang.github.io/posts/podman/readme/</loc>
+    <loc>https://26huitailang.github.io/tags/podman/</loc>
     <lastmod>2021-11-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://26huitailang.github.io/tags/podman/</loc>
+    <loc>https://26huitailang.github.io/posts/podman/readme/</loc>
     <lastmod>2021-11-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/tags/debian/</loc>
@@ -101,10 +128,10 @@
     <loc>https://26huitailang.github.io/tags/k3s/</loc>
     <lastmod>2020-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://26huitailang.github.io/posts/k3s/prometheus/</loc>
+    <loc>https://26huitailang.github.io/tags/prometheus/</loc>
     <lastmod>2020-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://26huitailang.github.io/tags/prometheus/</loc>
+    <loc>https://26huitailang.github.io/posts/k3s/prometheus/</loc>
     <lastmod>2020-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/tags/pycharm/</loc>
@@ -131,19 +158,19 @@
     <loc>https://26huitailang.github.io/posts/golang/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</loc>
     <lastmod>2020-05-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://26huitailang.github.io/posts/linux/ubuntu/multipass/</loc>
+    <loc>https://26huitailang.github.io/tags/multipass/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://26huitailang.github.io/tags/multipass/</loc>
+    <loc>https://26huitailang.github.io/posts/linux/ubuntu/multipass/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/tags/ubuntu/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://26huitailang.github.io/posts/tools/toolbox/</loc>
+    <loc>https://26huitailang.github.io/tags/toolbox/</loc>
     <lastmod>2020-03-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://26huitailang.github.io/tags/toolbox/</loc>
+    <loc>https://26huitailang.github.io/posts/tools/toolbox/</loc>
     <lastmod>2020-03-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/tags/vue/</loc>
@@ -166,6 +193,8 @@
   </url><url>
     <loc>https://26huitailang.github.io/posts/docker/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BB%93%E5%BA%93/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/posts/docker/dockerfile-best-practice/</loc>
   </url><url>
     <loc>https://26huitailang.github.io/tags/apt/</loc>
   </url><url>
@@ -205,17 +234,15 @@
   </url><url>
     <loc>https://26huitailang.github.io/posts/postgresql/partition/</loc>
   </url><url>
-    <loc>https://26huitailang.github.io/tags/python/</loc>
-  </url><url>
     <loc>https://26huitailang.github.io/search/</loc>
   </url><url>
     <loc>https://26huitailang.github.io/tags/teamcity/</loc>
   </url><url>
     <loc>https://26huitailang.github.io/posts/teamcity/teamcity/</loc>
   </url><url>
-    <loc>https://26huitailang.github.io/posts/vagrant/vagrant/</loc>
-  </url><url>
     <loc>https://26huitailang.github.io/tags/vagrant/</loc>
+  </url><url>
+    <loc>https://26huitailang.github.io/posts/vagrant/vagrant/</loc>
   </url><url>
     <loc>https://26huitailang.github.io/tags/wheel/</loc>
   </url><url>

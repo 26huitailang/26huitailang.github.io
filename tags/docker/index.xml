@@ -9,7 +9,20 @@
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 06 Dec 2021 17:53:22 +0800</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jan 2022 11:24:36 +0800</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker Network</title>
+      <link>https://26huitailang.github.io/posts/docker/docker-network/</link>
+      <pubDate>Wed, 26 Jan 2022 11:24:36 +0800</pubDate>
+      
+      <guid>https://26huitailang.github.io/posts/docker/docker-network/</guid>
+      <description>访问宿主机网络 host mode 使用host模式：
+docker run -d --network=host my-container:latest services: my-service: network_mode: host 添加hosts 使用--add-host选项添加映射到/etc/hosts文件，添加host.docker.internal到hosts
+docker run --rm -it --add-host host.docker.internal:host-gateway goexpect bash hosts in container
+root@00e0febe04e2:/app# cat /etc/hosts 127.0.0.1 localhost ::1 localhost ip6-localhost ip6-loopback fe00::0 ip6-localnet ff00::0 ip6-mcastprefix ff02::1 ip6-allnodes ff02::2 ip6-allrouters 192.168.65.2 host.docker.internal 172.17.0.2 00e0febe04e2 访问宿主机网络
+ssh root@host.docker.internal -p 2222 </description>
+    </item>
+    
     <item>
       <title>Docker Cheatsheet</title>
       <link>https://26huitailang.github.io/posts/docker/cheatsheet/</link>
@@ -27,7 +40,7 @@
       
       <guid>https://26huitailang.github.io/posts/pycharm/docker/</guid>
       <description>PyCharm 使用 Docker pycharm use docker for development and stage
-Development  使用windows和virtualbox，没有打开hyper-v所以无法使用docker，在虚拟机中使用docker并打开tcp，但是由于volume只能挂载宿主机，所以要先用pycharmm将文件拷贝到远程的映射目录，再使用。  此方法适合还没有准备开发环境和需要使用docker作为开发环境，但是windows本机没有docker的情况 我已使用虚拟机和pycharm远程同步功能达到同样的效果   在宿主机中开发时，可以很方便的将docker配置集成到configuration中  Stage PyCharm的docker也支持修改registry，如果有远程仓库需要的，也可以方便分发镜像</description>
+Development 使用windows和virtualbox，没有打开hyper-v所以无法使用docker，在虚拟机中使用docker并打开tcp，但是由于volume只能挂载宿主机，所以要先用pycharmm将文件拷贝到远程的映射目录，再使用。 此方法适合还没有准备开发环境和需要使用docker作为开发环境，但是windows本机没有docker的情况 我已使用虚拟机和pycharm远程同步功能达到同样的效果 在宿主机中开发时，可以很方便的将docker配置集成到configuration中 Stage PyCharm的docker也支持修改registry，如果有远程仓库需要的，也可以方便分发镜像</description>
     </item>
     
     <item>
@@ -39,7 +52,7 @@ Development  使用windows和virtualbox，没有打开hyper-v所以无法使用d
       <description>docker env file 在docker-compose 中使用以下方式导入.envfile。
 web: build: . restart: always working_dir: /deploy/mysite command: ./service_web.sh env_file: - .env # environments .env
 DOCKER=1 HOME=/deploy 想用shell script动态获取环境的CPU count 如果直接在.env 中写如下的内容，会报语法错误：
-CPU_NUM=$(cat /proc/cpuinfo |grep processor|wc -l)  所以，在web服务的command: ./service_web.sh脚本中export一个变量，并在gunicorn中使用：
+CPU_NUM=$(cat /proc/cpuinfo |grep processor|wc -l) 所以，在web服务的command: ./service_web.sh脚本中export一个变量，并在gunicorn中使用：
 #!/bin/bash sleep 5 export CPU_NUM=$(cat /proc/cpuinfo |grep processor|wc -l) python manage.py collectstatic -v0 --noinput python manage.py migrate --noinput /usr/local/bin/gunicorn -w $((2*$CPU_NUM+1)) -b unix:/deploy/running/handle/django-tutorial-server.sock mysite.wsgi:application --log-level info </description>
     </item>
     
@@ -49,7 +62,7 @@ CPU_NUM=$(cat /proc/cpuinfo |grep processor|wc -l)  所以，在web服务的comm
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://26huitailang.github.io/posts/docker/%E5%8A%A0%E9%80%9F/</guid>
-      <description>docker 加速 mac  ~/.docker/daemon.json 添加如下配置  { &amp;#34;registry-mirrors&amp;#34;: [&amp;#34;https://registry.docker-cn.com&amp;#34;] } </description>
+      <description>docker 加速 mac ~/.docker/daemon.json 添加如下配置 { &amp;#34;registry-mirrors&amp;#34;: [&amp;#34;https://registry.docker-cn.com&amp;#34;] } </description>
     </item>
     
     <item>
@@ -59,7 +72,7 @@ CPU_NUM=$(cat /proc/cpuinfo |grep processor|wc -l)  所以，在web服务的comm
       
       <guid>https://26huitailang.github.io/posts/docker/%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</guid>
       <description>docker 管理工具 Portainer web服务
-docker volume create portainer_data docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer  </description>
+docker volume create portainer_data docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer </description>
     </item>
     
     <item>
@@ -68,13 +81,13 @@ docker volume create portainer_data docker run -d -p 9000:9000 --name portainer 
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://26huitailang.github.io/posts/docker/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BB%93%E5%BA%93/</guid>
-      <description>docker 阿里云仓库 登录阿里云Docker Registry $ sudo docker login --username=26huitailang@gmail.com registry.cn-hangzhou.aliyuncs.com  用于登录的用户名为阿里云账号全名，密码为开通服务时设置的密码。
+      <description>docker 阿里云仓库 登录阿里云Docker Registry $ sudo docker login --username=26huitailang@gmail.com registry.cn-hangzhou.aliyuncs.com 用于登录的用户名为阿里云账号全名，密码为开通服务时设置的密码。
 您可以在产品控制台首页修改登录密码。
 遇到无法登录问题：
 Error saving credentials: error storing credentials - err: exit status 1, out: `The name org.freedesktop.secrets was not provided by any .service files sudo apt install gnupg2 pass 从Registry中拉取镜像 $ sudo docker pull registry.cn-hangzhou.aliyuncs.com/26huitailang/golang-web:[镜像版本号]
-将镜像推送到Registry $ sudo docker login --username=26huitailang@gmail.com registry.cn-hangzhou.aliyuncs.com $ sudo docker tag [ImageId] registry.cn-hangzhou.aliyuncs.com/26huitailang/golang-web:[镜像版本号] $ sudo docker push registry.cn-hangzhou.aliyuncs.com/26huitailang/golang-web:[镜像版本号]  请根据实际镜像信息替换示例中的[ImageId]和[镜像版本号]参数。
+将镜像推送到Registry $ sudo docker login --username=26huitailang@gmail.com registry.cn-hangzhou.aliyuncs.com $ sudo docker tag [ImageId] registry.cn-hangzhou.aliyuncs.com/26huitailang/golang-web:[镜像版本号] $ sudo docker push registry.cn-hangzhou.aliyuncs.com/26huitailang/golang-web:[镜像版本号] 请根据实际镜像信息替换示例中的[ImageId]和[镜像版本号]参数。
 选择合适的镜像仓库地址 从ECS推送镜像时，可以选择使用镜像仓库内网地址。推送速度将得到提升并且将不会损耗您的公网流量。
-如果您使用的机器位于VPC网络，请使用 registry-vpc.</description>
+如果您使用的机器位于VPC网络，请使用 registry-vpc.cn-hangzhou.aliyuncs.com 作为Registry的域名登录，并作为镜像命名空间前缀。</description>
     </item>
     
     <item>
@@ -85,7 +98,7 @@ Error saving credentials: error storing credentials - err: exit status 1, out: `
       <guid>https://26huitailang.github.io/posts/docker/debian-docker-install/</guid>
       <description>docker install install docker on Debian/Ubuntu
 link
-Uninstall old versions $ sudo apt-get remove docker docker-engine docker.io containerd runc Set up the repository $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg-agent \ software-properties-common $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - or $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add - $ sudo apt-key fingerprint 0EBFCD88 $ sudo add-apt-repository \ &amp;quot;deb [arch=amd64] https://download.</description>
+Uninstall old versions $ sudo apt-get remove docker docker-engine docker.io containerd runc Set up the repository $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg-agent \ software-properties-common $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - or $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add - $ sudo apt-key fingerprint 0EBFCD88 $ sudo add-apt-repository \ &amp;#34;deb [arch=amd64] https://download.</description>
     </item>
     
     <item>
@@ -96,8 +109,8 @@ Uninstall old versions $ sudo apt-get remove docker docker-engine docker.io cont
       <guid>https://26huitailang.github.io/posts/docker/%E7%A7%81%E6%9C%89registry/</guid>
       <description>Docker Private Registry 简单使用，官方 官方提供的 https://hub.docker.com/_/registry
 Run a local registry: Quick Version
-$ docker run -d -p 5000:5000 --restart always --name registry registry:2  Now, use it from within Docker:
-$ docker pull ubuntu $ docker tag ubuntu localhost:5000/ubuntu $ docker push localhost:5000/ubuntu  更复杂的需求，harbor https://goharbor.io/
+$ docker run -d -p 5000:5000 --restart always --name registry registry:2 Now, use it from within Docker:
+$ docker pull ubuntu $ docker tag ubuntu localhost:5000/ubuntu $ docker push localhost:5000/ubuntu 更复杂的需求，harbor https://goharbor.io/
 Our mission is to be the trusted cloud native repository for Kubernetes</description>
     </item>
     

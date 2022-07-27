@@ -17,8 +17,8 @@
       
       <guid>https://26huitailang.github.io/posts/devenv/tmux/</guid>
       <description>tmux 终端服用软件，session可以保存在tmux server中，就算iterm等终端关闭也可以恢复，远程连接的时候避免掉线（类似的功能的软件还有，screen）。
-参考  十分钟学会 tmux Tmux - Linux从业者必备利器 * cheatsheet 优雅地使用命令行：Tmux 终端复用 Tmux使用手册  本机，cheatsheet-tmux  安装 brew install tmux  基于参考第二篇文章，配置：
-$ cd $ rm -rf .tmux $ git clone https://github.com/gpakosz/.tmux.git $ ln -s -f .tmux/.tmux.conf $ cp .tmux/.tmux.conf.local . 概念  session，不同的会话 window，不同的窗口，物理划分，一个session可以有多个window pane，窗格，一个window可以用过 %/&amp;quot; 划分为多个窗格  tmux操作  tmux ls，查看打开的session tmux a，恢复 tmux a -t SESSION,恢复指定session  C-b操作  前缀快捷键，^b % 左右平分出两个pane &amp;quot; 上下平分出两个pane x 关闭当前窗格 { 当前窗格前移 } 当前窗格后移 ; 选择上次使用的窗格 o 选择下一个窗格，也可以使用上下左右方向键来选择 space 切换窗格布局，tmux 内置了五种窗格布局，也可以通过 ⌥1 至 ⌥5来切换 z 最大化当前窗格，再次执行可恢复原来大小 q 显示所有窗格的序号，在序号出现期间按下对应的数字，即可跳转至对应的窗格  resize pane  C-b :resize-pane -D/U/R/L 20  修改配置  ~/.</description>
+参考 十分钟学会 tmux Tmux - Linux从业者必备利器 * cheatsheet 优雅地使用命令行：Tmux 终端复用 Tmux使用手册 本机，cheatsheet-tmux 安装 brew install tmux 基于参考第二篇文章，配置：
+$ cd $ rm -rf .tmux $ git clone https://github.com/gpakosz/.tmux.git $ ln -s -f .tmux/.tmux.conf $ cp .tmux/.tmux.conf.local . 概念 session，不同的会话 window，不同的窗口，物理划分，一个session可以有多个window pane，窗格，一个window可以用过 %/&amp;quot; 划分为多个窗格 tmux操作 tmux ls，查看打开的session tmux a，恢复 tmux a -t SESSION,恢复指定session C-b操作 前缀快捷键，^b % 左右平分出两个pane &amp;quot; 上下平分出两个pane x 关闭当前窗格 { 当前窗格前移 } 当前窗格后移 ; 选择上次使用的窗格 o 选择下一个窗格，也可以使用上下左右方向键来选择 space 切换窗格布局，tmux 内置了五种窗格布局，也可以通过 ⌥1 至 ⌥5来切换 z 最大化当前窗格，再次执行可恢复原来大小 q 显示所有窗格的序号，在序号出现期间按下对应的数字，即可跳转至对应的窗格 resize pane C-b :resize-pane -D/U/R/L 20 修改配置 ~/.</description>
     </item>
     
   </channel>

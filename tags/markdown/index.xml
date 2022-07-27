@@ -16,8 +16,11 @@
       <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://26huitailang.github.io/posts/markdown/pandoc/</guid>
-      <description>Pandoc 开始  install pandoc install miktext build  中文要选择合适的字体否则无法成功创建 fc-list  mac: brew install fontconfig fc-list :lang-zh &amp;gt; fonts.txt fc-list -f &amp;ldquo;%{family}\n&amp;rdquo; :lang=zh   参数解释  -o: 输出文件 &amp;ndash;from: 输入文件类型 &amp;ndash;template: 模版文件 &amp;ndash;listings: 列表 &amp;ndash;pdf-engine: pdf生成用的引擎 -V: 参数  CJKmainfont: 中文文字字体        pandoc &amp;#34;README.md&amp;#34; -o &amp;#34;document.pdf&amp;#34; --from markdown --template &amp;#34;./template.latex&amp;#34; --listings --pdf-engine &amp;#34;xelatex&amp;#34; -V CJKmainfont=&amp;#34;PingFang SC&amp;#34; &amp;amp;&amp;amp; open document.pdf data-dir DATADIR
-macos: ~/.</description>
+      <description>Pandoc 开始 install pandoc install miktext build 中文要选择合适的字体否则无法成功创建 fc-list mac: brew install fontconfig fc-list :lang-zh &amp;gt; fonts.txt fc-list -f &amp;ldquo;%{family}\n&amp;rdquo; :lang=zh 参数解释 -o: 输出文件 &amp;ndash;from: 输入文件类型 &amp;ndash;template: 模版文件 &amp;ndash;listings: 列表 &amp;ndash;pdf-engine: pdf生成用的引擎 -V: 参数 CJKmainfont: 中文文字字体 pandoc &amp;#34;README.md&amp;#34; -o &amp;#34;document.pdf&amp;#34; --from markdown --template &amp;#34;./template.latex&amp;#34; --listings --pdf-engine &amp;#34;xelatex&amp;#34; -V CJKmainfont=&amp;#34;PingFang SC&amp;#34; &amp;amp;&amp;amp; open document.pdf data-dir DATADIR
+macos: ~/.local/share/pandoc
+windows: C:\Users\USERNAME\AppData\Roaming\pandoc
+defaults $DATADIR/defaults/docker.yaml，可以为不同的文档设置自己的defaults，避免后面重复操作，仅需使用pandoc --defaults docker即可打包文档
+from: markdown # reader: may be used instead of from: to: pdf # writer: may be used instead of to: # leave blank for output to stdout: output-file: docker.</description>
     </item>
     
   </channel>

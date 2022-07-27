@@ -19,7 +19,7 @@
       <description>Golang 开发环境准备和工具选择
 参考Alikhll/golang-developer-roadmap。
 更多关于golang的分享，参考Awesome-go
-环境准备  加速/私有模块  开发编辑器/IDE  vim vscode goland  软件选择  CLI工具开发  cobra   Web  Gin🍺 Echo🍺 Beego go-swagger Iris   ORM  Gorm🍺 Xorm   DB  PG🍺 Redis🍺 MongoDB   Log  Zap Logrus   Websocket  gorilla/websocket   Task schedule  Gron    CI/CD  gitlab CI/CD githu actions teamcity  部署选择  docker supervisor  </description>
+环境准备 加速/私有模块 开发编辑器/IDE vim vscode goland 软件选择 CLI工具开发 cobra Web Gin🍺 Echo🍺 Beego go-swagger Iris ORM Gorm🍺 Xorm DB PG🍺 Redis🍺 MongoDB Log Zap Logrus Websocket gorilla/websocket Task schedule Gron CI/CD gitlab CI/CD githu actions teamcity 部署选择 docker supervisor </description>
     </item>
     
     <item>
@@ -28,7 +28,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://26huitailang.github.io/posts/cheatsheet/pkg-manager/</guid>
-      <description>Cheatsheet for package manager  go mod pip apt ubuntu 20.04  pip pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+      <description>Cheatsheet for package manager go mod pip apt ubuntu 20.04 pip pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
 升级 pip 到最新的版本 (&amp;gt;=10.0.0) 后进行配置：
 pip install pip -U pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 如果您到 pip 默认源的网络连接较差，临时使用本镜像站来升级 pip：

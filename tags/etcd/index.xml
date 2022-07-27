@@ -15,7 +15,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://26huitailang.github.io/posts/etcd/readme/</guid>
-      <description>etcd 尝试 vagrant # -*- mode: ruby -*- # vi: set ft=ruby : servers = { :etcd1 =&amp;gt; &#39;192.168.1.21&#39;, :etcd2 =&amp;gt; &#39;192.168.1.22&#39;, :etcd3 =&amp;gt; &#39;192.168.1.23&#39; } Vagrant.configure(&amp;quot;2&amp;quot;) do |config| config.vm.box = &amp;quot;ubuntu/focal64&amp;quot; servers.each do |server_name, server_ip| config.vm.define server_name do |server_config| server_config.vm.hostname = &amp;quot;#{server_name.to_s}&amp;quot; server_config.vm.network :private_network, ip: server_ip server_config.vm.provider &amp;quot;virtualbox&amp;quot; do |vb| vb.name = server_name.to_s if vb.name == &amp;quot;etcd1&amp;quot; vb.memory = 1024 vb.cpus = 1 else vb.memory = 1024 vb.cpus = 1 end end end end end install install.</description>
+      <description>etcd 尝试 vagrant # -*- mode: ruby -*- # vi: set ft=ruby : servers = { :etcd1 =&amp;gt; &amp;#39;192.168.1.21&amp;#39;, :etcd2 =&amp;gt; &amp;#39;192.168.1.22&amp;#39;, :etcd3 =&amp;gt; &amp;#39;192.168.1.23&amp;#39; } Vagrant.configure(&amp;#34;2&amp;#34;) do |config| config.vm.box = &amp;#34;ubuntu/focal64&amp;#34; servers.each do |server_name, server_ip| config.vm.define server_name do |server_config| server_config.vm.hostname = &amp;#34;#{server_name.to_s}&amp;#34; server_config.vm.network :private_network, ip: server_ip server_config.vm.provider &amp;#34;virtualbox&amp;#34; do |vb| vb.name = server_name.to_s if vb.name == &amp;#34;etcd1&amp;#34; vb.memory = 1024 vb.cpus = 1 else vb.memory = 1024 vb.cpus = 1 end end end end end install install.</description>
     </item>
     
   </channel>

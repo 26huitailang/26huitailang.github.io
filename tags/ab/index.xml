@@ -16,11 +16,11 @@
       <pubDate>Thu, 06 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://26huitailang.github.io/posts/test/ab-test/</guid>
-      <description>Apache Bench Test   GET
+      <description>Apache Bench Test GET
 ab -c 10 -n 40 http://127.0.0.1:8000/api/v1/mzitu/tags/
-  POST, https://blog.csdn.net/chenggong2dm/article/details/51850923
+POST, https://blog.csdn.net/chenggong2dm/article/details/51850923
 ab -n 1 -c 1 -p f:/postdata.txt -T application/x-www-form-urlencoded &amp;ldquo;http://127.0.0.1/abpost&amp;rdquo; ab -n 100 -c 10 -p data.json -T application/json http://127.0.0.1/api
-  // postdata.txt </description>
+// postdata.txt </description>
     </item>
     
   </channel>

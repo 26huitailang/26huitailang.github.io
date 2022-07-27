@@ -20,8 +20,9 @@
 Install with docker Read the official documentation for how to install docker.
 I installed docker on the MacOS.
 gitlab documentation
-sudo docker run --detach \  --hostname 192.168.8.226 \  --publish 443:443 --publish 80:80 --publish 8022:22 \  --name gitlab \  --restart always \  --volume ~/gitlab/config:/etc/gitlab \  --volume ~/gitlab/logs:/var/log/gitlab \  --volume ~/gitlab/data:/var/opt/gitlab \  gitlab/gitlab-ce:latest gitlab-runner Order of initialization:
- install register custom config  documentation</description>
+sudo docker run --detach \ --hostname 192.168.8.226 \ --publish 443:443 --publish 80:80 --publish 8022:22 \ --name gitlab \ --restart always \ --volume ~/gitlab/config:/etc/gitlab \ --volume ~/gitlab/logs:/var/log/gitlab \ --volume ~/gitlab/data:/var/opt/gitlab \ gitlab/gitlab-ce:latest gitlab-runner Order of initialization:
+install register custom config documentation
+There is no difficulty to install gitlab and gitlab-runner in docker.</description>
     </item>
     
   </channel>

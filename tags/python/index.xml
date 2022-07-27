@@ -8,14 +8,40 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://26huitailang.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 27 Jul 2022 10:11:58 +0800</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fastapi</title>
+      <link>https://26huitailang.github.io/python/fastapi/</link>
+      <pubDate>Wed, 27 Jul 2022 10:11:58 +0800</pubDate>
+      
+      <guid>https://26huitailang.github.io/python/fastapi/</guid>
+      <description>middleware or dependency 官方说明
+场景：
+项目使用了sqlite+sqlalchemy，暂时不支持async方式访问，但是fastapi的middleware的 __call__ 方法必须是async，如果在middleware中去做用户会话管理等和db相关的io操作可能导致整个应用阻塞。
+解决：
+使用def的dependency组合完成相关操作
+官方对于两个组件的对比说明：
+middleware 代码多一些，更复杂一些 必须是async方法 任何需要IO代码的添加都可能导致整个应用速度变慢或者阻塞 每个请求都会执行相关代码，如果是db的话，即使路由函数不需要也会创建 </description>
+    </item>
+    
+    <item>
+      <title>Playwright</title>
+      <link>https://26huitailang.github.io/posts/test/playwright/</link>
+      <pubDate>Thu, 24 Mar 2022 17:12:16 +0800</pubDate>
+      
+      <guid>https://26huitailang.github.io/posts/test/playwright/</guid>
+      <description>image docker pull mcr.microsoft.com/playwright/python:v1.20.0-focal
+本地环境 pip install playwright -i https://pypi.tuna.tsinghua.edu.cn/simple playwright install</description>
+    </item>
+    
     <item>
       <title>Cheatsheet for pkg manager</title>
       <link>https://26huitailang.github.io/posts/cheatsheet/pkg-manager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://26huitailang.github.io/posts/cheatsheet/pkg-manager/</guid>
-      <description>Cheatsheet for package manager  go mod pip apt ubuntu 20.04  pip pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+      <description>Cheatsheet for package manager go mod pip apt ubuntu 20.04 pip pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
 升级 pip 到最新的版本 (&amp;gt;=10.0.0) 后进行配置：
 pip install pip -U pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 如果您到 pip 默认源的网络连接较差，临时使用本镜像站来升级 pip：
@@ -31,7 +57,7 @@ apt ubuntu 20.04
       
       <guid>https://26huitailang.github.io/posts/python/pdm/</guid>
       <description>github, A modern Python package manager with PEP 582 support.
- 仅在__pypackages__/&amp;lt;major.minor&amp;gt;包含必要的依赖和bin文件，没有解释器相关文件 就算python解释器被删除了，但是只要有其他符合pyproject.yoml规定版本的解释器即可，项目目录下的__pypackages__不包含解释器相关的内容，venv则必须重新关联或者重新创建  $ tree -L 3 __pypackages__ __pypackages__ └── 3.10 ├── bin │ ├── django-admin │ └── sqlformat ├── include └── lib ├── Django-4.0.1.dist-info ├── anyio ├── anyio-3.5.0.dist-info ├── asgiref ├── asgiref-3.4.1.dist-info ├── django ... install brew install pdm demo mkdir pdm-demo cd pdm-demo pdm init Creating a pyproject.toml for PDM... Please enter the Python interpreter to use .</description>
+仅在__pypackages__/&amp;lt;major.minor&amp;gt;包含必要的依赖和bin文件，没有解释器相关文件 就算python解释器被删除了，但是只要有其他符合pyproject.yoml规定版本的解释器即可，项目目录下的__pypackages__不包含解释器相关的内容，venv则必须重新关联或者重新创建 $ tree -L 3 __pypackages__ __pypackages__ └── 3.10 ├── bin │ ├── django-admin │ └── sqlformat ├── include └── lib ├── Django-4.0.1.dist-info ├── anyio ├── anyio-3.5.0.dist-info ├── asgiref ├── asgiref-3.4.1.dist-info ├── django ... install brew install pdm demo mkdir pdm-demo cd pdm-demo pdm init Creating a pyproject.toml for PDM... Please enter the Python interpreter to use ... 12. /usr/local/Cellar/pdm/1.</description>
     </item>
     
     <item>
@@ -42,7 +68,7 @@ apt ubuntu 20.04
       <guid>https://26huitailang.github.io/posts/python/pip/%E6%89%93%E5%8C%85%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</guid>
       <description>pip 离线安装 打包 注意，要在同平台打包，否则有些包不能正确安装。
 在已有的环境中，一般是一个虚拟环境：
- pip freeze &amp;gt; pip-requirements.txt pip download -d pip-packages -r pip-requirements.txt，将提取的包下载到pip-packages文件夹中  安装  将pip-requirements.txt和pip-packages文件夹，拷贝到目标环境的同目录下 pip install &amp;ndash;no-index &amp;ndash;find-links=pip-packages -r pip-requirements.txt  参考  断网环境下一键安装 python3 离线安装包及其依赖  </description>
+pip freeze &amp;gt; pip-requirements.txt pip download -d pip-packages -r pip-requirements.txt，将提取的包下载到pip-packages文件夹中 安装 将pip-requirements.txt和pip-packages文件夹，拷贝到目标环境的同目录下 pip install &amp;ndash;no-index &amp;ndash;find-links=pip-packages -r pip-requirements.txt 参考 断网环境下一键安装 python3 离线安装包及其依赖 </description>
     </item>
     
     <item>
@@ -52,15 +78,16 @@ apt ubuntu 20.04
       
       <guid>https://26huitailang.github.io/posts/python/pip/pipenv/</guid>
       <description>pipenv pip和virtualenv的组合，使用Pipfile来替换旧的requirements.txt方式。
- documentation zhihu 参考 segmentfault 参考  安装 安装到系统常用的python版本下，mac可以使用brew安装
-$ pip install pipenv  创建虚拟环境 $ pipenv install --three django  创建一个python3的虚拟环境并安装django，随机生成一个和当前文件夹名有关的虚拟环境。也可以用过--python 3.7指定python版本。
- TODO， 不能指定名称吗？  进入虚拟环境 $ pipenv shell  不过就算不进入环境，pipenv install依然可以正确安装包到对应的环境。
+documentation zhihu 参考 segmentfault 参考 安装 安装到系统常用的python版本下，mac可以使用brew安装
+$ pip install pipenv 创建虚拟环境 $ pipenv install --three django 创建一个python3的虚拟环境并安装django，随机生成一个和当前文件夹名有关的虚拟环境。也可以用过--python 3.7指定python版本。
+TODO， 不能指定名称吗？ 进入虚拟环境 $ pipenv shell 不过就算不进入环境，pipenv install依然可以正确安装包到对应的环境。
 新环境依赖 自动识别Pipfile，然后安装。
-$ pipenv install  一并安装开发环境的包：
-$ pipenv install --dev  区别开发环境 在安装包的时候添加一个--dev选项，会分类到开发依赖。
+$ pipenv install 一并安装开发环境的包：
+$ pipenv install --dev 区别开发环境 在安装包的时候添加一个--dev选项，会分类到开发依赖。
 更换源 更换Pipfile中的source-url
-[[source]] url = &amp;quot;https://mirrors.aliyun.com/pypi/simple&amp;quot; verify_ssl = true name = &amp;quot;pypi&amp;quot;  设置环境变量 PIPENV_PYPI_MIRROR 效果相同。类似指定&amp;ndash;pypi-mirror选项：
-$ pipenv install --pypi-mirror https://mirrors.</description>
+[[source]] url = &amp;quot;https://mirrors.aliyun.com/pypi/simple&amp;quot; verify_ssl = true name = &amp;quot;pypi&amp;quot; 设置环境变量 PIPENV_PYPI_MIRROR 效果相同。类似指定&amp;ndash;pypi-mirror选项：
+$ pipenv install --pypi-mirror https://mirrors.aliyun.com/pypi/simple 查看安装的包 $ pipenv graph 不仅可以看到安装包，还可以看到依赖关系。
+Django==2.1.7 - pytz [required: Any, installed: 2018.</description>
     </item>
     
     <item>
