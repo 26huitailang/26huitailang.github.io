@@ -9,7 +9,25 @@
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 27 Jul 2022 10:11:58 +0800</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>proxy</title>
+      <link>https://26huitailang.github.io/tags/proxy/</link>
+      <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://26huitailang.github.io/tags/proxy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test</title>
+      <link>https://26huitailang.github.io/tags/test/</link>
+      <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://26huitailang.github.io/tags/test/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>fastapi</title>
       <link>https://26huitailang.github.io/tags/fastapi/</link>
@@ -34,15 +52,6 @@
       <pubDate>Thu, 24 Mar 2022 17:12:16 +0800</pubDate>
       
       <guid>https://26huitailang.github.io/tags/playwright/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>test</title>
-      <link>https://26huitailang.github.io/tags/test/</link>
-      <pubDate>Thu, 24 Mar 2022 17:12:16 +0800</pubDate>
-      
-      <guid>https://26huitailang.github.io/tags/test/</guid>
       <description></description>
     </item>
     

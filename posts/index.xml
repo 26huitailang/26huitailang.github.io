@@ -9,7 +9,31 @@
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 24 Mar 2022 17:12:16 +0800</lastBuildDate><atom:link href="https://26huitailang.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Proxy Test</title>
+      <link>https://26huitailang.github.io/posts/test/proxy-test/</link>
+      <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://26huitailang.github.io/posts/test/proxy-test/</guid>
+      <description>socks5 # 监听1080为代理地址 ssh -f -N -D 0.0.0.0:1080 root@127.0.0.1 # test curl -v -k -x &amp;#34;socks5://USER:PASSWORD@HOSTIP:1080&amp;#34; https://baidu.com ssh </description>
+    </item>
+    
+    <item>
+      <title>Fastapi</title>
+      <link>https://26huitailang.github.io/posts/python/fastapi/</link>
+      <pubDate>Wed, 27 Jul 2022 10:11:58 +0800</pubDate>
+      
+      <guid>https://26huitailang.github.io/posts/python/fastapi/</guid>
+      <description>middleware or dependency 官方说明
+场景：
+项目使用了sqlite+sqlalchemy，暂时不支持async方式访问，但是fastapi的middleware的 __call__ 方法必须是async，如果在middleware中去做用户会话管理等和db相关的io操作可能导致整个应用阻塞。
+解决：
+使用def的dependency组合完成相关操作
+官方对于两个组件的对比说明：
+middleware 代码多一些，更复杂一些 必须是async方法 任何需要IO代码的添加都可能导致整个应用速度变慢或者阻塞 每个请求都会执行相关代码，如果是db的话，即使路由函数不需要也会创建 </description>
+    </item>
+    
     <item>
       <title>Playwright</title>
       <link>https://26huitailang.github.io/posts/test/playwright/</link>
