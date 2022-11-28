@@ -19,7 +19,7 @@
       <description>Golang 开发环境准备和工具选择
 参考Alikhll/golang-developer-roadmap。
 更多关于golang的分享，参考Awesome-go
-环境准备 加速/私有模块 开发编辑器/IDE vim vscode goland 软件选择 CLI工具开发 cobra Web Gin🍺 Echo🍺 Beego go-swagger Iris ORM Gorm🍺 Xorm DB PG🍺 Redis🍺 MongoDB Log Zap Logrus Websocket gorilla/websocket Task schedule Gron CI/CD gitlab CI/CD githu actions teamcity 部署选择 docker supervisor </description>
+环境准备 加速/私有模块 开发编辑器/IDE vim vscode goland 软件选择 CLI工具开发 cobra Config viper Web Gin🍺 Echo🍺 Beego go-swagger Iris ORM Gorm🍺 Xorm DB PG🍺 Redis🍺 MongoDB Log Zap🍺 Logrus Websocket gorilla/websocket Task schedule Gron test testify convey, bdd CI/CD gitlab CI/CD githu actions teamcity 部署选择 docker supervisor </description>
     </item>
     
     <item>

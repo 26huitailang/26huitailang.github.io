@@ -247,7 +247,7 @@ If file feature is important. You&amp;rsquo;d better be independent from the api
       <description>Golang 开发环境准备和工具选择
 参考Alikhll/golang-developer-roadmap。
 更多关于golang的分享，参考Awesome-go
-环境准备 加速/私有模块 开发编辑器/IDE vim vscode goland 软件选择 CLI工具开发 cobra Web Gin🍺 Echo🍺 Beego go-swagger Iris ORM Gorm🍺 Xorm DB PG🍺 Redis🍺 MongoDB Log Zap Logrus Websocket gorilla/websocket Task schedule Gron CI/CD gitlab CI/CD githu actions teamcity 部署选择 docker supervisor </description>
+环境准备 加速/私有模块 开发编辑器/IDE vim vscode goland 软件选择 CLI工具开发 cobra Config viper Web Gin🍺 Echo🍺 Beego go-swagger Iris ORM Gorm🍺 Xorm DB PG🍺 Redis🍺 MongoDB Log Zap🍺 Logrus Websocket gorilla/websocket Task schedule Gron test testify convey, bdd CI/CD gitlab CI/CD githu actions teamcity 部署选择 docker supervisor </description>
     </item>
     
     <item>
@@ -267,8 +267,7 @@ If file feature is important. You&amp;rsquo;d better be independent from the api
       
       <guid>https://26huitailang.github.io/posts/tools/toolbox/</guid>
       <description>Tool Hub 各个分类的工具汇总
-开发 代码 nvim vscode jetbrains vim 接口测试 postman httpie jebrains http test curl 接口mock测试 httpretty: a full fake TCP socket module. Inspired by FakeWeb(ruby), 用于模拟http外部访问请求 responses: A utility for mocking out the Python Requests library. 接口性能测试 vegeta pssh + vegeta, pssh并行在多个计算机中执行命令，vegeta接口性能测试工具，支持代码修改、命令模式，输出json、text、gob、html等格式 apache benchmark(ab) 代码性能分析 Python memray pytest-memray py-spy, Never use print for debugging again PySnooper, Never use print for debugging again 文档 markdown：
-typora，已收费 vscode + markdown + mermaid plugin markdown mermaid plantUML pandoc 构建文档 i18n poedit redis another redis desktop manager redis desktop manager 密码 keepass, windows macpass, macos, keepss的mac实现 输入效率 atext, windows copyQ, windows afred, macos dash, macos ssh/sftp transmit, macos xshell, windows mobaxterm, windows 作图 工具 功能 价格 地址 draw.</description>
+开发 代码 nvim vscode jetbrains vim 代码管理 gitea gitlab CI drone jetbrains teamcity gitlab 接口测试 postman httpie jebrains http test curl 接口mock测试 httpretty: a full fake TCP socket module. Inspired by FakeWeb(ruby), 用于模拟http外部访问请求 responses: A utility for mocking out the Python Requests library. 接口性能测试 vegeta pssh + vegeta, pssh并行在多个计算机中执行命令，vegeta接口性能测试工具，支持代码修改、命令模式，输出json、text、gob、html等格式 apache benchmark(ab) 代码性能分析 Python memray pytest-memray py-spy, Never use print for debugging again PySnooper, Never use print for debugging again 文档 markdown：</description>
     </item>
     
     <item>
