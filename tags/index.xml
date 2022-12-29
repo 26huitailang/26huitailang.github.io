@@ -9,7 +9,25 @@
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 14 Oct 2022 15:36:32 +0800</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Dec 2022 11:22:50 +0800</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>i18n</title>
+      <link>https://26huitailang.github.io/tags/i18n/</link>
+      <pubDate>Thu, 29 Dec 2022 11:22:50 +0800</pubDate>
+      
+      <guid>https://26huitailang.github.io/tags/i18n/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ocr</title>
+      <link>https://26huitailang.github.io/tags/ocr/</link>
+      <pubDate>Thu, 29 Dec 2022 11:22:50 +0800</pubDate>
+      
+      <guid>https://26huitailang.github.io/tags/ocr/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>compile</title>
       <link>https://26huitailang.github.io/tags/compile/</link>

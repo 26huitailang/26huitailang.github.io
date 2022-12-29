@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ocr on Peter&#39;s Blog</title>
+    <link>https://26huitailang.github.io/tags/ocr/</link>
+    <description>Recent content in ocr on Peter&#39;s Blog</description>
+    <image>
+      <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 29 Dec 2022 11:22:50 +0800</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/ocr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OCR</title>
+      <link>https://26huitailang.github.io/posts/tools/ocr/</link>
+      <pubDate>Thu, 29 Dec 2022 11:22:50 +0800</pubDate>
+      
+      <guid>https://26huitailang.github.io/posts/tools/ocr/</guid>
+      <description>brew install tesseract pngpaste brew install tesseract-lang # 语言支持 ctrl + shift + command + 4 截图
+pngpaste - | tesseract -l chi_sim stdin stdout 加入zsh alias,.zshrc
+alias ocr=&amp;#39;pngpaste - | tesseract -l chi_sim stdin stdout&amp;#39; </description>
+    </item>
+    
+  </channel>
+</rss>

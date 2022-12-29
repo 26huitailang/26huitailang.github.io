@@ -9,7 +9,27 @@
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 14 Oct 2022 15:36:32 +0800</lastBuildDate><atom:link href="https://26huitailang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Dec 2022 11:22:50 +0800</lastBuildDate><atom:link href="https://26huitailang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>i18n</title>
+      <link>https://26huitailang.github.io/posts/i18n/i18n/</link>
+      <pubDate>Thu, 29 Dec 2022 11:22:50 +0800</pubDate>
+      
+      <guid>https://26huitailang.github.io/posts/i18n/i18n/</guid>
+      <description>msgfmt -c zh_HK.po -o zh_HK.mo </description>
+    </item>
+    
+    <item>
+      <title>OCR</title>
+      <link>https://26huitailang.github.io/posts/tools/ocr/</link>
+      <pubDate>Thu, 29 Dec 2022 11:22:50 +0800</pubDate>
+      
+      <guid>https://26huitailang.github.io/posts/tools/ocr/</guid>
+      <description>brew install tesseract pngpaste brew install tesseract-lang # 语言支持 ctrl + shift + command + 4 截图
+pngpaste - | tesseract -l chi_sim stdin stdout 加入zsh alias,.zshrc
+alias ocr=&amp;#39;pngpaste - | tesseract -l chi_sim stdin stdout&amp;#39; </description>
+    </item>
+    
     <item>
       <title>Compile</title>
       <link>https://26huitailang.github.io/posts/python/compile/</link>
