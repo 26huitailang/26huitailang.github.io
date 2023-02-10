@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>dependency on Peter&#39;s Blog</title>
+    <link>https://26huitailang.github.io/tags/dependency/</link>
+    <description>Recent content in dependency on Peter&#39;s Blog</description>
+    <image>
+      <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 10 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/dependency/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pip dependency</title>
+      <link>https://26huitailang.github.io/posts/python/pip/dependency/</link>
+      <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://26huitailang.github.io/posts/python/pip/dependency/</guid>
+      <description>查看依赖 工具 pipdeptree
+支持正向、反向查看依赖 多种格式输出，安装了graphviz还可以输出图形 [root@10-113-57-176 /] pip install pipdeptree [root@10-113-57-176 /] pipdeptree --help usage: pipdeptree [-h] [-v] [-f] [--python PYTHON] [-a] [-l] [-u] [-w [{silence,suppress,fail}]] [-r] [-p PACKAGES] [-e PACKAGES] [-j] [--json-tree] [--graph-output OUTPUT_FORMAT] Dependency tree of the installed python packages optional arguments: -h, --help show this help message and exit -v, --version show program&amp;#39;s version number and exit -f, --freeze Print names so as to write freeze files --python PYTHON Python to use to look for packages in it (default: where installed) -a, --all list all deps at top level -l, --local-only If in a virtualenv that has global access do not show globally installed packages -u, --user-only Only show installations in the user site dir -w [{silence,suppress,fail}], --warn [{silence,suppress,fail}] Warning control.</description>
+    </item>
+    
+  </channel>
+</rss>

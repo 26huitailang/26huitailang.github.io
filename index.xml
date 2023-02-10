@@ -9,7 +9,38 @@
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 29 Dec 2022 11:22:50 +0800</lastBuildDate><atom:link href="https://26huitailang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pip dependency</title>
+      <link>https://26huitailang.github.io/posts/python/pip/dependency/</link>
+      <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://26huitailang.github.io/posts/python/pip/dependency/</guid>
+      <description>查看依赖 工具 pipdeptree
+支持正向、反向查看依赖 多种格式输出，安装了graphviz还可以输出图形 [root@10-113-57-176 /] pip install pipdeptree [root@10-113-57-176 /] pipdeptree --help usage: pipdeptree [-h] [-v] [-f] [--python PYTHON] [-a] [-l] [-u] [-w [{silence,suppress,fail}]] [-r] [-p PACKAGES] [-e PACKAGES] [-j] [--json-tree] [--graph-output OUTPUT_FORMAT] Dependency tree of the installed python packages optional arguments: -h, --help show this help message and exit -v, --version show program&amp;#39;s version number and exit -f, --freeze Print names so as to write freeze files --python PYTHON Python to use to look for packages in it (default: where installed) -a, --all list all deps at top level -l, --local-only If in a virtualenv that has global access do not show globally installed packages -u, --user-only Only show installations in the user site dir -w [{silence,suppress,fail}], --warn [{silence,suppress,fail}] Warning control.</description>
+    </item>
+    
+    <item>
+      <title>Daylight Saving Time</title>
+      <link>https://26huitailang.github.io/posts/linux/daylight/</link>
+      <pubDate>Wed, 04 Jan 2023 13:22:46 +0800</pubDate>
+      
+      <guid>https://26huitailang.github.io/posts/linux/daylight/</guid>
+      <description>参考 https://www.cnblogs.com/zihanxing/articles/6224263.html
+验证 zdump -v /usr/share/zoneinfo/America/Los_Angeles ｜ grep 2022 ln -sf /usr/share/zoneinfo/America/Los_Angeles /etc/localtime service ntpd stop date -s &amp;#34;2022-03-13 01:59:40&amp;#34; for i in `seq 1 1000`;do date;python -c &amp;#39;import time;print(int(time.time()))&amp;#39;;python -c &amp;#39;import datetime;print(datetime.datetime.now())&amp;#39;;sleep 1;done </description>
+    </item>
+    
+    <item>
+      <title>rsyslog</title>
+      <link>https://26huitailang.github.io/posts/linux/rsyslog/</link>
+      <pubDate>Wed, 04 Jan 2023 13:22:46 +0800</pubDate>
+      
+      <guid>https://26huitailang.github.io/posts/linux/rsyslog/</guid>
+      <description>man page https://man7.org/linux/man-pages/man3/syslog.3.html
+install yum install rsyslog systemctl start rsyslog systemctl enable rsyslog systemctl status rsyslog config server
+# for udp #module(load=”imudp”) #input(type=”imudp” port=”514&amp;#34;) # for tcp #module(load=”imtcp”) #input(type=”imtcp” port=”514&amp;#34;) facility: the type of process sending logs, can be kernel, cron, daemon, etc. priority: the security level or type of log, emerg (0), alert (1), crit (2), err-(3), warn (4), notice (5), info (6), debug (7). destination: location to save log messages, local file host (/var/log directory), or remote syslog server identified by @ IP:port.</description>
+    </item>
+    
     <item>
       <title>i18n</title>
       <link>https://26huitailang.github.io/posts/i18n/i18n/</link>

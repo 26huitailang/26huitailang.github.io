@@ -9,7 +9,52 @@
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 29 Dec 2022 11:22:50 +0800</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dependency</title>
+      <link>https://26huitailang.github.io/tags/dependency/</link>
+      <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://26huitailang.github.io/tags/dependency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pip</title>
+      <link>https://26huitailang.github.io/tags/pip/</link>
+      <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://26huitailang.github.io/tags/pip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dst</title>
+      <link>https://26huitailang.github.io/tags/dst/</link>
+      <pubDate>Wed, 04 Jan 2023 13:22:46 +0800</pubDate>
+      
+      <guid>https://26huitailang.github.io/tags/dst/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rsyslog</title>
+      <link>https://26huitailang.github.io/tags/rsyslog/</link>
+      <pubDate>Wed, 04 Jan 2023 13:22:46 +0800</pubDate>
+      
+      <guid>https://26huitailang.github.io/tags/rsyslog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>time</title>
+      <link>https://26huitailang.github.io/tags/time/</link>
+      <pubDate>Wed, 04 Jan 2023 13:22:46 +0800</pubDate>
+      
+      <guid>https://26huitailang.github.io/tags/time/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>i18n</title>
       <link>https://26huitailang.github.io/tags/i18n/</link>
@@ -403,15 +448,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://26huitailang.github.io/tags/pdm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pip</title>
-      <link>https://26huitailang.github.io/tags/pip/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://26huitailang.github.io/tags/pip/</guid>
       <description></description>
     </item>
     
