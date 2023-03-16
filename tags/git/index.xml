@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>git on Peter&#39;s Blog</title>
+    <link>https://26huitailang.github.io/tags/git/</link>
+    <description>Recent content in git on Peter&#39;s Blog</description>
+    <image>
+      <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 04 Jan 2023 13:22:46 +0800</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Statistics</title>
+      <link>https://26huitailang.github.io/posts/git/statistics/</link>
+      <pubDate>Wed, 04 Jan 2023 13:22:46 +0800</pubDate>
+      
+      <guid>https://26huitailang.github.io/posts/git/statistics/</guid>
+      <description>工具 hercules go，维护良好，较为复杂，可以尝试
+https://github.com/src-d/hercules
+gitinspector Python 但是最后一次维护是Oct 19, 2020，不能在py3下运行，可以尝试
+https://github.com/ejwa/gitinspector
+git-stats 合并程序是二进制，输出是js，不好改造
+https://github.com/IonicaBizau/git-stats
+git-quick-stats written by shell(不太好改造)，持续有维护，可以尝试
+https://github.com/arzzen/git-quick-stats#macos-homebrew
+brew install git-quick-stats
+You can use the Docker image provided:
+Build: docker build -t arzzen/git-quick-stats . Run interactive menu: docker run --rm -it -v $(pwd):/git arzzen/git-quick-stats Docker pull command: docker pull arzzen/git-quick-stats docker repository docker run --rm -it -e _GIT_SINCE=&amp;#34;2017-01-20&amp;#34; -v $(pwd):/git arzzen/git-quick-stats -j 统计 代码量 git log &amp;ndash;format=&amp;rsquo;%aN&amp;rsquo; | sort -u | while read name; do echo -en &amp;ldquo;$name\t&amp;rdquo;; git log &amp;ndash;author=&amp;quot;$name&amp;quot; &amp;ndash;pretty=tformat: &amp;ndash;since=2020-02-03 &amp;ndash;until=2020-03-27 &amp;ndash;numstat | awk &amp;lsquo;{ add += $1; subs += $2; loc += $1 - $2 } END { printf &amp;ldquo;added lines: %s, removed lines: %s, total lines: %s\n&amp;rdquo;, add, subs, loc }&amp;rsquo; -; done</description>
+    </item>
+    
+  </channel>
+</rss>
