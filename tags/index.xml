@@ -9,7 +9,25 @@
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 10 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>devops</title>
+      <link>https://26huitailang.github.io/tags/devops/</link>
+      <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://26huitailang.github.io/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fabric3</title>
+      <link>https://26huitailang.github.io/tags/fabric3/</link>
+      <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://26huitailang.github.io/tags/fabric3/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>dependency</title>
       <link>https://26huitailang.github.io/tags/dependency/</link>
