@@ -5,6 +5,7 @@
     <link>https://26huitailang.github.io/</link>
     <description>Recent content on Peter&#39;s Blog</description>
     <image>
+      <title>Peter&#39;s Blog</title>
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
@@ -501,7 +502,9 @@ Our mission is to be the trusted cloud native repository for Kubernetes</descrip
       <guid>https://26huitailang.github.io/posts/python/pip/%E6%89%93%E5%8C%85%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</guid>
       <description>pip 离线安装 打包 注意，要在同平台打包，否则有些包不能正确安装。
 在已有的环境中，一般是一个虚拟环境：
-pip freeze &amp;gt; pip-requirements.txt pip download -d pip-packages -r pip-requirements.txt，将提取的包下载到pip-packages文件夹中 安装 将pip-requirements.txt和pip-packages文件夹，拷贝到目标环境的同目录下 pip install &amp;ndash;no-index &amp;ndash;find-links=pip-packages -r pip-requirements.txt 参考 断网环境下一键安装 python3 离线安装包及其依赖 </description>
+pip freeze &amp;gt; pip-requirements.txt pip download -d pip-packages -r pip-requirements.txt，将提取的包下载到pip-packages文件夹中 安装 将pip-requirements.txt和pip-packages文件夹，拷贝到目标环境的同目录下 pip install &amp;ndash;no-index &amp;ndash;find-links=pip-packages -r pip-requirements.txt 参考 断网环境下一键安装 python3 离线安装包及其依赖 下载依赖 pip-download
+example
+pip install pip-download pip-download -p win_amd64 -p none-any fabric </description>
     </item>
     
     <item>
