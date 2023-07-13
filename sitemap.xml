@@ -2,22 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://26huitailang.github.io/tags/golang/</loc>
+    <lastmod>2023-07-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://26huitailang.github.io/</loc>
-    <lastmod>2023-05-17T21:57:16+08:00</lastmod>
+    <lastmod>2023-07-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/posts/</loc>
-    <lastmod>2023-05-17T21:57:16+08:00</lastmod>
+    <lastmod>2023-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/tags/python/</loc>
+    <lastmod>2023-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/tags/</loc>
+    <lastmod>2023-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/posts/devenv/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</loc>
+    <lastmod>2023-07-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/tags/pyenv/</loc>
     <lastmod>2023-05-17T21:57:16+08:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/posts/python/pyenv/</loc>
-    <lastmod>2023-05-17T21:57:16+08:00</lastmod>
-  </url><url>
-    <loc>https://26huitailang.github.io/tags/python/</loc>
-    <lastmod>2023-05-17T21:57:16+08:00</lastmod>
-  </url><url>
-    <loc>https://26huitailang.github.io/tags/</loc>
     <lastmod>2023-05-17T21:57:16+08:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/tags/devops/</loc>
@@ -217,12 +223,6 @@
   </url><url>
     <loc>https://26huitailang.github.io/posts/k3s/k3s/</loc>
     <lastmod>2020-05-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://26huitailang.github.io/tags/golang/</loc>
-    <lastmod>2020-05-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://26huitailang.github.io/posts/golang/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</loc>
-    <lastmod>2020-05-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/tags/multipass/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>

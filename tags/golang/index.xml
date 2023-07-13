@@ -11,17 +11,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 07 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Golang搭建环境</title>
-      <link>https://26huitailang.github.io/posts/golang/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
-      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      <title>开发环境</title>
+      <link>https://26huitailang.github.io/posts/devenv/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://26huitailang.github.io/posts/golang/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
-      <description>Golang 开发环境准备和工具选择
+      <guid>https://26huitailang.github.io/posts/devenv/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
+      <description>开发编辑器/IDE vim vscode goland pycharm CI/CD gitlab CI/CD github actions teamcity 部署选择 docker supervisor pm2 systemd 网络工具 wireshark socat tcpdump Go Golang 开发环境准备和工具选择
 参考Alikhll/golang-developer-roadmap。
 更多关于golang的分享，参考Awesome-go
-环境准备 加速/私有模块 开发编辑器/IDE vim vscode goland 软件选择 CLI工具开发 cobra Config viper Web Gin🍺 Echo🍺 Beego go-swagger Iris ORM Gorm🍺 Xorm DB PG🍺 Redis🍺 MongoDB Log Zap🍺 Logrus Websocket gorilla/websocket Task schedule Gron test testify convey, bdd CI/CD gitlab CI/CD githu actions teamcity 部署选择 docker supervisor </description>
+包管理 加速/私有模块 组件 CLI工具开发 cobra Config viper Web Gin🍺 Echo🍺 Beego go-swagger Iris ORM Gorm🍺 Xorm DB PG🍺 Redis🍺 MongoDB Log Zap🍺 Logrus Websocket gorilla/websocket Task schedule Gron test testify convey, bdd python lint black isort darker </description>
     </item>
     
     <item>
