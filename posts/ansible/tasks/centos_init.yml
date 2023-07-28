@@ -1,0 +1,35 @@
+---
+- name: Install epel-release
+  yum:
+    name: epel-release
+    state: latest
+    update_cache: yes
+
+- name: Install vim/git
+  yum:
+    name: "{{ packages }}"
+    state: latest
+    update_cache: yes
+  vars:
+    packages:
+      - vim
+      - git
+
+- name: check python3
+  shell: test -e /usr/bin/python3
+  register: check_python3
+  ignore_errors: yes
+- name: link python3
+  shell: |
+    ln -s -f {{ python_install_dir }}/bin/python3 /usr/bin/python3
+  register: link_python3
+  when: check_python3.rc != 0
+- name: check pip3
+  shell: test -e /usr/bin/pip3
+  register: check_pip3
+  ignore_errors: yes
+- name: link pip3
+  shell: |
+    ln -s -f {{ python_install_dir }}/bin/pip3 /usr/bin/pip3
+  register: link_pip3
+  when: check_pip3.rc != 0

@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Jul 2023 10:14:14 +0800</lastBuildDate><atom:link href="https://26huitailang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rsync</title>
+      <link>https://26huitailang.github.io/posts/tools/rsync/</link>
+      <pubDate>Fri, 28 Jul 2023 10:14:14 +0800</pubDate>
+      
+      <guid>https://26huitailang.github.io/posts/tools/rsync/</guid>
+      <description>Desc Text.</description>
+    </item>
+    
     <item>
       <title>开发环境</title>
       <link>https://26huitailang.github.io/posts/devenv/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
@@ -178,10 +187,10 @@ ssh root@host.docker.internal -p 2222 </description>
       <pubDate>Mon, 27 Dec 2021 11:22:50 +0800</pubDate>
       
       <guid>https://26huitailang.github.io/posts/tools/neovim/</guid>
-      <description>installation brew install neovim plugin use https://github.com/junegunn/vim-plug, install this first：
-sh -c &amp;#39;curl -fLo &amp;#34;${XDG_DATA_HOME:-$HOME/.local/share}&amp;#34;/nvim/site/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim&amp;#39; mkdir ~/.config/nvim/ nvim ~/.config/nvim/init.vim cat &amp;lt;&amp;lt; EOF &amp;gt; ~/.config/nvim/init.vim call plug#begin(&amp;#39;~/.vim/plugged&amp;#39;) call plug#end() EOF write Plug &#39;fatih/vim-go&#39; between call run :PlugInstall vim config is .vimrc language support use coc.nvim
-Plug &amp;#39;neoclide/coc.nvim&amp;#39;, {&amp;#39;branch&amp;#39;: &amp;#39;release&amp;#39;} :PlugInstall coc-settings.json
-{ &amp;#34;languageserver&amp;#34;: { &amp;#34;go&amp;#34;: { &amp;#34;command&amp;#34;: &amp;#34;gopls&amp;#34;, &amp;#34;rootPatterns&amp;#34;: [&amp;#34;go.mod&amp;#34;], &amp;#34;trace.server&amp;#34;: &amp;#34;verbose&amp;#34;, &amp;#34;filetypes&amp;#34;: [&amp;#34;go&amp;#34;] } } } problem:</description>
+      <description>installation brew install neovim brew install font-hack-nerd-font brew install ripgrep fzf brew install efm-langserver lazy-nvim tokyonight lualine barbecue bufferline indent_blankline gitsigns.nvim alpha-nvim nvim-telescope https://github.com/nvim-treesitter/nvim-treesitter https://github.com/nvim-treesitter/nvim-treesitter-textobjects https://github.com/neovim/nvim-lspconfig https://github.com/williamboman/mason.nvim https://github.com/hrsh7th/nvim-cmp lsp-format treesitter-playground
+lazyvim 参考 kickstart nvim 参考 了解 vim text object概念
+plugin use https://github.com/junegunn/vim-plug, install this first：
+sh -c &amp;#39;curl -fLo &amp;#34;${XDG_DATA_HOME:-$HOME/.local/share}&amp;#34;/nvim/site/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim&amp;#39; mkdir ~/.config/nvim/ nvim ~/.config/nvim/init.vim cat &amp;lt;&amp;lt; EOF &amp;gt; ~/.config/nvim/init.vim call plug#begin(&amp;#39;~/.vim/plugged&amp;#39;) call plug#end() EOF write Plug &#39;fatih/vim-go&#39; between call run :PlugInstall vim config is .</description>
     </item>
     
     <item>
@@ -423,6 +432,20 @@ Error saving credentials: error storing credentials - err: exit status 1, out: `
 将镜像推送到Registry $ sudo docker login --username=26huitailang@gmail.com registry.cn-hangzhou.aliyuncs.com $ sudo docker tag [ImageId] registry.cn-hangzhou.aliyuncs.com/26huitailang/golang-web:[镜像版本号] $ sudo docker push registry.cn-hangzhou.aliyuncs.com/26huitailang/golang-web:[镜像版本号] 请根据实际镜像信息替换示例中的[ImageId]和[镜像版本号]参数。
 选择合适的镜像仓库地址 从ECS推送镜像时，可以选择使用镜像仓库内网地址。推送速度将得到提升并且将不会损耗您的公网流量。
 如果您使用的机器位于VPC网络，请使用 registry-vpc.cn-hangzhou.aliyuncs.com 作为Registry的域名登录，并作为镜像命名空间前缀。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://26huitailang.github.io/posts/ansible/ansible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://26huitailang.github.io/posts/ansible/ansible/</guid>
+      <description>ansible ref quick-start 流程 环境准备 创建三个虚拟机, ansible(安装 ansible 的机器), vm1, vm2
+使用 ssh-keygen 生成公私钥
+ssh-copy-id name@host 配置免密登陆
+安装 ansible
+$ apt install -y ansible
+配置 ➜ ~ pwd /root ➜ ~ cat ansible.cfg [defaults] inventory = $HOME/hosts ➜ ~ cat hosts [webservers] vm1 [dbservers] vm2 ➜ ~ cat /etc/hosts 127.0.0.1	localhost 127.0.1.1	ansible.ansible	ansible # The following lines are desirable for IPv6 capable hosts ::1 localhost ip6-localhost ip6-loopback ff02::1 ip6-allnodes ff02::2 ip6-allrouters # ansible 10.</description>
     </item>
     
     <item>
