@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>dev-tools on Peter&#39;s Blog</title>
+    <link>https://26huitailang.github.io/tags/dev-tools/</link>
+    <description>Recent content in dev-tools on Peter&#39;s Blog</description>
+    <image>
+      <title>Peter&#39;s Blog</title>
+      <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 03 Aug 2023 17:33:23 +0800</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/dev-tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vscode</title>
+      <link>https://26huitailang.github.io/posts/devenv/vscode/</link>
+      <pubDate>Thu, 03 Aug 2023 17:33:23 +0800</pubDate>
+      
+      <guid>https://26huitailang.github.io/posts/devenv/vscode/</guid>
+      <description>Desc Text.</description>
+    </item>
+    
+  </channel>
+</rss>

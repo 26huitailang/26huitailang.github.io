@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 Jul 2023 10:14:14 +0800</lastBuildDate><atom:link href="https://26huitailang.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Aug 2023 17:33:23 +0800</lastBuildDate><atom:link href="https://26huitailang.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vscode</title>
+      <link>https://26huitailang.github.io/posts/devenv/vscode/</link>
+      <pubDate>Thu, 03 Aug 2023 17:33:23 +0800</pubDate>
+      
+      <guid>https://26huitailang.github.io/posts/devenv/vscode/</guid>
+      <description>Desc Text.</description>
+    </item>
+    
     <item>
       <title>Rsync</title>
       <link>https://26huitailang.github.io/posts/tools/rsync/</link>
