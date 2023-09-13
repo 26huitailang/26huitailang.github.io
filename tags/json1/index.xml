@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>json1 on Peter&#39;s Blog</title>
+    <link>https://26huitailang.github.io/tags/json1/</link>
+    <description>Recent content in json1 on Peter&#39;s Blog</description>
+    <image>
+      <title>Peter&#39;s Blog</title>
+      <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 26 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/json1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>sqlite视图</title>
+      <link>https://26huitailang.github.io/posts/database/sqlite/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://26huitailang.github.io/posts/database/sqlite/</guid>
+      <description>问题 在Centos上遇到sqlite3版本过低的问题, 3.7., 但是django要求版本不低于3.8., 自己编译升级后, 还是无法解决: 原因是python找寻动态库的位置不对
+# 下载并解压 [root@linux ~]# wget https://www.sqlite.org/2019/sqlite-autoconf-3270200.tar.gz [root@linux ~]# tar xf sqlite-autoconf-3270200.tar.gz # configure 生成makefile并指定安装路径 [root@linux ~]# cd sqlite-autoconf-3270200 [root@linux sqlite-autoconf-3270200]# ./configure --prefix=/usr/local/ [root@linux sqlite-autoconf-3270200]# make &amp;amp;&amp;amp; make install # 备份旧版本 [root@linux ~]# mv /usr/bin/sqlite3 /usr/bin/sqlite3_backupold # 链接新版本 [root@linux ~]# ln -s /usr/local/bin/sqlite3 /usr/bin/sqlite3 # 环境变量设置 [root@linux ~]# vim ~/.bashrc 添加内容如下, LD_LIBRARY_PATH 默认是没有设置的, 如果设置了会优先使用
+export LD_LIBRARY_PATH=&amp;#34;/usr/local/lib&amp;#34; json1 参考：howto_get_going_with_sqlite_json1
+使用版本3.7.17，最低支持版本3.9.0
+尝试编译json.so 去3.7.17中.load json.so 结论：3.7.17 可以加载，但是运行报错segmentation fault，应该还是有代码不兼容，直接在3.</description>
+    </item>
+    
+  </channel>
+</rss>
