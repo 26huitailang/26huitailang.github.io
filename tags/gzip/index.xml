@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gzip on Peter&#39;s Blog</title>
     <link>https://26huitailang.github.io/tags/gzip/</link>
@@ -11,17 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/gzip/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 May 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://26huitailang.github.io/tags/gzip/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Django打开gzip导致文件流content-length丢失</title>
       <link>https://26huitailang.github.io/posts/django/gzip/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/django/gzip/</guid>
       <description>Django打开gzip导致文件流content-length丢失 code GZipMiddleware
 use gzip middleware will del response[&#39;Content-Length&#39;] if response.streaming. nginx gzip is the same problem.
 If file feature is important. You&amp;rsquo;d better be independent from the api or system.</description>
     </item>
-    
   </channel>
 </rss>

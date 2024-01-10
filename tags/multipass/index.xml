@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>multipass on Peter&#39;s Blog</title>
     <link>https://26huitailang.github.io/tags/multipass/</link>
@@ -11,16 +11,15 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 23 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/multipass/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://26huitailang.github.io/tags/multipass/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Multipass</title>
       <link>https://26huitailang.github.io/posts/linux/ubuntu/multipass/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/linux/ubuntu/multipass/</guid>
       <description>multipass to set development environment 官网
 指定配置 $ multipass launch --name XXX -c 2 -d 20G -m 2G 删除 $ multipass delete --purge XXXXX 问题 macos下面使用virtualbox暂时拿不到ip，只能使用NAT，最好使用hyperkit windows下面也不行，尝试添加第二个网络(gui操作 or vboxmanager)，我这里使用了桥接，之后修改/etc/network/interfaces填写相关信息，重启之后查看网卡能获得ip # ubuntu 18.04 allow-hotplug enp0s8 iface enp0s8 inet static address 10.200.242.200 netmask 255.0.0.0 gateway 10.0.0.3 ubuntu20.04操作: 修改 /etc/netplan/50-cloud-init.yaml 应用 sudo netplan apply 重启 sudo reboot # ubuntu 20.04 /etc/netplan/50-cloud-init.yaml network: ethernets: enp0s3: dhcp4: true match: macaddress: 08:00:27:bc:97:36 set-name: enp0s3 version: 2 # change like following part network: ethernets: enp0s3: dhcp4: false addresses: [10.</description>
     </item>
-    
   </channel>
 </rss>

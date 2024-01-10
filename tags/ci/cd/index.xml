@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CI/CD on Peter&#39;s Blog</title>
     <link>https://26huitailang.github.io/tags/ci/cd/</link>
@@ -10,12 +10,12 @@
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://26huitailang.github.io/tags/ci/cd/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <atom:link href="https://26huitailang.github.io/tags/ci/cd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gitlab CI/CD</title>
       <link>https://26huitailang.github.io/posts/devops/gitlab/gitlab-ci-cd/</link>
       <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/devops/gitlab/gitlab-ci-cd/</guid>
       <description>Gitlab CI/CD For the development environment.
 Install with docker Read the official documentation for how to install docker.
@@ -25,16 +25,13 @@ sudo docker run --detach \ --hostname 192.168.8.226 \ --publish 443:443 --publis
 install register custom config documentation
 There is no difficulty to install gitlab and gitlab-runner in docker.</description>
     </item>
-    
     <item>
       <title>TeamCity 搭建CI/CD</title>
       <link>https://26huitailang.github.io/posts/teamcity/teamcity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/teamcity/teamcity/</guid>
       <description>Teamcity 搭建CI/CD install server
 mkdir teamcity_server docker run -it --name teamcity-server-instance \ -v /home/ubuntu/teamcity_server/datadir:/data/teamcity_server/datadir \ -v /home/ubuntu/teamcity_server/logs:/opt/teamcity/logs \ -p 8111:8111 \ jetbrains/teamcity-server agent, conf 有权限问题，最好在root运行 如果要使用docker-in-docker特性（sudo command not found），请使用linux-sudo tag的image sudo docker run -it -e SERVER_URL=&amp;#34;http://10.200.160.4:8111&amp;#34; \ -u 0 \ -v docker_volumes:/var/lib/docker \ -v /var/run/docker.sock:/var/run/docker.sock \ -v /opt/buildagent/work:/opt/buildagent/work \ -v /opt/buildagent/temp:/opt/buildagent/temp \ -v /opt/buildagent/tools:/opt/buildagent/tools \ -v /opt/buildagent/plugins:/opt/buildagent/plugins \ -v /opt/buildagent/system:/opt/buildagent/system \ --privileged -e DOCKER_IN_DOCKER=start \ -v /home/ubuntu/teamcity_agent/conf:/data/teamcity_agent/conf \ jetbrains/teamcity-agent register agent agent 安装好后，在server UI/Agents 中进行认证授权。待agent就绪后，可以添加需要的项目和操作等。</description>
     </item>
-    
   </channel>
 </rss>

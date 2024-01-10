@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>fabric3 on Peter&#39;s Blog</title>
     <link>https://26huitailang.github.io/tags/fabric3/</link>
@@ -11,12 +11,12 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 30 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/fabric3/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://26huitailang.github.io/tags/fabric3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fabric</title>
       <link>https://26huitailang.github.io/posts/devops/fabric/</link>
       <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/devops/fabric/</guid>
       <description>Fabric学习 [toc]
 总结 fabric3 移除了很多实用的功能和装饰器，变得更精简了，另外fab这个cli入口提供的参数能力也变弱了，目前个人实用的方式是typer+fabric3+makefile：
@@ -24,6 +24,5 @@ typer 作为参数解析入口 makefile 固定一些操作逻辑，可以使用�
 基于以下两个包构建的：
 Invoke，subprocess command execution and command-line features Paramiko，SSH protocol implementation 私钥配置 配置ssh的authorized_keys，将本机的id_rsa.pub信息复制到远程的authorized_keys文件中 简要用法 pty(prompt by hand)，如果sudo有密码，那么用pty来手动输入 &amp;gt;&amp;gt;&amp;gt; from fabric import Connection &amp;gt;&amp;gt;&amp;gt; c = Connection(&amp;#39;192.168.9.139&amp;#39;) &amp;gt;&amp;gt;&amp;gt; c.run(&amp;#39;sudo useradd mydbuser&amp;#39;, pty=True) [sudo] password: &amp;lt;Result cmd=&amp;#39;sudo useradd mydbuser&amp;#39; exited=0&amp;gt; &amp;gt;&amp;gt;&amp;gt; c.run(&amp;#39;id -u mydbuser&amp;#39;) 利用Invoke的自动回应来输入sudo密码，注意pattern的正确匹配，以及repsonese的结尾符号 &amp;gt;&amp;gt;&amp;gt; from invoke import Responder &amp;gt;&amp;gt;&amp;gt; from fabric import Connection &amp;gt;&amp;gt;&amp;gt; c = Connection(&amp;#39;host&amp;#39;) &amp;gt;&amp;gt;&amp;gt; sudopass = Responder( .</description>
     </item>
-    
   </channel>
 </rss>

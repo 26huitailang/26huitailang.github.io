@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nginx on Peter&#39;s Blog</title>
     <link>https://26huitailang.github.io/tags/nginx/</link>
@@ -11,12 +11,12 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 10 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://26huitailang.github.io/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nginx</title>
       <link>https://26huitailang.github.io/posts/nginx/nginx/</link>
       <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/nginx/nginx/</guid>
       <description>nginx [toc]
 常用命令 nginx -s stop nginx -s reload 简介 反向代理 一句话：
@@ -29,6 +29,5 @@
 在server中最重要的一项配置：server_name的配置。server_name决定了来了一个url，到底是哪个server处理该请求。nginx会依次找和url配置的第一次出现的server。server_name可以使用通配符，也可以使用正则表达式。而且一个server的server_name可以多个，以空格分隔。更详细的关于server_name匹配规则，参看这里
 Unix-domain socket(Unix域套接字) Python实例浅谈之九使用本地socket文件</description>
     </item>
-    
   </channel>
 </rss>

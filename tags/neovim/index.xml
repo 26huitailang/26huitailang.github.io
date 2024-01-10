@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>neovim on Peter&#39;s Blog</title>
     <link>https://26huitailang.github.io/tags/neovim/</link>
@@ -11,17 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 27 Dec 2021 11:22:50 +0800</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Dec 2021 11:22:50 +0800</lastBuildDate>
+    <atom:link href="https://26huitailang.github.io/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Neovim</title>
       <link>https://26huitailang.github.io/posts/tools/neovim/</link>
       <pubDate>Mon, 27 Dec 2021 11:22:50 +0800</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/tools/neovim/</guid>
       <description>了解 vim text object概念 installation brew install neovim brew install font-hack-nerd-font # 检索 brew install ripgrep fzf # lsp format brew install efm-langserver lazy-nvim tokyonight lualine barbecue bufferline indent_blankline gitsigns.nvim alpha-nvim nvim-telescope https://github.com/nvim-treesitter/nvim-treesitter https://github.com/nvim-treesitter/nvim-treesitter-textobjects https://github.com/neovim/nvim-lspconfig https://github.com/williamboman/mason.nvim https://github.com/hrsh7th/nvim-cmp lsp-format 参考 lazyvim kickstart nvim 整理中 my lazyvim config
 plugin use https://github.com/junegunn/vim-plug, install this first：
 sh -c &amp;#39;curl -fLo &amp;#34;${XDG_DATA_HOME:-$HOME/.local/share}&amp;#34;/nvim/site/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim&amp;#39; mkdir ~/.config/nvim/ nvim ~/.config/nvim/init.vim cat &amp;lt;&amp;lt; EOF &amp;gt; ~/.config/nvim/init.vim call plug#begin(&amp;#39;~/.</description>
     </item>
-    
   </channel>
 </rss>

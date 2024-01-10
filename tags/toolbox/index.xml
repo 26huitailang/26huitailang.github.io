@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>toolbox on Peter&#39;s Blog</title>
     <link>https://26huitailang.github.io/tags/toolbox/</link>
@@ -11,16 +11,15 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/toolbox/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://26huitailang.github.io/tags/toolbox/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Toolbox</title>
       <link>https://26huitailang.github.io/posts/tools/toolbox/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/tools/toolbox/</guid>
       <description>Tool Hub 各个分类的工具汇总
 开发 代码 nvim vscode jetbrains vim 代码管理 gitea gitlab CI drone jetbrains teamcity gitlab 接口测试 postman httpie jebrains http test curl 接口mock测试 httpretty: a full fake TCP socket module. Inspired by FakeWeb(ruby), 用于模拟http外部访问请求 responses: A utility for mocking out the Python Requests library. 接口性能测试 vegeta pssh + vegeta, pssh并行在多个计算机中执行命令，vegeta接口性能测试工具，支持代码修改、命令模式，输出json、text、gob、html等格式 apache benchmark(ab) 代码性能分析 Python memray pytest-memray py-spy, Never use print for debugging again PySnooper, Never use print for debugging again 文档 markdown：</description>
     </item>
-    
   </channel>
 </rss>

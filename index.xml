@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Peter&#39;s Blog</title>
     <link>https://26huitailang.github.io/</link>
@@ -11,51 +11,43 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 03 Aug 2023 17:33:23 +0800</lastBuildDate><atom:link href="https://26huitailang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Aug 2023 17:33:23 +0800</lastBuildDate>
+    <atom:link href="https://26huitailang.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vscode</title>
       <link>https://26huitailang.github.io/posts/devenv/vscode/</link>
       <pubDate>Thu, 03 Aug 2023 17:33:23 +0800</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/devenv/vscode/</guid>
       <description>Desc Text.</description>
     </item>
-    
     <item>
       <title>Rsync</title>
       <link>https://26huitailang.github.io/posts/tools/rsync/</link>
       <pubDate>Fri, 28 Jul 2023 10:14:14 +0800</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/tools/rsync/</guid>
       <description>Desc Text.</description>
     </item>
-    
     <item>
       <title>开发环境</title>
       <link>https://26huitailang.github.io/posts/devenv/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/devenv/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
       <description>开发编辑器/IDE vim vscode goland pycharm CI/CD gitlab CI/CD github actions teamcity 部署选择 docker supervisor pm2 systemd 网络工具 wireshark socat tcpdump Go Golang 开发环境准备和工具选择
 参考Alikhll/golang-developer-roadmap。
 更多关于golang的分享，参考Awesome-go
 包管理 加速/私有模块 组件 CLI工具开发 cobra Config viper Web Gin🍺 Echo🍺 Beego go-swagger Iris ORM Gorm🍺 Xorm DB PG🍺 Redis🍺 MongoDB Log Zap🍺 Logrus Websocket gorilla/websocket Task schedule Gron test testify convey, bdd python lint black isort darker </description>
     </item>
-    
     <item>
       <title>Pyenv</title>
       <link>https://26huitailang.github.io/posts/python/pyenv/</link>
       <pubDate>Wed, 17 May 2023 21:57:16 +0800</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/python/pyenv/</guid>
       <description>Desc Text.</description>
     </item>
-    
     <item>
       <title>sqlite视图</title>
       <link>https://26huitailang.github.io/posts/database/sqlite/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/database/sqlite/</guid>
       <description>问题 在Centos上遇到sqlite3版本过低的问题, 3.7., 但是django要求版本不低于3.8., 自己编译升级后, 还是无法解决: 原因是python找寻动态库的位置不对
 # 下载并解压 [root@linux ~]# wget https://www.sqlite.org/2019/sqlite-autoconf-3270200.tar.gz [root@linux ~]# tar xf sqlite-autoconf-3270200.tar.gz # configure 生成makefile并指定安装路径 [root@linux ~]# cd sqlite-autoconf-3270200 [root@linux sqlite-autoconf-3270200]# ./configure --prefix=/usr/local/ [root@linux sqlite-autoconf-3270200]# make &amp;amp;&amp;amp; make install # 备份旧版本 [root@linux ~]# mv /usr/bin/sqlite3 /usr/bin/sqlite3_backupold # 链接新版本 [root@linux ~]# ln -s /usr/local/bin/sqlite3 /usr/bin/sqlite3 # 环境变量设置 [root@linux ~]# vim ~/.bashrc 添加内容如下, LD_LIBRARY_PATH 默认是没有设置的, 如果设置了会优先使用
@@ -63,12 +55,10 @@ export LD_LIBRARY_PATH=&amp;#34;/usr/local/lib&amp;#34; json1 参考：howto_get
 使用版本3.7.17，最低支持版本3.9.0
 尝试编译json.so 去3.7.17中.load json.so 结论：3.7.17 可以加载，但是运行报错segmentation fault，应该还是有代码不兼容，直接在3.</description>
     </item>
-    
     <item>
       <title>Fabric</title>
       <link>https://26huitailang.github.io/posts/devops/fabric/</link>
       <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/devops/fabric/</guid>
       <description>Fabric学习 [toc]
 总结 fabric3 移除了很多实用的功能和装饰器，变得更精简了，另外fab这个cli入口提供的参数能力也变弱了，目前个人实用的方式是typer+fabric3+makefile：
@@ -76,32 +66,26 @@ typer 作为参数解析入口 makefile 固定一些操作逻辑，可以使用�
 基于以下两个包构建的：
 Invoke，subprocess command execution and command-line features Paramiko，SSH protocol implementation 私钥配置 配置ssh的authorized_keys，将本机的id_rsa.pub信息复制到远程的authorized_keys文件中 简要用法 pty(prompt by hand)，如果sudo有密码，那么用pty来手动输入 &amp;gt;&amp;gt;&amp;gt; from fabric import Connection &amp;gt;&amp;gt;&amp;gt; c = Connection(&amp;#39;192.168.9.139&amp;#39;) &amp;gt;&amp;gt;&amp;gt; c.run(&amp;#39;sudo useradd mydbuser&amp;#39;, pty=True) [sudo] password: &amp;lt;Result cmd=&amp;#39;sudo useradd mydbuser&amp;#39; exited=0&amp;gt; &amp;gt;&amp;gt;&amp;gt; c.run(&amp;#39;id -u mydbuser&amp;#39;) 利用Invoke的自动回应来输入sudo密码，注意pattern的正确匹配，以及repsonese的结尾符号 &amp;gt;&amp;gt;&amp;gt; from invoke import Responder &amp;gt;&amp;gt;&amp;gt; from fabric import Connection &amp;gt;&amp;gt;&amp;gt; c = Connection(&amp;#39;host&amp;#39;) &amp;gt;&amp;gt;&amp;gt; sudopass = Responder( .</description>
     </item>
-    
     <item>
       <title>pip dependency</title>
       <link>https://26huitailang.github.io/posts/python/pip/dependency/</link>
       <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/python/pip/dependency/</guid>
       <description>查看依赖 工具 pipdeptree
 支持正向、反向查看依赖 多种格式输出，安装了graphviz还可以输出图形 [root@10-113-57-176 /] pip install pipdeptree [root@10-113-57-176 /] pipdeptree --help usage: pipdeptree [-h] [-v] [-f] [--python PYTHON] [-a] [-l] [-u] [-w [{silence,suppress,fail}]] [-r] [-p PACKAGES] [-e PACKAGES] [-j] [--json-tree] [--graph-output OUTPUT_FORMAT] Dependency tree of the installed python packages optional arguments: -h, --help show this help message and exit -v, --version show program&amp;#39;s version number and exit -f, --freeze Print names so as to write freeze files --python PYTHON Python to use to look for packages in it (default: where installed) -a, --all list all deps at top level -l, --local-only If in a virtualenv that has global access do not show globally installed packages -u, --user-only Only show installations in the user site dir -w [{silence,suppress,fail}], --warn [{silence,suppress,fail}] Warning control.</description>
     </item>
-    
     <item>
       <title>Daylight Saving Time</title>
       <link>https://26huitailang.github.io/posts/linux/daylight/</link>
       <pubDate>Wed, 04 Jan 2023 13:22:46 +0800</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/linux/daylight/</guid>
       <description>参考 https://www.cnblogs.com/zihanxing/articles/6224263.html
 验证 zdump -v /usr/share/zoneinfo/America/Los_Angeles ｜ grep 2022 ln -sf /usr/share/zoneinfo/America/Los_Angeles /etc/localtime service ntpd stop date -s &amp;#34;2022-03-13 01:59:40&amp;#34; for i in `seq 1 1000`;do date;python -c &amp;#39;import time;print(int(time.time()))&amp;#39;;python -c &amp;#39;import datetime;print(datetime.datetime.now())&amp;#39;;sleep 1;done </description>
     </item>
-    
     <item>
       <title>Git Statistics</title>
       <link>https://26huitailang.github.io/posts/git/statistics/</link>
       <pubDate>Wed, 04 Jan 2023 13:22:46 +0800</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/git/statistics/</guid>
       <description>工具 hercules go，维护良好，较为复杂，可以尝试
 https://github.com/src-d/hercules
@@ -115,61 +99,50 @@ brew install git-quick-stats
 You can use the Docker image provided:
 Build: docker build -t arzzen/git-quick-stats . Run interactive menu: docker run --rm -it -v $(pwd):/git arzzen/git-quick-stats Docker pull command: docker pull arzzen/git-quick-stats docker repository docker run --rm -it -e _GIT_SINCE=&amp;#34;2017-01-20&amp;#34; -v $(pwd):/git arzzen/git-quick-stats -j 统计 代码量 git log &amp;ndash;format=&amp;rsquo;%aN&amp;rsquo; | sort -u | while read name; do echo -en &amp;ldquo;$name\t&amp;rdquo;; git log &amp;ndash;author=&amp;quot;$name&amp;quot; &amp;ndash;pretty=tformat: &amp;ndash;since=2020-02-03 &amp;ndash;until=2020-03-27 &amp;ndash;numstat | awk &amp;lsquo;{ add += $1; subs += $2; loc += $1 - $2 } END { printf &amp;ldquo;added lines: %s, removed lines: %s, total lines: %s\n&amp;rdquo;, add, subs, loc }&amp;rsquo; -; done</description>
     </item>
-    
     <item>
       <title>rsyslog</title>
       <link>https://26huitailang.github.io/posts/linux/rsyslog/</link>
       <pubDate>Wed, 04 Jan 2023 13:22:46 +0800</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/linux/rsyslog/</guid>
       <description>man page https://man7.org/linux/man-pages/man3/syslog.3.html
 install yum install rsyslog systemctl start rsyslog systemctl enable rsyslog systemctl status rsyslog config server
 # for udp #module(load=”imudp”) #input(type=”imudp” port=”514&amp;#34;) # for tcp #module(load=”imtcp”) #input(type=”imtcp” port=”514&amp;#34;) facility: the type of process sending logs, can be kernel, cron, daemon, etc. priority: the security level or type of log, emerg (0), alert (1), crit (2), err-(3), warn (4), notice (5), info (6), debug (7). destination: location to save log messages, local file host (/var/log directory), or remote syslog server identified by @ IP:port.</description>
     </item>
-    
     <item>
       <title>i18n</title>
       <link>https://26huitailang.github.io/posts/i18n/i18n/</link>
       <pubDate>Thu, 29 Dec 2022 11:22:50 +0800</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/i18n/i18n/</guid>
       <description>msgfmt -c zh_HK.po -o zh_HK.mo </description>
     </item>
-    
     <item>
       <title>OCR</title>
       <link>https://26huitailang.github.io/posts/tools/ocr/</link>
       <pubDate>Thu, 29 Dec 2022 11:22:50 +0800</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/tools/ocr/</guid>
       <description>brew install tesseract pngpaste brew install tesseract-lang # 语言支持 ctrl + shift + command + 4 截图
 pngpaste - | tesseract -l chi_sim stdin stdout 加入zsh alias,.zshrc
 alias ocr=&amp;#39;pngpaste - | tesseract -l chi_sim stdin stdout&amp;#39; </description>
     </item>
-    
     <item>
       <title>Compile</title>
       <link>https://26huitailang.github.io/posts/python/compile/</link>
       <pubDate>Fri, 14 Oct 2022 15:36:32 +0800</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/python/compile/</guid>
       <description>Desc Text.</description>
     </item>
-    
     <item>
       <title>Proxy Test</title>
       <link>https://26huitailang.github.io/posts/test/proxy-test/</link>
       <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/test/proxy-test/</guid>
-      <description>socks5 # 监听1080为代理地址 ssh -f -N -D 0.0.0.0:1080 root@127.0.0.1 # test curl -v -k -x &amp;#34;socks5://USER:PASSWORD@HOSTIP:1080&amp;#34; https://baidu.com ssh socat # forward 访问目标服务 socat TCP4-LISTEN:&amp;lt;本地端口&amp;gt;,bind=&amp;lt;监听本机的地址&amp;gt;,reuseaddr,fork TCP:&amp;lt;目标地址&amp;gt;:&amp;lt;目标端口&amp;gt; </description>
+      <description>socks5 # 监听1080为代理地址 ssh -f -N -D 0.0.0.0:1080 root@127.0.0.1 # test curl -v -k -x &amp;#34;socks5://USER:PASSWORD@HOSTIP:1080&amp;#34; https://baidu.com socat # forward 访问目标服务 socat TCP4-LISTEN:&amp;lt;本地端口&amp;gt;,bind=&amp;lt;监听本机的地址&amp;gt;,reuseaddr,fork TCP:&amp;lt;目标地址&amp;gt;:&amp;lt;目标端口&amp;gt; 3proxy 三方容器： 3128 http, 1080 socks5
+$ docker run --rm -d \ -p &amp;#34;3128:3128/tcp&amp;#34; \ -p &amp;#34;1080:1080/tcp&amp;#34; \ tarampampam/3proxy:latest </description>
     </item>
-    
     <item>
       <title>Fastapi</title>
       <link>https://26huitailang.github.io/posts/python/fastapi/</link>
       <pubDate>Wed, 27 Jul 2022 10:11:58 +0800</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/python/fastapi/</guid>
       <description>middleware or dependency 官方说明
 场景：
@@ -179,22 +152,18 @@ alias ocr=&amp;#39;pngpaste - | tesseract -l chi_sim stdin stdout&amp;#39; </des
 官方对于两个组件的对比说明：
 middleware 代码多一些，更复杂一些 必须是async方法 任何需要IO代码的添加都可能导致整个应用速度变慢或者阻塞 每个请求都会执行相关代码，如果是db的话，即使路由函数不需要也会创建 </description>
     </item>
-    
     <item>
       <title>Playwright</title>
       <link>https://26huitailang.github.io/posts/test/playwright/</link>
       <pubDate>Thu, 24 Mar 2022 17:12:16 +0800</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/test/playwright/</guid>
       <description>image docker pull mcr.microsoft.com/playwright/python:v1.20.0-focal
 本地环境 pip install playwright -i https://pypi.tuna.tsinghua.edu.cn/simple playwright install</description>
     </item>
-    
     <item>
       <title>Docker Network</title>
       <link>https://26huitailang.github.io/posts/docker/docker-network/</link>
       <pubDate>Wed, 26 Jan 2022 11:24:36 +0800</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/docker/docker-network/</guid>
       <description>访问宿主机网络 host mode 使用host模式：
 docker run -d --network=host my-container:latest services: my-service: network_mode: host 添加hosts 使用--add-host选项添加映射到/etc/hosts文件，添加host.docker.internal到hosts
@@ -202,66 +171,54 @@ docker run --rm -it --add-host host.docker.internal:host-gateway goexpect bash h
 root@00e0febe04e2:/app# cat /etc/hosts 127.0.0.1 localhost ::1 localhost ip6-localhost ip6-loopback fe00::0 ip6-localnet ff00::0 ip6-mcastprefix ff02::1 ip6-allnodes ff02::2 ip6-allrouters 192.168.65.2 host.docker.internal 172.17.0.2 00e0febe04e2 访问宿主机网络
 ssh root@host.docker.internal -p 2222 </description>
     </item>
-    
     <item>
       <title>Neovim</title>
       <link>https://26huitailang.github.io/posts/tools/neovim/</link>
       <pubDate>Mon, 27 Dec 2021 11:22:50 +0800</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/tools/neovim/</guid>
       <description>了解 vim text object概念 installation brew install neovim brew install font-hack-nerd-font # 检索 brew install ripgrep fzf # lsp format brew install efm-langserver lazy-nvim tokyonight lualine barbecue bufferline indent_blankline gitsigns.nvim alpha-nvim nvim-telescope https://github.com/nvim-treesitter/nvim-treesitter https://github.com/nvim-treesitter/nvim-treesitter-textobjects https://github.com/neovim/nvim-lspconfig https://github.com/williamboman/mason.nvim https://github.com/hrsh7th/nvim-cmp lsp-format 参考 lazyvim kickstart nvim 整理中 my lazyvim config
 plugin use https://github.com/junegunn/vim-plug, install this first：
 sh -c &amp;#39;curl -fLo &amp;#34;${XDG_DATA_HOME:-$HOME/.local/share}&amp;#34;/nvim/site/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim&amp;#39; mkdir ~/.config/nvim/ nvim ~/.config/nvim/init.vim cat &amp;lt;&amp;lt; EOF &amp;gt; ~/.config/nvim/init.vim call plug#begin(&amp;#39;~/.</description>
     </item>
-    
     <item>
       <title>Vim</title>
       <link>https://26huitailang.github.io/posts/tools/vim/</link>
       <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/tools/vim/</guid>
       <description>复制内容到剪贴板 +可以把内容复制到剪贴板寄存器，就能在其他应用中贴。 :reg [register_name] 查看指定寄存器的内容 &amp;#34;+yy // 复制当前行到剪切板 &amp;#34;+p // 将剪切板内容粘贴到光标后面 &amp;#34;ayy // 复制当前行到寄存器 a &amp;#34;ap // 将寄存器 a 中的内容粘贴到光标后面 Vim 有 12 个粘贴板依次编号为：0、1、2、&amp;hellip;、9、a、&amp;quot;、+，其中 + 号为系统粘贴板，” 为临时粘贴板。系统剪切板中的内容可在其他程序中使用。上面的复制指令都可以配合剪切板进行操作。&amp;ldquo;nyw 复制当前单词到 n 号剪切板（双引号开始） &amp;ldquo;np 粘贴 n 号剪切板内容到当前位置后 &amp;ldquo;+Y 复制当前行到系统剪切板&amp;rdquo;+nY 复制当前行往下 n 行到系统剪切板&amp;rdquo;+p 粘贴系统剪切板内容到当前位置后
 标记，mark 一下 mc标记一个位置c，当在本页其他地方完成代码之后，有时因为不是用的 vim 的G或g位移操作，所以两个点号不一定能回来，但是如果在离开前就 mark 了它，`c 一下就能会到 c 标记的地方，这里用其他字母也行，只要自己能记住，我从别的地方学的是 e - end，c - current，s - start，比如代码开头的 import 内容或者常量不对调整，则标记一个 s，当前的代码工作地方标记为 c，这样可以在开头和当前不断跳转。
 replace Search and replace :%s/foo/bar/g, Find each occurrence of &amp;lsquo;foo&amp;rsquo; (in all lines), and replace it with &amp;lsquo;bar&amp;rsquo;.</description>
     </item>
-    
     <item>
       <title>api security checklist</title>
       <link>https://26huitailang.github.io/posts/security/api-security-checklist/</link>
       <pubDate>Sun, 19 Dec 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/security/api-security-checklist/</guid>
       <description>开发安全的 API 所需要核对的清单
 https://github.com/shieldfy/API-Security-Checklist
 https://github.com/shieldfy/API-Security-Checklist/blob/master/README-zh.md</description>
     </item>
-    
     <item>
       <title>Docker Cheatsheet</title>
       <link>https://26huitailang.github.io/posts/docker/cheatsheet/</link>
       <pubDate>Mon, 06 Dec 2021 17:53:22 +0800</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/docker/cheatsheet/</guid>
       <description>docker cheatsheet docker
 # 不使用缓存重新build docker build . --no-cache # tag docker build -t peterchen0802/mypandoc:latest . docker tag peterchen0802/mypandoc:latest mypandoc:latest # 查看容器日志 docker logs SERVICE_NAME [-f] # 导出容器 # 注：用户既可以使用 docker load 来导入镜像存储文件到本地镜像库，也可以使用 docker import 来导入一个容器快照到本地镜像库。这两者的区别在于容器快照文件将丢弃所有的历史记录和元数据信息（即仅保存容器当时的快照状态），而镜像存储文件将保存完整记录，体积也要大。此外，从容器快照文件导入时可以重新指定标签等元数据信息。 docker export CONTAINER &amp;gt; TARFILENAME docker export CONTAINER -o TARFILENAME # 导入容器 docker import [OPTIONS] file|URL|- [REPOSITORY[:TAG]] docker import mypandoc.tar peterchen0802/mypandoc:latest # 指定导入的镜像名称 # -----清理 start----- ## 磁盘容量查看 docker system df ## 清理 docker rmi $(docker images --filter &amp;#34;dangling=true&amp;#34; -q) ## 清理无标签的镜像 docker image prune ## 清理磁盘，删除关闭的容器、无用的数据卷、网络，以及dangling镜像（无tag的镜像）。 docker system prune ## 更彻底的删除，将没有容器使用的镜像删除： docker system prune -a # -----清理 end----- docker-compose</description>
     </item>
-    
     <item>
       <title>tmux</title>
       <link>https://26huitailang.github.io/posts/devenv/tmux/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/devenv/tmux/</guid>
       <description>tmux 终端服用软件，session可以保存在tmux server中，就算iterm等终端关闭也可以恢复，远程连接的时候避免掉线（类似的功能的软件还有，screen）。
 参考 十分钟学会 tmux Tmux - Linux从业者必备利器 * cheatsheet 优雅地使用命令行：Tmux 终端复用 Tmux使用手册 本机，cheatsheet-tmux 安装 brew install tmux 基于参考第二篇文章，配置：
 $ cd $ rm -rf .tmux $ git clone https://github.com/gpakosz/.tmux.git $ ln -s -f .tmux/.tmux.conf $ cp .tmux/.tmux.conf.local . 概念 session，不同的会话 window，不同的窗口，物理划分，一个session可以有多个window pane，窗格，一个window可以用过 %/&amp;quot; 划分为多个窗格 tmux操作 tmux ls，查看打开的session tmux a，恢复 tmux a -t SESSION,恢复指定session C-b操作 前缀快捷键，^b % 左右平分出两个pane &amp;quot; 上下平分出两个pane x 关闭当前窗格 { 当前窗格前移 } 当前窗格后移 ; 选择上次使用的窗格 o 选择下一个窗格，也可以使用上下左右方向键来选择 space 切换窗格布局，tmux 内置了五种窗格布局，也可以通过 ⌥1 至 ⌥5来切换 z 最大化当前窗格，再次执行可恢复原来大小 q 显示所有窗格的序号，在序号出现期间按下对应的数字，即可跳转至对应的窗格 resize pane C-b :resize-pane -D/U/R/L 20 修改配置 ~/.</description>
     </item>
-    
     <item>
       <title>Nginx</title>
       <link>https://26huitailang.github.io/posts/nginx/nginx/</link>
       <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/nginx/nginx/</guid>
       <description>nginx [toc]
 常用命令 nginx -s stop nginx -s reload 简介 反向代理 一句话：
@@ -274,12 +231,10 @@ $ cd $ rm -rf .tmux $ git clone https://github.com/gpakosz/.tmux.git $ ln -s -f 
 在server中最重要的一项配置：server_name的配置。server_name决定了来了一个url，到底是哪个server处理该请求。nginx会依次找和url配置的第一次出现的server。server_name可以使用通配符，也可以使用正则表达式。而且一个server的server_name可以多个，以空格分隔。更详细的关于server_name匹配规则，参看这里
 Unix-domain socket(Unix域套接字) Python实例浅谈之九使用本地socket文件</description>
     </item>
-    
     <item>
       <title>Pandoc</title>
       <link>https://26huitailang.github.io/posts/markdown/pandoc/</link>
       <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/markdown/pandoc/</guid>
       <description>Pandoc 开始 install pandoc install miktext build 中文要选择合适的字体否则无法成功创建 fc-list mac: brew install fontconfig fc-list :lang-zh &amp;gt; fonts.txt fc-list -f &amp;ldquo;%{family}\n&amp;rdquo; :lang=zh 参数解释 -o: 输出文件 &amp;ndash;from: 输入文件类型 &amp;ndash;template: 模版文件 &amp;ndash;listings: 列表 &amp;ndash;pdf-engine: pdf生成用的引擎 -V: 参数 CJKmainfont: 中文文字字体 pandoc &amp;#34;README.md&amp;#34; -o &amp;#34;document.pdf&amp;#34; --from markdown --template &amp;#34;./template.latex&amp;#34; --listings --pdf-engine &amp;#34;xelatex&amp;#34; -V CJKmainfont=&amp;#34;PingFang SC&amp;#34; &amp;amp;&amp;amp; open document.pdf data-dir DATADIR
 macos: ~/.local/share/pandoc
@@ -287,31 +242,25 @@ windows: C:\Users\USERNAME\AppData\Roaming\pandoc
 defaults $DATADIR/defaults/docker.yaml，可以为不同的文档设置自己的defaults，避免后面重复操作，仅需使用pandoc --defaults docker即可打包文档
 from: markdown # reader: may be used instead of from: to: pdf # writer: may be used instead of to: # leave blank for output to stdout: output-file: docker.</description>
     </item>
-    
     <item>
       <title>Podman</title>
       <link>https://26huitailang.github.io/posts/podman/readme/</link>
       <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/podman/readme/</guid>
       <description>README 初次使用 podman root用户和非root用户的images和container是分开的 非root用户使用podman generate systemd命令生成的文件，拷贝到~/.config/systemd/user/下面，使用systemctl --user执行 流程演示
 podman pull docker.io/nginx:latest podman create --name nginx -p 8080:80 nginx:latest mkdir -p ~/.config/systemd/user cd ~/.config/systemd/user podman generate systemd --files --name nginx systemctl --user enable container-nginx systemctl --user start container-nginx curl http://127.0.0.1:8080 </description>
     </item>
-    
     <item>
       <title>Upgrade debian main version</title>
       <link>https://26huitailang.github.io/posts/linux/debian/upgrade/</link>
       <pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/linux/debian/upgrade/</guid>
       <description>Upgrade debian main version update $ apt-get update &amp;amp;&amp;amp; apt-get upgrade backup sources.list $ cp /etc/apt/sources.list /etc/apt/sources.list.bak replace `stretch` to `buster` of `/etc/apt/sources.list` $ sed -i &amp;#39;s/stretch/buster/g&amp;#39; /etc/apt/sources.list run upgrade $ apt-get update &amp;amp;&amp;amp; apt-get upgrade run dist upgrade $ apt-get dist-upgrade $ reboot $ lsb_release -a clean: $ apt-get autoremove </description>
     </item>
-    
     <item>
       <title>Gitlab CI/CD</title>
       <link>https://26huitailang.github.io/posts/devops/gitlab/gitlab-ci-cd/</link>
       <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/devops/gitlab/gitlab-ci-cd/</guid>
       <description>Gitlab CI/CD For the development environment.
 Install with docker Read the official documentation for how to install docker.
@@ -321,12 +270,10 @@ sudo docker run --detach \ --hostname 192.168.8.226 \ --publish 443:443 --publis
 install register custom config documentation
 There is no difficulty to install gitlab and gitlab-runner in docker.</description>
     </item>
-    
     <item>
       <title>Apache Bench Test</title>
       <link>https://26huitailang.github.io/posts/test/ab-test/</link>
       <pubDate>Thu, 06 Aug 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/test/ab-test/</guid>
       <description>Apache Bench Test GET
 ab -c 10 -n 40 http://127.0.0.1:8000/api/v1/mzitu/tags/
@@ -334,71 +281,57 @@ POST, https://blog.csdn.net/chenggong2dm/article/details/51850923
 ab -n 1 -c 1 -p f:/postdata.txt -T application/x-www-form-urlencoded &amp;ldquo;http://127.0.0.1/abpost&amp;rdquo; ab -n 100 -c 10 -p data.json -T application/json http://127.0.0.1/api
 // postdata.txt </description>
     </item>
-    
     <item>
       <title>Prometheus</title>
       <link>https://26huitailang.github.io/posts/k3s/prometheus/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/k3s/prometheus/</guid>
       <description>Prometheus 简介 概念 prometheus server exporter，用于server采集数据，有官方提供的node-exporter，也可以通过各种SDK自定义导出内容，暴露一个类似/metrics的路径用于采集 注意，exporter在多进程（gunicorn 多进程）模式下使用会有限制，参考文档 数据模型，和influxdb类似，是时序数据库，以metric为名称，多个label（key-value形式）组成：&amp;lt;metric name&amp;gt;{&amp;lt;label name&amp;gt;=&amp;lt;label value&amp;gt;, ...} 重载配置 Yes, sending SIGHUP to the Prometheus process or an HTTP POST request to the /-/reload endpoint will reload and apply the configuration file. The various components attempt to handle failing changes gracefully.</description>
     </item>
-    
     <item>
       <title>PyCharm Docker</title>
       <link>https://26huitailang.github.io/posts/pycharm/docker/</link>
       <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/pycharm/docker/</guid>
       <description>PyCharm 使用 Docker pycharm use docker for development and stage
 Development 使用windows和virtualbox，没有打开hyper-v所以无法使用docker，在虚拟机中使用docker并打开tcp，但是由于volume只能挂载宿主机，所以要先用pycharmm将文件拷贝到远程的映射目录，再使用。 此方法适合还没有准备开发环境和需要使用docker作为开发环境，但是windows本机没有docker的情况 我已使用虚拟机和pycharm远程同步功能达到同样的效果 在宿主机中开发时，可以很方便的将docker配置集成到configuration中 Stage PyCharm的docker也支持修改registry，如果有远程仓库需要的，也可以方便分发镜像</description>
     </item>
-    
     <item>
       <title>Django打开gzip导致文件流content-length丢失</title>
       <link>https://26huitailang.github.io/posts/django/gzip/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/django/gzip/</guid>
       <description>Django打开gzip导致文件流content-length丢失 code GZipMiddleware
 use gzip middleware will del response[&#39;Content-Length&#39;] if response.streaming. nginx gzip is the same problem.
 If file feature is important. You&amp;rsquo;d better be independent from the api or system.</description>
     </item>
-    
     <item>
       <title>k3s</title>
       <link>https://26huitailang.github.io/posts/k3s/k3s/</link>
       <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/k3s/k3s/</guid>
       <description>k3s 初次使用 multipass 环境准备 quick-start 参考1 参考2 # k3s1 node for master 192.168.64.5 multipass launch -v --name k3s1 20.04 multipass shell k3s1 curl -sfL https://get.k3s.io | sh - # default config sudo cat /etc/rancher/k3s/k3s.yaml # node-token sudo cat /var/lib/rancher/k3s/server/node-token # Check for Ready node, takes maybe 30 seconds sudo kubectl get nodes # k3s2 node 192.168.64.6 multipass launch -v --name k3s2 20.04 multipass shell k3s2 # add node to cluster # token in master cat /var/lib/rancher/k3s/server/node-token # K3S_NODE_NAME for unique hostname export K3S_TOKEN=x export K3S_URL=https://192.</description>
     </item>
-    
     <item>
       <title>Multipass</title>
       <link>https://26huitailang.github.io/posts/linux/ubuntu/multipass/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/linux/ubuntu/multipass/</guid>
       <description>multipass to set development environment 官网
 指定配置 $ multipass launch --name XXX -c 2 -d 20G -m 2G 删除 $ multipass delete --purge XXXXX 问题 macos下面使用virtualbox暂时拿不到ip，只能使用NAT，最好使用hyperkit windows下面也不行，尝试添加第二个网络(gui操作 or vboxmanager)，我这里使用了桥接，之后修改/etc/network/interfaces填写相关信息，重启之后查看网卡能获得ip # ubuntu 18.04 allow-hotplug enp0s8 iface enp0s8 inet static address 10.200.242.200 netmask 255.0.0.0 gateway 10.0.0.3 ubuntu20.04操作: 修改 /etc/netplan/50-cloud-init.yaml 应用 sudo netplan apply 重启 sudo reboot # ubuntu 20.04 /etc/netplan/50-cloud-init.yaml network: ethernets: enp0s3: dhcp4: true match: macaddress: 08:00:27:bc:97:36 set-name: enp0s3 version: 2 # change like following part network: ethernets: enp0s3: dhcp4: false addresses: [10.</description>
     </item>
-    
     <item>
       <title>Toolbox</title>
       <link>https://26huitailang.github.io/posts/tools/toolbox/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/tools/toolbox/</guid>
       <description>Tool Hub 各个分类的工具汇总
 开发 代码 nvim vscode jetbrains vim 代码管理 gitea gitlab CI drone jetbrains teamcity gitlab 接口测试 postman httpie jebrains http test curl 接口mock测试 httpretty: a full fake TCP socket module. Inspired by FakeWeb(ruby), 用于模拟http外部访问请求 responses: A utility for mocking out the Python Requests library. 接口性能测试 vegeta pssh + vegeta, pssh并行在多个计算机中执行命令，vegeta接口性能测试工具，支持代码修改、命令模式，输出json、text、gob、html等格式 apache benchmark(ab) 代码性能分析 Python memray pytest-memray py-spy, Never use print for debugging again PySnooper, Never use print for debugging again 文档 markdown：</description>
     </item>
-    
     <item>
       <title>vue cors</title>
       <link>https://26huitailang.github.io/posts/vue/cors/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/vue/cors/</guid>
       <description>利用proxy 解决 Django Vue 开发环境中的跨域问题 最近使用 Django+Vue的组合快速的做一个项目，前段之前有看过，但是只是👀会了，这次实际操作，在前后端分离后的开发环境中踩了坑。
 环境 Django + DRF Django Channels，主要是websocket vue-admin-template，一个开源的项目，很多东西都有实现，新手可以用来改改就用，还能学习 开发环境：
@@ -407,12 +340,10 @@ wsgi, 8000 asgi, 8001 vue, 9528 问题 想像在使用nginx一样的透明的使
 代理 /api的请求到8000端口的wsgi server 代理 /ws的请求到8001的asgi server /api ---&amp;gt; localhost:8000/api localhost:9528 (cookie) -- /ws ---&amp;gt; localhost:8001/ws vue.conf.js
 devServer: { ... proxy: { [process.env.VUE_APP_BASE_API]: { target: &amp;#39;http://127.0.0.1:8000&amp;#39;, changeOrigin: true, ws: false, pathRewrite: { [&amp;#39;^&amp;#39; + process.env.VUE_APP_BASE_API]: &amp;#39;&amp;#39; }, cookieDomainRewrite: { &amp;#39;*&amp;#39;: &amp;#39;localhost&amp;#39; } }, &amp;#39;/ws&amp;#39;: { target: &amp;#39;ws://127.</description>
     </item>
-    
     <item>
       <title>docker env file</title>
       <link>https://26huitailang.github.io/posts/docker/env/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/docker/env/</guid>
       <description>docker env file 在docker-compose 中使用以下方式导入.envfile。
 web: build: . restart: always working_dir: /deploy/mysite command: ./service_web.sh env_file: - .env # environments .env
@@ -420,31 +351,25 @@ DOCKER=1 HOME=/deploy 想用shell script动态获取环境的CPU count 如果直
 CPU_NUM=$(cat /proc/cpuinfo |grep processor|wc -l) 所以，在web服务的command: ./service_web.sh脚本中export一个变量，并在gunicorn中使用：
 #!/bin/bash sleep 5 export CPU_NUM=$(cat /proc/cpuinfo |grep processor|wc -l) python manage.py collectstatic -v0 --noinput python manage.py migrate --noinput /usr/local/bin/gunicorn -w $((2*$CPU_NUM+1)) -b unix:/deploy/running/handle/django-tutorial-server.sock mysite.wsgi:application --log-level info </description>
     </item>
-    
     <item>
       <title>docker 加速</title>
       <link>https://26huitailang.github.io/posts/docker/%E5%8A%A0%E9%80%9F/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/docker/%E5%8A%A0%E9%80%9F/</guid>
       <description>docker 加速 mac ~/.docker/daemon.json 添加如下配置 { &amp;#34;registry-mirrors&amp;#34;: [&amp;#34;https://registry.docker-cn.com&amp;#34;] } </description>
     </item>
-    
     <item>
       <title>docker 管理工具</title>
       <link>https://26huitailang.github.io/posts/docker/%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/docker/%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</guid>
       <description>docker 管理工具 Portainer web服务
 docker volume create portainer_data docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer </description>
     </item>
-    
     <item>
       <title>docker 阿里云仓库</title>
       <link>https://26huitailang.github.io/posts/docker/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BB%93%E5%BA%93/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/docker/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BB%93%E5%BA%93/</guid>
       <description>docker 阿里云仓库 登录阿里云Docker Registry $ sudo docker login --username=26huitailang@gmail.com registry.cn-hangzhou.aliyuncs.com 用于登录的用户名为阿里云账号全名，密码为开通服务时设置的密码。
 您可以在产品控制台首页修改登录密码。
@@ -454,12 +379,10 @@ Error saving credentials: error storing credentials - err: exit status 1, out: `
 选择合适的镜像仓库地址 从ECS推送镜像时，可以选择使用镜像仓库内网地址。推送速度将得到提升并且将不会损耗您的公网流量。
 如果您使用的机器位于VPC网络，请使用 registry-vpc.cn-hangzhou.aliyuncs.com 作为Registry的域名登录，并作为镜像命名空间前缀。</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://26huitailang.github.io/posts/ansible/ansible/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/ansible/ansible/</guid>
       <description>ansible ref quick-start 流程 环境准备 创建三个虚拟机, ansible(安装 ansible 的机器), vm1, vm2
 使用 ssh-keygen 生成公私钥
@@ -468,21 +391,17 @@ ssh-copy-id name@host 配置免密登陆
 $ apt install -y ansible
 配置 ➜ ~ pwd /root ➜ ~ cat ansible.cfg [defaults] inventory = $HOME/hosts ➜ ~ cat hosts [webservers] vm1 [dbservers] vm2 ➜ ~ cat /etc/hosts 127.0.0.1	localhost 127.0.1.1	ansible.ansible	ansible # The following lines are desirable for IPv6 capable hosts ::1 localhost ip6-localhost ip6-loopback ff02::1 ip6-allnodes ff02::2 ip6-allrouters # ansible 10.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://26huitailang.github.io/posts/docker/dockerfile-best-practice/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/docker/dockerfile-best-practice/</guid>
       <description>https://docs.docker.com/develop/develop-images/dockerfile_best-practices/</description>
     </item>
-    
     <item>
       <title>Cheatsheet for pkg manager</title>
       <link>https://26huitailang.github.io/posts/cheatsheet/pkg-manager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/cheatsheet/pkg-manager/</guid>
       <description>Cheatsheet for package manager go mod pip apt ubuntu 20.04 pip pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
 升级 pip 到最新的版本 (&amp;gt;=10.0.0) 后进行配置：
@@ -492,35 +411,29 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -U
 apt ubuntu 20.04
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse # deb-src https://mirrors.</description>
     </item>
-    
     <item>
       <title>Cobra 命令行</title>
       <link>https://26huitailang.github.io/posts/golang/cobra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/golang/cobra/</guid>
       <description>Cobra 命令行 因为之前写 Django，python manage.py这个命令非常好用，想看看能不能实现类似的效果。搜索之后发现了更强的cobra，看简介中使用的项目就知道非常不错。代码组织参考的frp的。
 PATH/frp/cmd，frpc和fprs分别是客户端和服务端
 ├───frpc │ │ main.go │ │ │ └───sub │ http.go │ https.go │ reload.go │ root.go │ status.go │ stcp.go │ sudp.go │ tcp.go │ tcpmux.go │ udp.go │ xtcp.go │ └───frps main.go root.go 添加 go get -u github.com/spf13/cobra/cobra 在项目目录中执行，appname mycli，其中cmd中 rootCmd 的名称是mycli，这里建议和appname一样，后面可以直接go install之后使用mycli即可。
 mkdir cmd &amp;amp;&amp;amp; cd cmd cobra init mycli --pkg-name mycli cmd └───mycli │ LICENSE │ main.go │ └───cmd root.go 模板代码 import错误，重新按照自己项目的组织方式重写 import即可。</description>
     </item>
-    
     <item>
       <title>docker install</title>
       <link>https://26huitailang.github.io/posts/docker/debian-docker-install/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/docker/debian-docker-install/</guid>
       <description>docker install install docker on Debian/Ubuntu
 link
 Uninstall old versions $ sudo apt-get remove docker docker-engine docker.io containerd runc Set up the repository $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg-agent \ software-properties-common $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - or $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add - $ sudo apt-key fingerprint 0EBFCD88 $ sudo add-apt-repository \ &amp;#34;deb [arch=amd64] https://download.</description>
     </item>
-    
     <item>
       <title>Docker Private Registry</title>
       <link>https://26huitailang.github.io/posts/docker/%E7%A7%81%E6%9C%89registry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/docker/%E7%A7%81%E6%9C%89registry/</guid>
       <description>Docker Private Registry 简单使用，官方 官方提供的 https://hub.docker.com/_/registry
 Run a local registry: Quick Version
@@ -528,31 +441,25 @@ $ docker run -d -p 5000:5000 --restart always --name registry registry:2 Now, us
 $ docker pull ubuntu $ docker tag ubuntu localhost:5000/ubuntu $ docker push localhost:5000/ubuntu 更复杂的需求，harbor https://goharbor.io/
 Our mission is to be the trusted cloud native repository for Kubernetes</description>
     </item>
-    
     <item>
       <title>etcd 尝试</title>
       <link>https://26huitailang.github.io/posts/etcd/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/etcd/readme/</guid>
       <description>etcd 尝试 vagrant # -*- mode: ruby -*- # vi: set ft=ruby : servers = { :etcd1 =&amp;gt; &amp;#39;192.168.1.21&amp;#39;, :etcd2 =&amp;gt; &amp;#39;192.168.1.22&amp;#39;, :etcd3 =&amp;gt; &amp;#39;192.168.1.23&amp;#39; } Vagrant.configure(&amp;#34;2&amp;#34;) do |config| config.vm.box = &amp;#34;ubuntu/focal64&amp;#34; servers.each do |server_name, server_ip| config.vm.define server_name do |server_config| server_config.vm.hostname = &amp;#34;#{server_name.to_s}&amp;#34; server_config.vm.network :private_network, ip: server_ip server_config.vm.provider &amp;#34;virtualbox&amp;#34; do |vb| vb.name = server_name.to_s if vb.name == &amp;#34;etcd1&amp;#34; vb.memory = 1024 vb.cpus = 1 else vb.memory = 1024 vb.cpus = 1 end end end end end install install.</description>
     </item>
-    
     <item>
       <title>pdm</title>
       <link>https://26huitailang.github.io/posts/python/pdm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/python/pdm/</guid>
       <description>github, A modern Python package manager with PEP 582 support.
 仅在__pypackages__/&amp;lt;major.minor&amp;gt;包含必要的依赖和bin文件，没有解释器相关文件 就算python解释器被删除了，但是只要有其他符合pyproject.yoml规定版本的解释器即可，项目目录下的__pypackages__不包含解释器相关的内容，venv则必须重新关联或者重新创建 $ tree -L 3 __pypackages__ __pypackages__ └── 3.10 ├── bin │ ├── django-admin │ └── sqlformat ├── include └── lib ├── Django-4.0.1.dist-info ├── anyio ├── anyio-3.5.0.dist-info ├── asgiref ├── asgiref-3.4.1.dist-info ├── django ... install brew install pdm demo mkdir pdm-demo cd pdm-demo pdm init Creating a pyproject.toml for PDM... Please enter the Python interpreter to use ... 12. /usr/local/Cellar/pdm/1.</description>
     </item>
-    
     <item>
       <title>pip 离线安装</title>
       <link>https://26huitailang.github.io/posts/python/pip/%E6%89%93%E5%8C%85%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/python/pip/%E6%89%93%E5%8C%85%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</guid>
       <description>pip 离线安装 打包 注意，要在同平台打包，否则有些包不能正确安装。
 在已有的环境中，一般是一个虚拟环境：
@@ -560,12 +467,10 @@ pip freeze &amp;gt; pip-requirements.txt pip download -d pip-packages -r pip-req
 example
 pip install pip-download pip-download -p win_amd64 -p none-any fabric </description>
     </item>
-    
     <item>
       <title>pipenv</title>
       <link>https://26huitailang.github.io/posts/python/pip/pipenv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/python/pip/pipenv/</guid>
       <description>pipenv pip和virtualenv的组合，使用Pipfile来替换旧的requirements.txt方式。
 documentation zhihu 参考 segmentfault 参考 安装 安装到系统常用的python版本下，mac可以使用brew安装
@@ -579,33 +484,26 @@ $ pipenv install --dev 区别开发环境 在安装包的时候添加一个--dev
 $ pipenv install --pypi-mirror https://mirrors.aliyun.com/pypi/simple 查看安装的包 $ pipenv graph 不仅可以看到安装包，还可以看到依赖关系。
 Django==2.1.7 - pytz [required: Any, installed: 2018.</description>
     </item>
-    
     <item>
       <title>PostgreSQL 分表</title>
       <link>https://26huitailang.github.io/posts/postgresql/partition/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/postgresql/partition/</guid>
       <description>PostgreSQL 分表 继承实现更灵活，可以直接在已有数据的表上实现，不用重新迁移。
 -- https://www.postgresql.org/docs/current/ddl-partitioning.html -- zh -- http://postgres.cn/docs/11/ddl-partitioning.html -- keyword: further redirect -- 已有数据分表，因为主表不能有数据，所以需要先备份，创建分表和规则完毕后重新插入 -- 或者用新的表名，之后再分批读取插入 -- 创建主表 CREATE TABLE measurement ( city_id int not null, logdate date not null, peaktemp int, unitsales int ) PARTITION BY RANGE (logdate); -- 创建分表及规则 -- 还可以通过partition by 再次创建sub-partitioning，对插入measurement_y2006m02的数据再次重定向 -- CREATE TABLE measurement_y2006m02 PARTITION OF measurement -- FOR VALUES FROM (&amp;#39;2006-02-01&amp;#39;) TO (&amp;#39;2006-03-01&amp;#39;) -- PARTITION BY RANGE (peaktemp); CREATE TABLE measurement_y2006m02 PARTITION OF measurement FOR VALUES FROM (&amp;#39;2006-02-01&amp;#39;) TO (&amp;#39;2006-03-01&amp;#39;); CREATE TABLE measurement_y2006m03 PARTITION OF measurement FOR VALUES FROM (&amp;#39;2006-03-01&amp;#39;) TO (&amp;#39;2006-04-01&amp;#39;); -- 创建索引，自动再每个分区上创建索引 CREATE INDEX ON measurement (logdate); -- Ensure that the enable_partition_pruning configuration parameter is not disabled in postgresql.</description>
     </item>
-    
-    
     <item>
       <title>TeamCity 搭建CI/CD</title>
       <link>https://26huitailang.github.io/posts/teamcity/teamcity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/teamcity/teamcity/</guid>
       <description>Teamcity 搭建CI/CD install server
 mkdir teamcity_server docker run -it --name teamcity-server-instance \ -v /home/ubuntu/teamcity_server/datadir:/data/teamcity_server/datadir \ -v /home/ubuntu/teamcity_server/logs:/opt/teamcity/logs \ -p 8111:8111 \ jetbrains/teamcity-server agent, conf 有权限问题，最好在root运行 如果要使用docker-in-docker特性（sudo command not found），请使用linux-sudo tag的image sudo docker run -it -e SERVER_URL=&amp;#34;http://10.200.160.4:8111&amp;#34; \ -u 0 \ -v docker_volumes:/var/lib/docker \ -v /var/run/docker.sock:/var/run/docker.sock \ -v /opt/buildagent/work:/opt/buildagent/work \ -v /opt/buildagent/temp:/opt/buildagent/temp \ -v /opt/buildagent/tools:/opt/buildagent/tools \ -v /opt/buildagent/plugins:/opt/buildagent/plugins \ -v /opt/buildagent/system:/opt/buildagent/system \ --privileged -e DOCKER_IN_DOCKER=start \ -v /home/ubuntu/teamcity_agent/conf:/data/teamcity_agent/conf \ jetbrains/teamcity-agent register agent agent 安装好后，在server UI/Agents 中进行认证授权。待agent就绪后，可以添加需要的项目和操作等。</description>
     </item>
-    
     <item>
       <title>Vagrant</title>
       <link>https://26huitailang.github.io/posts/vagrant/vagrant/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/vagrant/vagrant/</guid>
       <description>如何使用 Vagrant 快速搭建环境 加速 可以直接从国内镜像下载 box格式的文件，然后用 vagrant box add NAME URL添加
 # 自己下载 https://mirrors.tuna.tsinghua.edu.cn/ubuntu-cloud-images/focal/current/ 制作自己的box 官方文档
@@ -616,12 +514,10 @@ vagrant box add ubuntu2004 .\ubuntu2004.box 如果没有Vagrantfile，则初始�
 vagrant box add ubuntu2004 .\ubuntu2004.box 启动
 vagrant up VagrantFile # -*- mode: ruby -*- # vi: set ft=ruby : servers = { :k3s1 =&amp;gt; &amp;#39;192.168.1.21&amp;#39;, :k3s2 =&amp;gt; &amp;#39;192.168.1.22&amp;#39;, :k3s3 =&amp;gt; &amp;#39;192.168.1.23&amp;#39; } Vagrant.configure(&amp;#34;2&amp;#34;) do |config| # 可以指定自己导出的box config.vm.box = &amp;#34;ubuntu/focal64&amp;#34; servers.</description>
     </item>
-    
     <item>
       <title>wheel</title>
       <link>https://26huitailang.github.io/posts/python/pip/wheel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/python/pip/wheel/</guid>
       <description>wheel 提供给系统组的wheel包构建，要求none-any
 以oss2包为例
@@ -630,6 +526,5 @@ pip download oss2 --platform=any --abi=none --no-deps 查看setup.py中的依赖
 python .\setup.py bdist_wheel --universal 如果遇到打包错误 error: invalid command &#39;bdist_wheel&#39;，可以修改setup.py使用setuptools的setup方法：
 # from distutils.core import setup from setuptools import setup </description>
     </item>
-    
   </channel>
 </rss>

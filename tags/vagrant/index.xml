@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>vagrant on Peter&#39;s Blog</title>
     <link>https://26huitailang.github.io/tags/vagrant/</link>
@@ -10,12 +10,12 @@
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://26huitailang.github.io/tags/vagrant/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <atom:link href="https://26huitailang.github.io/tags/vagrant/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vagrant</title>
       <link>https://26huitailang.github.io/posts/vagrant/vagrant/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/vagrant/vagrant/</guid>
       <description>如何使用 Vagrant 快速搭建环境 加速 可以直接从国内镜像下载 box格式的文件，然后用 vagrant box add NAME URL添加
 # 自己下载 https://mirrors.tuna.tsinghua.edu.cn/ubuntu-cloud-images/focal/current/ 制作自己的box 官方文档
@@ -26,6 +26,5 @@ vagrant box add ubuntu2004 .\ubuntu2004.box 如果没有Vagrantfile，则初始�
 vagrant box add ubuntu2004 .\ubuntu2004.box 启动
 vagrant up VagrantFile # -*- mode: ruby -*- # vi: set ft=ruby : servers = { :k3s1 =&amp;gt; &amp;#39;192.168.1.21&amp;#39;, :k3s2 =&amp;gt; &amp;#39;192.168.1.22&amp;#39;, :k3s3 =&amp;gt; &amp;#39;192.168.1.23&amp;#39; } Vagrant.configure(&amp;#34;2&amp;#34;) do |config| # 可以指定自己导出的box config.vm.box = &amp;#34;ubuntu/focal64&amp;#34; servers.</description>
     </item>
-    
   </channel>
 </rss>

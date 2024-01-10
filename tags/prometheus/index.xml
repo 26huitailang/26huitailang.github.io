@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>prometheus on Peter&#39;s Blog</title>
     <link>https://26huitailang.github.io/tags/prometheus/</link>
@@ -11,15 +11,14 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/prometheus/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://26huitailang.github.io/tags/prometheus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Prometheus</title>
       <link>https://26huitailang.github.io/posts/k3s/prometheus/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/k3s/prometheus/</guid>
       <description>Prometheus 简介 概念 prometheus server exporter，用于server采集数据，有官方提供的node-exporter，也可以通过各种SDK自定义导出内容，暴露一个类似/metrics的路径用于采集 注意，exporter在多进程（gunicorn 多进程）模式下使用会有限制，参考文档 数据模型，和influxdb类似，是时序数据库，以metric为名称，多个label（key-value形式）组成：&amp;lt;metric name&amp;gt;{&amp;lt;label name&amp;gt;=&amp;lt;label value&amp;gt;, ...} 重载配置 Yes, sending SIGHUP to the Prometheus process or an HTTP POST request to the /-/reload endpoint will reload and apply the configuration file. The various components attempt to handle failing changes gracefully.</description>
     </item>
-    
   </channel>
 </rss>

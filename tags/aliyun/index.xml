@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>aliyun on Peter&#39;s Blog</title>
     <link>https://26huitailang.github.io/tags/aliyun/</link>
@@ -11,12 +11,12 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/aliyun/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://26huitailang.github.io/tags/aliyun/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>docker 阿里云仓库</title>
       <link>https://26huitailang.github.io/posts/docker/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BB%93%E5%BA%93/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/docker/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BB%93%E5%BA%93/</guid>
       <description>docker 阿里云仓库 登录阿里云Docker Registry $ sudo docker login --username=26huitailang@gmail.com registry.cn-hangzhou.aliyuncs.com 用于登录的用户名为阿里云账号全名，密码为开通服务时设置的密码。
 您可以在产品控制台首页修改登录密码。
@@ -26,6 +26,5 @@ Error saving credentials: error storing credentials - err: exit status 1, out: `
 选择合适的镜像仓库地址 从ECS推送镜像时，可以选择使用镜像仓库内网地址。推送速度将得到提升并且将不会损耗您的公网流量。
 如果您使用的机器位于VPC网络，请使用 registry-vpc.cn-hangzhou.aliyuncs.com 作为Registry的域名登录，并作为镜像命名空间前缀。</description>
     </item>
-    
   </channel>
 </rss>

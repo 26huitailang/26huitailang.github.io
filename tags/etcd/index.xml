@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>etcd on Peter&#39;s Blog</title>
     <link>https://26huitailang.github.io/tags/etcd/</link>
@@ -10,15 +10,14 @@
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://26huitailang.github.io/tags/etcd/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <atom:link href="https://26huitailang.github.io/tags/etcd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>etcd 尝试</title>
       <link>https://26huitailang.github.io/posts/etcd/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/etcd/readme/</guid>
       <description>etcd 尝试 vagrant # -*- mode: ruby -*- # vi: set ft=ruby : servers = { :etcd1 =&amp;gt; &amp;#39;192.168.1.21&amp;#39;, :etcd2 =&amp;gt; &amp;#39;192.168.1.22&amp;#39;, :etcd3 =&amp;gt; &amp;#39;192.168.1.23&amp;#39; } Vagrant.configure(&amp;#34;2&amp;#34;) do |config| config.vm.box = &amp;#34;ubuntu/focal64&amp;#34; servers.each do |server_name, server_ip| config.vm.define server_name do |server_config| server_config.vm.hostname = &amp;#34;#{server_name.to_s}&amp;#34; server_config.vm.network :private_network, ip: server_ip server_config.vm.provider &amp;#34;virtualbox&amp;#34; do |vb| vb.name = server_name.to_s if vb.name == &amp;#34;etcd1&amp;#34; vb.memory = 1024 vb.cpus = 1 else vb.memory = 1024 vb.cpus = 1 end end end end end install install.</description>
     </item>
-    
   </channel>
 </rss>

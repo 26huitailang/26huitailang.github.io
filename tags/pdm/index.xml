@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>pdm on Peter&#39;s Blog</title>
     <link>https://26huitailang.github.io/tags/pdm/</link>
@@ -10,16 +10,15 @@
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://26huitailang.github.io/tags/pdm/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <atom:link href="https://26huitailang.github.io/tags/pdm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>pdm</title>
       <link>https://26huitailang.github.io/posts/python/pdm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/python/pdm/</guid>
       <description>github, A modern Python package manager with PEP 582 support.
 仅在__pypackages__/&amp;lt;major.minor&amp;gt;包含必要的依赖和bin文件，没有解释器相关文件 就算python解释器被删除了，但是只要有其他符合pyproject.yoml规定版本的解释器即可，项目目录下的__pypackages__不包含解释器相关的内容，venv则必须重新关联或者重新创建 $ tree -L 3 __pypackages__ __pypackages__ └── 3.10 ├── bin │ ├── django-admin │ └── sqlformat ├── include └── lib ├── Django-4.0.1.dist-info ├── anyio ├── anyio-3.5.0.dist-info ├── asgiref ├── asgiref-3.4.1.dist-info ├── django ... install brew install pdm demo mkdir pdm-demo cd pdm-demo pdm init Creating a pyproject.toml for PDM... Please enter the Python interpreter to use ... 12. /usr/local/Cellar/pdm/1.</description>
     </item>
-    
   </channel>
 </rss>

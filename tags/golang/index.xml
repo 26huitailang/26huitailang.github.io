@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>golang on Peter&#39;s Blog</title>
     <link>https://26huitailang.github.io/tags/golang/</link>
@@ -11,24 +11,22 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://26huitailang.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>开发环境</title>
       <link>https://26huitailang.github.io/posts/devenv/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/devenv/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
       <description>开发编辑器/IDE vim vscode goland pycharm CI/CD gitlab CI/CD github actions teamcity 部署选择 docker supervisor pm2 systemd 网络工具 wireshark socat tcpdump Go Golang 开发环境准备和工具选择
 参考Alikhll/golang-developer-roadmap。
 更多关于golang的分享，参考Awesome-go
 包管理 加速/私有模块 组件 CLI工具开发 cobra Config viper Web Gin🍺 Echo🍺 Beego go-swagger Iris ORM Gorm🍺 Xorm DB PG🍺 Redis🍺 MongoDB Log Zap🍺 Logrus Websocket gorilla/websocket Task schedule Gron test testify convey, bdd python lint black isort darker </description>
     </item>
-    
     <item>
       <title>Cheatsheet for pkg manager</title>
       <link>https://26huitailang.github.io/posts/cheatsheet/pkg-manager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/cheatsheet/pkg-manager/</guid>
       <description>Cheatsheet for package manager go mod pip apt ubuntu 20.04 pip pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
 升级 pip 到最新的版本 (&amp;gt;=10.0.0) 后进行配置：
@@ -38,18 +36,15 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -U
 apt ubuntu 20.04
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse # deb-src https://mirrors.</description>
     </item>
-    
     <item>
       <title>Cobra 命令行</title>
       <link>https://26huitailang.github.io/posts/golang/cobra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/golang/cobra/</guid>
       <description>Cobra 命令行 因为之前写 Django，python manage.py这个命令非常好用，想看看能不能实现类似的效果。搜索之后发现了更强的cobra，看简介中使用的项目就知道非常不错。代码组织参考的frp的。
 PATH/frp/cmd，frpc和fprs分别是客户端和服务端
 ├───frpc │ │ main.go │ │ │ └───sub │ http.go │ https.go │ reload.go │ root.go │ status.go │ stcp.go │ sudp.go │ tcp.go │ tcpmux.go │ udp.go │ xtcp.go │ └───frps main.go root.go 添加 go get -u github.com/spf13/cobra/cobra 在项目目录中执行，appname mycli，其中cmd中 rootCmd 的名称是mycli，这里建议和appname一样，后面可以直接go install之后使用mycli即可。
 mkdir cmd &amp;amp;&amp;amp; cd cmd cobra init mycli --pkg-name mycli cmd └───mycli │ LICENSE │ main.go │ └───cmd root.go 模板代码 import错误，重新按照自己项目的组织方式重写 import即可。</description>
     </item>
-    
   </channel>
 </rss>

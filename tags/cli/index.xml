@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cli on Peter&#39;s Blog</title>
     <link>https://26huitailang.github.io/tags/cli/</link>
@@ -10,18 +10,17 @@
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://26huitailang.github.io/tags/cli/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <atom:link href="https://26huitailang.github.io/tags/cli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cobra 命令行</title>
       <link>https://26huitailang.github.io/posts/golang/cobra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/golang/cobra/</guid>
       <description>Cobra 命令行 因为之前写 Django，python manage.py这个命令非常好用，想看看能不能实现类似的效果。搜索之后发现了更强的cobra，看简介中使用的项目就知道非常不错。代码组织参考的frp的。
 PATH/frp/cmd，frpc和fprs分别是客户端和服务端
 ├───frpc │ │ main.go │ │ │ └───sub │ http.go │ https.go │ reload.go │ root.go │ status.go │ stcp.go │ sudp.go │ tcp.go │ tcpmux.go │ udp.go │ xtcp.go │ └───frps main.go root.go 添加 go get -u github.com/spf13/cobra/cobra 在项目目录中执行，appname mycli，其中cmd中 rootCmd 的名称是mycli，这里建议和appname一样，后面可以直接go install之后使用mycli即可。
 mkdir cmd &amp;amp;&amp;amp; cd cmd cobra init mycli --pkg-name mycli cmd └───mycli │ LICENSE │ main.go │ └───cmd root.go 模板代码 import错误，重新按照自己项目的组织方式重写 import即可。</description>
     </item>
-    
   </channel>
 </rss>

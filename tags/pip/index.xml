@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>pip on Peter&#39;s Blog</title>
     <link>https://26huitailang.github.io/tags/pip/</link>
@@ -11,22 +11,20 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 10 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://26huitailang.github.io/tags/pip/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://26huitailang.github.io/tags/pip/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>pip dependency</title>
       <link>https://26huitailang.github.io/posts/python/pip/dependency/</link>
       <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/python/pip/dependency/</guid>
       <description>查看依赖 工具 pipdeptree
 支持正向、反向查看依赖 多种格式输出，安装了graphviz还可以输出图形 [root@10-113-57-176 /] pip install pipdeptree [root@10-113-57-176 /] pipdeptree --help usage: pipdeptree [-h] [-v] [-f] [--python PYTHON] [-a] [-l] [-u] [-w [{silence,suppress,fail}]] [-r] [-p PACKAGES] [-e PACKAGES] [-j] [--json-tree] [--graph-output OUTPUT_FORMAT] Dependency tree of the installed python packages optional arguments: -h, --help show this help message and exit -v, --version show program&amp;#39;s version number and exit -f, --freeze Print names so as to write freeze files --python PYTHON Python to use to look for packages in it (default: where installed) -a, --all list all deps at top level -l, --local-only If in a virtualenv that has global access do not show globally installed packages -u, --user-only Only show installations in the user site dir -w [{silence,suppress,fail}], --warn [{silence,suppress,fail}] Warning control.</description>
     </item>
-    
     <item>
       <title>Cheatsheet for pkg manager</title>
       <link>https://26huitailang.github.io/posts/cheatsheet/pkg-manager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/cheatsheet/pkg-manager/</guid>
       <description>Cheatsheet for package manager go mod pip apt ubuntu 20.04 pip pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
 升级 pip 到最新的版本 (&amp;gt;=10.0.0) 后进行配置：
@@ -36,12 +34,10 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -U
 apt ubuntu 20.04
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse # deb-src https://mirrors.</description>
     </item>
-    
     <item>
       <title>pip 离线安装</title>
       <link>https://26huitailang.github.io/posts/python/pip/%E6%89%93%E5%8C%85%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/python/pip/%E6%89%93%E5%8C%85%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</guid>
       <description>pip 离线安装 打包 注意，要在同平台打包，否则有些包不能正确安装。
 在已有的环境中，一般是一个虚拟环境：
@@ -49,12 +45,10 @@ pip freeze &amp;gt; pip-requirements.txt pip download -d pip-packages -r pip-req
 example
 pip install pip-download pip-download -p win_amd64 -p none-any fabric </description>
     </item>
-    
     <item>
       <title>pipenv</title>
       <link>https://26huitailang.github.io/posts/python/pip/pipenv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/python/pip/pipenv/</guid>
       <description>pipenv pip和virtualenv的组合，使用Pipfile来替换旧的requirements.txt方式。
 documentation zhihu 参考 segmentfault 参考 安装 安装到系统常用的python版本下，mac可以使用brew安装
@@ -68,12 +62,10 @@ $ pipenv install --dev 区别开发环境 在安装包的时候添加一个--dev
 $ pipenv install --pypi-mirror https://mirrors.aliyun.com/pypi/simple 查看安装的包 $ pipenv graph 不仅可以看到安装包，还可以看到依赖关系。
 Django==2.1.7 - pytz [required: Any, installed: 2018.</description>
     </item>
-    
     <item>
       <title>wheel</title>
       <link>https://26huitailang.github.io/posts/python/pip/wheel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://26huitailang.github.io/posts/python/pip/wheel/</guid>
       <description>wheel 提供给系统组的wheel包构建，要求none-any
 以oss2包为例
@@ -82,6 +74,5 @@ pip download oss2 --platform=any --abi=none --no-deps 查看setup.py中的依赖
 python .\setup.py bdist_wheel --universal 如果遇到打包错误 error: invalid command &#39;bdist_wheel&#39;，可以修改setup.py使用setuptools的setup方法：
 # from distutils.core import setup from setuptools import setup </description>
     </item>
-    
   </channel>
 </rss>
