@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Peter&#39;s Blog</title>
     <link>https://26huitailang.github.io/posts/</link>
@@ -11,13 +11,20 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 03 Aug 2023 17:33:23 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 14 Mar 2024 18:07:37 +0800</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Curl</title>
+      <link>https://26huitailang.github.io/posts/tools/curl/</link>
+      <pubDate>Thu, 14 Mar 2024 18:07:37 +0800</pubDate>
+      <guid>https://26huitailang.github.io/posts/tools/curl/</guid>
+      <description>Desc Text.</description>
+    </item>
+    <item>
       <title>Vscode</title>
-      <link>https://26huitailang.github.io/posts/devenv/vscode/</link>
+      <link>https://26huitailang.github.io/posts/tools/vscode/</link>
       <pubDate>Thu, 03 Aug 2023 17:33:23 +0800</pubDate>
-      <guid>https://26huitailang.github.io/posts/devenv/vscode/</guid>
+      <guid>https://26huitailang.github.io/posts/tools/vscode/</guid>
       <description>Desc Text.</description>
     </item>
     <item>
@@ -29,9 +36,9 @@
     </item>
     <item>
       <title>开发环境</title>
-      <link>https://26huitailang.github.io/posts/devenv/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
+      <link>https://26huitailang.github.io/posts/tools/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://26huitailang.github.io/posts/devenv/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
+      <guid>https://26huitailang.github.io/posts/tools/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
       <description>开发编辑器/IDE vim vscode goland pycharm CI/CD gitlab CI/CD github actions teamcity 部署选择 docker supervisor pm2 systemd 网络工具 wireshark socat tcpdump Go Golang 开发环境准备和工具选择
 参考Alikhll/golang-developer-roadmap。
 更多关于golang的分享，参考Awesome-go
@@ -208,9 +215,9 @@ https://github.com/shieldfy/API-Security-Checklist/blob/master/README-zh.md</des
     </item>
     <item>
       <title>tmux</title>
-      <link>https://26huitailang.github.io/posts/devenv/tmux/</link>
+      <link>https://26huitailang.github.io/posts/tools/tmux/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>https://26huitailang.github.io/posts/devenv/tmux/</guid>
+      <guid>https://26huitailang.github.io/posts/tools/tmux/</guid>
       <description>tmux 终端服用软件，session可以保存在tmux server中，就算iterm等终端关闭也可以恢复，远程连接的时候避免掉线（类似的功能的软件还有，screen）。
 参考 十分钟学会 tmux Tmux - Linux从业者必备利器 * cheatsheet 优雅地使用命令行：Tmux 终端复用 Tmux使用手册 本机，cheatsheet-tmux 安装 brew install tmux 基于参考第二篇文章，配置：
 $ cd $ rm -rf .tmux $ git clone https://github.com/gpakosz/.tmux.git $ ln -s -f .tmux/.tmux.conf $ cp .tmux/.tmux.conf.local . 概念 session，不同的会话 window，不同的窗口，物理划分，一个session可以有多个window pane，窗格，一个window可以用过 %/&amp;quot; 划分为多个窗格 tmux操作 tmux ls，查看打开的session tmux a，恢复 tmux a -t SESSION,恢复指定session C-b操作 前缀快捷键，^b % 左右平分出两个pane &amp;quot; 上下平分出两个pane x 关闭当前窗格 { 当前窗格前移 } 当前窗格后移 ; 选择上次使用的窗格 o 选择下一个窗格，也可以使用上下左右方向键来选择 space 切换窗格布局，tmux 内置了五种窗格布局，也可以通过 ⌥1 至 ⌥5来切换 z 最大化当前窗格，再次执行可恢复原来大小 q 显示所有窗格的序号，在序号出现期间按下对应的数字，即可跳转至对应的窗格 resize pane C-b :resize-pane -D/U/R/L 20 修改配置 ~/.</description>
@@ -298,9 +305,9 @@ Development 使用windows和virtualbox，没有打开hyper-v所以无法使用do
     </item>
     <item>
       <title>Django打开gzip导致文件流content-length丢失</title>
-      <link>https://26huitailang.github.io/posts/django/gzip/</link>
+      <link>https://26huitailang.github.io/posts/python/django/gzip/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://26huitailang.github.io/posts/django/gzip/</guid>
+      <guid>https://26huitailang.github.io/posts/python/django/gzip/</guid>
       <description>Django打开gzip导致文件流content-length丢失 code GZipMiddleware
 use gzip middleware will del response[&#39;Content-Length&#39;] if response.streaming. nginx gzip is the same problem.
 If file feature is important. You&amp;rsquo;d better be independent from the api or system.</description>
@@ -397,6 +404,76 @@ $ apt install -y ansible
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/docker/dockerfile-best-practice/</guid>
       <description>https://docs.docker.com/develop/develop-images/dockerfile_best-practices/</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://26huitailang.github.io/posts/golang/ci/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://26huitailang.github.io/posts/golang/ci/</guid>
+      <description>尝试golang的CI Golang基于Gitlab CI/CD部署方案 环境 gitlab:
+docker，gitlab docker，gitlab-runner 用于集成部署的镜像制作，golang版本，和一些必须的工具（golint等） runner 注册和配置 定义规则，.gitlab-ci.yml 获取列表，go list ./... | grep -v /vendor/ 单元测试, go test -short 数据竞争, go test -race -short 代码覆盖率 构建 linter github + travis-ci:
+先整理一个本地的测试方案 按照travis的golang指导写.travis-ci.yml 参考：
+language: go go: - 1.9 - 1.8 - 1.7 branches: only: - master cache: directories: - $GOPATH/pkg/dep env: - DEP_VERSION=&amp;#34;0.3.2&amp;#34; before_install: # Setup some env variables - GO_FILES=$(find . -iname &amp;#39;*.go&amp;#39; | grep -v /vendor/) # All the .</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://26huitailang.github.io/posts/golang/go-doc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://26huitailang.github.io/posts/golang/go-doc/</guid>
+      <description>go doc godoc 命令godoc是一个很强大的工具，同样用于展示指定代码包的文档。并且提供网页选择。
+开启godoc -http=localhost:6060。
+可以在官方包之后的third-party部分找到对应的GOPATH里面自己的或下载的其他包。
+go_doc go doc命令可以打印附于Go语言程序实体上的文档。我们可以通过把程序实体的标识符作为该命令的参数来达到查看其文档的目的。
+下面是一个包的go doc输出：
+package suite // import &amp;#34;learning/cobra_demo/download_suite/suite&amp;#34; Package suite to download one suite images. Now support meituri. func DonwloadSuite(iSuite ISuiteOperator, countFanOut int, folderPath string, title string) func IsDir(path string) bool func IsFile(path string) bool func IsFileOrFolderExists(path string) bool type ISuiteOperator interface{ ... } type MeituriSuite struct{ ... } func NewMeituriSuite(firstPage string) *MeituriSuite 还支持其他参数，-all可以一并显示文档等。</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://26huitailang.github.io/posts/golang/goroutine/channel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://26huitailang.github.io/posts/golang/goroutine/channel/</guid>
+      <description>goroutine channel的坑 channel的关闭 for-range 知道channel的关闭，代码继续执行 for-select 不知道，用case v, ok:=&amp;lt;-c:中的ok来判断 那么问题来了，如果是一个buffer channel，ok在关闭的时候可不是true，而是满足channel数据去完&amp;amp;channel close，ok才会返回true，如果不这样设计的话，会导致数据丢失。 channel for-select 中break和return的问题 核心是，break在select中是只能跳出select，return是返回当前的函数。
+package meituri import &amp;#34;fmt&amp;#34; type ISuiteOperator interface { GetPageURLs(chan string) GetImgURLs(chPage &amp;lt;-chan string, chFailedImg &amp;lt;-chan string) &amp;lt;-chan string Download(chImg &amp;lt;-chan string, chFailedImg chan string, folderPath string) &amp;lt;-chan string } // DonwloadSuite to download one suite func DonwloadSuite(iSuite ISuiteOperator, countFanOut int, folderPath string) { chPage := make(chan string) chFailedImg := make(chan string) // 下载失败img放回 go iSuite.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://26huitailang.github.io/posts/golang/profiling/profiling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://26huitailang.github.io/posts/golang/profiling/profiling/</guid>
+      <description>Profiling 在计算机性能调试领域里，profiling 就是对应用的画像，这里画像就是应用使用 CPU 和内存的情况。也就是说应用使用了多少 CPU 资源？都是哪些部分在使用？每个函数使用的比例是多少？有哪些函数在等待 CPU 资源？知道了这些，我们就能对应用进行规划，也能快速定位性能瓶颈。
+在 go 语言中，主要关注的应用运行情况主要包括以下几种：
+CPU profile：报告程序的 CPU 使用情况，按照一定频率去采集应用程序在 CPU 和寄存器上面的数据 Memory Profile（Heap Profile）：报告程序的内存使用情况 Block Profiling：报告 goroutines 不在运行状态的情况，可以用来分析和查找死锁等性能瓶颈 Goroutine Profiling：报告 goroutines 的使用情况，有哪些 goroutine，它们的调用关系是怎样的 go 提供了：
+runtime/pprof，适合一次性运行的程序 net/http/pprof，web服务型的使用 服务应用型 import _ &amp;#34;net/http/pprof&amp;#34; 结果 flat：给定函数上运行耗时 flat%：同上的 CPU 运行耗时总比例 sum%：给定函数累积使用 CPU 总比例 cum：当前函数加上它之上的调用运行总耗时 cum%：同上的 CPU 运行耗时总比例 参考 使用 pprof 和火焰图调试 golang 应用 Tutorial for optimizing golang program </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://26huitailang.github.io/posts/golang/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://26huitailang.github.io/posts/golang/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</guid>
+      <description>交叉编译 Golang 交叉编译与选择性编译 树莓派cmd CGO_ENABLED=0 GOOS=linux GOARCH=arm go build xxx.go 问题 如果依赖库使用了如C、C++，那么交叉编译的时候是需要打开CGO_ENABLED=1，并制定CC参数（cross compiler）
+这里以macos darwin为例，我要在mac上写好代码，要编译后调试逻辑
+使用docker放到对应环境中编译，需要安装docker，建议，避免环境不一致的问题 docker run --rm -v `pwd`:/code golang:1.18-rc bash -c &amp;#34;ls /code &amp;amp;&amp;amp; ls /code/deploy &amp;amp;&amp;amp; cd /code &amp;amp;&amp;amp; /usr/local/go/bin/go build -o /code/deploy/20220905235741/yogo ./&amp;#34;` 使用macos-cross-toolchains brew tap messense/macos-cross-toolchains # install x86_64-unknown-linux-gnu toolchain brew install x86_64-unknown-linux-gnu # install aarch64-unknown-linux-gnu toolchain brew install aarch64-unknown-linux-gnu # build GOOS=linux GOARCH=amd64 CGO_ENABLED=1 CC=x86_64-unknown-linux-gnu-gcc go build 使用musl（类似glibc），需要运行环境安装musl库，如apt install musl，否则会提示no such file brew install FiloSottile/musl-cross/musl-cross GOOS=linux GOARCH=amd64 CGO_ENABLED=1 CC=x86_64-linux-musl-gcc go build </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://26huitailang.github.io/posts/golang/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://26huitailang.github.io/posts/golang/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</guid>
+      <description>单元测试 go test指令 go test, 运行测试 go test -v -short -cover -parallel 3 -v verbose -short 忽略时间过长的测试 -cover 覆盖率 -parallel 3，同时运行3个测试用例，不过需要在测试中写t.parallel()来告诉go test go test -bench . -run x，运行当前目录的所有基准测试，并运行x的功能测试，因为没有x匹配，所以相当于忽略所有功能测试 测试http 包testing/httptest，模拟web服务器所需的设施，用net/http中的客户端去请求，然后模拟服务器返回的响应。
+test double 测试替身 提高被测试代码的独立性。
+实现测试替身的一种设计方法是使用依赖注入模式，dependency injection。
+Go中被传入的依赖关系通常会是一种接口类型。
+三方 Gocheck Ginkgo </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://26huitailang.github.io/posts/tools/aria2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://26huitailang.github.io/posts/tools/aria2/</guid>
+      <description>aria2 一个下载工具
+https://gist.github.com/maboloshi/a4b1f27567319d4a42352aadd036a578
+Mac使用 不喜欢命令行的可以用这个方案，后台启动aria2，webui来管理下载。
+brew install aria2 mkdir ~/.aria2 &amp;amp;&amp;amp; cd ~/.aria2 touch aria2.conf touch aria2.session # 启动文件 touch ~/Library/LaunchAgents/aria2.plist &amp;lt;!-- ~/Library/LaunchAgents/araia2.plist --&amp;gt; &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;#34;-//Apple//DTD PLIST 1.0//EN&amp;#34; &amp;#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;#34;&amp;gt; &amp;lt;plist version=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;KeepAlive&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;key&amp;gt;Label&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;aria2&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;ProgramArguments&amp;lt;/key&amp;gt; &amp;lt;array&amp;gt; &amp;lt;string&amp;gt;/usr/local/bin/aria2c&amp;lt;/string&amp;gt; &amp;lt;/array&amp;gt; &amp;lt;key&amp;gt;RunAtLoad&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;key&amp;gt;WorkingDirectory&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;/Users/maboloshi/Downloads&amp;lt;/string&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt; # 检查plist语法是否正确 plutil ~/Library/LaunchAgents/aria2.plist # 修改文件权限 chmod 644 ~/Library/LaunchAgents/aria2.plist # 添加自启动项: aria2 launchctl load ~/Library/LaunchAgents/aria2.plist # 删除自启动项: aria2 launchctl unload ~/Library/LaunchAgents/aria2.</description>
     </item>
     <item>
       <title>Cheatsheet for pkg manager</title>

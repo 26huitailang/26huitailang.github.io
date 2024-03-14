@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>python on Peter&#39;s Blog</title>
     <link>https://26huitailang.github.io/tags/python/</link>
@@ -15,9 +15,9 @@
     <atom:link href="https://26huitailang.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>开发环境</title>
-      <link>https://26huitailang.github.io/posts/devenv/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
+      <link>https://26huitailang.github.io/posts/tools/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://26huitailang.github.io/posts/devenv/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
+      <guid>https://26huitailang.github.io/posts/tools/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
       <description>开发编辑器/IDE vim vscode goland pycharm CI/CD gitlab CI/CD github actions teamcity 部署选择 docker supervisor pm2 systemd 网络工具 wireshark socat tcpdump Go Golang 开发环境准备和工具选择
 参考Alikhll/golang-developer-roadmap。
 更多关于golang的分享，参考Awesome-go

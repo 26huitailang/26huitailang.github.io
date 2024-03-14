@@ -2,22 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://26huitailang.github.io/tags/dev-tools/</loc>
-    <lastmod>2023-08-03T17:33:23+08:00</lastmod>
+    <loc>https://26huitailang.github.io/tags/curl/</loc>
+    <lastmod>2024-03-14T18:07:37+08:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/posts/tools/curl/</loc>
+    <lastmod>2024-03-14T18:07:37+08:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/</loc>
-    <lastmod>2023-08-03T17:33:23+08:00</lastmod>
+    <lastmod>2024-03-14T18:07:37+08:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/posts/</loc>
-    <lastmod>2023-08-03T17:33:23+08:00</lastmod>
+    <lastmod>2024-03-14T18:07:37+08:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/tags/</loc>
+    <lastmod>2024-03-14T18:07:37+08:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/tags/dev-tools/</loc>
     <lastmod>2023-08-03T17:33:23+08:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/tags/vscode/</loc>
     <lastmod>2023-08-03T17:33:23+08:00</lastmod>
   </url><url>
-    <loc>https://26huitailang.github.io/posts/devenv/vscode/</loc>
+    <loc>https://26huitailang.github.io/posts/tools/vscode/</loc>
     <lastmod>2023-08-03T17:33:23+08:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/tags/rsync/</loc>
@@ -32,7 +38,7 @@
     <loc>https://26huitailang.github.io/tags/python/</loc>
     <lastmod>2023-07-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://26huitailang.github.io/posts/devenv/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</loc>
+    <loc>https://26huitailang.github.io/posts/tools/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</loc>
     <lastmod>2023-07-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/tags/pyenv/</loc>
@@ -173,7 +179,7 @@
     <loc>https://26huitailang.github.io/tags/tmux/</loc>
     <lastmod>2021-11-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://26huitailang.github.io/posts/devenv/tmux/</loc>
+    <loc>https://26huitailang.github.io/posts/tools/tmux/</loc>
     <lastmod>2021-11-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/tags/markdown/</loc>
@@ -239,7 +245,7 @@
     <loc>https://26huitailang.github.io/tags/django/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://26huitailang.github.io/posts/django/gzip/</loc>
+    <loc>https://26huitailang.github.io/posts/python/django/gzip/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/tags/gzip/</loc>
@@ -287,6 +293,20 @@
     <loc>https://26huitailang.github.io/posts/ansible/ansible/</loc>
   </url><url>
     <loc>https://26huitailang.github.io/posts/docker/dockerfile-best-practice/</loc>
+  </url><url>
+    <loc>https://26huitailang.github.io/posts/golang/ci/</loc>
+  </url><url>
+    <loc>https://26huitailang.github.io/posts/golang/go-doc/</loc>
+  </url><url>
+    <loc>https://26huitailang.github.io/posts/golang/goroutine/channel/</loc>
+  </url><url>
+    <loc>https://26huitailang.github.io/posts/golang/profiling/profiling/</loc>
+  </url><url>
+    <loc>https://26huitailang.github.io/posts/golang/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
+  </url><url>
+    <loc>https://26huitailang.github.io/posts/golang/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</loc>
+  </url><url>
+    <loc>https://26huitailang.github.io/posts/tools/aria2/</loc>
   </url><url>
     <loc>https://26huitailang.github.io/tags/apt/</loc>
   </url><url>
