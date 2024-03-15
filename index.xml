@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 14 Mar 2024 18:07:37 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 15 Mar 2024 14:20:27 +0800</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tar</title>
+      <link>https://26huitailang.github.io/posts/tools/tar/</link>
+      <pubDate>Fri, 15 Mar 2024 14:20:27 +0800</pubDate>
+      <guid>https://26huitailang.github.io/posts/tools/tar/</guid>
+      <description>Desc Text.</description>
+    </item>
     <item>
       <title>Curl</title>
       <link>https://26huitailang.github.io/posts/tools/curl/</link>

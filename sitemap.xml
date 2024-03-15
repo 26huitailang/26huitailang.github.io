@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://26huitailang.github.io/</loc>
+    <lastmod>2024-03-15T14:20:27+08:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/posts/</loc>
+    <lastmod>2024-03-15T14:20:27+08:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/tags/</loc>
+    <lastmod>2024-03-15T14:20:27+08:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/tags/tar/</loc>
+    <lastmod>2024-03-15T14:20:27+08:00</lastmod>
+  </url><url>
+    <loc>https://26huitailang.github.io/posts/tools/tar/</loc>
+    <lastmod>2024-03-15T14:20:27+08:00</lastmod>
+  </url><url>
     <loc>https://26huitailang.github.io/tags/curl/</loc>
     <lastmod>2024-03-14T18:07:37+08:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/posts/tools/curl/</loc>
-    <lastmod>2024-03-14T18:07:37+08:00</lastmod>
-  </url><url>
-    <loc>https://26huitailang.github.io/</loc>
-    <lastmod>2024-03-14T18:07:37+08:00</lastmod>
-  </url><url>
-    <loc>https://26huitailang.github.io/posts/</loc>
-    <lastmod>2024-03-14T18:07:37+08:00</lastmod>
-  </url><url>
-    <loc>https://26huitailang.github.io/tags/</loc>
     <lastmod>2024-03-14T18:07:37+08:00</lastmod>
   </url><url>
     <loc>https://26huitailang.github.io/tags/dev-tools/</loc>
