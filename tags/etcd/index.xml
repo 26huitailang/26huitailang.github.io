@@ -9,13 +9,14 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.134.2</generator>
+    <generator>Hugo -- 0.139.2</generator>
     <language>en</language>
+    <lastBuildDate>Wed, 22 Jul 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/etcd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>etcd 尝试</title>
       <link>https://26huitailang.github.io/posts/etcd/readme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/etcd/readme/</guid>
       <description>&lt;h1 id=&#34;etcd-尝试&#34;&gt;etcd 尝试&lt;/h1&gt;
 &lt;h2 id=&#34;vagrant&#34;&gt;vagrant&lt;/h2&gt;

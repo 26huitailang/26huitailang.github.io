@@ -19,27 +19,13 @@ middleware
 每个请求都会执行相关代码，如果是db的话，即使路由函数不需要也会创建
 
 
-"><meta name=author content="Peter"><link rel=canonical href=https://26huitailang.github.io/posts/python/fastapi/><meta name=google-site-verification content="XYZabc"><meta name=yandex-verification content="XYZabc"><meta name=msvalidate.01 content="XYZabc"><link crossorigin=anonymous href=/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as=style><link rel=icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=16x16 href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=mask-icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://26huitailang.github.io/posts/python/fastapi/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:title" content="Fastapi"><meta property="og:description" content="middleware or dependency
-官方说明
+"><meta name=author content="Peter"><link rel=canonical href=https://26huitailang.github.io/posts/python/fastapi/><meta name=google-site-verification content="XYZabc"><meta name=yandex-verification content="XYZabc"><meta name=msvalidate.01 content="XYZabc"><link crossorigin=anonymous href=/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css integrity="sha256-1vzSCk+4bvpN+sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as=style><link rel=icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=16x16 href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=mask-icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://26huitailang.github.io/posts/python/fastapi/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:url" content="https://26huitailang.github.io/posts/python/fastapi/"><meta property="og:site_name" content="Peter's Blog"><meta property="og:title" content="Fastapi"><meta property="og:description" content="middleware or dependency 官方说明
 场景：
-
 项目使用了sqlite+sqlalchemy，暂时不支持async方式访问，但是fastapi的middleware的 __call__ 方法必须是async，如果在middleware中去做用户会话管理等和db相关的io操作可能导致整个应用阻塞。
-
 解决：
-
 使用def的dependency组合完成相关操作
-
 官方对于两个组件的对比说明：
-
-middleware
-
-代码多一些，更复杂一些
-必须是async方法
-任何需要IO代码的添加都可能导致整个应用速度变慢或者阻塞
-每个请求都会执行相关代码，如果是db的话，即使路由函数不需要也会创建
-
-
-"><meta property="og:type" content="article"><meta property="og:url" content="https://26huitailang.github.io/posts/python/fastapi/"><meta property="og:image" content="https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-07-27T10:11:58+08:00"><meta property="article:modified_time" content="2022-07-27T10:11:58+08:00"><meta property="og:site_name" content="Peter's Blog"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:title content="Fastapi"><meta name=twitter:description content="middleware or dependency
+middleware 代码多一些，更复杂一些 必须是async方法 任何需要IO代码的添加都可能导致整个应用速度变慢或者阻塞 每个请求都会执行相关代码，如果是db的话，即使路由函数不需要也会创建 "><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-07-27T10:11:58+08:00"><meta property="article:modified_time" content="2022-07-27T10:11:58+08:00"><meta property="article:tag" content="Python"><meta property="article:tag" content="Fastapi"><meta property="og:image" content="https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:title content="Fastapi"><meta name=twitter:description content="middleware or dependency
 官方说明
 场景：
 

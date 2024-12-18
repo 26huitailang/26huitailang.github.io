@@ -23,31 +23,11 @@ Go中被传入的依赖关系通常会是一种接口类型。
 
 Gocheck
 Ginkgo
-"><meta name=author content="Peter"><link rel=canonical href=https://26huitailang.github.io/posts/golang/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/><meta name=google-site-verification content="XYZabc"><meta name=yandex-verification content="XYZabc"><meta name=msvalidate.01 content="XYZabc"><link crossorigin=anonymous href=/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as=style><link rel=icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=16x16 href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=mask-icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://26huitailang.github.io/posts/golang/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:title" content><meta property="og:description" content="单元测试
-go test指令
-
-go test, 运行测试
-go test -v -short -cover -parallel 3
-
--v verbose
--short 忽略时间过长的测试
--cover 覆盖率
--parallel 3，同时运行3个测试用例，不过需要在测试中写t.parallel()来告诉go test
-
-
-go test -bench . -run x，运行当前目录的所有基准测试，并运行x的功能测试，因为没有x匹配，所以相当于忽略所有功能测试
-
-测试http
-包testing/httptest，模拟web服务器所需的设施，用net/http中的客户端去请求，然后模拟服务器返回的响应。
-test double 测试替身
-提高被测试代码的独立性。
+"><meta name=author content="Peter"><link rel=canonical href=https://26huitailang.github.io/posts/golang/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/><meta name=google-site-verification content="XYZabc"><meta name=yandex-verification content="XYZabc"><meta name=msvalidate.01 content="XYZabc"><link crossorigin=anonymous href=/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css integrity="sha256-1vzSCk+4bvpN+sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as=style><link rel=icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=16x16 href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=mask-icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://26huitailang.github.io/posts/golang/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:url" content="https://26huitailang.github.io/posts/golang/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"><meta property="og:site_name" content="Peter's Blog"><meta property="og:title" content="Peter's Blog"><meta property="og:description" content="单元测试 go test指令 go test, 运行测试 go test -v -short -cover -parallel 3 -v verbose -short 忽略时间过长的测试 -cover 覆盖率 -parallel 3，同时运行3个测试用例，不过需要在测试中写t.parallel()来告诉go test go test -bench . -run x，运行当前目录的所有基准测试，并运行x的功能测试，因为没有x匹配，所以相当于忽略所有功能测试 测试http 包testing/httptest，模拟web服务器所需的设施，用net/http中的客户端去请求，然后模拟服务器返回的响应。
+test double 测试替身 提高被测试代码的独立性。
 实现测试替身的一种设计方法是使用依赖注入模式，dependency injection。
 Go中被传入的依赖关系通常会是一种接口类型。
-三方
-
-Gocheck
-Ginkgo
-"><meta property="og:type" content="article"><meta property="og:url" content="https://26huitailang.github.io/posts/golang/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"><meta property="og:image" content="https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="posts"><meta property="og:site_name" content="Peter's Blog"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:title content><meta name=twitter:description content="单元测试
+三方 Gocheck Ginkgo "><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="og:image" content="https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:title content><meta name=twitter:description content="单元测试
 go test指令
 
 go test, 运行测试

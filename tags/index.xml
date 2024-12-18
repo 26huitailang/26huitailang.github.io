@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.134.2</generator>
+    <generator>Hugo -- 0.139.2</generator>
     <language>en</language>
     <lastBuildDate>Wed, 18 Dec 2024 09:26:35 +0800</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -378,6 +378,69 @@
       <description></description>
     </item>
     <item>
+      <title>Cli</title>
+      <link>https://26huitailang.github.io/tags/cli/</link>
+      <pubDate>Fri, 24 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://26huitailang.github.io/tags/cli/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apt</title>
+      <link>https://26huitailang.github.io/tags/apt/</link>
+      <pubDate>Fri, 24 Jul 2020 00:00:00 +0800</pubDate>
+      <guid>https://26huitailang.github.io/tags/apt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>https://26huitailang.github.io/tags/database/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://26huitailang.github.io/tags/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Etcd</title>
+      <link>https://26huitailang.github.io/tags/etcd/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://26huitailang.github.io/tags/etcd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pdm</title>
+      <link>https://26huitailang.github.io/tags/pdm/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://26huitailang.github.io/tags/pdm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pipenv</title>
+      <link>https://26huitailang.github.io/tags/pipenv/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://26huitailang.github.io/tags/pipenv/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Postgresql</title>
+      <link>https://26huitailang.github.io/tags/postgresql/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://26huitailang.github.io/tags/postgresql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Teamcity</title>
+      <link>https://26huitailang.github.io/tags/teamcity/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://26huitailang.github.io/tags/teamcity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wheel</title>
+      <link>https://26huitailang.github.io/tags/wheel/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://26huitailang.github.io/tags/wheel/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>K3s</title>
       <link>https://26huitailang.github.io/tags/k3s/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
@@ -434,80 +497,17 @@
       <description></description>
     </item>
     <item>
-      <title>Aliyun</title>
-      <link>https://26huitailang.github.io/tags/aliyun/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://26huitailang.github.io/tags/aliyun/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Apt</title>
-      <link>https://26huitailang.github.io/tags/apt/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://26huitailang.github.io/tags/apt/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cli</title>
-      <link>https://26huitailang.github.io/tags/cli/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://26huitailang.github.io/tags/cli/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Database</title>
-      <link>https://26huitailang.github.io/tags/database/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://26huitailang.github.io/tags/database/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Etcd</title>
-      <link>https://26huitailang.github.io/tags/etcd/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://26huitailang.github.io/tags/etcd/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Pdm</title>
-      <link>https://26huitailang.github.io/tags/pdm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://26huitailang.github.io/tags/pdm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Pipenv</title>
-      <link>https://26huitailang.github.io/tags/pipenv/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://26huitailang.github.io/tags/pipenv/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Postgresql</title>
-      <link>https://26huitailang.github.io/tags/postgresql/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://26huitailang.github.io/tags/postgresql/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Teamcity</title>
-      <link>https://26huitailang.github.io/tags/teamcity/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://26huitailang.github.io/tags/teamcity/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Vagrant</title>
       <link>https://26huitailang.github.io/tags/vagrant/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/vagrant/</guid>
       <description></description>
     </item>
     <item>
-      <title>Wheel</title>
-      <link>https://26huitailang.github.io/tags/wheel/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://26huitailang.github.io/tags/wheel/</guid>
+      <title>Aliyun</title>
+      <link>https://26huitailang.github.io/tags/aliyun/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://26huitailang.github.io/tags/aliyun/</guid>
       <description></description>
     </item>
   </channel>

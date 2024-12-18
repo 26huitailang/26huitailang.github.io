@@ -53,61 +53,8 @@ func DonwloadSuite(iSuite ISuiteOperator, countFanOut int, folderPath string) {
         fmt.Println("finish: ", ret)
     }
 }
-在上面的代码中，chImg在merge结果的时候，注释代码是去测试结果的。'><meta name=author content="Peter"><link rel=canonical href=https://26huitailang.github.io/posts/golang/goroutine/channel/><meta name=google-site-verification content="XYZabc"><meta name=yandex-verification content="XYZabc"><meta name=msvalidate.01 content="XYZabc"><link crossorigin=anonymous href=/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as=style><link rel=icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=16x16 href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=mask-icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://26huitailang.github.io/posts/golang/goroutine/channel/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:title" content><meta property="og:description" content='goroutine channel的坑
-channel的关闭
-
-for-range 知道channel的关闭，代码继续执行
-for-select 不知道，用case v, ok:=<-c:中的ok来判断
-
-那么问题来了，如果是一个buffer channel，ok在关闭的时候可不是true，而是满足channel数据去完&amp;channel close，ok才会返回true，如果不这样设计的话，会导致数据丢失。
-
-
-
-channel for-select 中break和return的问题
-核心是，break在select中是只能跳出select，return是返回当前的函数。
-package meituri
-
-import "fmt"
-
-type ISuiteOperator interface {
-    GetPageURLs(chan string)
-    GetImgURLs(chPage <-chan string, chFailedImg <-chan string) <-chan string
-    Download(chImg <-chan string, chFailedImg chan string, folderPath string) <-chan string
-}
-
-// DonwloadSuite to download one suite
-func DonwloadSuite(iSuite ISuiteOperator, countFanOut int, folderPath string) {
-    chPage := make(chan string)
-    chFailedImg := make(chan string) // 下载失败img放回
-    go iSuite.GetPageURLs(chPage)
-    var chImgs []<-chan string
-    for i := 0; i < countFanOut; i++ {
-        ch := iSuite.GetImgURLs(chPage, chFailedImg)
-        chImgs = append(chImgs, ch)
-    }
-    // 回收多个channel的结果
-    chImg := merge(chImgs...)
-    // for debug
-    // for {
-    // 	select {
-    // 	case v, ok := <-chImg:
-    // 		if !ok {
-    // 			return
-    // 		}
-    // 		fmt.Println(v, ok)
-    // 	}
-    // }
-    var chDownloads []<-chan string
-    for i := 0; i < countFanOut; i++ {
-        ch := iSuite.Download(chImg, chFailedImg, folderPath)
-        chDownloads = append(chDownloads, ch)
-    }
-    finish := merge(chDownloads...)
-    for ret := range finish {
-        fmt.Println("finish: ", ret)
-    }
-}
-在上面的代码中，chImg在merge结果的时候，注释代码是去测试结果的。'><meta property="og:type" content="article"><meta property="og:url" content="https://26huitailang.github.io/posts/golang/goroutine/channel/"><meta property="og:image" content="https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="posts"><meta property="og:site_name" content="Peter's Blog"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:title content><meta name=twitter:description content='goroutine channel的坑
+在上面的代码中，chImg在merge结果的时候，注释代码是去测试结果的。'><meta name=author content="Peter"><link rel=canonical href=https://26huitailang.github.io/posts/golang/goroutine/channel/><meta name=google-site-verification content="XYZabc"><meta name=yandex-verification content="XYZabc"><meta name=msvalidate.01 content="XYZabc"><link crossorigin=anonymous href=/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css integrity="sha256-1vzSCk+4bvpN+sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as=style><link rel=icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=16x16 href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=mask-icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://26huitailang.github.io/posts/golang/goroutine/channel/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:url" content="https://26huitailang.github.io/posts/golang/goroutine/channel/"><meta property="og:site_name" content="Peter's Blog"><meta property="og:title" content="Peter's Blog"><meta property="og:description" content='goroutine channel的坑 channel的关闭 for-range 知道channel的关闭，代码继续执行 for-select 不知道，用case v, ok:=<-c:中的ok来判断 那么问题来了，如果是一个buffer channel，ok在关闭的时候可不是true，而是满足channel数据去完&amp;channel close，ok才会返回true，如果不这样设计的话，会导致数据丢失。 channel for-select 中break和return的问题 核心是，break在select中是只能跳出select，return是返回当前的函数。
+package meituri import "fmt" type ISuiteOperator interface { GetPageURLs(chan string) GetImgURLs(chPage <-chan string, chFailedImg <-chan string) <-chan string Download(chImg <-chan string, chFailedImg chan string, folderPath string) <-chan string } // DonwloadSuite to download one suite func DonwloadSuite(iSuite ISuiteOperator, countFanOut int, folderPath string) { chPage := make(chan string) chFailedImg := make(chan string) // 下载失败img放回 go iSuite.GetPageURLs(chPage) var chImgs []<-chan string for i := 0; i < countFanOut; i++ { ch := iSuite.GetImgURLs(chPage, chFailedImg) chImgs = append(chImgs, ch) } // 回收多个channel的结果 chImg := merge(chImgs...) // for debug // for { // select { // case v, ok := <-chImg: // if !ok { // return // } // fmt.Println(v, ok) // } // } var chDownloads []<-chan string for i := 0; i < countFanOut; i++ { ch := iSuite.Download(chImg, chFailedImg, folderPath) chDownloads = append(chDownloads, ch) } finish := merge(chDownloads...) for ret := range finish { fmt.Println("finish: ", ret) } } 在上面的代码中，chImg在merge结果的时候，注释代码是去测试结果的。'><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="og:image" content="https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:title content><meta name=twitter:description content='goroutine channel的坑
 channel的关闭
 
 for-range 知道channel的关闭，代码继续执行

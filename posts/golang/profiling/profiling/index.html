@@ -27,35 +27,10 @@ cum%：同上的 CPU 运行耗时总比例
 
 使用 pprof 和火焰图调试 golang 应用
 Tutorial for optimizing golang program
-'><meta name=author content="Peter"><link rel=canonical href=https://26huitailang.github.io/posts/golang/profiling/profiling/><meta name=google-site-verification content="XYZabc"><meta name=yandex-verification content="XYZabc"><meta name=msvalidate.01 content="XYZabc"><link crossorigin=anonymous href=/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as=style><link rel=icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=16x16 href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=mask-icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://26huitailang.github.io/posts/golang/profiling/profiling/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:title" content><meta property="og:description" content='Profiling
-在计算机性能调试领域里，profiling 就是对应用的画像，这里画像就是应用使用 CPU 和内存的情况。也就是说应用使用了多少 CPU 资源？都是哪些部分在使用？每个函数使用的比例是多少？有哪些函数在等待 CPU 资源？知道了这些，我们就能对应用进行规划，也能快速定位性能瓶颈。
+'><meta name=author content="Peter"><link rel=canonical href=https://26huitailang.github.io/posts/golang/profiling/profiling/><meta name=google-site-verification content="XYZabc"><meta name=yandex-verification content="XYZabc"><meta name=msvalidate.01 content="XYZabc"><link crossorigin=anonymous href=/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css integrity="sha256-1vzSCk+4bvpN+sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as=style><link rel=icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=16x16 href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><link rel=mask-icon href=https://26huitailang.github.io/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://26huitailang.github.io/posts/golang/profiling/profiling/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:url" content="https://26huitailang.github.io/posts/golang/profiling/profiling/"><meta property="og:site_name" content="Peter's Blog"><meta property="og:title" content="Peter's Blog"><meta property="og:description" content='Profiling 在计算机性能调试领域里，profiling 就是对应用的画像，这里画像就是应用使用 CPU 和内存的情况。也就是说应用使用了多少 CPU 资源？都是哪些部分在使用？每个函数使用的比例是多少？有哪些函数在等待 CPU 资源？知道了这些，我们就能对应用进行规划，也能快速定位性能瓶颈。
 在 go 语言中，主要关注的应用运行情况主要包括以下几种：
-
-CPU profile：报告程序的 CPU 使用情况，按照一定频率去采集应用程序在 CPU 和寄存器上面的数据
-Memory Profile（Heap Profile）：报告程序的内存使用情况
-Block Profiling：报告 goroutines 不在运行状态的情况，可以用来分析和查找死锁等性能瓶颈
-Goroutine Profiling：报告 goroutines 的使用情况，有哪些 goroutine，它们的调用关系是怎样的
-
-go 提供了：
-
-runtime/pprof，适合一次性运行的程序
-net/http/pprof，web服务型的使用
-
-服务应用型
-import _ "net/http/pprof"
-结果
-
-flat：给定函数上运行耗时
-flat%：同上的 CPU 运行耗时总比例
-sum%：给定函数累积使用 CPU 总比例
-cum：当前函数加上它之上的调用运行总耗时
-cum%：同上的 CPU 运行耗时总比例
-
-参考
-
-使用 pprof 和火焰图调试 golang 应用
-Tutorial for optimizing golang program
-'><meta property="og:type" content="article"><meta property="og:url" content="https://26huitailang.github.io/posts/golang/profiling/profiling/"><meta property="og:image" content="https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="posts"><meta property="og:site_name" content="Peter's Blog"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:title content><meta name=twitter:description content='Profiling
+CPU profile：报告程序的 CPU 使用情况，按照一定频率去采集应用程序在 CPU 和寄存器上面的数据 Memory Profile（Heap Profile）：报告程序的内存使用情况 Block Profiling：报告 goroutines 不在运行状态的情况，可以用来分析和查找死锁等性能瓶颈 Goroutine Profiling：报告 goroutines 的使用情况，有哪些 goroutine，它们的调用关系是怎样的 go 提供了：
+runtime/pprof，适合一次性运行的程序 net/http/pprof，web服务型的使用 服务应用型 import _ "net/http/pprof" 结果 flat：给定函数上运行耗时 flat%：同上的 CPU 运行耗时总比例 sum%：给定函数累积使用 CPU 总比例 cum：当前函数加上它之上的调用运行总耗时 cum%：同上的 CPU 运行耗时总比例 参考 使用 pprof 和火焰图调试 golang 应用 Tutorial for optimizing golang program '><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="og:image" content="https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:title content><meta name=twitter:description content='Profiling
 在计算机性能调试领域里，profiling 就是对应用的画像，这里画像就是应用使用 CPU 和内存的情况。也就是说应用使用了多少 CPU 资源？都是哪些部分在使用？每个函数使用的比例是多少？有哪些函数在等待 CPU 资源？知道了这些，我们就能对应用进行规划，也能快速定位性能瓶颈。
 在 go 语言中，主要关注的应用运行情况主要包括以下几种：
 

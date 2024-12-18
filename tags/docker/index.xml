@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.134.2</generator>
+    <generator>Hugo -- 0.139.2</generator>
     <language>en</language>
     <lastBuildDate>Wed, 26 Jan 2022 11:24:36 +0800</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
@@ -87,6 +87,26 @@ ff02::2 ip6-allrouters
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;docker-compose&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Docker Private Registry</title>
+      <link>https://26huitailang.github.io/posts/docker/%E7%A7%81%E6%9C%89registry/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://26huitailang.github.io/posts/docker/%E7%A7%81%E6%9C%89registry/</guid>
+      <description>&lt;h1 id=&#34;docker-private-registry&#34;&gt;Docker Private Registry&lt;/h1&gt;
+&lt;h2 id=&#34;简单使用官方&#34;&gt;简单使用，官方&lt;/h2&gt;
+&lt;p&gt;官方提供的 &lt;a href=&#34;https://hub.docker.com/_/registry&#34;&gt;https://hub.docker.com/_/registry&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Run a local registry: Quick Version&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker run -d -p 5000:5000 --restart always --name registry registry:2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, use it from within Docker:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker pull ubuntu
+$ docker tag ubuntu localhost:5000/ubuntu
+$ docker push localhost:5000/ubuntu
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;更复杂的需求harbor&#34;&gt;更复杂的需求，harbor&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://goharbor.io/&#34;&gt;https://goharbor.io/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Our mission is to be the trusted cloud native repository for Kubernetes&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>PyCharm Docker</title>
       <link>https://26huitailang.github.io/posts/pycharm/docker/</link>
       <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
@@ -105,6 +125,63 @@ ff02::2 ip6-allrouters
 &lt;/ul&gt;
 &lt;h2 id=&#34;stage&#34;&gt;Stage&lt;/h2&gt;
 &lt;p&gt;PyCharm的docker也支持修改registry，如果有远程仓库需要的，也可以方便分发镜像&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>docker install</title>
+      <link>https://26huitailang.github.io/posts/docker/debian-docker-install/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://26huitailang.github.io/posts/docker/debian-docker-install/</guid>
+      <description>&lt;h1 id=&#34;docker-install&#34;&gt;docker install&lt;/h1&gt;
+&lt;p&gt;install docker on Debian/Ubuntu&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.docker.com/engine/install/debian/&#34;&gt;link&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;uninstall-old-versions&#34;&gt;Uninstall old versions&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get remove docker docker-engine docker.io containerd runc
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;set-up-the-repository&#34;&gt;Set up the repository&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get update
+
+$ sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
+
+$ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+or
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
+
+$ sudo apt-key fingerprint 0EBFCD88
+
+
+$ sudo add-apt-repository \
+   &amp;#34;deb [arch=amd64] https://download.docker.com/linux/debian \
+   $(lsb_release -cs) \
+   stable&amp;#34;
+or
+sudo add-apt-repository \
+   &amp;#34;deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+  focal \
+  stable&amp;#34;
+or
+$ sudo add-apt-repository \
+   &amp;#34;deb [arch=amd64] https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/ \
+  $(lsb_release -cs) \
+  stable&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;install-docker-engine&#34;&gt;Install Docker Engine&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get update
+$ sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+$ sudo docker run --rm hello-world
+
+$ sudo apt install docker-compose -y
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;without-sudo-to-use-docker&#34;&gt;Without sudo to use docker&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo usermod -aG docker $USER
+
+$ sudo systemctl restart docker
+$ sudo systemctl enable docker
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;speed-up&#34;&gt;Speed up&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://YOURS.mirror.aliyuncs.com&#34;&gt;https://YOURS.mirror.aliyuncs.com&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>docker env file</title>
@@ -190,83 +267,6 @@ $ sudo docker push registry.cn-hangzhou.aliyuncs.com/26huitailang/golang-web:[�
 &lt;h2 id=&#34;选择合适的镜像仓库地址&#34;&gt;选择合适的镜像仓库地址&lt;/h2&gt;
 &lt;p&gt;从ECS推送镜像时，可以选择使用镜像仓库内网地址。推送速度将得到提升并且将不会损耗您的公网流量。&lt;/p&gt;
 &lt;p&gt;如果您使用的机器位于VPC网络，请使用 registry-vpc.cn-hangzhou.aliyuncs.com 作为Registry的域名登录，并作为镜像命名空间前缀。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>docker install</title>
-      <link>https://26huitailang.github.io/posts/docker/debian-docker-install/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://26huitailang.github.io/posts/docker/debian-docker-install/</guid>
-      <description>&lt;h1 id=&#34;docker-install&#34;&gt;docker install&lt;/h1&gt;
-&lt;p&gt;install docker on Debian/Ubuntu&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://docs.docker.com/engine/install/debian/&#34;&gt;link&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;uninstall-old-versions&#34;&gt;Uninstall old versions&lt;/h2&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get remove docker docker-engine docker.io containerd runc
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;set-up-the-repository&#34;&gt;Set up the repository&lt;/h2&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get update
-
-$ sudo apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg-agent \
-    software-properties-common
-
-$ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
-or
-$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
-
-$ sudo apt-key fingerprint 0EBFCD88
-
-
-$ sudo add-apt-repository \
-   &amp;#34;deb [arch=amd64] https://download.docker.com/linux/debian \
-   $(lsb_release -cs) \
-   stable&amp;#34;
-or
-sudo add-apt-repository \
-   &amp;#34;deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-  focal \
-  stable&amp;#34;
-or
-$ sudo add-apt-repository \
-   &amp;#34;deb [arch=amd64] https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/ \
-  $(lsb_release -cs) \
-  stable&amp;#34;
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;install-docker-engine&#34;&gt;Install Docker Engine&lt;/h2&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get update
-$ sudo apt-get install docker-ce docker-ce-cli containerd.io
-
-$ sudo docker run --rm hello-world
-
-$ sudo apt install docker-compose -y
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;without-sudo-to-use-docker&#34;&gt;Without sudo to use docker&lt;/h2&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo usermod -aG docker $USER
-
-$ sudo systemctl restart docker
-$ sudo systemctl enable docker
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;speed-up&#34;&gt;Speed up&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://YOURS.mirror.aliyuncs.com&#34;&gt;https://YOURS.mirror.aliyuncs.com&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Docker Private Registry</title>
-      <link>https://26huitailang.github.io/posts/docker/%E7%A7%81%E6%9C%89registry/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://26huitailang.github.io/posts/docker/%E7%A7%81%E6%9C%89registry/</guid>
-      <description>&lt;h1 id=&#34;docker-private-registry&#34;&gt;Docker Private Registry&lt;/h1&gt;
-&lt;h2 id=&#34;简单使用官方&#34;&gt;简单使用，官方&lt;/h2&gt;
-&lt;p&gt;官方提供的 &lt;a href=&#34;https://hub.docker.com/_/registry&#34;&gt;https://hub.docker.com/_/registry&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Run a local registry: Quick Version&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ docker run -d -p 5000:5000 --restart always --name registry registry:2
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now, use it from within Docker:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ docker pull ubuntu
-$ docker tag ubuntu localhost:5000/ubuntu
-$ docker push localhost:5000/ubuntu
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;更复杂的需求harbor&#34;&gt;更复杂的需求，harbor&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://goharbor.io/&#34;&gt;https://goharbor.io/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Our mission is to be the trusted cloud native repository for Kubernetes&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
