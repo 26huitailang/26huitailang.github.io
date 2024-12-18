@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
     <lastBuildDate>Thu, 29 Dec 2022 11:22:50 +0800</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/ocr/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,13 @@
       <link>https://26huitailang.github.io/posts/tools/ocr/</link>
       <pubDate>Thu, 29 Dec 2022 11:22:50 +0800</pubDate>
       <guid>https://26huitailang.github.io/posts/tools/ocr/</guid>
-      <description>brew install tesseract pngpaste brew install tesseract-lang # 语言支持 ctrl + shift + command + 4 截图
-pngpaste - | tesseract -l chi_sim stdin stdout 加入zsh alias,.zshrc
-alias ocr=&amp;#39;pngpaste - | tesseract -l chi_sim stdin stdout&amp;#39; </description>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install tesseract pngpaste
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install tesseract-lang  &lt;span style=&#34;color:#75715e&#34;&gt;# 语言支持&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;ctrl + shift + command + 4 截图&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pngpaste - | tesseract -l chi_sim stdin stdout
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;加入zsh alias,&lt;code&gt;.zshrc&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-.zshrc&#34; data-lang=&#34;.zshrc&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;alias ocr&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;pngpaste - | tesseract -l chi_sim stdin stdout&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>

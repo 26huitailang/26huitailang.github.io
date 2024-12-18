@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
     <atom:link href="https://26huitailang.github.io/tags/pdm/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -17,8 +17,50 @@
       <link>https://26huitailang.github.io/posts/python/pdm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/python/pdm/</guid>
-      <description>github, A modern Python package manager with PEP 582 support.
-仅在__pypackages__/&amp;lt;major.minor&amp;gt;包含必要的依赖和bin文件，没有解释器相关文件 就算python解释器被删除了，但是只要有其他符合pyproject.yoml规定版本的解释器即可，项目目录下的__pypackages__不包含解释器相关的内容，venv则必须重新关联或者重新创建 $ tree -L 3 __pypackages__ __pypackages__ └── 3.10 ├── bin │ ├── django-admin │ └── sqlformat ├── include └── lib ├── Django-4.0.1.dist-info ├── anyio ├── anyio-3.5.0.dist-info ├── asgiref ├── asgiref-3.4.1.dist-info ├── django ... install brew install pdm demo mkdir pdm-demo cd pdm-demo pdm init Creating a pyproject.toml for PDM... Please enter the Python interpreter to use ... 12. /usr/local/Cellar/pdm/1.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/pdm-project/pdm&#34;&gt;github&lt;/a&gt;, A modern Python package manager with PEP 582 support.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;仅在&lt;code&gt;__pypackages__/&amp;lt;major.minor&amp;gt;&lt;/code&gt;包含必要的依赖和bin文件，没有解释器相关文件&lt;/li&gt;
+&lt;li&gt;就算python解释器被删除了，但是只要有其他符合&lt;code&gt;pyproject.yoml&lt;/code&gt;规定版本的解释器即可，项目目录下的&lt;code&gt;__pypackages__&lt;/code&gt;不包含解释器相关的内容，venv则必须重新关联或者重新创建&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-tree&#34; data-lang=&#34;tree&#34;&gt;$ tree -L 3 __pypackages__
+__pypackages__
+└── 3.10
+    ├── bin
+    │   ├── django-admin
+    │   └── sqlformat
+    ├── include
+    └── lib
+        ├── Django-4.0.1.dist-info
+        ├── anyio
+        ├── anyio-3.5.0.dist-info
+        ├── asgiref
+        ├── asgiref-3.4.1.dist-info
+        ├── django
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;install&#34;&gt;install&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install pdm
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;demo&#34;&gt;demo&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mkdir pdm-demo
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd pdm-demo
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pdm init
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Creating a pyproject.toml &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; PDM...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Please enter the Python interpreter to use
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;12. /usr/local/Cellar/pdm/1.12.2/libexec/bin/python3.10 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;3.10&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Please &lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt;: &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Using Python interpreter: /usr/local/Cellar/pdm/1.12.2/libexec/bin/python3.10 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;3.10&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Is the project a library that will be uploaded to PyPI? &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;y/N&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;: N
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;License&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;SPDX name&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;MIT&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Author name &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;26huitailang&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Author email &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;26huitailang@gmail.com&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Python requires&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;*&amp;#39;&lt;/span&gt; to allow any&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&amp;gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;3.10&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Changes are written to pyproject.toml.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PDM 1.12.2 is installed, &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; 1.12.6 is available.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Please run $ brew upgrade pdm to upgrade.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Run $ pdm config check_update false to disable the check.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;init files&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

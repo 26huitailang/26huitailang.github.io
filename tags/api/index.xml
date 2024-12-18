@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
     <lastBuildDate>Sun, 19 Dec 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/api/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,9 @@
       <link>https://26huitailang.github.io/posts/security/api-security-checklist/</link>
       <pubDate>Sun, 19 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/security/api-security-checklist/</guid>
-      <description>开发安全的 API 所需要核对的清单
-https://github.com/shieldfy/API-Security-Checklist
-https://github.com/shieldfy/API-Security-Checklist/blob/master/README-zh.md</description>
+      <description>&lt;p&gt;开发安全的 API 所需要核对的清单&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/shieldfy/API-Security-Checklist&#34;&gt;https://github.com/shieldfy/API-Security-Checklist&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/shieldfy/API-Security-Checklist/blob/master/README-zh.md&#34;&gt;https://github.com/shieldfy/API-Security-Checklist/blob/master/README-zh.md&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
     <lastBuildDate>Thu, 06 Aug 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/ab/index.xml" rel="self" type="application/rss+xml" />
@@ -18,11 +18,20 @@
       <link>https://26huitailang.github.io/posts/test/ab-test/</link>
       <pubDate>Thu, 06 Aug 2020 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/test/ab-test/</guid>
-      <description>Apache Bench Test GET
-ab -c 10 -n 40 http://127.0.0.1:8000/api/v1/mzitu/tags/
-POST, https://blog.csdn.net/chenggong2dm/article/details/51850923
-ab -n 1 -c 1 -p f:/postdata.txt -T application/x-www-form-urlencoded &amp;ldquo;http://127.0.0.1/abpost&amp;rdquo; ab -n 100 -c 10 -p data.json -T application/json http://127.0.0.1/api
-// postdata.txt </description>
+      <description>&lt;h1 id=&#34;apache-bench-test&#34;&gt;Apache Bench Test&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;GET&lt;/p&gt;
+&lt;p&gt;ab -c 10 -n 40 http://127.0.0.1:8000/api/v1/mzitu/tags/&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;POST, &lt;a href=&#34;https://blog.csdn.net/chenggong2dm/article/details/51850923&#34;&gt;https://blog.csdn.net/chenggong2dm/article/details/51850923&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ab -n 1 -c 1 -p f:/postdata.txt -T application/x-www-form-urlencoded &amp;ldquo;http://127.0.0.1/abpost&amp;rdquo;
+ab -n 100 -c 10 -p data.json -T application/json http://127.0.0.1/api&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// postdata.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>

@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
     <lastBuildDate>Fri, 23 Sep 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/proxy/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,22 @@
       <link>https://26huitailang.github.io/posts/test/proxy-test/</link>
       <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/test/proxy-test/</guid>
-      <description>socks5 # 监听1080为代理地址 ssh -f -N -D 0.0.0.0:1080 root@127.0.0.1 # test curl -v -k -x &amp;#34;socks5://USER:PASSWORD@HOSTIP:1080&amp;#34; https://baidu.com socat # forward 访问目标服务 socat TCP4-LISTEN:&amp;lt;本地端口&amp;gt;,bind=&amp;lt;监听本机的地址&amp;gt;,reuseaddr,fork TCP:&amp;lt;目标地址&amp;gt;:&amp;lt;目标端口&amp;gt; 3proxy 三方容器： 3128 http, 1080 socks5
-$ docker run --rm -d \ -p &amp;#34;3128:3128/tcp&amp;#34; \ -p &amp;#34;1080:1080/tcp&amp;#34; \ tarampampam/3proxy:latest </description>
+      <description>&lt;h2 id=&#34;socks5&#34;&gt;socks5&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 监听1080为代理地址&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh -f -N -D 0.0.0.0:1080 root@127.0.0.1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# test&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl -v -k -x &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;socks5://USER:PASSWORD@HOSTIP:1080&amp;#34;&lt;/span&gt; https://baidu.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;socat&#34;&gt;socat&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# forward 访问目标服务&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;socat TCP4-LISTEN:&amp;lt;本地端口&amp;gt;,bind&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&amp;lt;监听本机的地址&amp;gt;,reuseaddr,fork TCP:&amp;lt;目标地址&amp;gt;:&amp;lt;目标端口&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;3proxy&#34;&gt;3proxy&lt;/h2&gt;
+&lt;p&gt;三方容器： 3128 http, 1080 socks5&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ docker run --rm -d \
+    -p &amp;#34;3128:3128/tcp&amp;#34; \
+    -p &amp;#34;1080:1080/tcp&amp;#34; \
+    tarampampam/3proxy:latest
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
   </channel>
 </rss>

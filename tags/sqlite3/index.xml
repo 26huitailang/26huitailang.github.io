@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
     <lastBuildDate>Wed, 26 Apr 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/sqlite3/index.xml" rel="self" type="application/rss+xml" />
@@ -18,11 +18,35 @@
       <link>https://26huitailang.github.io/posts/database/sqlite/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/database/sqlite/</guid>
-      <description>问题 在Centos上遇到sqlite3版本过低的问题, 3.7., 但是django要求版本不低于3.8., 自己编译升级后, 还是无法解决: 原因是python找寻动态库的位置不对
-# 下载并解压 [root@linux ~]# wget https://www.sqlite.org/2019/sqlite-autoconf-3270200.tar.gz [root@linux ~]# tar xf sqlite-autoconf-3270200.tar.gz # configure 生成makefile并指定安装路径 [root@linux ~]# cd sqlite-autoconf-3270200 [root@linux sqlite-autoconf-3270200]# ./configure --prefix=/usr/local/ [root@linux sqlite-autoconf-3270200]# make &amp;amp;&amp;amp; make install # 备份旧版本 [root@linux ~]# mv /usr/bin/sqlite3 /usr/bin/sqlite3_backupold # 链接新版本 [root@linux ~]# ln -s /usr/local/bin/sqlite3 /usr/bin/sqlite3 # 环境变量设置 [root@linux ~]# vim ~/.bashrc 添加内容如下, LD_LIBRARY_PATH 默认是没有设置的, 如果设置了会优先使用
-export LD_LIBRARY_PATH=&amp;#34;/usr/local/lib&amp;#34; json1 参考：howto_get_going_with_sqlite_json1
-使用版本3.7.17，最低支持版本3.9.0
-尝试编译json.so 去3.7.17中.load json.so 结论：3.7.17 可以加载，但是运行报错segmentation fault，应该还是有代码不兼容，直接在3.</description>
+      <description>&lt;h2 id=&#34;问题&#34;&gt;问题&lt;/h2&gt;
+&lt;p&gt;在Centos上遇到sqlite3版本过低的问题, 3.7.&lt;em&gt;, 但是django要求版本不低于3.8.&lt;/em&gt;, 自己编译升级后, 还是无法解决: &lt;strong&gt;原因是python找寻动态库的位置不对&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 下载并解压&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@linux ~&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# wget https://www.sqlite.org/2019/sqlite-autoconf-3270200.tar.gz&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@linux ~&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# tar xf sqlite-autoconf-3270200.tar.gz&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# configure 生成makefile并指定安装路径&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@linux ~&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# cd sqlite-autoconf-3270200&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@linux sqlite-autoconf-3270200&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# ./configure --prefix=/usr/local/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@linux sqlite-autoconf-3270200&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# make &amp;amp;&amp;amp; make install&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 备份旧版本&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@linux ~&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# mv /usr/bin/sqlite3 /usr/bin/sqlite3_backupold&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 链接新版本&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@linux ~&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# ln -s /usr/local/bin/sqlite3 /usr/bin/sqlite3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 环境变量设置&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@linux ~&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# vim ~/.bashrc&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;添加内容如下, &lt;code&gt;LD_LIBRARY_PATH&lt;/code&gt; 默认是没有设置的, 如果设置了会优先使用&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;export LD_LIBRARY_PATH&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/usr/local/lib&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;json1&#34;&gt;json1&lt;/h2&gt;
+&lt;p&gt;参考：&lt;a href=&#34;https://github.com/SMAPPNYU/smapphowto/blob/master/howto_get_going_with_sqlite_json1.md&#34;&gt;howto_get_going_with_sqlite_json1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;使用版本3.7.17，最低支持版本3.9.0&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;尝试编译json.so 去3.7.17中&lt;code&gt;.load json.so&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;结论：3.7.17 可以加载，但是运行报错segmentation fault，应该还是有代码不兼容，直接在3.9.0上可加载、可运行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;下载：&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
     <atom:link href="https://26huitailang.github.io/tags/apt/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -17,13 +17,36 @@
       <link>https://26huitailang.github.io/posts/cheatsheet/pkg-manager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/cheatsheet/pkg-manager/</guid>
-      <description>Cheatsheet for package manager go mod pip apt ubuntu 20.04 pip pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
-升级 pip 到最新的版本 (&amp;gt;=10.0.0) 后进行配置：
-pip install pip -U pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
-如果您到 pip 默认源的网络连接较差，临时使用本镜像站来升级 pip：
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -U
-apt ubuntu 20.04
-# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse # deb-src https://mirrors.</description>
+      <description>&lt;h1 id=&#34;cheatsheet-for-package-manager&#34;&gt;Cheatsheet for package manager&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;go mod&lt;/li&gt;
+&lt;li&gt;pip&lt;/li&gt;
+&lt;li&gt;apt ubuntu 20.04&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;pip&#34;&gt;pip&lt;/h2&gt;
+&lt;p&gt;pip install -i &lt;a href=&#34;https://pypi.tuna.tsinghua.edu.cn/simple&#34;&gt;https://pypi.tuna.tsinghua.edu.cn/simple&lt;/a&gt; some-package&lt;/p&gt;
+&lt;p&gt;升级 pip 到最新的版本 (&amp;gt;=10.0.0) 后进行配置：&lt;/p&gt;
+&lt;p&gt;pip install pip -U
+pip config set global.index-url &lt;a href=&#34;https://pypi.tuna.tsinghua.edu.cn/simple&#34;&gt;https://pypi.tuna.tsinghua.edu.cn/simple&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如果您到 pip 默认源的网络连接较差，临时使用本镜像站来升级 pip：&lt;/p&gt;
+&lt;p&gt;pip install -i &lt;a href=&#34;https://pypi.tuna.tsinghua.edu.cn/simple&#34;&gt;https://pypi.tuna.tsinghua.edu.cn/simple&lt;/a&gt; pip -U&lt;/p&gt;
+&lt;h2 id=&#34;apt&#34;&gt;apt&lt;/h2&gt;
+&lt;p&gt;ubuntu 20.04&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+
+# 预发布软件源，不建议启用
+# deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;go-mod&#34;&gt;go mod&lt;/h2&gt;
+&lt;p&gt;GOPROXY=https://goproxy.io,direct&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

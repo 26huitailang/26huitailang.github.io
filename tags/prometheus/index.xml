@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
     <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/prometheus/index.xml" rel="self" type="application/rss+xml" />
@@ -18,7 +18,19 @@
       <link>https://26huitailang.github.io/posts/k3s/prometheus/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/k3s/prometheus/</guid>
-      <description>Prometheus 简介 概念 prometheus server exporter，用于server采集数据，有官方提供的node-exporter，也可以通过各种SDK自定义导出内容，暴露一个类似/metrics的路径用于采集 注意，exporter在多进程（gunicorn 多进程）模式下使用会有限制，参考文档 数据模型，和influxdb类似，是时序数据库，以metric为名称，多个label（key-value形式）组成：&amp;lt;metric name&amp;gt;{&amp;lt;label name&amp;gt;=&amp;lt;label value&amp;gt;, ...} 重载配置 Yes, sending SIGHUP to the Prometheus process or an HTTP POST request to the /-/reload endpoint will reload and apply the configuration file. The various components attempt to handle failing changes gracefully.</description>
+      <description>&lt;h1 id=&#34;prometheus-简介&#34;&gt;Prometheus 简介&lt;/h1&gt;
+&lt;h2 id=&#34;概念&#34;&gt;概念&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;prometheus server&lt;/li&gt;
+&lt;li&gt;exporter，用于server采集数据，有官方提供的node-exporter，也可以通过各种SDK自定义导出内容，暴露一个类似&lt;code&gt;/metrics&lt;/code&gt;的路径用于采集
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;注意&lt;/strong&gt;，exporter在多进程（gunicorn 多进程）模式下使用会有限制，参考&lt;a href=&#34;https://github.com/prometheus/client_python&#34;&gt;文档&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;数据模型，和influxdb类似，是时序数据库，以metric为名称，多个label（key-value形式）组成：&lt;code&gt;&amp;lt;metric name&amp;gt;{&amp;lt;label name&amp;gt;=&amp;lt;label value&amp;gt;, ...}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;重载配置&#34;&gt;重载配置&lt;/h2&gt;
+&lt;p&gt;Yes, sending SIGHUP to the Prometheus process or an HTTP POST request to the /-/reload endpoint will reload and apply the configuration file. The various components attempt to handle failing changes gracefully.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

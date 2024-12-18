@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
     <lastBuildDate>Sat, 06 Nov 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/podman/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,27 @@
       <link>https://26huitailang.github.io/posts/podman/readme/</link>
       <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/podman/readme/</guid>
-      <description>README 初次使用 podman root用户和非root用户的images和container是分开的 非root用户使用podman generate systemd命令生成的文件，拷贝到~/.config/systemd/user/下面，使用systemctl --user执行 流程演示
-podman pull docker.io/nginx:latest podman create --name nginx -p 8080:80 nginx:latest mkdir -p ~/.config/systemd/user cd ~/.config/systemd/user podman generate systemd --files --name nginx systemctl --user enable container-nginx systemctl --user start container-nginx curl http://127.0.0.1:8080 </description>
+      <description>&lt;h1 id=&#34;readme&#34;&gt;README&lt;/h1&gt;
+&lt;h2 id=&#34;初次使用&#34;&gt;初次使用&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;podman root用户和非root用户的images和container是分开的&lt;/li&gt;
+&lt;li&gt;非root用户使用&lt;code&gt;podman generate systemd&lt;/code&gt;命令生成的文件，拷贝到&lt;code&gt;~/.config/systemd/user/&lt;/code&gt;下面，使用&lt;code&gt;systemctl --user&lt;/code&gt;执行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;流程演示&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;podman pull docker.io/nginx:latest
+
+podman create --name nginx -p 8080:80 nginx:latest
+
+mkdir -p ~/.config/systemd/user
+cd ~/.config/systemd/user
+
+podman generate systemd --files --name nginx
+
+systemctl --user enable container-nginx
+systemctl --user start container-nginx
+
+curl http://127.0.0.1:8080
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
   </channel>
 </rss>

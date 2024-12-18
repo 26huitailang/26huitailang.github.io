@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
     <lastBuildDate>Mon, 27 Dec 2021 11:22:50 +0800</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/tools/index.xml" rel="self" type="application/rss+xml" />
@@ -18,18 +18,84 @@
       <link>https://26huitailang.github.io/posts/tools/neovim/</link>
       <pubDate>Mon, 27 Dec 2021 11:22:50 +0800</pubDate>
       <guid>https://26huitailang.github.io/posts/tools/neovim/</guid>
-      <description>了解 vim text object概念 installation brew install neovim brew install font-hack-nerd-font # 检索 brew install ripgrep fzf # lsp format brew install efm-langserver lazy-nvim tokyonight lualine barbecue bufferline indent_blankline gitsigns.nvim alpha-nvim nvim-telescope https://github.com/nvim-treesitter/nvim-treesitter https://github.com/nvim-treesitter/nvim-treesitter-textobjects https://github.com/neovim/nvim-lspconfig https://github.com/williamboman/mason.nvim https://github.com/hrsh7th/nvim-cmp lsp-format 参考 lazyvim kickstart nvim 整理中 my lazyvim config
-plugin use https://github.com/junegunn/vim-plug, install this first：
-sh -c &amp;#39;curl -fLo &amp;#34;${XDG_DATA_HOME:-$HOME/.local/share}&amp;#34;/nvim/site/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim&amp;#39; mkdir ~/.config/nvim/ nvim ~/.config/nvim/init.vim cat &amp;lt;&amp;lt; EOF &amp;gt; ~/.config/nvim/init.vim call plug#begin(&amp;#39;~/.</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 了解 vim text object概念&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installation&#34;&gt;installation&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install neovim
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install font-hack-nerd-font
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 检索&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install ripgrep fzf
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# lsp format&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install efm-langserver
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;lazy-nvim&lt;/li&gt;
+&lt;li&gt;tokyonight&lt;/li&gt;
+&lt;li&gt;lualine&lt;/li&gt;
+&lt;li&gt;barbecue&lt;/li&gt;
+&lt;li&gt;bufferline&lt;/li&gt;
+&lt;li&gt;indent_blankline&lt;/li&gt;
+&lt;li&gt;gitsigns.nvim&lt;/li&gt;
+&lt;li&gt;alpha-nvim&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nvim-telescope/telescope.nvim&#34;&gt;nvim-telescope&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nvim-treesitter/nvim-treesitter&#34;&gt;https://github.com/nvim-treesitter/nvim-treesitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nvim-treesitter/nvim-treesitter-textobjects&#34;&gt;https://github.com/nvim-treesitter/nvim-treesitter-textobjects&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/neovim/nvim-lspconfig&#34;&gt;https://github.com/neovim/nvim-lspconfig&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/williamboman/mason.nvim&#34;&gt;https://github.com/williamboman/mason.nvim&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hrsh7th/nvim-cmp&#34;&gt;https://github.com/hrsh7th/nvim-cmp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;lsp-format&lt;/li&gt;
+&lt;li&gt;参考
+&lt;ul&gt;
+&lt;li&gt;lazyvim&lt;/li&gt;
+&lt;li&gt;kickstart nvim&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/26huitailang/nvim&#34;&gt;整理中 my lazyvim config&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;plugin&#34;&gt;plugin&lt;/h2&gt;
+&lt;p&gt;use &lt;code&gt;https://github.com/junegunn/vim-plug&lt;/code&gt;, install this first：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sh -c &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;curl -fLo &amp;#34;${XDG_DATA_HOME:-$HOME/.local/share}&amp;#34;/nvim/site/autoload/plug.vim --create-dirs \
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mkdir ~/.config/nvim/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nvim ~/.config/nvim/init.vim
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cat &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;lt;&amp;lt; EOF &amp;gt; ~/.config/nvim/init.vim
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;call plug#begin(&amp;#39;~/.vim/plugged&amp;#39;)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;call plug#end()
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;EOF&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;write &lt;code&gt;Plug &#39;fatih/vim-go&#39;&lt;/code&gt; between &lt;code&gt;call&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;run &lt;code&gt;:PlugInstall&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;vim config is &lt;code&gt;.vimrc&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;language-support&#34;&gt;language support&lt;/h2&gt;
+&lt;p&gt;use &lt;a href=&#34;https://github.com/neoclide/coc.nvim&#34;&gt;coc.nvim&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vim</title>
       <link>https://26huitailang.github.io/posts/tools/vim/</link>
       <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/tools/vim/</guid>
-      <description>复制内容到剪贴板 +可以把内容复制到剪贴板寄存器，就能在其他应用中贴。 :reg [register_name] 查看指定寄存器的内容 &amp;#34;+yy // 复制当前行到剪切板 &amp;#34;+p // 将剪切板内容粘贴到光标后面 &amp;#34;ayy // 复制当前行到寄存器 a &amp;#34;ap // 将寄存器 a 中的内容粘贴到光标后面 Vim 有 12 个粘贴板依次编号为：0、1、2、&amp;hellip;、9、a、&amp;quot;、+，其中 + 号为系统粘贴板，” 为临时粘贴板。系统剪切板中的内容可在其他程序中使用。上面的复制指令都可以配合剪切板进行操作。&amp;ldquo;nyw 复制当前单词到 n 号剪切板（双引号开始） &amp;ldquo;np 粘贴 n 号剪切板内容到当前位置后 &amp;ldquo;+Y 复制当前行到系统剪切板&amp;rdquo;+nY 复制当前行往下 n 行到系统剪切板&amp;rdquo;+p 粘贴系统剪切板内容到当前位置后
-标记，mark 一下 mc标记一个位置c，当在本页其他地方完成代码之后，有时因为不是用的 vim 的G或g位移操作，所以两个点号不一定能回来，但是如果在离开前就 mark 了它，`c 一下就能会到 c 标记的地方，这里用其他字母也行，只要自己能记住，我从别的地方学的是 e - end，c - current，s - start，比如代码开头的 import 内容或者常量不对调整，则标记一个 s，当前的代码工作地方标记为 c，这样可以在开头和当前不断跳转。
-replace Search and replace :%s/foo/bar/g, Find each occurrence of &amp;lsquo;foo&amp;rsquo; (in all lines), and replace it with &amp;lsquo;bar&amp;rsquo;.</description>
+      <description>&lt;h2 id=&#34;复制内容到剪贴板&#34;&gt;复制内容到剪贴板&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;+&lt;/code&gt;可以把内容复制到剪贴板寄存器，就能在其他应用中贴。&lt;/li&gt;
+&lt;li&gt;:reg [register_name] 查看指定寄存器的内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-vim&#34; data-lang=&#34;vim&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;+yy  // 复制当前行到剪切板&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;+p   // 将剪切板内容粘贴到光标后面&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;ayy  // 复制当前行到寄存器 a&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;ap   // 将寄存器 a 中的内容粘贴到光标后面&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Vim 有 12 个粘贴板依次编号为：0、1、2、&amp;hellip;、9、a、&amp;quot;、+，其中 + 号为系统粘贴板，” 为临时粘贴板。系统剪切板中的内容可在其他程序中使用。上面的复制指令都可以配合剪切板进行操作。&amp;ldquo;nyw 复制当前单词到 n 号剪切板（双引号开始） &amp;ldquo;np 粘贴 n 号剪切板内容到当前位置后 &amp;ldquo;+Y 复制当前行到系统剪切板&amp;rdquo;+nY 复制当前行往下 n 行到系统剪切板&amp;rdquo;+p 粘贴系统剪切板内容到当前位置后&lt;/p&gt;
+&lt;h2 id=&#34;标记mark-一下&#34;&gt;标记，mark 一下&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;mc&lt;/code&gt;标记一个位置&lt;code&gt;c&lt;/code&gt;，当在本页其他地方完成代码之后，有时因为不是用的 vim 的&lt;code&gt;G或g&lt;/code&gt;位移操作，所以两个点号不一定能回来，但是如果在离开前就 mark 了它，`c 一下就能会到 c 标记的地方，这里用其他字母也行，只要自己能记住，我从别的地方学的是 e - end，c - current，s - start，比如代码开头的 import 内容或者常量不对调整，则标记一个 s，当前的代码工作地方标记为 c，这样可以在开头和当前不断跳转。&lt;/p&gt;
+&lt;h2 id=&#34;replace&#34;&gt;replace&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://vim.wikia.com/wiki/Search_and_replace&#34;&gt;Search and replace&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:%s/foo/bar/g&lt;/code&gt;, Find each occurrence of &amp;lsquo;foo&amp;rsquo; (in all lines), and replace it with &amp;lsquo;bar&amp;rsquo;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;插件&#34;&gt;插件&lt;/h2&gt;
+&lt;h3 id=&#34;youcompleteme&#34;&gt;Youcompleteme&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.v2ex.com/t/341751&#34;&gt;文章&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

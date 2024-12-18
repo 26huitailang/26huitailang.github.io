@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
     <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/k3s/index.xml" rel="self" type="application/rss+xml" />
@@ -18,14 +18,56 @@
       <link>https://26huitailang.github.io/posts/k3s/prometheus/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/k3s/prometheus/</guid>
-      <description>Prometheus 简介 概念 prometheus server exporter，用于server采集数据，有官方提供的node-exporter，也可以通过各种SDK自定义导出内容，暴露一个类似/metrics的路径用于采集 注意，exporter在多进程（gunicorn 多进程）模式下使用会有限制，参考文档 数据模型，和influxdb类似，是时序数据库，以metric为名称，多个label（key-value形式）组成：&amp;lt;metric name&amp;gt;{&amp;lt;label name&amp;gt;=&amp;lt;label value&amp;gt;, ...} 重载配置 Yes, sending SIGHUP to the Prometheus process or an HTTP POST request to the /-/reload endpoint will reload and apply the configuration file. The various components attempt to handle failing changes gracefully.</description>
+      <description>&lt;h1 id=&#34;prometheus-简介&#34;&gt;Prometheus 简介&lt;/h1&gt;
+&lt;h2 id=&#34;概念&#34;&gt;概念&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;prometheus server&lt;/li&gt;
+&lt;li&gt;exporter，用于server采集数据，有官方提供的node-exporter，也可以通过各种SDK自定义导出内容，暴露一个类似&lt;code&gt;/metrics&lt;/code&gt;的路径用于采集
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;注意&lt;/strong&gt;，exporter在多进程（gunicorn 多进程）模式下使用会有限制，参考&lt;a href=&#34;https://github.com/prometheus/client_python&#34;&gt;文档&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;数据模型，和influxdb类似，是时序数据库，以metric为名称，多个label（key-value形式）组成：&lt;code&gt;&amp;lt;metric name&amp;gt;{&amp;lt;label name&amp;gt;=&amp;lt;label value&amp;gt;, ...}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;重载配置&#34;&gt;重载配置&lt;/h2&gt;
+&lt;p&gt;Yes, sending SIGHUP to the Prometheus process or an HTTP POST request to the /-/reload endpoint will reload and apply the configuration file. The various components attempt to handle failing changes gracefully.&lt;/p&gt;</description>
     </item>
     <item>
       <title>k3s</title>
       <link>https://26huitailang.github.io/posts/k3s/k3s/</link>
       <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/k3s/k3s/</guid>
-      <description>k3s 初次使用 multipass 环境准备 quick-start 参考1 参考2 # k3s1 node for master 192.168.64.5 multipass launch -v --name k3s1 20.04 multipass shell k3s1 curl -sfL https://get.k3s.io | sh - # default config sudo cat /etc/rancher/k3s/k3s.yaml # node-token sudo cat /var/lib/rancher/k3s/server/node-token # Check for Ready node, takes maybe 30 seconds sudo kubectl get nodes # k3s2 node 192.168.64.6 multipass launch -v --name k3s2 20.04 multipass shell k3s2 # add node to cluster # token in master cat /var/lib/rancher/k3s/server/node-token # K3S_NODE_NAME for unique hostname export K3S_TOKEN=x export K3S_URL=https://192.</description>
+      <description>&lt;h1 id=&#34;k3s-初次使用&#34;&gt;k3s 初次使用&lt;/h1&gt;
+&lt;h2 id=&#34;multipass-环境准备&#34;&gt;multipass 环境准备&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://rancher.com/docs/k3s/latest/en/quick-start/&#34;&gt;quick-start&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jianshu.com/p/dbc8d9a8374e&#34;&gt;参考1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://juejin.im/post/5dbb9471e51d4529ea263c67&#34;&gt;参考2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# k3s1 node for master 192.168.64.5&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;multipass launch -v --name k3s1 20.04
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;multipass shell k3s1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl -sfL https://get.k3s.io | sh -
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# default config&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo cat /etc/rancher/k3s/k3s.yaml
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# node-token&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo cat /var/lib/rancher/k3s/server/node-token
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Check for Ready node, takes maybe 30 seconds&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo kubectl get nodes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# k3s2 node 192.168.64.6&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;multipass launch -v --name k3s2 20.04
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;multipass shell k3s2
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# add node to cluster&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# token in master cat /var/lib/rancher/k3s/server/node-token&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# K3S_NODE_NAME for unique hostname&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;export K3S_TOKEN&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;x
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;export K3S_URL&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;https://192.168.1.21:6443
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl -sfL https://get.k3s.io | K3S_URL&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;K3S_URL&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt; K3S_TOKEN&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;K3S_TOKEN&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt; sh -
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# if not register successfully, 查看日志可能是因为之前有重复node hostname&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 原因：https://github.com/rancher/k3s/issues/802 移除node没有一同移除密码&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo vim /var/lib/rancher/k3s/server/cred/node-passwd
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;查看节点状态：&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

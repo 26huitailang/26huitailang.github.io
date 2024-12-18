@@ -9,406 +9,434 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 30 Apr 2024 10:49:04 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 18 Dec 2024 09:26:35 +0800</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ai</title>
+      <link>https://26huitailang.github.io/tags/ai/</link>
+      <pubDate>Wed, 18 Dec 2024 09:26:35 +0800</pubDate>
+      <guid>https://26huitailang.github.io/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Search</title>
+      <link>https://26huitailang.github.io/tags/search/</link>
+      <pubDate>Wed, 18 Dec 2024 09:26:35 +0800</pubDate>
+      <guid>https://26huitailang.github.io/tags/search/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docker-File-Owner</title>
+      <link>https://26huitailang.github.io/tags/docker-file-owner/</link>
+      <pubDate>Wed, 21 Aug 2024 16:19:57 +0800</pubDate>
+      <guid>https://26huitailang.github.io/tags/docker-file-owner/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rust</title>
+      <link>https://26huitailang.github.io/tags/rust/</link>
+      <pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://26huitailang.github.io/tags/rust/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Sqlalchemy</title>
       <link>https://26huitailang.github.io/tags/sqlalchemy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 30 Apr 2024 10:49:04 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/sqlalchemy/</guid>
       <description></description>
     </item>
     <item>
       <title>Tar</title>
       <link>https://26huitailang.github.io/tags/tar/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 15 Mar 2024 14:20:27 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/tar/</guid>
       <description></description>
     </item>
     <item>
       <title>Curl</title>
       <link>https://26huitailang.github.io/tags/curl/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 14 Mar 2024 18:07:37 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/curl/</guid>
       <description></description>
     </item>
     <item>
       <title>Cookiecutter</title>
       <link>https://26huitailang.github.io/tags/cookiecutter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 24 Jan 2024 11:29:45 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/cookiecutter/</guid>
       <description></description>
     </item>
     <item>
       <title>Django</title>
       <link>https://26huitailang.github.io/tags/django/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 24 Jan 2024 11:29:45 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/django/</guid>
       <description></description>
     </item>
     <item>
       <title>Dev-Tools</title>
       <link>https://26huitailang.github.io/tags/dev-tools/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 03 Aug 2023 17:33:23 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/dev-tools/</guid>
       <description></description>
     </item>
     <item>
       <title>Vscode</title>
       <link>https://26huitailang.github.io/tags/vscode/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 03 Aug 2023 17:33:23 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/vscode/</guid>
       <description></description>
     </item>
     <item>
       <title>Rsync</title>
       <link>https://26huitailang.github.io/tags/rsync/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 28 Jul 2023 10:14:14 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/rsync/</guid>
       <description></description>
     </item>
     <item>
       <title>Golang</title>
       <link>https://26huitailang.github.io/tags/golang/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/golang/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
       <link>https://26huitailang.github.io/tags/python/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Pyenv</title>
       <link>https://26huitailang.github.io/tags/pyenv/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 17 May 2023 21:57:16 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/pyenv/</guid>
       <description></description>
     </item>
     <item>
       <title>Json1</title>
       <link>https://26huitailang.github.io/tags/json1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/json1/</guid>
       <description></description>
     </item>
     <item>
       <title>Sqlite3</title>
       <link>https://26huitailang.github.io/tags/sqlite3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/sqlite3/</guid>
       <description></description>
     </item>
     <item>
       <title>Devops</title>
       <link>https://26huitailang.github.io/tags/devops/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/devops/</guid>
       <description></description>
     </item>
     <item>
       <title>Fabric3</title>
       <link>https://26huitailang.github.io/tags/fabric3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/fabric3/</guid>
       <description></description>
     </item>
     <item>
       <title>Dependency</title>
       <link>https://26huitailang.github.io/tags/dependency/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/dependency/</guid>
       <description></description>
     </item>
     <item>
       <title>Pip</title>
       <link>https://26huitailang.github.io/tags/pip/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/pip/</guid>
       <description></description>
     </item>
     <item>
       <title>Dst</title>
       <link>https://26huitailang.github.io/tags/dst/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 04 Jan 2023 13:22:46 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/dst/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
       <link>https://26huitailang.github.io/tags/git/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 04 Jan 2023 13:22:46 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/git/</guid>
       <description></description>
     </item>
     <item>
       <title>Rsyslog</title>
       <link>https://26huitailang.github.io/tags/rsyslog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 04 Jan 2023 13:22:46 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/rsyslog/</guid>
       <description></description>
     </item>
     <item>
       <title>Time</title>
       <link>https://26huitailang.github.io/tags/time/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 04 Jan 2023 13:22:46 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/time/</guid>
       <description></description>
     </item>
     <item>
       <title>I18n</title>
       <link>https://26huitailang.github.io/tags/i18n/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 29 Dec 2022 11:22:50 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/i18n/</guid>
       <description></description>
     </item>
     <item>
       <title>Ocr</title>
       <link>https://26huitailang.github.io/tags/ocr/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 29 Dec 2022 11:22:50 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/ocr/</guid>
       <description></description>
     </item>
     <item>
       <title>Compile</title>
       <link>https://26huitailang.github.io/tags/compile/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 14 Oct 2022 15:36:32 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/compile/</guid>
       <description></description>
     </item>
     <item>
       <title>Proxy</title>
       <link>https://26huitailang.github.io/tags/proxy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/proxy/</guid>
       <description></description>
     </item>
     <item>
       <title>Test</title>
       <link>https://26huitailang.github.io/tags/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/test/</guid>
       <description></description>
     </item>
     <item>
       <title>Fastapi</title>
       <link>https://26huitailang.github.io/tags/fastapi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 27 Jul 2022 10:11:58 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/fastapi/</guid>
       <description></description>
     </item>
     <item>
       <title>Playwright</title>
       <link>https://26huitailang.github.io/tags/playwright/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 24 Mar 2022 17:12:16 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/playwright/</guid>
       <description></description>
     </item>
     <item>
       <title>Docker</title>
       <link>https://26huitailang.github.io/tags/docker/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 26 Jan 2022 11:24:36 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/docker/</guid>
       <description></description>
     </item>
     <item>
       <title>Network</title>
       <link>https://26huitailang.github.io/tags/network/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 26 Jan 2022 11:24:36 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/network/</guid>
       <description></description>
     </item>
     <item>
       <title>Neovim</title>
       <link>https://26huitailang.github.io/tags/neovim/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 27 Dec 2021 11:22:50 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/neovim/</guid>
       <description></description>
     </item>
     <item>
       <title>Tools</title>
       <link>https://26huitailang.github.io/tags/tools/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 27 Dec 2021 11:22:50 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/tools/</guid>
       <description></description>
     </item>
     <item>
       <title>Vim</title>
       <link>https://26huitailang.github.io/tags/vim/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/vim/</guid>
       <description></description>
     </item>
     <item>
       <title>Api</title>
       <link>https://26huitailang.github.io/tags/api/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 19 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/api/</guid>
       <description></description>
     </item>
     <item>
       <title>Checklist</title>
       <link>https://26huitailang.github.io/tags/checklist/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 19 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/checklist/</guid>
       <description></description>
     </item>
     <item>
       <title>Security</title>
       <link>https://26huitailang.github.io/tags/security/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 19 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/security/</guid>
       <description></description>
     </item>
     <item>
       <title>Cheatsheet</title>
       <link>https://26huitailang.github.io/tags/cheatsheet/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 Dec 2021 17:53:22 +0800</pubDate>
       <guid>https://26huitailang.github.io/tags/cheatsheet/</guid>
       <description></description>
     </item>
     <item>
       <title>Tmux</title>
       <link>https://26huitailang.github.io/tags/tmux/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/tmux/</guid>
       <description></description>
     </item>
     <item>
       <title>Markdown</title>
       <link>https://26huitailang.github.io/tags/markdown/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/markdown/</guid>
       <description></description>
     </item>
     <item>
       <title>Nginx</title>
       <link>https://26huitailang.github.io/tags/nginx/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/nginx/</guid>
       <description></description>
     </item>
     <item>
       <title>Pandoc</title>
       <link>https://26huitailang.github.io/tags/pandoc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/pandoc/</guid>
       <description></description>
     </item>
     <item>
       <title>Container</title>
       <link>https://26huitailang.github.io/tags/container/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/container/</guid>
       <description></description>
     </item>
     <item>
       <title>Podman</title>
       <link>https://26huitailang.github.io/tags/podman/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/podman/</guid>
       <description></description>
     </item>
     <item>
       <title>Debian</title>
       <link>https://26huitailang.github.io/tags/debian/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/debian/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
       <link>https://26huitailang.github.io/tags/linux/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>CI/CD</title>
       <link>https://26huitailang.github.io/tags/ci/cd/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/ci/cd/</guid>
       <description></description>
     </item>
     <item>
       <title>Gitlab</title>
       <link>https://26huitailang.github.io/tags/gitlab/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/gitlab/</guid>
       <description></description>
     </item>
     <item>
       <title>Ab</title>
       <link>https://26huitailang.github.io/tags/ab/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 06 Aug 2020 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/ab/</guid>
       <description></description>
     </item>
     <item>
       <title>K3s</title>
       <link>https://26huitailang.github.io/tags/k3s/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/k3s/</guid>
       <description></description>
     </item>
     <item>
       <title>Prometheus</title>
       <link>https://26huitailang.github.io/tags/prometheus/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/prometheus/</guid>
       <description></description>
     </item>
     <item>
       <title>Pycharm</title>
       <link>https://26huitailang.github.io/tags/pycharm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/pycharm/</guid>
       <description></description>
     </item>
     <item>
       <title>Gzip</title>
       <link>https://26huitailang.github.io/tags/gzip/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/gzip/</guid>
       <description></description>
     </item>
     <item>
       <title>Multipass</title>
       <link>https://26huitailang.github.io/tags/multipass/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/multipass/</guid>
       <description></description>
     </item>
     <item>
       <title>Ubuntu</title>
       <link>https://26huitailang.github.io/tags/ubuntu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/ubuntu/</guid>
       <description></description>
     </item>
     <item>
       <title>Toolbox</title>
       <link>https://26huitailang.github.io/tags/toolbox/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/toolbox/</guid>
       <description></description>
     </item>
     <item>
       <title>Vue</title>
       <link>https://26huitailang.github.io/tags/vue/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/vue/</guid>
       <description></description>
     </item>
     <item>
       <title>Aliyun</title>
       <link>https://26huitailang.github.io/tags/aliyun/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/tags/aliyun/</guid>
       <description></description>
     </item>

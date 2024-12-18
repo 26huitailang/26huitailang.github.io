@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
     <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/toolbox/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,63 @@
       <link>https://26huitailang.github.io/posts/tools/toolbox/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/tools/toolbox/</guid>
-      <description>Tool Hub 各个分类的工具汇总
-开发 代码 nvim vscode jetbrains vim 代码管理 gitea gitlab CI drone jetbrains teamcity gitlab 接口测试 postman httpie jebrains http test curl 接口mock测试 httpretty: a full fake TCP socket module. Inspired by FakeWeb(ruby), 用于模拟http外部访问请求 responses: A utility for mocking out the Python Requests library. 接口性能测试 vegeta pssh + vegeta, pssh并行在多个计算机中执行命令，vegeta接口性能测试工具，支持代码修改、命令模式，输出json、text、gob、html等格式 apache benchmark(ab) 代码性能分析 Python memray pytest-memray py-spy, Never use print for debugging again PySnooper, Never use print for debugging again 文档 markdown：</description>
+      <description>&lt;h1 id=&#34;tool-hub&#34;&gt;Tool Hub&lt;/h1&gt;
+&lt;p&gt;各个分类的工具汇总&lt;/p&gt;
+&lt;h2 id=&#34;开发&#34;&gt;开发&lt;/h2&gt;
+&lt;h3 id=&#34;代码&#34;&gt;代码&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;nvim&lt;/li&gt;
+&lt;li&gt;vscode&lt;/li&gt;
+&lt;li&gt;jetbrains&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;vim&lt;/del&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;代码管理&#34;&gt;代码管理&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;gitea&lt;/li&gt;
+&lt;li&gt;gitlab&lt;/li&gt;
+&lt;li&gt;CI
+&lt;ul&gt;
+&lt;li&gt;drone&lt;/li&gt;
+&lt;li&gt;jetbrains teamcity&lt;/li&gt;
+&lt;li&gt;gitlab&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;接口测试&#34;&gt;接口测试&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;postman&lt;/li&gt;
+&lt;li&gt;httpie&lt;/li&gt;
+&lt;li&gt;jebrains http test&lt;/li&gt;
+&lt;li&gt;curl&lt;/li&gt;
+&lt;li&gt;接口mock测试
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gabrielfalcao/HTTPretty&#34;&gt;httpretty&lt;/a&gt;: a full fake TCP socket module. Inspired by FakeWeb(ruby), 用于模拟http外部访问请求&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/getsentry/responses&#34;&gt;responses&lt;/a&gt;: A utility for mocking out the Python Requests library.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;接口性能测试&#34;&gt;接口性能测试&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;vegeta
+&lt;ul&gt;
+&lt;li&gt;pssh + vegeta, pssh并行在多个计算机中执行命令，vegeta接口性能测试工具，支持代码修改、命令模式，输出json、text、gob、html等格式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;apache benchmark(ab)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;代码性能分析&#34;&gt;代码性能分析&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Python
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/bloomberg/memray&#34;&gt;memray&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/bloomberg/pytest-memray&#34;&gt;pytest-memray&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cool-RR/PySnooper&#34;&gt;py-spy&lt;/a&gt;, Never use print for debugging again&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cool-RR/PySnooper&#34;&gt;PySnooper&lt;/a&gt;, Never use print for debugging again&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;文档&#34;&gt;文档&lt;/h3&gt;
+&lt;p&gt;markdown：&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

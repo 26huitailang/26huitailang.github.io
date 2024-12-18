@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
     <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/vue/index.xml" rel="self" type="application/rss+xml" />
@@ -18,12 +18,59 @@
       <link>https://26huitailang.github.io/posts/vue/cors/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/vue/cors/</guid>
-      <description>利用proxy 解决 Django Vue 开发环境中的跨域问题 最近使用 Django+Vue的组合快速的做一个项目，前段之前有看过，但是只是👀会了，这次实际操作，在前后端分离后的开发环境中踩了坑。
-环境 Django + DRF Django Channels，主要是websocket vue-admin-template，一个开源的项目，很多东西都有实现，新手可以用来改改就用，还能学习 开发环境：
-wsgi, 8000 asgi, 8001 vue, 9528 问题 想像在使用nginx一样的透明的使用开发环境 django已经配置了corsheaders middleware了 尝试 axios显示指定地址和端口到8000的服务上，解决了axios实例的访问，但是使用 el-upload的表单时，发现就不好使了，localhost和其他不同域，拿不到 cookie中的csrftoken，导致被 django拒绝 解决 在查看了各种文档后，最有效的方案是devServer的proxy，这是webpack提供的功能，使用的是http-proxy-middleware这个中间件，文档很详细，可以看看。
-目标：
-代理 /api的请求到8000端口的wsgi server 代理 /ws的请求到8001的asgi server /api ---&amp;gt; localhost:8000/api localhost:9528 (cookie) -- /ws ---&amp;gt; localhost:8001/ws vue.conf.js
-devServer: { ... proxy: { [process.env.VUE_APP_BASE_API]: { target: &amp;#39;http://127.0.0.1:8000&amp;#39;, changeOrigin: true, ws: false, pathRewrite: { [&amp;#39;^&amp;#39; + process.env.VUE_APP_BASE_API]: &amp;#39;&amp;#39; }, cookieDomainRewrite: { &amp;#39;*&amp;#39;: &amp;#39;localhost&amp;#39; } }, &amp;#39;/ws&amp;#39;: { target: &amp;#39;ws://127.</description>
+      <description>&lt;h1 id=&#34;利用proxy-解决-django-vue-开发环境中的跨域问题&#34;&gt;利用proxy 解决 Django Vue 开发环境中的跨域问题&lt;/h1&gt;
+&lt;p&gt;最近使用 Django+Vue的组合快速的做一个项目，前段之前有看过，但是只是👀会了，这次实际操作，在前后端分离后的开发环境中踩了坑。&lt;/p&gt;
+&lt;h2 id=&#34;环境&#34;&gt;环境&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Django + DRF&lt;/li&gt;
+&lt;li&gt;Django Channels，主要是websocket&lt;/li&gt;
+&lt;li&gt;vue-admin-template，一个开源的项目，很多东西都有实现，新手可以用来改改就用，还能学习&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;开发环境：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;wsgi, 8000&lt;/li&gt;
+&lt;li&gt;asgi, 8001&lt;/li&gt;
+&lt;li&gt;vue, 9528&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;问题&#34;&gt;问题&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;想像在使用nginx一样的透明的使用开发环境&lt;/li&gt;
+&lt;li&gt;django已经配置了&lt;code&gt;corsheaders&lt;/code&gt; middleware了&lt;/li&gt;
+&lt;li&gt;尝试 axios显示指定地址和端口到8000的服务上，解决了axios实例的访问，但是使用 el-upload的表单时，发现就不好使了，localhost和其他不同域，拿不到 cookie中的csrftoken，导致被 django拒绝&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;解决&#34;&gt;解决&lt;/h2&gt;
+&lt;p&gt;在查看了各种文档后，最有效的方案是&lt;code&gt;devServer&lt;/code&gt;的proxy，这是webpack提供的功能，使用的是&lt;a href=&#34;https://github.com/chimurai/http-proxy-middleware#external-websocket-upgrade&#34;&gt;http-proxy-middleware&lt;/a&gt;这个中间件，文档很详细，可以看看。&lt;/p&gt;
+&lt;p&gt;目标：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;代理 &lt;code&gt;/api&lt;/code&gt;的请求到8000端口的wsgi server&lt;/li&gt;
+&lt;li&gt;代理 &lt;code&gt;/ws&lt;/code&gt;的请求到8001的asgi server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;                                /api ---&amp;gt; localhost:8000/api
+    localhost:9528 (cookie) --
+                                /ws ---&amp;gt; localhost:8001/ws
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;vue.conf.js&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;devServer&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;proxy&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      [&lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;env&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;VUE_APP_BASE_API&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;http://127.0.0.1:8000&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;changeOrigin&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;ws&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;pathRewrite&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;^&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;env&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;VUE_APP_BASE_API&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;cookieDomainRewrite&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;*&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;localhost&amp;#39;&lt;/span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/ws&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ws://127.0.0.1:8001&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;// changeOrigin: true,
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;secure&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;ws&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;说明：&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

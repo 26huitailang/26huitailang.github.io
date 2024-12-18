@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
     <lastBuildDate>Wed, 26 Jan 2022 11:24:36 +0800</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
@@ -18,86 +18,255 @@
       <link>https://26huitailang.github.io/posts/docker/docker-network/</link>
       <pubDate>Wed, 26 Jan 2022 11:24:36 +0800</pubDate>
       <guid>https://26huitailang.github.io/posts/docker/docker-network/</guid>
-      <description>访问宿主机网络 host mode 使用host模式：
-docker run -d --network=host my-container:latest services: my-service: network_mode: host 添加hosts 使用--add-host选项添加映射到/etc/hosts文件，添加host.docker.internal到hosts
-docker run --rm -it --add-host host.docker.internal:host-gateway goexpect bash hosts in container
-root@00e0febe04e2:/app# cat /etc/hosts 127.0.0.1 localhost ::1 localhost ip6-localhost ip6-loopback fe00::0 ip6-localnet ff00::0 ip6-mcastprefix ff02::1 ip6-allnodes ff02::2 ip6-allrouters 192.168.65.2 host.docker.internal 172.17.0.2 00e0febe04e2 访问宿主机网络
-ssh root@host.docker.internal -p 2222 </description>
+      <description>&lt;h2 id=&#34;访问宿主机网络&#34;&gt;访问宿主机网络&lt;/h2&gt;
+&lt;h3 id=&#34;host-mode&#34;&gt;host mode&lt;/h3&gt;
+&lt;p&gt;使用host模式：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run -d --network&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;host my-container:latest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;services&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;my-service&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;network_mode&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;host&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;添加hosts&#34;&gt;添加hosts&lt;/h3&gt;
+&lt;p&gt;使用&lt;code&gt;--add-host&lt;/code&gt;选项添加映射到&lt;code&gt;/etc/hosts&lt;/code&gt;文件，添加&lt;code&gt;host.docker.internal&lt;/code&gt;到hosts&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run --rm -it --add-host host.docker.internal:host-gateway goexpect bash
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;hosts in container&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;root@00e0febe04e2:/app# cat /etc/hosts
+127.0.0.1       localhost
+::1     localhost ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+192.168.65.2    host.docker.internal
+172.17.0.2      00e0febe04e2
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;访问宿主机网络&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh root@host.docker.internal -p &lt;span style=&#34;color:#ae81ff&#34;&gt;2222&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Docker Cheatsheet</title>
       <link>https://26huitailang.github.io/posts/docker/cheatsheet/</link>
       <pubDate>Mon, 06 Dec 2021 17:53:22 +0800</pubDate>
       <guid>https://26huitailang.github.io/posts/docker/cheatsheet/</guid>
-      <description>docker cheatsheet docker
-# 不使用缓存重新build docker build . --no-cache # tag docker build -t peterchen0802/mypandoc:latest . docker tag peterchen0802/mypandoc:latest mypandoc:latest # 查看容器日志 docker logs SERVICE_NAME [-f] # 导出容器 # 注：用户既可以使用 docker load 来导入镜像存储文件到本地镜像库，也可以使用 docker import 来导入一个容器快照到本地镜像库。这两者的区别在于容器快照文件将丢弃所有的历史记录和元数据信息（即仅保存容器当时的快照状态），而镜像存储文件将保存完整记录，体积也要大。此外，从容器快照文件导入时可以重新指定标签等元数据信息。 docker export CONTAINER &amp;gt; TARFILENAME docker export CONTAINER -o TARFILENAME # 导入容器 docker import [OPTIONS] file|URL|- [REPOSITORY[:TAG]] docker import mypandoc.tar peterchen0802/mypandoc:latest # 指定导入的镜像名称 # -----清理 start----- ## 磁盘容量查看 docker system df ## 清理 docker rmi $(docker images --filter &amp;#34;dangling=true&amp;#34; -q) ## 清理无标签的镜像 docker image prune ## 清理磁盘，删除关闭的容器、无用的数据卷、网络，以及dangling镜像（无tag的镜像）。 docker system prune ## 更彻底的删除，将没有容器使用的镜像删除： docker system prune -a # -----清理 end----- docker-compose</description>
+      <description>&lt;h1 id=&#34;docker-cheatsheet&#34;&gt;docker cheatsheet&lt;/h1&gt;
+&lt;p&gt;docker&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 不使用缓存重新build&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker build . --no-cache
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# tag&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker build -t peterchen0802/mypandoc:latest .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker tag peterchen0802/mypandoc:latest mypandoc:latest
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 查看容器日志&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker logs SERVICE_NAME &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-f&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 导出容器&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 注：用户既可以使用 docker load 来导入镜像存储文件到本地镜像库，也可以使用 docker import 来导入一个容器快照到本地镜像库。这两者的区别在于容器快照文件将丢弃所有的历史记录和元数据信息（即仅保存容器当时的快照状态），而镜像存储文件将保存完整记录，体积也要大。此外，从容器快照文件导入时可以重新指定标签等元数据信息。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker export CONTAINER &amp;gt; TARFILENAME
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker export CONTAINER -o TARFILENAME
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 导入容器&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker import &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;OPTIONS&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; file|URL|- &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;REPOSITORY&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;:TAG&lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker import mypandoc.tar peterchen0802/mypandoc:latest  &lt;span style=&#34;color:#75715e&#34;&gt;# 指定导入的镜像名称&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# -----清理 start-----&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## 磁盘容量查看&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker system df
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## 清理&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker rmi &lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;docker images --filter &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;dangling=true&amp;#34;&lt;/span&gt; -q&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## 清理无标签的镜像&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker image prune
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## 清理磁盘，删除关闭的容器、无用的数据卷、网络，以及dangling镜像（无tag的镜像）。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker system prune
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## 更彻底的删除，将没有容器使用的镜像删除：&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker system prune -a
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# -----清理 end-----&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;docker-compose&lt;/p&gt;</description>
     </item>
     <item>
       <title>PyCharm Docker</title>
       <link>https://26huitailang.github.io/posts/pycharm/docker/</link>
       <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/pycharm/docker/</guid>
-      <description>PyCharm 使用 Docker pycharm use docker for development and stage
-Development 使用windows和virtualbox，没有打开hyper-v所以无法使用docker，在虚拟机中使用docker并打开tcp，但是由于volume只能挂载宿主机，所以要先用pycharmm将文件拷贝到远程的映射目录，再使用。 此方法适合还没有准备开发环境和需要使用docker作为开发环境，但是windows本机没有docker的情况 我已使用虚拟机和pycharm远程同步功能达到同样的效果 在宿主机中开发时，可以很方便的将docker配置集成到configuration中 Stage PyCharm的docker也支持修改registry，如果有远程仓库需要的，也可以方便分发镜像</description>
+      <description>&lt;h1 id=&#34;pycharm-使用-docker&#34;&gt;PyCharm 使用 Docker&lt;/h1&gt;
+&lt;p&gt;pycharm use docker for development and stage&lt;/p&gt;
+&lt;h2 id=&#34;development&#34;&gt;Development&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;使用windows和virtualbox，没有打开hyper-v所以无法使用docker，在虚拟机中使用docker并打开tcp，但是由于volume只能挂载宿主机，所以要先用pycharmm将文件拷贝到远程的映射目录，再使用。
+&lt;ul&gt;
+&lt;li&gt;此方法适合还没有准备开发环境和需要使用docker作为开发环境，但是windows本机没有docker的情况&lt;/li&gt;
+&lt;li&gt;我已使用虚拟机和pycharm远程同步功能达到同样的效果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;在宿主机中开发时，可以很方便的将docker配置集成到configuration中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;stage&#34;&gt;Stage&lt;/h2&gt;
+&lt;p&gt;PyCharm的docker也支持修改registry，如果有远程仓库需要的，也可以方便分发镜像&lt;/p&gt;</description>
     </item>
     <item>
       <title>docker env file</title>
       <link>https://26huitailang.github.io/posts/docker/env/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/docker/env/</guid>
-      <description>docker env file 在docker-compose 中使用以下方式导入.envfile。
-web: build: . restart: always working_dir: /deploy/mysite command: ./service_web.sh env_file: - .env # environments .env
-DOCKER=1 HOME=/deploy 想用shell script动态获取环境的CPU count 如果直接在.env 中写如下的内容，会报语法错误：
-CPU_NUM=$(cat /proc/cpuinfo |grep processor|wc -l) 所以，在web服务的command: ./service_web.sh脚本中export一个变量，并在gunicorn中使用：
-#!/bin/bash sleep 5 export CPU_NUM=$(cat /proc/cpuinfo |grep processor|wc -l) python manage.py collectstatic -v0 --noinput python manage.py migrate --noinput /usr/local/bin/gunicorn -w $((2*$CPU_NUM+1)) -b unix:/deploy/running/handle/django-tutorial-server.sock mysite.wsgi:application --log-level info </description>
+      <description>&lt;h1 id=&#34;docker-env-file&#34;&gt;docker env file&lt;/h1&gt;
+&lt;p&gt;在docker-compose 中使用以下方式导入&lt;code&gt;.env&lt;/code&gt;file。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-docker-compose&#34; data-lang=&#34;docker-compose&#34;&gt;  web:
+    build: .
+    restart: always
+    working_dir: /deploy/mysite
+    command: ./service_web.sh
+    env_file:
+      - .env  # environments
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;.env&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-env&#34; data-lang=&#34;env&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;DOCKER&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;HOME&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/deploy
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;想用shell-script动态获取环境的cpu-count&#34;&gt;想用shell script动态获取环境的CPU count&lt;/h2&gt;
+&lt;p&gt;如果直接在.env 中写如下的内容，会报语法错误：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;CPU_NUM=$(cat /proc/cpuinfo |grep processor|wc -l)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;所以，在web服务的&lt;code&gt;command: ./service_web.sh&lt;/code&gt;脚本中export一个变量，并在gunicorn中使用：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;sleep &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;export CPU_NUM&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;cat /proc/cpuinfo |grep processor|wc -l&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python manage.py collectstatic -v0 --noinput
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python manage.py migrate --noinput
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/usr/local/bin/gunicorn -w &lt;span style=&#34;color:#66d9ef&#34;&gt;$((&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;$CPU_NUM&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;))&lt;/span&gt; -b unix:/deploy/running/handle/django-tutorial-server.sock mysite.wsgi:application --log-level info
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>docker 加速</title>
       <link>https://26huitailang.github.io/posts/docker/%E5%8A%A0%E9%80%9F/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/docker/%E5%8A%A0%E9%80%9F/</guid>
-      <description>docker 加速 mac ~/.docker/daemon.json 添加如下配置 { &amp;#34;registry-mirrors&amp;#34;: [&amp;#34;https://registry.docker-cn.com&amp;#34;] } </description>
+      <description>&lt;h1 id=&#34;docker-加速&#34;&gt;docker 加速&lt;/h1&gt;
+&lt;h2 id=&#34;mac&#34;&gt;mac&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;~/.docker/daemon.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;添加如下配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;registry-mirrors&amp;#34;&lt;/span&gt;: [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://registry.docker-cn.com&amp;#34;&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>docker 管理工具</title>
       <link>https://26huitailang.github.io/posts/docker/%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/docker/%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</guid>
-      <description>docker 管理工具 Portainer web服务
-docker volume create portainer_data docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer </description>
+      <description>&lt;h1 id=&#34;docker-管理工具&#34;&gt;docker 管理工具&lt;/h1&gt;
+&lt;h2 id=&#34;portainer&#34;&gt;Portainer&lt;/h2&gt;
+&lt;p&gt;web服务&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker volume create portainer_data
+docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>docker 阿里云仓库</title>
       <link>https://26huitailang.github.io/posts/docker/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BB%93%E5%BA%93/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/docker/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BB%93%E5%BA%93/</guid>
-      <description>docker 阿里云仓库 登录阿里云Docker Registry $ sudo docker login --username=26huitailang@gmail.com registry.cn-hangzhou.aliyuncs.com 用于登录的用户名为阿里云账号全名，密码为开通服务时设置的密码。
-您可以在产品控制台首页修改登录密码。
-遇到无法登录问题：
-Error saving credentials: error storing credentials - err: exit status 1, out: `The name org.freedesktop.secrets was not provided by any .service files sudo apt install gnupg2 pass 从Registry中拉取镜像 $ sudo docker pull registry.cn-hangzhou.aliyuncs.com/26huitailang/golang-web:[镜像版本号]
-将镜像推送到Registry $ sudo docker login --username=26huitailang@gmail.com registry.cn-hangzhou.aliyuncs.com $ sudo docker tag [ImageId] registry.cn-hangzhou.aliyuncs.com/26huitailang/golang-web:[镜像版本号] $ sudo docker push registry.cn-hangzhou.aliyuncs.com/26huitailang/golang-web:[镜像版本号] 请根据实际镜像信息替换示例中的[ImageId]和[镜像版本号]参数。
-选择合适的镜像仓库地址 从ECS推送镜像时，可以选择使用镜像仓库内网地址。推送速度将得到提升并且将不会损耗您的公网流量。
-如果您使用的机器位于VPC网络，请使用 registry-vpc.cn-hangzhou.aliyuncs.com 作为Registry的域名登录，并作为镜像命名空间前缀。</description>
+      <description>&lt;h1 id=&#34;docker-阿里云仓库&#34;&gt;docker 阿里云仓库&lt;/h1&gt;
+&lt;h2 id=&#34;登录阿里云docker-registry&#34;&gt;登录阿里云Docker Registry&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo docker login --username=26huitailang@gmail.com registry.cn-hangzhou.aliyuncs.com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;用于登录的用户名为阿里云账号全名，密码为开通服务时设置的密码。&lt;/p&gt;
+&lt;p&gt;您可以在产品控制台首页修改登录密码。&lt;/p&gt;
+&lt;p&gt;遇到无法登录问题：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Error saving credentials: error storing credentials - err: exit status 1, out: `The name org.freedesktop.secrets was not provided by any .service files
+
+sudo apt install gnupg2 pass
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;从registry中拉取镜像&#34;&gt;从Registry中拉取镜像&lt;/h2&gt;
+&lt;p&gt;$ sudo docker pull registry.cn-hangzhou.aliyuncs.com/26huitailang/golang-web:[镜像版本号]&lt;/p&gt;
+&lt;h2 id=&#34;将镜像推送到registry&#34;&gt;将镜像推送到Registry&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo docker login --username=26huitailang@gmail.com registry.cn-hangzhou.aliyuncs.com
+$ sudo docker tag [ImageId] registry.cn-hangzhou.aliyuncs.com/26huitailang/golang-web:[镜像版本号]
+$ sudo docker push registry.cn-hangzhou.aliyuncs.com/26huitailang/golang-web:[镜像版本号]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;请根据实际镜像信息替换示例中的[ImageId]和[镜像版本号]参数。&lt;/p&gt;
+&lt;h2 id=&#34;选择合适的镜像仓库地址&#34;&gt;选择合适的镜像仓库地址&lt;/h2&gt;
+&lt;p&gt;从ECS推送镜像时，可以选择使用镜像仓库内网地址。推送速度将得到提升并且将不会损耗您的公网流量。&lt;/p&gt;
+&lt;p&gt;如果您使用的机器位于VPC网络，请使用 registry-vpc.cn-hangzhou.aliyuncs.com 作为Registry的域名登录，并作为镜像命名空间前缀。&lt;/p&gt;</description>
     </item>
     <item>
       <title>docker install</title>
       <link>https://26huitailang.github.io/posts/docker/debian-docker-install/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/docker/debian-docker-install/</guid>
-      <description>docker install install docker on Debian/Ubuntu
-link
-Uninstall old versions $ sudo apt-get remove docker docker-engine docker.io containerd runc Set up the repository $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg-agent \ software-properties-common $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - or $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add - $ sudo apt-key fingerprint 0EBFCD88 $ sudo add-apt-repository \ &amp;#34;deb [arch=amd64] https://download.</description>
+      <description>&lt;h1 id=&#34;docker-install&#34;&gt;docker install&lt;/h1&gt;
+&lt;p&gt;install docker on Debian/Ubuntu&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.docker.com/engine/install/debian/&#34;&gt;link&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;uninstall-old-versions&#34;&gt;Uninstall old versions&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get remove docker docker-engine docker.io containerd runc
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;set-up-the-repository&#34;&gt;Set up the repository&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get update
+
+$ sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
+
+$ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+or
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
+
+$ sudo apt-key fingerprint 0EBFCD88
+
+
+$ sudo add-apt-repository \
+   &amp;#34;deb [arch=amd64] https://download.docker.com/linux/debian \
+   $(lsb_release -cs) \
+   stable&amp;#34;
+or
+sudo add-apt-repository \
+   &amp;#34;deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+  focal \
+  stable&amp;#34;
+or
+$ sudo add-apt-repository \
+   &amp;#34;deb [arch=amd64] https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/ \
+  $(lsb_release -cs) \
+  stable&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;install-docker-engine&#34;&gt;Install Docker Engine&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get update
+$ sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+$ sudo docker run --rm hello-world
+
+$ sudo apt install docker-compose -y
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;without-sudo-to-use-docker&#34;&gt;Without sudo to use docker&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo usermod -aG docker $USER
+
+$ sudo systemctl restart docker
+$ sudo systemctl enable docker
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;speed-up&#34;&gt;Speed up&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://YOURS.mirror.aliyuncs.com&#34;&gt;https://YOURS.mirror.aliyuncs.com&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Docker Private Registry</title>
       <link>https://26huitailang.github.io/posts/docker/%E7%A7%81%E6%9C%89registry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/docker/%E7%A7%81%E6%9C%89registry/</guid>
-      <description>Docker Private Registry 简单使用，官方 官方提供的 https://hub.docker.com/_/registry
-Run a local registry: Quick Version
-$ docker run -d -p 5000:5000 --restart always --name registry registry:2 Now, use it from within Docker:
-$ docker pull ubuntu $ docker tag ubuntu localhost:5000/ubuntu $ docker push localhost:5000/ubuntu 更复杂的需求，harbor https://goharbor.io/
-Our mission is to be the trusted cloud native repository for Kubernetes</description>
+      <description>&lt;h1 id=&#34;docker-private-registry&#34;&gt;Docker Private Registry&lt;/h1&gt;
+&lt;h2 id=&#34;简单使用官方&#34;&gt;简单使用，官方&lt;/h2&gt;
+&lt;p&gt;官方提供的 &lt;a href=&#34;https://hub.docker.com/_/registry&#34;&gt;https://hub.docker.com/_/registry&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Run a local registry: Quick Version&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker run -d -p 5000:5000 --restart always --name registry registry:2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, use it from within Docker:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker pull ubuntu
+$ docker tag ubuntu localhost:5000/ubuntu
+$ docker push localhost:5000/ubuntu
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;更复杂的需求harbor&#34;&gt;更复杂的需求，harbor&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://goharbor.io/&#34;&gt;https://goharbor.io/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Our mission is to be the trusted cloud native repository for Kubernetes&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

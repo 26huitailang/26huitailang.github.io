@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
     <lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
@@ -18,10 +18,104 @@
       <link>https://26huitailang.github.io/posts/tools/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/tools/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
-      <description>开发编辑器/IDE vim vscode goland pycharm CI/CD gitlab CI/CD github actions teamcity 部署选择 docker supervisor pm2 systemd 网络工具 wireshark socat tcpdump Go Golang 开发环境准备和工具选择
-参考Alikhll/golang-developer-roadmap。
-更多关于golang的分享，参考Awesome-go
-包管理 加速/私有模块 组件 CLI工具开发 cobra Config viper Web Gin🍺 Echo🍺 Beego go-swagger Iris ORM Gorm🍺 Xorm DB PG🍺 Redis🍺 MongoDB Log Zap🍺 Logrus Websocket gorilla/websocket Task schedule Gron test testify convey, bdd python lint black isort darker </description>
+      <description>&lt;h2 id=&#34;开发编辑器ide&#34;&gt;开发编辑器/IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;vim&lt;/li&gt;
+&lt;li&gt;vscode&lt;/li&gt;
+&lt;li&gt;goland&lt;/li&gt;
+&lt;li&gt;pycharm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;cicd&#34;&gt;CI/CD&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;gitlab CI/CD&lt;/li&gt;
+&lt;li&gt;github actions&lt;/li&gt;
+&lt;li&gt;teamcity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;部署选择&#34;&gt;部署选择&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;docker&lt;/li&gt;
+&lt;li&gt;supervisor&lt;/li&gt;
+&lt;li&gt;pm2&lt;/li&gt;
+&lt;li&gt;systemd&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;网络工具&#34;&gt;网络工具&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;wireshark&lt;/li&gt;
+&lt;li&gt;socat&lt;/li&gt;
+&lt;li&gt;tcpdump&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;go&#34;&gt;Go&lt;/h2&gt;
+&lt;p&gt;Golang 开发环境准备和工具选择&lt;/p&gt;
+&lt;p&gt;参考&lt;a href=&#34;https://github.com/Alikhll/golang-developer-roadmap&#34;&gt;Alikhll/golang-developer-roadmap&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;更多关于golang的分享，参考&lt;a href=&#34;https://github.com/avelino/awesome-go&#34;&gt;Awesome-go&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;包管理&#34;&gt;包管理&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://learnku.com/go/wikis/38122&#34;&gt;加速/私有模块&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;组件&#34;&gt;组件&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;CLI工具开发
+&lt;ul&gt;
+&lt;li&gt;cobra&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Config
+&lt;ul&gt;
+&lt;li&gt;viper&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Web
+&lt;ul&gt;
+&lt;li&gt;Gin🍺&lt;/li&gt;
+&lt;li&gt;Echo🍺&lt;/li&gt;
+&lt;li&gt;Beego&lt;/li&gt;
+&lt;li&gt;go-swagger&lt;/li&gt;
+&lt;li&gt;Iris&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ORM
+&lt;ul&gt;
+&lt;li&gt;Gorm🍺&lt;/li&gt;
+&lt;li&gt;Xorm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DB
+&lt;ul&gt;
+&lt;li&gt;PG🍺&lt;/li&gt;
+&lt;li&gt;Redis🍺&lt;/li&gt;
+&lt;li&gt;MongoDB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Log
+&lt;ul&gt;
+&lt;li&gt;Zap🍺&lt;/li&gt;
+&lt;li&gt;Logrus&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Websocket
+&lt;ul&gt;
+&lt;li&gt;gorilla/websocket&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Task schedule
+&lt;ul&gt;
+&lt;li&gt;Gron&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;test
+&lt;ul&gt;
+&lt;li&gt;testify&lt;/li&gt;
+&lt;li&gt;convey, bdd&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;python&#34;&gt;python&lt;/h2&gt;
+&lt;h3 id=&#34;lint&#34;&gt;lint&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;black&lt;/li&gt;
+&lt;li&gt;isort&lt;/li&gt;
+&lt;li&gt;darker&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Pyenv</title>
@@ -42,82 +136,222 @@
       <link>https://26huitailang.github.io/posts/python/fastapi/</link>
       <pubDate>Wed, 27 Jul 2022 10:11:58 +0800</pubDate>
       <guid>https://26huitailang.github.io/posts/python/fastapi/</guid>
-      <description>middleware or dependency 官方说明
-场景：
-项目使用了sqlite+sqlalchemy，暂时不支持async方式访问，但是fastapi的middleware的 __call__ 方法必须是async，如果在middleware中去做用户会话管理等和db相关的io操作可能导致整个应用阻塞。
-解决：
-使用def的dependency组合完成相关操作
-官方对于两个组件的对比说明：
-middleware 代码多一些，更复杂一些 必须是async方法 任何需要IO代码的添加都可能导致整个应用速度变慢或者阻塞 每个请求都会执行相关代码，如果是db的话，即使路由函数不需要也会创建 </description>
+      <description>&lt;h2 id=&#34;middleware-or-dependency&#34;&gt;middleware or dependency&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://fastapi.tiangolo.com/tutorial/sql-databases/#dependencies-with-yield-or-middleware&#34;&gt;官方说明&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;场景：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;项目使用了sqlite+sqlalchemy，暂时不支持async方式访问，但是fastapi的middleware的 __call__ 方法必须是async，如果在middleware中去做用户会话管理等和db相关的io操作可能导致整个应用阻塞。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;解决：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用def的dependency组合完成相关操作&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;官方对于两个组件的对比说明：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;middleware
+&lt;ul&gt;
+&lt;li&gt;代码多一些，更复杂一些&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;必须是async方法&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;任何需要IO代码的添加都可能导致整个应用速度变慢或者阻塞&lt;/li&gt;
+&lt;li&gt;每个请求都会执行相关代码，如果是db的话，即使路由函数不需要也会创建&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Playwright</title>
       <link>https://26huitailang.github.io/posts/test/playwright/</link>
       <pubDate>Thu, 24 Mar 2022 17:12:16 +0800</pubDate>
       <guid>https://26huitailang.github.io/posts/test/playwright/</guid>
-      <description>image docker pull mcr.microsoft.com/playwright/python:v1.20.0-focal
-本地环境 pip install playwright -i https://pypi.tuna.tsinghua.edu.cn/simple playwright install</description>
+      <description>&lt;h2 id=&#34;image&#34;&gt;image&lt;/h2&gt;
+&lt;p&gt;docker pull mcr.microsoft.com/playwright/python:v1.20.0-focal&lt;/p&gt;
+&lt;h2 id=&#34;本地环境&#34;&gt;本地环境&lt;/h2&gt;
+&lt;p&gt;pip install playwright -i &lt;a href=&#34;https://pypi.tuna.tsinghua.edu.cn/simple&#34;&gt;https://pypi.tuna.tsinghua.edu.cn/simple&lt;/a&gt;
+playwright install&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cheatsheet for pkg manager</title>
       <link>https://26huitailang.github.io/posts/cheatsheet/pkg-manager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/cheatsheet/pkg-manager/</guid>
-      <description>Cheatsheet for package manager go mod pip apt ubuntu 20.04 pip pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
-升级 pip 到最新的版本 (&amp;gt;=10.0.0) 后进行配置：
-pip install pip -U pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
-如果您到 pip 默认源的网络连接较差，临时使用本镜像站来升级 pip：
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -U
-apt ubuntu 20.04
-# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse # deb-src https://mirrors.</description>
+      <description>&lt;h1 id=&#34;cheatsheet-for-package-manager&#34;&gt;Cheatsheet for package manager&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;go mod&lt;/li&gt;
+&lt;li&gt;pip&lt;/li&gt;
+&lt;li&gt;apt ubuntu 20.04&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;pip&#34;&gt;pip&lt;/h2&gt;
+&lt;p&gt;pip install -i &lt;a href=&#34;https://pypi.tuna.tsinghua.edu.cn/simple&#34;&gt;https://pypi.tuna.tsinghua.edu.cn/simple&lt;/a&gt; some-package&lt;/p&gt;
+&lt;p&gt;升级 pip 到最新的版本 (&amp;gt;=10.0.0) 后进行配置：&lt;/p&gt;
+&lt;p&gt;pip install pip -U
+pip config set global.index-url &lt;a href=&#34;https://pypi.tuna.tsinghua.edu.cn/simple&#34;&gt;https://pypi.tuna.tsinghua.edu.cn/simple&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如果您到 pip 默认源的网络连接较差，临时使用本镜像站来升级 pip：&lt;/p&gt;
+&lt;p&gt;pip install -i &lt;a href=&#34;https://pypi.tuna.tsinghua.edu.cn/simple&#34;&gt;https://pypi.tuna.tsinghua.edu.cn/simple&lt;/a&gt; pip -U&lt;/p&gt;
+&lt;h2 id=&#34;apt&#34;&gt;apt&lt;/h2&gt;
+&lt;p&gt;ubuntu 20.04&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+
+# 预发布软件源，不建议启用
+# deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;go-mod&#34;&gt;go mod&lt;/h2&gt;
+&lt;p&gt;GOPROXY=https://goproxy.io,direct&lt;/p&gt;</description>
     </item>
     <item>
       <title>pdm</title>
       <link>https://26huitailang.github.io/posts/python/pdm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/python/pdm/</guid>
-      <description>github, A modern Python package manager with PEP 582 support.
-仅在__pypackages__/&amp;lt;major.minor&amp;gt;包含必要的依赖和bin文件，没有解释器相关文件 就算python解释器被删除了，但是只要有其他符合pyproject.yoml规定版本的解释器即可，项目目录下的__pypackages__不包含解释器相关的内容，venv则必须重新关联或者重新创建 $ tree -L 3 __pypackages__ __pypackages__ └── 3.10 ├── bin │ ├── django-admin │ └── sqlformat ├── include └── lib ├── Django-4.0.1.dist-info ├── anyio ├── anyio-3.5.0.dist-info ├── asgiref ├── asgiref-3.4.1.dist-info ├── django ... install brew install pdm demo mkdir pdm-demo cd pdm-demo pdm init Creating a pyproject.toml for PDM... Please enter the Python interpreter to use ... 12. /usr/local/Cellar/pdm/1.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/pdm-project/pdm&#34;&gt;github&lt;/a&gt;, A modern Python package manager with PEP 582 support.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;仅在&lt;code&gt;__pypackages__/&amp;lt;major.minor&amp;gt;&lt;/code&gt;包含必要的依赖和bin文件，没有解释器相关文件&lt;/li&gt;
+&lt;li&gt;就算python解释器被删除了，但是只要有其他符合&lt;code&gt;pyproject.yoml&lt;/code&gt;规定版本的解释器即可，项目目录下的&lt;code&gt;__pypackages__&lt;/code&gt;不包含解释器相关的内容，venv则必须重新关联或者重新创建&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-tree&#34; data-lang=&#34;tree&#34;&gt;$ tree -L 3 __pypackages__
+__pypackages__
+└── 3.10
+    ├── bin
+    │   ├── django-admin
+    │   └── sqlformat
+    ├── include
+    └── lib
+        ├── Django-4.0.1.dist-info
+        ├── anyio
+        ├── anyio-3.5.0.dist-info
+        ├── asgiref
+        ├── asgiref-3.4.1.dist-info
+        ├── django
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;install&#34;&gt;install&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install pdm
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;demo&#34;&gt;demo&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mkdir pdm-demo
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd pdm-demo
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pdm init
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Creating a pyproject.toml &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; PDM...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Please enter the Python interpreter to use
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;12. /usr/local/Cellar/pdm/1.12.2/libexec/bin/python3.10 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;3.10&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Please &lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt;: &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Using Python interpreter: /usr/local/Cellar/pdm/1.12.2/libexec/bin/python3.10 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;3.10&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Is the project a library that will be uploaded to PyPI? &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;y/N&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;: N
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;License&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;SPDX name&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;MIT&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Author name &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;26huitailang&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Author email &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;26huitailang@gmail.com&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Python requires&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;*&amp;#39;&lt;/span&gt; to allow any&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&amp;gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;3.10&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Changes are written to pyproject.toml.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PDM 1.12.2 is installed, &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; 1.12.6 is available.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Please run $ brew upgrade pdm to upgrade.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Run $ pdm config check_update false to disable the check.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;init files&lt;/p&gt;</description>
     </item>
     <item>
       <title>pip 离线安装</title>
       <link>https://26huitailang.github.io/posts/python/pip/%E6%89%93%E5%8C%85%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/python/pip/%E6%89%93%E5%8C%85%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85/</guid>
-      <description>pip 离线安装 打包 注意，要在同平台打包，否则有些包不能正确安装。
-在已有的环境中，一般是一个虚拟环境：
-pip freeze &amp;gt; pip-requirements.txt pip download -d pip-packages -r pip-requirements.txt，将提取的包下载到pip-packages文件夹中 安装 将pip-requirements.txt和pip-packages文件夹，拷贝到目标环境的同目录下 pip install &amp;ndash;no-index &amp;ndash;find-links=pip-packages -r pip-requirements.txt 参考 断网环境下一键安装 python3 离线安装包及其依赖 下载依赖 pip-download
-example
-pip install pip-download pip-download -p win_amd64 -p none-any fabric </description>
+      <description>&lt;h1 id=&#34;pip-离线安装&#34;&gt;pip 离线安装&lt;/h1&gt;
+&lt;h2 id=&#34;打包&#34;&gt;打包&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;注意，要在同平台打包&lt;/strong&gt;，否则有些包不能正确安装。&lt;/p&gt;
+&lt;p&gt;在已有的环境中，一般是一个虚拟环境：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pip freeze &amp;gt; pip-requirements.txt&lt;/li&gt;
+&lt;li&gt;pip download -d pip-packages -r pip-requirements.txt，将提取的包下载到pip-packages文件夹中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;将&lt;code&gt;pip-requirements.txt&lt;/code&gt;和&lt;code&gt;pip-packages文件夹&lt;/code&gt;，拷贝到目标环境的同目录下&lt;/li&gt;
+&lt;li&gt;pip install &amp;ndash;no-index &amp;ndash;find-links=pip-packages -r pip-requirements.txt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://testerhome.com/topics/17711&#34;&gt;断网环境下一键安装 python3 离线安装包及其依赖&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;下载依赖&#34;&gt;下载依赖&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/youngquan/pip-download&#34;&gt;pip-download&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;example&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install pip-download
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip-download  -p win_amd64 -p none-any fabric
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>pipenv</title>
       <link>https://26huitailang.github.io/posts/python/pip/pipenv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/python/pip/pipenv/</guid>
-      <description>pipenv pip和virtualenv的组合，使用Pipfile来替换旧的requirements.txt方式。
-documentation zhihu 参考 segmentfault 参考 安装 安装到系统常用的python版本下，mac可以使用brew安装
-$ pip install pipenv 创建虚拟环境 $ pipenv install --three django 创建一个python3的虚拟环境并安装django，随机生成一个和当前文件夹名有关的虚拟环境。也可以用过--python 3.7指定python版本。
-TODO， 不能指定名称吗？ 进入虚拟环境 $ pipenv shell 不过就算不进入环境，pipenv install依然可以正确安装包到对应的环境。
-新环境依赖 自动识别Pipfile，然后安装。
-$ pipenv install 一并安装开发环境的包：
-$ pipenv install --dev 区别开发环境 在安装包的时候添加一个--dev选项，会分类到开发依赖。
-更换源 更换Pipfile中的source-url
-[[source]] url = &amp;quot;https://mirrors.aliyun.com/pypi/simple&amp;quot; verify_ssl = true name = &amp;quot;pypi&amp;quot; 设置环境变量 PIPENV_PYPI_MIRROR 效果相同。类似指定&amp;ndash;pypi-mirror选项：
-$ pipenv install --pypi-mirror https://mirrors.aliyun.com/pypi/simple 查看安装的包 $ pipenv graph 不仅可以看到安装包，还可以看到依赖关系。
-Django==2.1.7 - pytz [required: Any, installed: 2018.</description>
+      <description>&lt;h1 id=&#34;pipenv&#34;&gt;pipenv&lt;/h1&gt;
+&lt;p&gt;pip和virtualenv的组合，使用Pipfile来替换旧的requirements.txt方式。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pipenv.readthedocs.io/en/latest/&#34;&gt;documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/37581807&#34;&gt;zhihu 参考&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://segmentfault.com/a/1190000015389565&#34;&gt;segmentfault 参考&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;
+&lt;p&gt;安装到系统常用的python版本下，mac可以使用&lt;code&gt;brew&lt;/code&gt;安装&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ pip install pipenv
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;创建虚拟环境&#34;&gt;创建虚拟环境&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ pipenv install --three django
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;创建一个python3的虚拟环境并安装django，随机生成一个和当前文件夹名有关的虚拟环境。也可以用过&lt;code&gt;--python 3.7&lt;/code&gt;指定python版本。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TODO， 不能指定名称吗？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;进入虚拟环境&#34;&gt;进入虚拟环境&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ pipenv shell
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;不过就算不进入环境，&lt;code&gt;pipenv install&lt;/code&gt;依然可以正确安装包到对应的环境。&lt;/p&gt;
+&lt;h2 id=&#34;新环境依赖&#34;&gt;新环境依赖&lt;/h2&gt;
+&lt;p&gt;自动识别Pipfile，然后安装。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ pipenv install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;一并安装开发环境的包：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ pipenv install --dev
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;区别开发环境&#34;&gt;区别开发环境&lt;/h2&gt;
+&lt;p&gt;在安装包的时候添加一个&lt;code&gt;--dev&lt;/code&gt;选项，会分类到开发依赖。&lt;/p&gt;
+&lt;h2 id=&#34;更换源&#34;&gt;更换源&lt;/h2&gt;
+&lt;p&gt;更换Pipfile中的source-url&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[[source]]
+
+url = &amp;quot;https://mirrors.aliyun.com/pypi/simple&amp;quot;
+verify_ssl = true
+name = &amp;quot;pypi&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;设置环境变量 &lt;code&gt;PIPENV_PYPI_MIRROR&lt;/code&gt; 效果相同。类似指定&amp;ndash;pypi-mirror选项：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ pipenv install --pypi-mirror https://mirrors.aliyun.com/pypi/simple
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;查看安装的包&#34;&gt;查看安装的包&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ pipenv graph
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;不仅可以看到安装包，还可以看到依赖关系。&lt;/p&gt;</description>
     </item>
     <item>
       <title>wheel</title>
       <link>https://26huitailang.github.io/posts/python/pip/wheel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/python/pip/wheel/</guid>
-      <description>wheel 提供给系统组的wheel包构建，要求none-any
-以oss2包为例
-pip download oss2 --platform=any --abi=none --no-deps 查看setup.py中的依赖，分别用上面的命令下载，获得所有的源码包。
-打包wheel，universal选项可以打包忽略平台和架构的包;如果包里面含有c extension是不支持universal的，必须是纯python实现
-python .\setup.py bdist_wheel --universal 如果遇到打包错误 error: invalid command &#39;bdist_wheel&#39;，可以修改setup.py使用setuptools的setup方法：
-# from distutils.core import setup from setuptools import setup </description>
+      <description>&lt;h1 id=&#34;wheel&#34;&gt;wheel&lt;/h1&gt;
+&lt;p&gt;提供给系统组的wheel包构建，要求none-any&lt;/p&gt;
+&lt;p&gt;以oss2包为例&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pip download oss2 --platform=any --abi=none --no-deps
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;查看setup.py中的依赖，分别用上面的命令下载，获得所有的源码包。&lt;/p&gt;
+&lt;p&gt;打包wheel，universal选项可以打包忽略平台和架构的包;&lt;strong&gt;如果包里面含有c extension是不支持universal的，必须是纯python实现&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;python .\setup.py bdist_wheel --universal
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果遇到打包错误 &lt;code&gt;error: invalid command &#39;bdist_wheel&#39;&lt;/code&gt;，可以修改setup.py使用setuptools的setup方法：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# from distutils.core import setup&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; setuptools &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; setup
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>

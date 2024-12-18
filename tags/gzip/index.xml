@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
     <lastBuildDate>Mon, 18 May 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/gzip/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,10 @@
       <link>https://26huitailang.github.io/posts/python/django/gzip/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/python/django/gzip/</guid>
-      <description>Django打开gzip导致文件流content-length丢失 code GZipMiddleware
-use gzip middleware will del response[&#39;Content-Length&#39;] if response.streaming. nginx gzip is the same problem.
-If file feature is important. You&amp;rsquo;d better be independent from the api or system.</description>
+      <description>&lt;h1 id=&#34;django打开gzip导致文件流content-length丢失&#34;&gt;Django打开gzip导致文件流content-length丢失&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/django/django/blob/e3d0b4d5501c6d0bc39f035e4345e5bdfde12e41/django/middleware/gzip.py&#34;&gt;code GZipMiddleware&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;use gzip middleware will &lt;code&gt;del response[&#39;Content-Length&#39;]&lt;/code&gt; if response.streaming. nginx gzip is the same problem.&lt;/p&gt;
+&lt;p&gt;If file feature is important. You&amp;rsquo;d better be independent from the api or system.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
     <lastBuildDate>Fri, 05 Nov 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
@@ -18,24 +18,149 @@
       <link>https://26huitailang.github.io/posts/linux/debian/upgrade/</link>
       <pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/linux/debian/upgrade/</guid>
-      <description>Upgrade debian main version update $ apt-get update &amp;amp;&amp;amp; apt-get upgrade backup sources.list $ cp /etc/apt/sources.list /etc/apt/sources.list.bak replace `stretch` to `buster` of `/etc/apt/sources.list` $ sed -i &amp;#39;s/stretch/buster/g&amp;#39; /etc/apt/sources.list run upgrade $ apt-get update &amp;amp;&amp;amp; apt-get upgrade run dist upgrade $ apt-get dist-upgrade $ reboot $ lsb_release -a clean: $ apt-get autoremove </description>
+      <description>&lt;h1 id=&#34;upgrade-debian-main-version&#34;&gt;Upgrade debian main version&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;update
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ apt-get update &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt-get upgrade
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;backup sources.list
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ cp /etc/apt/sources.list /etc/apt/sources.list.bak
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;replace &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;stretch&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt; to &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;buster&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt; of &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;/etc/apt/sources.list&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s/stretch/buster/g&amp;#39;&lt;/span&gt; /etc/apt/sources.list
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;run upgrade
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ apt-get update &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt-get upgrade
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;run dist upgrade
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ apt-get dist-upgrade
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ reboot
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ lsb_release -a
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;clean:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ apt-get autoremove
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Multipass</title>
       <link>https://26huitailang.github.io/posts/linux/ubuntu/multipass/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/linux/ubuntu/multipass/</guid>
-      <description>multipass to set development environment 官网
-指定配置 $ multipass launch --name XXX -c 2 -d 20G -m 2G 删除 $ multipass delete --purge XXXXX 问题 macos下面使用virtualbox暂时拿不到ip，只能使用NAT，最好使用hyperkit windows下面也不行，尝试添加第二个网络(gui操作 or vboxmanager)，我这里使用了桥接，之后修改/etc/network/interfaces填写相关信息，重启之后查看网卡能获得ip # ubuntu 18.04 allow-hotplug enp0s8 iface enp0s8 inet static address 10.200.242.200 netmask 255.0.0.0 gateway 10.0.0.3 ubuntu20.04操作: 修改 /etc/netplan/50-cloud-init.yaml 应用 sudo netplan apply 重启 sudo reboot # ubuntu 20.04 /etc/netplan/50-cloud-init.yaml network: ethernets: enp0s3: dhcp4: true match: macaddress: 08:00:27:bc:97:36 set-name: enp0s3 version: 2 # change like following part network: ethernets: enp0s3: dhcp4: false addresses: [10.</description>
+      <description>&lt;h1 id=&#34;multipass-to-set-development-environment&#34;&gt;multipass to set development environment&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://multipass.run/&#34;&gt;官网&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;指定配置&#34;&gt;指定配置&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ multipass launch --name XXX -c 2 -d 20G -m 2G
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;删除&#34;&gt;删除&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ multipass delete --purge XXXXX
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;问题&#34;&gt;问题&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;macos下面使用virtualbox暂时拿不到ip，只能使用NAT，最好使用hyperkit&lt;/li&gt;
+&lt;li&gt;windows下面也不行，尝试添加第二个网络(gui操作 or vboxmanager)，我这里使用了桥接，之后修改&lt;code&gt;/etc/network/interfaces&lt;/code&gt;填写相关信息，重启之后查看网卡能获得ip&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# ubuntu 18.04
+allow-hotplug enp0s8
+iface enp0s8 inet static
+address 10.200.242.200
+netmask 255.0.0.0
+gateway 10.0.0.3
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;ubuntu20.04操作:
+&lt;ul&gt;
+&lt;li&gt;修改 /etc/netplan/50-cloud-init.yaml&lt;/li&gt;
+&lt;li&gt;应用 sudo netplan apply&lt;/li&gt;
+&lt;li&gt;重启 sudo reboot&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# ubuntu 20.04 /etc/netplan/50-cloud-init.yaml&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;network&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;ethernets&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;enp0s3&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;dhcp4&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;match&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#f92672&#34;&gt;macaddress&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;08&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;00&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;27&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;bc:97:36&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;set-name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;enp0s3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;version&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# change like following part&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;network&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;ethernets&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;enp0s3&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;dhcp4&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;addresses&lt;/span&gt;: [&lt;span style=&#34;color:#ae81ff&#34;&gt;10.200.242.200&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;/8]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;gateway4&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;10.0.0.3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;nameservers&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#f92672&#34;&gt;addresses&lt;/span&gt;: [&lt;span style=&#34;color:#ae81ff&#34;&gt;8.8.8.8&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;8.8.4.4&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;match&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#f92672&#34;&gt;macaddress&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;08&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;00&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;27&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;bc:97:36&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;set-name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;enp0s3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;version&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>docker install</title>
       <link>https://26huitailang.github.io/posts/docker/debian-docker-install/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/docker/debian-docker-install/</guid>
-      <description>docker install install docker on Debian/Ubuntu
-link
-Uninstall old versions $ sudo apt-get remove docker docker-engine docker.io containerd runc Set up the repository $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg-agent \ software-properties-common $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - or $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add - $ sudo apt-key fingerprint 0EBFCD88 $ sudo add-apt-repository \ &amp;#34;deb [arch=amd64] https://download.</description>
+      <description>&lt;h1 id=&#34;docker-install&#34;&gt;docker install&lt;/h1&gt;
+&lt;p&gt;install docker on Debian/Ubuntu&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.docker.com/engine/install/debian/&#34;&gt;link&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;uninstall-old-versions&#34;&gt;Uninstall old versions&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get remove docker docker-engine docker.io containerd runc
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;set-up-the-repository&#34;&gt;Set up the repository&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get update
+
+$ sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
+
+$ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+or
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
+
+$ sudo apt-key fingerprint 0EBFCD88
+
+
+$ sudo add-apt-repository \
+   &amp;#34;deb [arch=amd64] https://download.docker.com/linux/debian \
+   $(lsb_release -cs) \
+   stable&amp;#34;
+or
+sudo add-apt-repository \
+   &amp;#34;deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+  focal \
+  stable&amp;#34;
+or
+$ sudo add-apt-repository \
+   &amp;#34;deb [arch=amd64] https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/ \
+  $(lsb_release -cs) \
+  stable&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;install-docker-engine&#34;&gt;Install Docker Engine&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt-get update
+$ sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+$ sudo docker run --rm hello-world
+
+$ sudo apt install docker-compose -y
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;without-sudo-to-use-docker&#34;&gt;Without sudo to use docker&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo usermod -aG docker $USER
+
+$ sudo systemctl restart docker
+$ sudo systemctl enable docker
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;speed-up&#34;&gt;Speed up&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://YOURS.mirror.aliyuncs.com&#34;&gt;https://YOURS.mirror.aliyuncs.com&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

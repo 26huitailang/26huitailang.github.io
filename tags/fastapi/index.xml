@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
     <lastBuildDate>Wed, 27 Jul 2022 10:11:58 +0800</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/fastapi/index.xml" rel="self" type="application/rss+xml" />
@@ -18,13 +18,27 @@
       <link>https://26huitailang.github.io/posts/python/fastapi/</link>
       <pubDate>Wed, 27 Jul 2022 10:11:58 +0800</pubDate>
       <guid>https://26huitailang.github.io/posts/python/fastapi/</guid>
-      <description>middleware or dependency 官方说明
-场景：
-项目使用了sqlite+sqlalchemy，暂时不支持async方式访问，但是fastapi的middleware的 __call__ 方法必须是async，如果在middleware中去做用户会话管理等和db相关的io操作可能导致整个应用阻塞。
-解决：
-使用def的dependency组合完成相关操作
-官方对于两个组件的对比说明：
-middleware 代码多一些，更复杂一些 必须是async方法 任何需要IO代码的添加都可能导致整个应用速度变慢或者阻塞 每个请求都会执行相关代码，如果是db的话，即使路由函数不需要也会创建 </description>
+      <description>&lt;h2 id=&#34;middleware-or-dependency&#34;&gt;middleware or dependency&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://fastapi.tiangolo.com/tutorial/sql-databases/#dependencies-with-yield-or-middleware&#34;&gt;官方说明&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;场景：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;项目使用了sqlite+sqlalchemy，暂时不支持async方式访问，但是fastapi的middleware的 __call__ 方法必须是async，如果在middleware中去做用户会话管理等和db相关的io操作可能导致整个应用阻塞。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;解决：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用def的dependency组合完成相关操作&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;官方对于两个组件的对比说明：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;middleware
+&lt;ul&gt;
+&lt;li&gt;代码多一些，更复杂一些&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;必须是async方法&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;任何需要IO代码的添加都可能导致整个应用速度变慢或者阻塞&lt;/li&gt;
+&lt;li&gt;每个请求都会执行相关代码，如果是db的话，即使路由函数不需要也会创建&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

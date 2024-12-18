@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
     <lastBuildDate>Wed, 04 Jan 2023 13:22:46 +0800</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/dst/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,15 @@
       <link>https://26huitailang.github.io/posts/linux/daylight/</link>
       <pubDate>Wed, 04 Jan 2023 13:22:46 +0800</pubDate>
       <guid>https://26huitailang.github.io/posts/linux/daylight/</guid>
-      <description>参考 https://www.cnblogs.com/zihanxing/articles/6224263.html
-验证 zdump -v /usr/share/zoneinfo/America/Los_Angeles ｜ grep 2022 ln -sf /usr/share/zoneinfo/America/Los_Angeles /etc/localtime service ntpd stop date -s &amp;#34;2022-03-13 01:59:40&amp;#34; for i in `seq 1 1000`;do date;python -c &amp;#39;import time;print(int(time.time()))&amp;#39;;python -c &amp;#39;import datetime;print(datetime.datetime.now())&amp;#39;;sleep 1;done </description>
+      <description>&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/zihanxing/articles/6224263.html&#34;&gt;https://www.cnblogs.com/zihanxing/articles/6224263.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;验证&#34;&gt;验证&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zdump -v /usr/share/zoneinfo/America/Los_Angeles ｜ grep &lt;span style=&#34;color:#ae81ff&#34;&gt;2022&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ln -sf  /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;service ntpd stop
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;date -s &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;2022-03-13 01:59:40&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i in &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;seq &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; 1000&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt; date;python -c &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;import time;print(int(time.time()))&amp;#39;&lt;/span&gt;;python -c &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;import datetime;print(datetime.datetime.now())&amp;#39;&lt;/span&gt;;sleep 1;&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>

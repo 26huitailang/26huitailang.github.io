@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
     <lastBuildDate>Mon, 26 Apr 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/gitlab/index.xml" rel="self" type="application/rss+xml" />
@@ -18,13 +18,31 @@
       <link>https://26huitailang.github.io/posts/devops/gitlab/gitlab-ci-cd/</link>
       <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/devops/gitlab/gitlab-ci-cd/</guid>
-      <description>Gitlab CI/CD For the development environment.
-Install with docker Read the official documentation for how to install docker.
-I installed docker on the MacOS.
-gitlab documentation
-sudo docker run --detach \ --hostname 192.168.8.226 \ --publish 443:443 --publish 80:80 --publish 8022:22 \ --name gitlab \ --restart always \ --volume ~/gitlab/config:/etc/gitlab \ --volume ~/gitlab/logs:/var/log/gitlab \ --volume ~/gitlab/data:/var/opt/gitlab \ gitlab/gitlab-ce:latest gitlab-runner Order of initialization:
-install register custom config documentation
-There is no difficulty to install gitlab and gitlab-runner in docker.</description>
+      <description>&lt;h1 id=&#34;gitlab-cicd&#34;&gt;Gitlab CI/CD&lt;/h1&gt;
+&lt;p&gt;For the development environment.&lt;/p&gt;
+&lt;h2 id=&#34;install-with-docker&#34;&gt;Install with docker&lt;/h2&gt;
+&lt;p&gt;Read the official &lt;a href=&#34;https://docs.docker.com/install/&#34;&gt;documentation&lt;/a&gt; for how to install docker.&lt;/p&gt;
+&lt;p&gt;I installed docker on the MacOS.&lt;/p&gt;
+&lt;h3 id=&#34;gitlab&#34;&gt;gitlab&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.gitlab.com/omnibus/docker/&#34;&gt;documentation&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo docker run --detach &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --hostname 192.168.8.226 &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --publish 443:443 --publish 80:80 --publish 8022:22 &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --name gitlab &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --restart always &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --volume ~/gitlab/config:/etc/gitlab &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --volume ~/gitlab/logs:/var/log/gitlab &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --volume ~/gitlab/data:/var/opt/gitlab &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  gitlab/gitlab-ce:latest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;gitlab-runner&#34;&gt;gitlab-runner&lt;/h3&gt;
+&lt;p&gt;Order of initialization:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;install&lt;/li&gt;
+&lt;li&gt;register&lt;/li&gt;
+&lt;li&gt;custom config&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.gitlab.com/runner/install/docker.html&#34;&gt;documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;There is no difficulty to install gitlab and gitlab-runner in docker.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

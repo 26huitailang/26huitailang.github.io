@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
     <atom:link href="https://26huitailang.github.io/tags/pipenv/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -17,17 +17,52 @@
       <link>https://26huitailang.github.io/posts/python/pip/pipenv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/python/pip/pipenv/</guid>
-      <description>pipenv pip和virtualenv的组合，使用Pipfile来替换旧的requirements.txt方式。
-documentation zhihu 参考 segmentfault 参考 安装 安装到系统常用的python版本下，mac可以使用brew安装
-$ pip install pipenv 创建虚拟环境 $ pipenv install --three django 创建一个python3的虚拟环境并安装django，随机生成一个和当前文件夹名有关的虚拟环境。也可以用过--python 3.7指定python版本。
-TODO， 不能指定名称吗？ 进入虚拟环境 $ pipenv shell 不过就算不进入环境，pipenv install依然可以正确安装包到对应的环境。
-新环境依赖 自动识别Pipfile，然后安装。
-$ pipenv install 一并安装开发环境的包：
-$ pipenv install --dev 区别开发环境 在安装包的时候添加一个--dev选项，会分类到开发依赖。
-更换源 更换Pipfile中的source-url
-[[source]] url = &amp;quot;https://mirrors.aliyun.com/pypi/simple&amp;quot; verify_ssl = true name = &amp;quot;pypi&amp;quot; 设置环境变量 PIPENV_PYPI_MIRROR 效果相同。类似指定&amp;ndash;pypi-mirror选项：
-$ pipenv install --pypi-mirror https://mirrors.aliyun.com/pypi/simple 查看安装的包 $ pipenv graph 不仅可以看到安装包，还可以看到依赖关系。
-Django==2.1.7 - pytz [required: Any, installed: 2018.</description>
+      <description>&lt;h1 id=&#34;pipenv&#34;&gt;pipenv&lt;/h1&gt;
+&lt;p&gt;pip和virtualenv的组合，使用Pipfile来替换旧的requirements.txt方式。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pipenv.readthedocs.io/en/latest/&#34;&gt;documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/37581807&#34;&gt;zhihu 参考&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://segmentfault.com/a/1190000015389565&#34;&gt;segmentfault 参考&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;
+&lt;p&gt;安装到系统常用的python版本下，mac可以使用&lt;code&gt;brew&lt;/code&gt;安装&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ pip install pipenv
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;创建虚拟环境&#34;&gt;创建虚拟环境&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ pipenv install --three django
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;创建一个python3的虚拟环境并安装django，随机生成一个和当前文件夹名有关的虚拟环境。也可以用过&lt;code&gt;--python 3.7&lt;/code&gt;指定python版本。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TODO， 不能指定名称吗？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;进入虚拟环境&#34;&gt;进入虚拟环境&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ pipenv shell
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;不过就算不进入环境，&lt;code&gt;pipenv install&lt;/code&gt;依然可以正确安装包到对应的环境。&lt;/p&gt;
+&lt;h2 id=&#34;新环境依赖&#34;&gt;新环境依赖&lt;/h2&gt;
+&lt;p&gt;自动识别Pipfile，然后安装。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ pipenv install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;一并安装开发环境的包：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ pipenv install --dev
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;区别开发环境&#34;&gt;区别开发环境&lt;/h2&gt;
+&lt;p&gt;在安装包的时候添加一个&lt;code&gt;--dev&lt;/code&gt;选项，会分类到开发依赖。&lt;/p&gt;
+&lt;h2 id=&#34;更换源&#34;&gt;更换源&lt;/h2&gt;
+&lt;p&gt;更换Pipfile中的source-url&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[[source]]
+
+url = &amp;quot;https://mirrors.aliyun.com/pypi/simple&amp;quot;
+verify_ssl = true
+name = &amp;quot;pypi&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;设置环境变量 &lt;code&gt;PIPENV_PYPI_MIRROR&lt;/code&gt; 效果相同。类似指定&amp;ndash;pypi-mirror选项：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ pipenv install --pypi-mirror https://mirrors.aliyun.com/pypi/simple
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;查看安装的包&#34;&gt;查看安装的包&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ pipenv graph
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;不仅可以看到安装包，还可以看到依赖关系。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

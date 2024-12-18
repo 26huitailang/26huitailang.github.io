@@ -9,7 +9,7 @@
       <url>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://26huitailang.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.124.1</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>en</language>
     <lastBuildDate>Fri, 10 Feb 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://26huitailang.github.io/tags/dependency/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,54 @@
       <link>https://26huitailang.github.io/posts/python/pip/dependency/</link>
       <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
       <guid>https://26huitailang.github.io/posts/python/pip/dependency/</guid>
-      <description>查看依赖 工具 pipdeptree
-支持正向、反向查看依赖 多种格式输出，安装了graphviz还可以输出图形 [root@10-113-57-176 /] pip install pipdeptree [root@10-113-57-176 /] pipdeptree --help usage: pipdeptree [-h] [-v] [-f] [--python PYTHON] [-a] [-l] [-u] [-w [{silence,suppress,fail}]] [-r] [-p PACKAGES] [-e PACKAGES] [-j] [--json-tree] [--graph-output OUTPUT_FORMAT] Dependency tree of the installed python packages optional arguments: -h, --help show this help message and exit -v, --version show program&amp;#39;s version number and exit -f, --freeze Print names so as to write freeze files --python PYTHON Python to use to look for packages in it (default: where installed) -a, --all list all deps at top level -l, --local-only If in a virtualenv that has global access do not show globally installed packages -u, --user-only Only show installations in the user site dir -w [{silence,suppress,fail}], --warn [{silence,suppress,fail}] Warning control.</description>
+      <description>&lt;h2 id=&#34;查看依赖&#34;&gt;查看依赖&lt;/h2&gt;
+&lt;p&gt;工具 pipdeptree&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;支持正向、反向查看依赖&lt;/li&gt;
+&lt;li&gt;多种格式输出，安装了graphviz还可以输出图形&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@10-113-57-176 /&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; pip install pipdeptree
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@10-113-57-176 /&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; pipdeptree --help
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;usage: pipdeptree &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-h&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-v&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-f&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;--python PYTHON&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-a&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-l&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-u&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-w &lt;span style=&#34;color:#f92672&#34;&gt;[{&lt;/span&gt;silence,suppress,fail&lt;span style=&#34;color:#f92672&#34;&gt;}]]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-r&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-p PACKAGES&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-e PACKAGES&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-j&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;--json-tree&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;--graph-output OUTPUT_FORMAT&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Dependency tree of the installed python packages
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;optional arguments:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  -h, --help            show this help message and exit
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  -v, --version         show program&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;#39;&lt;/span&gt;s version number and exit
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  -f, --freeze          Print names so as to write freeze files
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  --python PYTHON       Python to use to look &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; packages in it &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;default: where installed&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  -a, --all             list all deps at top level
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  -l, --local-only      If in a virtualenv that has global access &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt; not show globally
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        installed packages
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  -u, --user-only       Only show installations in the user site dir
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  -w &lt;span style=&#34;color:#f92672&#34;&gt;[{&lt;/span&gt;silence,suppress,fail&lt;span style=&#34;color:#f92672&#34;&gt;}]&lt;/span&gt;, --warn &lt;span style=&#34;color:#f92672&#34;&gt;[{&lt;/span&gt;silence,suppress,fail&lt;span style=&#34;color:#f92672&#34;&gt;}]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        Warning control. &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;suppress&amp;#34;&lt;/span&gt; will show warnings but &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; whether
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        or not they are present. &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;silence&amp;#34;&lt;/span&gt; will not show warnings at all and
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        always &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; 0. &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fail&amp;#34;&lt;/span&gt; will show warnings and &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; any are
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        present. The default is &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;suppress&amp;#34;&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  -r, --reverse         Shows the dependency tree in the reverse fashion ie. the sub-
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        dependencies are listed with the list of packages that need them
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        under them.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  -p PACKAGES, --packages PACKAGES
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        Comma separated list of &lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; packages to show in the output. If
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        set, --all will be ignored.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  -e PACKAGES, --exclude PACKAGES
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        Comma separated list of &lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; packages to exclude from the output.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        If set, --all will be ignored.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  -j, --json            Display dependency tree as json. This will yield &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;raw&amp;#34;&lt;/span&gt; output that
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        may be used by external tools. This option overrides all other
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        options.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  --json-tree           Display dependency tree as json which is nested the same way as the
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        plain text output printed by default. This option overrides all other
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        options &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;except --json&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  --graph-output OUTPUT_FORMAT
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        Print a dependency graph in the specified output format. Available
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        are all formats supported by GraphViz, e.g.: dot, jpeg, pdf, png, svg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>
